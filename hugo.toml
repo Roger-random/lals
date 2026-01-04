@@ -1,4 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'Roger Cheng at LALS'
-theme = 'ananke'
+theme = 'hugo-book'
+
+[params]
+  BookTheme='dark'
+  BookSection='*'
