@@ -2,94 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Roger Cheng at LALS</title>
-    <link>https://roger-random.github.io/lals/</link>
+    <link>http://localhost:1313/lals/</link>
     <description>Recent content on Roger Cheng at LALS</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Dec 2025 17:02:00 -0800</lastBuildDate>
-    <atom:link href="https://roger-random.github.io/lals/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jan 2026 17:23:49 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/lals/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2026 Timecards</title>
+      <link>http://localhost:1313/lals/timecards/2026/</link>
+      <pubDate>Mon, 05 Jan 2026 17:23:49 -0800</pubDate>
+      <guid>http://localhost:1313/lals/timecards/2026/</guid>
+      <description>&lt;h2 id=&#34;sunday-202614&#34;&gt;Sunday 2026/1/4&lt;a class=&#34;anchor&#34; href=&#34;#sunday-202614&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;No public rides today due to rain, but stopped in to walk around the track in&#xA;reverse direction from what I&amp;rsquo;ve been used to so far. Trying to imagine what&#xA;I would watch for to ensure passenger safety. No leaf blower today, but I did&#xA;pick up large branches as I went along.&lt;/p&gt;&#xA;&lt;p&gt;Walking down mountain division eastward from water wheel, my left foot found&#xA;a sinkhole collapsing to nearly my knee. Thankfully no twisted ankle. After&#xA;consulting with Nelson via text message, I grabbed a shovel and filled the&#xA;hole back up with dirt conveniently at hand. Since it&amp;rsquo;s raining, the dirt&#xA;is partially mud. Will need to revisit after it has a chance to dry and&#xA;settle, but at least now it presents no risk to anyone else&amp;rsquo;s ankles.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Sunday 2025/12/28</title>
-      <link>https://roger-random.github.io/lals/posts/20251228/</link>
+      <link>http://localhost:1313/lals/posts/20251228/</link>
       <pubDate>Sun, 28 Dec 2025 17:02:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251228/</guid>
+      <guid>http://localhost:1313/lals/posts/20251228/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Complete probationary membership requirements.&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;I thought I would complete probationary requirements today but when I double&#xA;checked records I found I double-counted conductor hours on 12/7. So instead&#xA;of a few hours over, I&amp;rsquo;m actually a bit short. I made this mistake because I&#xA;had been writing down name of the engineer of train I was conducting. This&#xA;system broke down when Ronne and Rodstein traded off engineering&#xA;Santa Fe Electric on 12/7. Which meant my &amp;ldquo;conductor for Ronne&amp;rdquo; hours and&#xA;&amp;ldquo;conductor for Rodstein&amp;rdquo; hours were actually the same hours. Lesson learned,&#xA;note-keeping system will evolve!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sunday 2025/12/21</title>
-      <link>https://roger-random.github.io/lals/posts/20251221/</link>
+      <link>http://localhost:1313/lals/posts/20251221/</link>
       <pubDate>Sun, 21 Dec 2025 16:10:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251221/</guid>
+      <guid>http://localhost:1313/lals/posts/20251221/</guid>
       <description>&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Christmas themed day along with Carolwood (Disney) barn. We had Santa, we had&#xA;Grinch!&lt;/p&gt;&#xA;&lt;p&gt;Murphy brought Baofeng configuration equipment and set me up so I can use my&#xA;own radio.&lt;/p&gt;&#xA;&lt;p&gt;Met another Roger. T and C sounded too similar over radio, though, so I&#xA;pronounced my last name instead of just initial.&lt;/p&gt;&#xA;&lt;p&gt;Shawn brought and ran a Roger Goldmann (of original&#xA;&lt;a href=&#34;https://www.livesteamlocomotives.com/&#34;&gt;livesteamlocomotives.com&lt;/a&gt;)&#xA;designed 2-8-0 steam locomotive pulling public trains.&lt;/p&gt;&#xA;&lt;p&gt;Boschan brought and ran a small steam locomotive that fit in the trunk of a&#xA;Honda Civic, a reassuringly accessible size! Boschan works professionally in&#xA;a heat exchanger fabrication company, and offered to answer questions&#xA;about building boilers when I reach that point. The little locomotive is an&#xA;articulated 2-4-4-2 modeled after the&#xA;&lt;a href=&#34;https://en.wikipedia.org/wiki/Columbia_River_Belt_Line_7&#34;&gt;Columbia River Belt Line 7 a.k.a. &lt;em&gt;Skookum&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Saturday 2025/12/20</title>
-      <link>https://roger-random.github.io/lals/posts/20251220/</link>
+      <link>http://localhost:1313/lals/posts/20251220/</link>
       <pubDate>Sat, 20 Dec 2025 16:49:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251220/</guid>
+      <guid>http://localhost:1313/lals/posts/20251220/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Stopped by for a bit of yardwork, make things more presentable for Disney&#xA;weekend. It&amp;rsquo;s going to be a busy day.&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Don said I just missed Jay Leno and his Chrysler Turbine car by less than 15&#xA;minutes. That would have been awesome.&lt;/p&gt;&#xA;&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;a class=&#34;anchor&#34; href=&#34;#activity-log&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;3.0 hours total&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;3.0 facility (28 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 conducting (13.75 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 kitchen (3 out of 6)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;1:30PM - 4:30PM (3.0 facility)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Monday 2025/12/15</title>
-      <link>https://roger-random.github.io/lals/posts/20251215/</link>
+      <link>http://localhost:1313/lals/posts/20251215/</link>
       <pubDate>Mon, 15 Dec 2025 12:45:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251215/</guid>
+      <guid>http://localhost:1313/lals/posts/20251215/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Member of Nelson work crew finishing up Bagley wall project.&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Engineer the center cab (a.k.a. work train) for a bit under Nelson supervision.&#xA;My first time engineering a locomotive, exciting!&lt;/p&gt;&#xA;&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;a class=&#34;anchor&#34; href=&#34;#activity-log&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;3.5 hours total&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;3.5 facility (25 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 conducting (13.75 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 kitchen (3 out of 6)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;9:00AM - 12:30PM&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Put horizontal wall logs behind new vertical posts.&lt;/li&gt;&#xA;&lt;li&gt;Refill dirt behind wall.&lt;/li&gt;&#xA;&lt;li&gt;Clean up work site.&lt;/li&gt;&#xA;&lt;li&gt;Remove broken rail side billboard.&lt;/li&gt;&#xA;&lt;li&gt;Drill holes for new vertical posts.&lt;/li&gt;&#xA;&lt;li&gt;New posts in concrete.&lt;/li&gt;&#xA;&lt;li&gt;Clean up work site.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Sunday 2025/12/14</title>
-      <link>https://roger-random.github.io/lals/posts/20251214/</link>
+      <link>http://localhost:1313/lals/posts/20251214/</link>
       <pubDate>Sun, 14 Dec 2025 15:52:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251214/</guid>
+      <guid>http://localhost:1313/lals/posts/20251214/</guid>
       <description>&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Murphy instructs me to send text reminder about Baofeng configuration equipment&#xA;next Saturday evening. Today my train engineer had an extra radio I could use.&lt;/p&gt;&#xA;&lt;p&gt;Liz ran her Allen 2-6-0 Mogul steam locomotive around the track during public&#xA;run hours. Guests were entertained.&lt;/p&gt;&#xA;&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;a class=&#34;anchor&#34; href=&#34;#activity-log&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;7.0 hours total&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;2.25 facility (21.5 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;4.75 conducting (13.75 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.00 kitchen (3 out of 6)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;8:30AM - 10:45AM (2.25 facility)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sunday 2025/12/07</title>
-      <link>https://roger-random.github.io/lals/posts/20251207/</link>
+      <link>http://localhost:1313/lals/posts/20251207/</link>
       <pubDate>Sun, 07 Dec 2025 15:36:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251207/</guid>
+      <guid>http://localhost:1313/lals/posts/20251207/</guid>
       <description>&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Whenever I&amp;rsquo;m ready to upgrade from my starter whistle, Ronne recommends&#xA;Acme Thunderer 58 or Titanic.&lt;/p&gt;&#xA;&lt;p&gt;Liz fired up her&#xA;&lt;a href=&#34;https://allenmodels.com/locomotives/allen-mogul.html&#34;&gt;Allen Models of Nevada 2-6-0 Mogul&lt;/a&gt;&#xA;coal-burning(!) steam locomotive but unfortunately some misplaced rods meant&#xA;she couldn&amp;rsquo;t run it. Liz was very friendly and answered questions as I&#xA;watched her go through procedure to shut her engine back down for the night.&lt;/p&gt;&#xA;&lt;p&gt;Liz loves the K-27 locomotive, specificially&#xA;&lt;a href=&#34;https://en.wikipedia.org/wiki/Rio_Grande_463&#34;&gt;engine 463&lt;/a&gt;,&#xA;and was very excited to hear I&amp;rsquo;m contemplating building&#xA;&lt;a href=&#34;https://secure.villagepress.com/store/items/list/group/961&#34;&gt;Kozo Hiraoka&amp;rsquo;s K-27&lt;/a&gt;.&#xA;Sounds like I&amp;rsquo;ll have an appreciative fan if I go make one a 463.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Saturday 2025/12/06</title>
-      <link>https://roger-random.github.io/lals/posts/20251206/</link>
+      <link>http://localhost:1313/lals/posts/20251206/</link>
       <pubDate>Sat, 06 Dec 2025 17:32:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251206/</guid>
+      <guid>http://localhost:1313/lals/posts/20251206/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Nelson&amp;rsquo;s Bagley Wall crew in the morning, then stayed around for additional&#xA;independent facility work in the afternoon.&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Dorado tri-tip is very tasty&lt;/p&gt;&#xA;&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;a class=&#34;anchor&#34; href=&#34;#activity-log&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;6.75 hours total&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;6.75 facility (16.75 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 conducting (4.5 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 kitchen (3 out of 6)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;8:30AM - 11:45AM (3.25 facility)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Bagley wall disassembly&lt;/li&gt;&#xA;&lt;li&gt;Set new vertical posts in concrete&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;1:15PM - 2:45PM (1.5 facility)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Shovel sediment buildup out of waterwheel reservoir&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;3:15PM - 5:15PM (2 facility)&lt;/p&gt;</description>
     </item>
     <item>
       <title>Wednesday 2025/12/03</title>
-      <link>https://roger-random.github.io/lals/posts/20251203/</link>
+      <link>http://localhost:1313/lals/posts/20251203/</link>
       <pubDate>Wed, 03 Dec 2025 16:26:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251203/</guid>
+      <guid>http://localhost:1313/lals/posts/20251203/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Was in the area and had a few hours to spare, stopped in for some facility work.&lt;/p&gt;&#xA;&lt;p&gt;Met Rick and Russ(?) as they sorted through their inventory in the storage&#xA;unit adjacent to elevated Gauge-1 layout. Rick&amp;rsquo;s got a Audi TDI with DR GROSS&#xA;plate. Russ has a big truck and that&amp;rsquo;s not a tow hitch in the back: it&amp;rsquo;s a&#xA;train coupler. Cool!&lt;/p&gt;&#xA;&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;a class=&#34;anchor&#34; href=&#34;#activity-log&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;2.0 hours total&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sunday 2025/11/30</title>
-      <link>https://roger-random.github.io/lals/posts/20251130/</link>
+      <link>http://localhost:1313/lals/posts/20251130/</link>
       <pubDate>Sun, 30 Nov 2025 15:53:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251130/</guid>
+      <guid>http://localhost:1313/lals/posts/20251130/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Work towards building conductor hours.&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Plan: After completing conductor training with Chavez, I came to see if I&#xA;can get a few ride-alongs and maybe a check ride.&lt;/p&gt;&#xA;&lt;p&gt;Actual: &amp;ldquo;You finished the class?&amp;rdquo; &amp;ldquo;Yeah.&amp;rdquo; &amp;ldquo;You passed the test?&amp;rdquo; &amp;ldquo;Yeah, 9/10.&amp;rdquo;&#xA;&amp;ldquo;You&amp;rsquo;re conducting today.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Normally I would talk to engineers to find out who needs a conductor, but today&#xA;is different because of an unexpected shortage of conductors resulted in some&#xA;shuffling and reassignment by safety coordinators.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sunday 2025/11/23</title>
-      <link>https://roger-random.github.io/lals/posts/20251123/</link>
+      <link>http://localhost:1313/lals/posts/20251123/</link>
       <pubDate>Sun, 23 Nov 2025 16:17:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251123/</guid>
+      <guid>http://localhost:1313/lals/posts/20251123/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Learn what happens during Sunday public ride operations.&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Listened to several conductors&amp;rsquo; safety speeches.&lt;/p&gt;&#xA;&lt;p&gt;One ride-along with McCabe conducting.&lt;/p&gt;&#xA;&lt;p&gt;I got to see the fabled Engine No. 8, club-owned steam locomotive. Tour&#xA;by Anthony who just barely missed being able to run it when it broke down&#xA;nearly a year ago.&lt;/p&gt;&#xA;&lt;p&gt;Chatted with Eber and Nick G. about 3.5&amp;quot; gauge steam engines. I consider&#xA;myself properly warned that smaller engines are more challenging to run&#xA;smoothly due to smaller margins in maintaining proper level of fire and water.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Sunday 2025/11/09</title>
-      <link>https://roger-random.github.io/lals/posts/20251109/</link>
+      <link>http://localhost:1313/lals/posts/20251109/</link>
       <pubDate>Sun, 09 Nov 2025 16:44:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251109/</guid>
+      <guid>http://localhost:1313/lals/posts/20251109/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Introduce myself to the Kountry Kitchen&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Dorado: &amp;ldquo;If you need hours, there is always something that needs doing&#xA;around here.&amp;rdquo;&lt;/p&gt;&#xA;&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;a class=&#34;anchor&#34; href=&#34;#activity-log&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;3.0 hours total&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;0.0 facility (6 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 conducting (0 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;3.0 kitchen (3 out of 6)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;1:30PM - 4:30PM&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Instructed on how to restock cold drinks.&lt;/li&gt;&#xA;&lt;li&gt;Put instruction to practice.&lt;/li&gt;&#xA;&lt;li&gt;Instructed on dish washing sink.&lt;/li&gt;&#xA;&lt;li&gt;And put that to practice, too.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
     <item>
       <title>Saturday 2025/11/08</title>
-      <link>https://roger-random.github.io/lals/posts/20251108/</link>
+      <link>http://localhost:1313/lals/posts/20251108/</link>
       <pubDate>Sat, 08 Nov 2025 15:00:00 -0800</pubDate>
-      <guid>https://roger-random.github.io/lals/posts/20251108/</guid>
+      <guid>http://localhost:1313/lals/posts/20251108/</guid>
       <description>&lt;h2 id=&#34;objective&#34;&gt;Objective&lt;a class=&#34;anchor&#34; href=&#34;#objective&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Welcome to the club, Roger! Now GET TO WORK!&lt;/p&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;anchor&#34; href=&#34;#notes&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;There was a crew removing a switch and track that went unused due to erosion&#xA;from cliff, but they seemed to have enough people and Mike F. thought I&#xA;could be more useful elsewhere.&lt;/p&gt;&#xA;&lt;h2 id=&#34;activity-log&#34;&gt;Activity Log&lt;a class=&#34;anchor&#34; href=&#34;#activity-log&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;6.0 hours total&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;6.0 facility (6 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 conducting (0 out of 18)&lt;/li&gt;&#xA;&lt;li&gt;0.0 kitchen (0 out of 6)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;8:30AM - 10:30AM (2 facility)&lt;/p&gt;</description>
     </item>
   </channel>
