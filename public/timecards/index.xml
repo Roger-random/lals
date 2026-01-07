@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Timecards on Roger Cheng at LALS</title>
-    <link>http://localhost:1313/lals/timecards/</link>
-    <description>Recent content in Timecards on Roger Cheng at LALS</description>
+    <title>Timecards by Year on Roger Cheng at LALS</title>
+    <link>https://roger-random.github.io/lals/timecards/</link>
+    <description>Recent content in Timecards by Year on Roger Cheng at LALS</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Jan 2026 17:23:49 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/lals/timecards/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>2026 Timecards</title>
-      <link>http://localhost:1313/lals/timecards/2026/</link>
-      <pubDate>Mon, 05 Jan 2026 17:23:49 -0800</pubDate>
-      <guid>http://localhost:1313/lals/timecards/2026/</guid>
-      <description>&lt;h2 id=&#34;sunday-202614&#34;&gt;Sunday 2026/1/4&lt;a class=&#34;anchor&#34; href=&#34;#sunday-202614&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;No public rides today due to rain, but stopped in to walk around the track in&#xA;reverse direction from what I&amp;rsquo;ve been used to so far. Trying to imagine what&#xA;I would watch for to ensure passenger safety. No leaf blower today, but I did&#xA;pick up large branches as I went along.&lt;/p&gt;&#xA;&lt;p&gt;Walking down mountain division eastward from water wheel, my left foot found&#xA;a sinkhole collapsing to nearly my knee. Thankfully no twisted ankle. After&#xA;consulting with Nelson via text message, I grabbed a shovel and filled the&#xA;hole back up with dirt conveniently at hand. Since it&amp;rsquo;s raining, the dirt&#xA;is partially mud. Will need to revisit after it has a chance to dry and&#xA;settle, but at least now it presents no risk to anyone else&amp;rsquo;s ankles.&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://roger-random.github.io/lals/timecards/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

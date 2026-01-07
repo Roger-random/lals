@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Roger Cheng at LALS</title>
-    <link>http://localhost:1313/lals/categories/</link>
+    <link>https://roger-random.github.io/lals/categories/</link>
     <description>Recent content in Categories on Roger Cheng at LALS</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/lals/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://roger-random.github.io/lals/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
