@@ -57,6 +57,8 @@ Jay Leno stopped by with [Doble E-20 steam car](https://www.youtube.com/watch?v=
   * 0.75 conductor (16.5 out of 18)
   * 3.75 kitchen (7.75 out of 6)
 
+---
+
 ## Sunday 2025/12/21
 
 Christmas themed day along with Carolwood (Disney) barn. We had Santa, we had
@@ -110,6 +112,8 @@ articulated 2-4-4-2 modeled after the
   * 2.0 conducting (15.75 out of 18)
   * 1.0 kitchen (4 out of 6)
 
+---
+
 ## Saturday 2025/12/20
 
 Stopped by for a bit of yardwork, make things more presentable for Disney
@@ -147,6 +151,8 @@ Rinsed off Carolwood driveway. Better but still not mud-free.
   * 0.0 conducting (13.75 out of 18)
   * 0.0 kitchen (3 out of 6)
 
+---
+
 ## Monday 2025/12/15
 
 Joined Nelson work crew to finish up Bagley wall project. After that, helped
@@ -180,6 +186,8 @@ is a common lunch spot by joining for lunch afterwards.
   * 0.0 conducting (13.75 out of 18)
   * 0.0 kitchen (3 out of 6)
 
+---
+
 ## Sunday 2025/12/14
 
 Murphy instructs me to send text reminder about Baofeng configuration equipment
@@ -210,6 +218,8 @@ I am here!
   * 2.25 facility (21.5 out of 18)
   * 4.75 conducting (13.75 out of 18)
   * 0.00 kitchen (3 out of 6)
+
+---
 
 ## Sunday 2025/12/07
 
@@ -258,6 +268,8 @@ a MT-3 class 4-8-2 Mountain. Did I get the wrong one? Ask Nick later.
   * 2.5 facility (19.25 out of 18)
   * 4.5 conducting (9 out of 18)
   * 0.0 kitchen (3 out of 6)
+
+---
 
 ## Saturday 2025/12/06
 
@@ -315,6 +327,8 @@ All we can do is to have it look nicer for a little bit.
   * 0.0 conducting (4.5 out of 18)
   * 0.0 kitchen (3 out of 6)
 
+---
+
 ## Wednesday 2025/12/03
 
 I was in the area and had a few hours to spare, stopped in for some facility work.
@@ -359,6 +373,8 @@ no sinking guest shoes into mud anymore.
   * 0.0 conducting (4.5 out of 18)
   * 0.0 kitchen (3 out of 6)
 
+---
+
 ## Sunday 2025/11/30
 
 My plan: After completing conductor training with Chavez, I came to see if I
@@ -387,6 +403,8 @@ shuffling and reassignment by safety coordinators.
   * 1.5 facility (8 out of 18)
   * 4.5 conducting (4.5 out of 18)
   * 0.0 kitchen (3 out of 6)
+
+---
 
 ## Sunday 2025/11/23
 
@@ -422,6 +440,8 @@ smoothly due to smaller margins in maintaining proper level of fire and water.
   * 0.0 conducting (0 out of 18)
   * 0.0 kitchen (3 out of 6)
 
+---
+
 ## Sunday 2025/11/09
 
 Introduce myself to the Kountry Kitchen and start helping out.
@@ -443,6 +463,8 @@ around here."
   * 0.0 facility (6 out of 18)
   * 0.0 conducting (0 out of 18)
   * 3.0 kitchen (3 out of 6)
+
+---
 
 ## Saturday 2025/11/08
 
