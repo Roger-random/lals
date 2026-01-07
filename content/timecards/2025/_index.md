@@ -222,9 +222,10 @@ happy and I was happy to see and hear it run.
 
 Liz fired up her
 [Allen Models of Nevada 2-6-0 Mogul](https://allenmodels.com/locomotives/allen-mogul.html)
-coal-burning(!) steam locomotive but unfortunately some misplaced rods meant
-she couldn't run it. Liz was very friendly and answered questions as I
-watched her go through procedure to shut her engine back down for the night.
+coal-burning(!) steam locomotive but unfortunately some misplaced fire grate
+rods meant she couldn't run it. Liz was very friendly and answered questions
+as I watched her go through procedure to shut her engine back down for
+the night.
 
 Liz loves the K-27 locomotive, specificially
 [engine 463](https://en.wikipedia.org/wiki/Rio_Grande_463),
@@ -271,7 +272,11 @@ exerted pressure making Bagley wall lean in.
 
 ![Holding one of the big roots like a fisherman with his catch](20251206-big-root.jpg)
 
-Water wheel reservoir collected quite a bit of sediment after recent storm
+After the Bagley posts were set in concrete, the big crew had lunch then
+dispersed. Since I'm already here and have time, I looked around at what else
+I could do by myself.
+
+The water wheel reservoir collected quite a bit of sediment after recent storm
 so I started shoveling them out.
 
 Before/after view of the reservoir wall.
