@@ -25,7 +25,7 @@ the grate lifted, implying somebody was in the middle of a project.
 #### 10:45AM - 11:00AM (0.25 conductor)
 
 Train crew safety meeting. Three trains had their engineers and conductors
-so I'm on relief conductor on an as-needed bases. Frees me up to go back
+so I'm relief conductor on an as-needed bases. Frees me up to go back
 and look at the water wheel.
 
 #### 11:00AM - 11:45AM (0.75 facility)
