@@ -3,6 +3,55 @@ date = '2026-01-05T17:23:49-08:00'
 title = '2026 Timecards'
 +++
 
+## Sunday 2026/1/11
+
+* 4.25 hours total
+  * 3 facility (45 out of 18)
+  * 1.25 conductor (17.75 out of 18)
+  * 0 kitchen (7.75 out of 6)
+
+#### 8:30AM - 10:45AM (2.25 facility)
+
+Track morning walk with leaf blower to clear loose leaves from track.
+Also removed derailment risks like rocks, branches, and pine cones.
+Since I had the leaf blower, finish my morning routine by clearing off
+Sherwood station platform and guest entry area.
+
+The water wheel feature is still a bit of a mess after recent rains. I found
+the grate lifted, implying somebody was in the middle of a project.
+
+![Water wheel grates lifted](./20260111-water-wheel-1-grate-open.jpg)
+
+#### 10:45AM - 11:00AM (0.25 conductor)
+
+Train crew safety meeting. Three trains had their engineers and conductors
+so I'm on relief conductor on an as-needed bases. Frees me up to go back
+and look at the water wheel.
+
+#### 11:00AM - 11:45AM (0.75 facility)
+
+After 11AM and no sign of McCabe, reached out via text message. Received
+assignment: Reinstall grates, clear out whatever leaves are easy to clean,
+then activate water wheel. Campbell helped execute this plan.
+
+It took a while for water reservoir level to build up to flow over the wall.
+The pump had to cycle on and off several times before reaching a state of
+steady flow.
+
+![Water wheel running over wall](./20260111-water-wheel-2-running-over-top.jpg)
+
+#### 1:45PM - 2:45PM (1.00 conductor)
+
+Late in the afternoon I conducted Fuad's train for an hour then helped put
+the bench cars and the engine away at the end of the day.
+
+#### 3:15PM
+
+Turned off water wheel electric power and water valve. See what the reservoir
+looks like next time.
+
+---
+
 ## Saturday 2026/1/10
 
 * 7.5 hours total

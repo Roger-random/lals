@@ -5,8 +5,6 @@ title = '2025 Timecards'
 
 ## Sunday 2025/12/28
 
-**Objective** Complete probationary membership requirements. (Fail)
-
 I thought I would complete probationary requirements today but when I double
 checked records I found I double-counted conductor hours on 12/7. So instead
 of a few hours over, I'm actually a bit short. I made this mistake because I
