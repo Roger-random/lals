@@ -43,6 +43,11 @@ Reservoir dam, before and after.
 McCabe happened to stop in as I wrapped up my labor, he reviewed and approved
 of my results.
 
+#### 3:15PM - 4:00PM (0.75 facility not counted)
+
+Tried to improve appearance of old table saw without success. Not counting
+this wasted time.
+
 ## Sunday 2026/1/11
 
 * 4.25 hours total
