@@ -3,6 +3,46 @@ date = '2026-01-05T17:23:49-08:00'
 title = '2026 Timecards'
 +++
 
+## Saturday 2026/1/17
+
+* 2 hours total
+  * 2 facility (47 out of 18)
+  * 0 conductor (17.75 out of 18)
+  * 0 kitchen (7.75 out of 6)
+
+#### 12:30PM - 2:30PM (2 facility)
+
+Stopped in to shovel sediment out from water wheel reservoir so tomorrow's
+Sunday public run can use the lower outlet pipe instead of filling up the
+reservoir and spilling over the wall like last week.
+
+Shoveling was easier than the last time I did it, partially because it hasn't
+built back up as much and partially because I am getting more practiced at it.
+
+The dirt is the functional concern, but the buildup of leaves was a secondary
+appearance concern. I can clear out the dirt but, as the tree is actively
+dropping leaves every time there's a breeze, clearing out all the leaves is
+impossible. I can only make it better than it was.
+
+Thick buildup of leaves on the structure before my work, a thin layer of fresh
+leaves when I called it quits.
+
+![Water wheel house with lots of leaves](./20260117-5-water-wheel-before.jpg)
+![Water wheel house with less leaves](./20260117-6-water-wheel-after.jpg)
+
+Dirt and leaves at reservoir entry under the rail bridge, before and after.
+
+![Reservoir entry with dirt and leaves](./20260117-3-reservoir-before.jpg)
+![Reservoir entry with no dirt and few leaves](./20260117-4-reservoir-after.jpg)
+
+Reservoir dam, before and after.
+
+![Reservoir dam wall with dirt and leaves](./20260117-1-wall-before.jpg)
+![Reservoir dam wall with no dirt and few leaves](./20260117-2-wall-after.jpg)
+
+McCabe happened to stop in as I wrapped up my labor, he reviewed and approved
+of my results.
+
 ## Sunday 2026/1/11
 
 * 4.25 hours total
