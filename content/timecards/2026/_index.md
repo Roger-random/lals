@@ -3,6 +3,8 @@ date = '2026-01-05T17:23:49-08:00'
 title = '2026 Timecards'
 +++
 
+---
+
 ## Sunday 2026/1/18
 
 * 5 hours total
@@ -15,22 +17,36 @@ title = '2026 Timecards'
 Introduction to track signal system from Strawn.
 
 Cleaned up some of leaves built up overnight on water wheel, then turned on
-water pump. Watched water flow until I was satisfied the water flow closed the
-cycle correctly.
+water pump. Watched until I was satisfied the water flow closed the cycle
+correctly.
 
 Pre-run inspection walk for west track. Rodstein verified. Rock fall is
 active: a big rock fell on the track in the time between my walk and Rodstein's.
+
+No leaf blower on track today: somebody took the bucket of batteries. In
+hindsight I should have gotten on the radio and asked who's got it. That's
+what a radio is good for!
 
 #### 10:45AM - 12:30PM (1.75 conductor)
 
 Safety meeting.
 
-Conducting Santa Fe Electric, engineered by Cook, until lunch break.
+Conducting Santa Fe Electric, engineered by Cook, until lunch break. Handed
+off to Ames.
 
 #### 1:45PM - 2:45PM (1 conductor)
 
-Conducting Rio Grande UP 1989 engineered by Nelson. Handed off to Bickel to
-conduct a train with his family on board.
+Conducting Rio Grande UP 1989 engineered by Nelson. A bit of unwelcome
+excitement in the form of engine derailment at mausoleum, joked with guests
+this is an extended tour of rail operations at no extra charge. Needed some
+help to put the engine back on the tracks. Several pairs of eyes found no
+plausible explanation for derailment. Engine went through the same location
+just fine afterwards. Shrug.
+
+Handed off to Bickel to conduct a train with his family on board, then he
+continued for the rest of the day.
+
+---
 
 ## Saturday 2026/1/17
 
@@ -76,6 +92,8 @@ of my results.
 
 Tried to improve appearance of old table saw without success. Not counting
 this wasted time.
+
+---
 
 ## Sunday 2026/1/11
 
@@ -216,6 +234,8 @@ Merryland disc isn't the right shape to address those items.
 This was a good place to pause, as I've maxed out the daily work hours limit.
 I found a quart of random motor oil in a cabinet. I applied a thin coat to
 keep rust from immediately returning while I think about what to do next.
+
+---
 
 ## Sunday 2026/1/4
 
