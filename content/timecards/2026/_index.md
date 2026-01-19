@@ -14,7 +14,8 @@ title = '2026 Timecards'
 
 #### 8:30AM - 10:45AM (2.25 facility)
 
-Introduction to track signal system from Strawn.
+Introduction to track signal system from Strawn. Included some history on both
+technical and non-technical issues surrounding the signal system.
 
 Cleaned up some of leaves built up overnight on water wheel, then turned on
 water pump. Watched until I was satisfied the water flow closed the cycle
@@ -23,28 +24,34 @@ correctly.
 Pre-run inspection walk for west track. Rodstein verified. Rock fall is
 active: a big rock fell on the track in the time between my walk and Rodstein's.
 
-No leaf blower on track today: somebody took the bucket of batteries. In
-hindsight I should have gotten on the radio and asked who's got it. That's
-what a radio is good for!
+No leaf blower on track today because somebody took the bucket of batteries. In
+hindsight I should have gotten on the radio and asked who's got it. That's what
+a radio is good for!
 
 #### 10:45AM - 12:30PM (1.75 conductor)
 
 Safety meeting.
 
-Conducting Santa Fe Electric, engineered by Cook, until lunch break. Handed
-off to Ames.
+Conductor for Santa Fe Electric engineered by Cook. Handed off to Ames for my
+lunch break. I took this opportunity to go thank Carolwood staff for being
+friendly and waving to our guests.
 
 #### 1:45PM - 2:45PM (1 conductor)
 
-Conducting Rio Grande UP 1989 engineered by Nelson. A bit of unwelcome
-excitement in the form of engine derailment at mausoleum, joked with guests
-this is an extended tour of rail operations at no extra charge. Needed some
-help to put the engine back on the tracks. Several pairs of eyes found no
-plausible explanation for derailment. Engine went through the same location
-just fine afterwards. Shrug.
+Conductor for Rio Grande UP 1989 engineered by Nelson. A bit of unwelcome
+excitement in the form of engine derailment at mausoleum when first axle of
+second bogie went off track. Joked with guests this is an extended tour of
+rail operations at no extra charge. Needed to disconnect engine from train
+to put the engine back on the tracks. I learned that a
+[powered slug](https://en.wikipedia.org/wiki/Slug_(railroad))
+would have made this particular derailment recovery much more difficult so it
+was a good thing our engine was not configured as such.
 
-Handed off to Bickel to conduct a train with his family on board, then he
-continued for the rest of the day.
+Several pairs of eyes found no plausible explanation for derailment. Engine
+went through the same location just fine afterwards. Shrug.
+
+Handed off to Bickel to conduct a train with his family on board. He finished
+off the day at that post.
 
 ---
 
