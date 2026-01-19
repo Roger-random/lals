@@ -219,6 +219,13 @@ keep rust from immediately returning while I think about what to do next.
 
 ## Sunday 2026/1/4
 
+* 1.0 hours total
+  * 1 facility (34.5 out of 18)
+  * 0 conductor (16.5 out of 18)
+  * 0 kitchen (7.75 out of 6)
+
+#### 9:00AM - 10:00AM (1.0 hrs facility)
+
 No public rides today due to rain, but stopped in to walk around the track in
 reverse direction from what I've been used to so far. Trying to imagine what
 I would watch for to ensure passenger safety. No leaf blower today, but I did
@@ -247,16 +254,3 @@ shovel and filled the hole back up with dirt conveniently at hand.
 Since it's raining, things are still muddy. Will need to revisit after it
 has a chance to dry and settle, but at least now it presents no risk to
 anyone else's ankles.
-
-### Activity
-
-* 9:00AM - 10:00AM (1.0 hrs facility)
-  * Put large branches on main line in organics bin.
-  * Fill sinkhole.
-
-### Updated Tally
-
-* 1.0 hours total
-  * 1 facility (34.5 out of 18)
-  * 0 conductor (16.5 out of 18)
-  * 0 kitchen (7.75 out of 6)
