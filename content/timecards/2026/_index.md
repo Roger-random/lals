@@ -5,6 +5,46 @@ title = '2026 Timecards'
 
 ---
 
+## Tuesday 2026/1/20
+
+* 2.5 hours total
+  * 2.5 facility (52 out of 18)
+  * 0 conductor (20.5 out of 18)
+  * 0 kitchen (7.75 out of 6)
+
+#### 2:00PM - 4:30PM (2.5 facility)
+
+Accepted Strawn's invitation to join in signal work today though I only got
+to participate towards the end as I had an existing eye doctor's appointment.
+Still, I got to help a bit and learned a lot doing it.
+
+The biggest lesson of the day: all my past career skills trying to make sense
+of poorly documented legacy code built up over decades will transfer directly
+to making sense of poorly documented track signal wiring built up over
+decades.
+
+Past work have not necessarily be done with maintainability in mind, as
+demonstrated by fasteners only accessible from below. Which today means we
+would need to pull up the track segment to get to it. They likely built the
+assembly while laying the track and plopped them into the ground together.
+Not accounting for the possibility someone may need to service the switch
+independently at a later date, like today.
+
+History can also be found in wires that today goes nowhere and connect to
+nothing, trying to tell me stories of projects past.
+
+I had expected to see major differences between the components I've used for
+my indoor electronics projects and track signal equipment out in the
+elements. Like extensive waterproofing to mitigate corrosion and
+studious grounding to maintain signal integrity. I didn't see much of that at
+first glance. I hope I'm just overlooking mechanisms I don't yet recognize,
+but if not maybe it is a contributing factor of signal reliability issues.
+
+One thing I am confident of: there will be no shortage of work that needs
+doing here.
+
+---
+
 ## Sunday 2026/1/18
 
 * 5 hours total
