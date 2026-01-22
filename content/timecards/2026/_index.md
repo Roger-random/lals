@@ -23,7 +23,7 @@ of poorly documented legacy code built up over decades will transfer directly
 to making sense of poorly documented track signal wiring built up over
 decades.
 
-Past work have not necessarily be done with maintainability in mind, as
+Past work have not necessarily been done with maintainability in mind, as
 demonstrated by fasteners only accessible from below. Which today means we
 would need to pull up the track segment to get to it. They likely built the
 assembly while laying the track and plopped them into the ground together.
