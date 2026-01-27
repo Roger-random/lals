@@ -5,6 +5,86 @@ title = '2026 Timecards'
 
 ---
 
+## Sunday 2026/1/25
+
+* 5.5 hours total
+  * 2.25 facility (54.25 out of 18)
+  * 3.25 conductor (23.75 out of 18)
+  * 0 kitchen (7.75 out of 6)
+
+#### 8:30AM - 10:45AM (2.25 facility)
+
+Lots of leaves dropped on the water wheel feature. Blew and raked three
+garbage cans worth of leaves for the organics bin while McCabe worked on the
+debris screen. I wasn't confident I could put it back together so I hadn't
+taken it apart in my previous work sessions. Today was the first time I could
+watch McCabe take it apart, shovel accumulated dirt, and put it back together.
+Now I can handle doing the same the next time I shovel out the reservoir.
+
+Learned the fine mesh filter looped over the drain pipe exit were nylon sheer
+knee-high socks. The old one was retired and a new one installed, with a few
+extras available for the future.
+
+After the water wheel was sorted out, took the leaf blower and walked the
+west loop. Leaf clearing was easier because Tagochi had already done some
+of it with a gas-powered blower. Usual rocks and branches, nothing major.
+
+As I completed my west loop walk, Rodstein reported a problem with the east
+loop: rails over a bridge were loose, moving as much as 1/4" laterally which
+is bad. I join the crew making an expedient field repair to steady the
+rails for Sunday ride operation. A real fix will be needed later.
+
+#### 10:45AM - 11:00AM (0.25 conductor)
+
+After safety meeting I was slated to conduct SPPA, but Tagochi needs more
+conductor hours so I gave up that seat.
+
+#### 11:45AM - 12:45AM (1.0 conductor)
+
+Relieved McCabe of Santa Fe Electric conductor duties until lunchtime.
+
+#### Lunchtime entertainment
+
+During lunch break, saw Jay Leno stop by with his White (that's the
+brand name) steam car. Judging by its green color, I guess it is the
+[1909 Model M featured in this video](https://www.youtube.com/watch?v=pw2Tm9o6fiQ).
+
+Love that the thing was designed without an electrical system. Not just lack
+of electronics: lack of electricity! No spark plugs, no ignition. All lights
+are acetylene gas burning lamps, including the dashboard instrument light.
+
+![Jay Leno's 1909 White Model M](./20260125-jay-leno-white-model-m.jpg)
+
+As he departed he gave us a toot of the horn -- a steam whistle, naturally.
+
+#### 1:30PM - 3:45PM (2.25 conductor)
+
+Resumed conducting Santa Fe Electric engineered by Blake. Continued for the
+rest of the day including last train of the day duty of locking west gate.
+
+#### Miscellaneous
+
+Saw that someone performed the experiment discussed at general member meeting.
+I cautioned against using vinegar on corrosion concerns. Well, they were right
+it would kill weeds, and I was right it greatly accelerated rail corrosion.
+(And probably fasteners, switches, etc.)
+I stand by my opinion rail condition is an important concern at a train club.
+
+The pump house clock has been one hour off for several months, since the time
+we were supposed to "fall back". Alexander helped me adjust the clock so it
+reads correctly again. That was an adventure but we should be able to
+do it faster in a few weeks when we "spring forward". Afterwards we were told
+Harrison could do it quickly so I should ask him about it the next time I
+see him.
+
+Got a chance to look inside the club library, saw the collection included a few
+out-of-print titles that I would be interested in digging into later. Including
+Kozo Hiraoka's Climax and Pennsylvania A3 Switcher books.
+
+Dinner at Tallyrand. They do a solid chicken fried steak.
+
+---
+
 ## Tuesday 2026/1/20
 
 * 2.5 hours total
