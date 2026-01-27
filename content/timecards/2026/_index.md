@@ -41,7 +41,8 @@ conductor hours so I gave up that seat.
 
 #### 11:45AM - 12:45AM (1.0 conductor)
 
-Relieved McCabe of Santa Fe Electric conductor duties until lunchtime.
+Santa Fe Electric conductor duty. McCabe handed off to me, and I handed off
+to (?) at lunchtime.
 
 #### Lunchtime entertainment
 
