@@ -5,6 +5,83 @@ title = '2026 Timecards'
 
 ---
 
+## Tuesday 2026/1/27
+
+* 7 hours total
+  * 7 facility (61.25 out of 18)
+  * 0 conductor (23.75 out of 18)
+  * 0 kitchen (7.75 out of 6)
+
+#### 9:45AM - 1:00PM (3.25 facility)
+
+Joined for a full day of signal work! Started by helping Strawn make panel I
+talk to panel R so that a red signal in zone I will trigger the appropriate
+yellow signal in zone R. Learned valuable lesson that these panel connections
+have isolated ground wires. In hindsight it was something both of us should
+have known.
+
+After that success, moved on to panel S. I put my familiarity with leaf
+blowers to work clearing out leaves to help see where wires already existed.
+Once wires were located and identified, it didn't take long for Strawn and
+Harper to restore power timer functionality. The timer module needs a bit of
+programming to make it display a countdown and adjust the time span, this
+is now on Strawn's to-do list.
+
+On the way out to lunch, we noticed false red/red displaying for main line /
+mountain division. Strawn and Harper agreed that should take priority over
+what they had on their to-do list for the afternoon.
+
+#### 2:00PM - 3:45PM (2.5 facility)
+
+After lunch Strawn opened up panel H to see why mountain division has a false
+red/red. Found several error conditions that led to replacing two broken bond
+wires and one broken track resistor. Unfortunately the light is still not
+behaving quite right. Now the signal is green for main line, which is correct,
+but mountain division light has both red and yellow illuminated even though
+track voltage levels are consistent with a green. With wiring fixed and
+voltage correct, the problem is likely somewhere within Smith proprietary
+analog logic circuits.
+
+We also found the both adjacent western blocks are completely unpowered with
+zero train presence sensing voltage. Thus trains on those blocks are not being
+tracked by the signal system. This has repercussions beyond today's scope of
+work, will have to come back later.
+
+After today's session I feel I can do some basic signal issue diagnosis using
+a voltmeter, looking for 12-16VDC vs. 6-8VDC vs <1V DC. Probably can't
+fix anything without access to signal panels, but can gather information to
+help make repairs faster.
+
+For next session: bring ferrule crimp kit and bring iPad online with Test
+Flight for the signal system reference app.
+
+#### 4:45PM - 6:00PM (1.25 facility)
+
+After Harper and Strawn departed, I went back to my solo project: club's old
+table saw. I cleaned off the top surface on Jan 10th but the grinder-mounted
+Merryland strip disc could not get into the pair of recessed guide rails so
+they remained rusty.
+
+![Table saw rusty guides](./20260127-table-saw-1-rusty-guide-rails.jpg)
+
+Today I brought some drill-mounted steel wire wheels that I can use to clean
+out those slots. Taking care not to (further) mar the top surface with those
+steel bristles.
+
+![Table saw less rusty guides](./20260127-table-saw-2-rust-reduced-guide-rails.jpg)
+
+Once those were clean, I put the guide back into the slot and noticed it was
+also covered with rust. Good thing I saw it while I have all my tools handy,
+so I could make it all nice and shiny too.
+
+![Shiny table saw guide bar](./20260127-table-saw-3-shiny-guide-bar.jpg)
+
+After applying a coat of oil to keep rust from immediately returning, I am
+content to call the table saw project done for now. Pending evaluation and
+feedback for improvement.
+
+---
+
 ## Sunday 2026/1/25
 
 * 5.5 hours total
@@ -56,7 +133,7 @@ are acetylene gas burning lamps, including the dashboard instrument light.
 
 ![Jay Leno's 1909 White Model M](./20260125-jay-leno-white-model-m.jpg)
 
-As he departed he gave us a toot of the horn -- a steam whistle, naturally.
+As he departed he gave us a toot of the horn -- a multi-tone steam whistle, naturally.
 
 #### 1:30PM - 3:45PM (2.25 conductor)
 
