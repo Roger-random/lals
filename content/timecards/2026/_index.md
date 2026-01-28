@@ -31,7 +31,7 @@ On the way out to lunch, we noticed false red/red displaying for main line /
 mountain division. Strawn and Harper agreed that should take priority over
 what they had on their to-do list for the afternoon.
 
-#### 2:00PM - 3:45PM (2.5 facility)
+#### 2:00PM - 3:45PM (2.75 facility)
 
 After lunch Strawn opened up panel H to see why mountain division has a false
 red/red. Found several error conditions that led to replacing two broken bond
