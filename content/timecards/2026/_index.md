@@ -5,6 +5,97 @@ title = '2026 Timecards'
 
 ---
 
+## Monday 2026/2/2
+
+* 3.0 hours today, 3.0 hours cumulative
+
+First yellow time card as full member!
+
+#### 1:00PM - 4:00PM (3 hours)
+
+Helped Strawn with signal work.
+
+Opened up the Sherwood station crossing signal boxes because they aren't
+doing anything as if they don't have power. Tracing through the power
+supply board, everything looks to be in order. That's when we noticed the
+signals are now powered up. Hypothesis: there's an intermittent connection
+somewhere in the power supply board, and it woke up when we were poking around
+with a meter. Not fixed, but at least we've narrowed it down and it's working
+for now. I guess we can try wiggling the power board the next time it happens.
+
+Moving on to panel G to diagnose missing red light on the signal bridge.
+Flipping the light driver board to test mode, we saw it was not even
+trying to illuminate red. Swapping out the board allowed red light to
+illuminate. I performed this board swap as my first hands-on signal work and
+I was supervised by no less than five other people. I feel important.
+
+Next: why is it trying to show red light when there's no train? Found a busted
+bond wire to replace and now signal bridge lights show red when there's a
+train and green when there is not. Success!
+
+Next up panel H. While waiting for Smith to arrive, probed to find current
+mapping from rail segments to detector boards. Then consulted with Smith to
+understand why there's a signal showing red and yellow simultaneously,
+something that should never happen. Traced electrical behavior through rail
+and found another bond wire to replace, but light is still showing both red
+and yellow simultaneously. Smith will look at it some more.
+
+While working on H, Strawn noticed light going up to Mountain Division is
+indicating a train when there isn't one. This is new behavior within the past
+few hours. Harper was working in that area in preparation for future work
+and may have inadvertently damaged a feed wire. Fortunately it was quickly
+diagnosed and repaired.
+
+#### 7:00PM Board Meeting
+
+Among various club business, three probationary members were voted to full
+membership: Syring, Turner, and me!
+
+---
+
+## Sunday 2026/2/1
+
+* 1.5 hours total
+  * 0 facility (61.25 out of 18)
+  * 1.5 conductor (25.25 out of 18)
+  * 0 kitchen (7.75 out of 6)
+
+Last orange card as probationary member.
+
+#### 8:45AM - 10:00AM (No club credit)
+
+Two training laps on Santa Fe Electric with Ronne in the first car going over
+things as we went. I had to articulate what track signals I see, explain what
+I think they meant, and what I should do about it (if anything.) Also
+included a few randomly called whistle stops for me to practice stopping
+promptly without being jarring. Learning the throttle engagement
+curve on SFE control knob feel a lot like learning a car manual transmission's
+clutch engagement zone. Practice makes perfect!
+
+Ronne thinks I'm doing very well and on track towards my goal of getting
+certified as an engineer on club engines for public runs. A good vote of
+confidence as I work towards fulfilling other requirements.
+
+#### 10:45AM - 11:00AM (0.25 conductor)
+
+Safety meeting
+
+#### 12:00PM - 1:15PM (1.25 conductor)
+
+Lunch relief conductor on Santa Fe Electric
+
+#### Misc
+
+Plus other minor facility tasks like helping to take out the garbage of
+Kountry Kitchen. Nothing big enough to track.
+
+Reviewing my photo record of my time card, I realized I forgot to put down
+my name and today's date on the card. Oops! Thankfully I have more than
+enough hours to finish out my probationary period and missing these 1.5 hours
+won't matter.
+
+---
+
 ## Tuesday 2026/1/27
 
 * 7 hours total
