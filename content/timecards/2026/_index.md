@@ -5,6 +5,91 @@ title = '2026 Timecards'
 
 ---
 
+## Sunday 2026/2/8
+
+* 4.5 hours today, 10.5 hours cumulative
+
+#### 8:30AM - 1:00PM (4.5 hours)
+
+Arrived at LALS to see the fabled "Gold Rusher" locomotive out for some
+maintenance work. It gleamed beautifully in the morning light. I hope to see
+it choo-choo down the rails at some point in all its shiny glory.
+
+![Gold Rusher Locomotive](./20260208_gold_rusher.jpg)
+
+I grabbed a leaf blower and walked the west loop. Noticed several pieces of
+rusty debris in close proximity to each other but with no obvious source.
+All rail within ~4' in either direction looks fine to my eyes. Later Kristman
+identified them as heavily corroded rail tie plates and associated fasteners.
+I think I would have noticed missing tie plates so where did these come from?
+Still a mystery.
+
+The signal (KAB?) by the curved westbound rail leading to O'Brien-Moore
+bridge was correctly green as expected when I walked past. But later coming
+back the other way, I happened to look over my shoulder and saw it was red
+with no train. This may be related to that oddly dual-purposed rail segment
+B-K2. For the moment I can only report it as a known false red to Strawn and
+at the safety meeting to Sunday operations train engineers.
+
+Helped Alexander restock the cold water refrigerator in the ticket booth.
+Then figured I might as well stay on the theme and went over the Kountry
+Kitchen beverage cooler as well. Several flats of drinks are now all in the
+refrigerator, opening up storage shelf space.
+
+While moving bottles towards the front, I found there's something brown and
+sticky (Coca Cola? Pepsi? Dr. Pepper?) on the bottom. I wiped up the stainless
+steel, and also bottoms of several cans that were sitting in that stuff.
+
+Sent pictures of updated status (storage shelf, cooler left, cooler right)
+to Dorado for his information.
+
+Meeting up with friends for lunch today so departed at 1PM.
+
+---
+
+## Friday 2026/2/6
+
+* 3.0 hours today, 6.0 hours cumulative
+
+#### 11:00AM - 1:30PM (2.5 hours)
+
+Met up with Strawn and Harper by panel K to see why signal light KD is dark.
+An ultimately unsatisfying session because after probing some panels and wires
+the light came back on without any intentional change on our part. Intermittent
+connections make us tear our hair out.
+
+While probing panel K, learned that a segment of rail (B-K2) has an associated
+train presence detector board for signal purposes AND hooked up to another
+detector that triggers a timer to control signal panel power. The timer
+functionality is usually done by a short dedicated length of rail. What are
+the tradeoffs between using dedicated rail versus dual-purposing like this?
+
+Panel K is also unusual in having an always-on exhaust fan pushing warm air
+out of the enclosure. This may be related to the timer board (since it needs
+to stay on 24x7 to control whether the rest of the panel comes on) or it may
+be due to the fact this panel gets a lot of sun exposure. New idea for the
+project to-do list: add a rail side scenery facade building that also act as
+panel K sun shade.
+
+With some lessons learned about panel K and KD illuminated, attention moved on
+to a rail switch motor control module in panel J. The new module is not an
+identical drop-in replacement for the old so wiring verification and remapping
+had to be done first. This was more difficult than it should be, partly due to
+technical problems like a jumper wire that didn't actually jump, and to non-
+technical issues like low blood sugar. Fix for the former: different jumper
+wire. Fix for the latter: get lunch.
+
+#### 2:30PM - 3:00PM (0.5 hours)
+
+Continue panel J rail switch motor board replacement. Good news: the new board
+sees user pressing on the rail side pole switch. Bad news: the new board isn't
+commanding the MOSFET to send power to the motor. Without power the motor
+doesn't turn and the switch doesn't get thrown.
+
+I had to be out the gate by 3, Harper and Strawn continued working.
+
+---
+
 ## Monday 2026/2/2
 
 * 3.0 hours today, 3.0 hours cumulative
