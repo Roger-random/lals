@@ -24,6 +24,10 @@ identified them as heavily corroded rail tie plates and associated fasteners.
 I think I would have noticed missing tie plates so where did these come from?
 Still a mystery.
 
+While I had the leaf blower in hand, blew pine needles and such off the
+concrete areas of Sherwood station: both the customer waiting line area
+and train platforms.
+
 The signal (KAB?) by the curved westbound rail leading to O'Brien-Moore
 bridge was correctly green as expected when I walked past. But later coming
 back the other way, I happened to look over my shoulder and saw it was red
