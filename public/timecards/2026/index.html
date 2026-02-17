@@ -27,7 +27,7 @@ https://github.com/alex-shpak/hugo-book
 10:00AM - 12:30PM (2.5 hours)# After enjoying a French toast breakfast by the kitchen, I helped Cammarata adjust Sutchville clock which I hadn’t noticed earlier. Also tried to adjust the station clock, but nobody on site has a key to get into the library. We’ll have to do that later.">
   <meta itemprop="datePublished" content="2026-01-05T17:23:49-08:00">
   <meta itemprop="dateModified" content="2026-01-05T17:23:49-08:00">
-  <meta itemprop="wordCount" content="5685">
+  <meta itemprop="wordCount" content="5690">
 
 <title>2026 Timecards | Roger Cheng at LALS</title>
 <link rel="icon" href="/lals/favicon.png" >
@@ -37,7 +37,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <script defer src="/lals/fuse.min.js"></script>
-  <script defer src="/lals/en.search.min.dcd93a8ab528b8e80ceb8222ae8966ea073ca5ad49a4d0c324c49a9747a73eec.js" integrity="sha256-3Nk6irUouOgM64Iirolm6gc8pa1JpNDDJMSal0enPuw=" crossorigin="anonymous"></script>
+  <script defer src="/lals/en.search.min.5c91f4489c74833de5c2820d9b25d1003ee8dd9036d13a932358a4d2cbd9fb70.js" integrity="sha256-XJH0SJx0gz3lwoINmyXRAD7o3ZA20TqTI1ik0svZ&#43;3A=" crossorigin="anonymous"></script>
 
 
 <link rel="alternate" type="application/rss+xml" href="https://roger-random.github.io/lals/timecards/2026/index.xml" title="Roger Cheng at LALS" />
@@ -334,7 +334,7 @@ today, with one derailing caboose and multiple unruly passengers. Ames
 took over conducting just in time for me to go eat and calm down.</p>
 <p>Elsewhere on the grounds, a private train derailed with much onboard
 drama, a train suffered a brake system failure causing uncommanded brake
-activation, and reports of signal &amp; switch issuees that will need to be
+activation, and reports of signal &amp; switch issues that will need to be
 checked out later.</p>
 <h4 id="100pm---400pm-3-hours">1:00PM - 4:00PM (3 hours)<a class="anchor" href="#100pm---400pm-3-hours">#</a></h4>
 <p>After lunch, on standby floating conductor duty. Cammarata also needed
@@ -380,26 +380,26 @@ a new lever connected them and panel L block 1 was back in business.</p>
 <p>Panel H block 4 was identified as a concern yesterday, but it&rsquo;s not on
 mainline and it is heavily contaminated with leaves so it is lower priority
 for later.</p>
-<p>Clouse was working in that area whacking weeds and noticed a broken wire
-on panel L block 12. This wire bridged the outer rails of the switch and
-would explain the inconsistent detection on that block. This would mean the
-detector would see train on one side of the switch and not the other, and the
-detector would not see a fault. Installing a replacement wire restored
-block 12 detection.</p>
+<p>Clouse was working in that area whacking weeds and noticed a broken wire.
+This wire bridged the outer rails of the switch at panel L block 12 and
+would explain the inconsistent detection on that block. That broken wire
+prevented the detector from seeing a train on the far side of the switch
+while the near side has correct connection and thus detector block does
+not indicate a fault. Installing a replacement wire restored block 12
+detection.</p>
 <h4 id="115pm---300pm-175-hours">1:15PM - 3:00PM (1.75 hours)<a class="anchor" href="#115pm---300pm-175-hours">#</a></h4>
 <p>Signal light LI green LED turned out to have <em>two</em> intermittent connections.
-The wire not loose in the connector terminal. After that was reseated, found
+The wire was loose in the connector terminal. After that was reseated, found
 another loose connection between the connector and the LED backplane board.</p>
 <p>Hypothesis: The increased resistance associated with the loose wire heated
-up the connector plastic housing. Distorting the associated spring terminals
-which no longer gripped the solid metal post soldered to the LED backplane
-board.</p>
+up and distorted the connector plastic housing. Changing how spring contacts
+gripped the solid metal post soldered to the LED backplane board.</p>
 <p>Proper fix: Replace all components suspected of heat damage, which means both
 the connector and the LED backplane.</p>
 <p>Today&rsquo;s hack: bend the LED backplane metal post a tiny bit so it makes better
 contact with connector spring terminals. If this doesn&rsquo;t work, then let&rsquo;s
 proceed with the proper fix.</p>
-<p>Between yesterday and today, we&rsquo;ve restored all known signal issues relevant
+<p>Between yesterday and today, we&rsquo;ve restored all known signal issues important
 to standard Sunday public ride operations. However note light IE shows either
 yellow or red, never green. This is masked by the fact Sunday route goes up to
 the waterwheel. So IDA/IDB will show red/yellow. When this is true IE is
