@@ -43,7 +43,7 @@ took over conducting just in time for me to go eat and calm down.
 
 Elsewhere on the grounds, a private train derailed with much onboard
 drama, a train suffered a brake system failure causing uncommanded brake
-activation, and reports of signal & switch issuees that will need to be
+activation, and reports of signal & switch issues that will need to be
 checked out later.
 
 #### 1:00PM - 4:00PM (3 hours)
@@ -107,23 +107,23 @@ Panel H block 4 was identified as a concern yesterday, but it's not on
 mainline and it is heavily contaminated with leaves so it is lower priority
 for later.
 
-Clouse was working in that area whacking weeds and noticed a broken wire
-on panel L block 12. This wire bridged the outer rails of the switch and
-would explain the inconsistent detection on that block. This would mean the
-detector would see train on one side of the switch and not the other, and the
-detector would not see a fault. Installing a replacement wire restored
-block 12 detection.
+Clouse was working in that area whacking weeds and noticed a broken wire.
+This wire bridged the outer rails of the switch at panel L block 12 and
+would explain the inconsistent detection on that block. That broken wire
+prevented the detector from seeing a train on the far side of the switch
+while the near side has correct connection and thus detector block does
+not indicate a fault. Installing a replacement wire restored block 12
+detection.
 
 #### 1:15PM - 3:00PM (1.75 hours)
 
 Signal light LI green LED turned out to have _two_ intermittent connections.
-The wire not loose in the connector terminal. After that was reseated, found
+The wire was loose in the connector terminal. After that was reseated, found
 another loose connection between the connector and the LED backplane board.
 
 Hypothesis: The increased resistance associated with the loose wire heated
-up the connector plastic housing. Distorting the associated spring terminals
-which no longer gripped the solid metal post soldered to the LED backplane
-board.
+up and distorted the connector plastic housing. Changing how spring contacts
+gripped the solid metal post soldered to the LED backplane board.
 
 Proper fix: Replace all components suspected of heat damage, which means both
 the connector and the LED backplane.
@@ -132,7 +132,7 @@ Today's hack: bend the LED backplane metal post a tiny bit so it makes better
 contact with connector spring terminals. If this doesn't work, then let's
 proceed with the proper fix.
 
-Between yesterday and today, we've restored all known signal issues relevant
+Between yesterday and today, we've restored all known signal issues important
 to standard Sunday public ride operations. However note light IE shows either
 yellow or red, never green. This is masked by the fact Sunday route goes up to
 the waterwheel. So IDA/IDB will show red/yellow. When this is true IE is
