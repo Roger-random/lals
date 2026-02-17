@@ -5,6 +5,205 @@ title = '2026 Timecards'
 
 ---
 
+## Sunday 2026/2/15
+
+* 5.5 hours today, 27.75 hours this quarter.
+
+Public rides on Carolwood day. It was not a smooth running day. I had to call
+for more train stops just today than I ever had to do since the day I started
+conducting for LALS public rides.
+
+#### 10:00AM - 12:30PM (2.5 hours)
+
+After enjoying a French toast breakfast by the kitchen, I helped Cammarata
+adjust Sutchville clock which I hadn't noticed earlier. Also tried to adjust
+the station clock, but nobody on site has a key to get into the library. We'll
+have to do that later.
+
+When we "Spring Forward" in a few weeks, the list of clocks in rough order of
+difficulty are:
+* Kitchen
+* Sutchville station (x 2)
+* Pumphouse (8 foot ladder + two person job + member key)
+* Sherwood station (6 foot ladder + two person job + library key)
+
+At this month's board meeting it was suggested that we skip the water wheel
+today, in order to ensure Crystal Springs stays dry for slurry seal.
+Since the slurry plan has been postponed due to expected rain, I turned the
+water wheel on.
+
+Just before safety meeting I grabbed a leaf blower and did a quick "better
+than nothing" round to clear Sherwood station of pine needles and leaves.
+
+This morning was also classroom instruction for the next batch of train
+conductors. I started the day conducting for Santa Fe Electric operated by
+Blake, with Eigan and Clouse as ride-alongs. Quite the "teaching moments"
+today, with one derailing caboose and multiple unruly passengers. Ames
+took over conducting just in time for me to go eat and calm down.
+
+Elsewhere on the grounds, a private train derailed with much onboard
+drama, a train suffered a brake system failure causing uncommanded brake
+activation, and reports of signal & switch issuees that will need to be
+checked out later.
+
+#### 1:00PM - 4:00PM (3 hours)
+
+After lunch, on standby floating conductor duty. Cammarata also needed
+a floating engineer. When I said I hadn't been certified to be engineer for
+public trains, was told to work on that. Will do!
+
+In midst of filling miscellaneous public ride operations needs, also joined
+Ames for a round of kitchen dishwashing. It went a lot faster with two
+on the job.
+
+Ames returned to conducting, then I took over when Ames had to leave
+promptly at 3PM. Carolwood day crowds meant we ran well past 3:30PM before
+we drained the queue. Not helped the fact I had to call for another stop
+due to misbehaving passengers. What is up with today!?
+
+To support "work on that" mentioned earlier, I was given my first opportunity
+to operate engine 1989 as we put away bench cars and put the engine back into
+its berth. Looking forward to getting checked out on all club engines.
+
+I turned off the water wheel.
+
+Newly applied Southern Pacific caboose graphics looks great. I also learned how
+to work the rail gate plank thing for when I can't duck under 1-gauge elevated
+layout for whatever reason.
+
+---
+
+## Saturday 2026/2/14
+
+* 7.5 hours today, 22.25 hours this quarter.
+
+Monthly LALS work day. I stayed with Strawn and Harper to resume where we
+left off yesterday.
+
+#### 9:15AM - 12:15PM (3 hours)
+
+Day started with panel H. Strawn's train was parked alongside. It looks
+good in front of rail town Minden. Crabbe, Rodstein, Tagochi, and probably
+others dug Minden out from eroded cliff that had threatened to bury it.
+
+![B&O 7614 Chessie System in front of Minden](./20260214_strawn_train_in_front_of_minden.jpg)
+
+One board and one conduit wire run replacement later, we have resolved the
+false red+yellow coming down from mountain division. It's been a long time
+since we saw green on that light!
+
+Panel H still has a long to-do list but this is good enough to support Sunday
+public run operations. We switched focus to panel L so it can do the same.
+First task was to find the open circuit for rail block 1. Tracing feed wires
+through vaults, we found one not connected to anything. "Well there's your
+problem!"
+
+![Unconnected wire for panel L block 1](./20260214_panel_l_block_1_unconnected_wire.jpg)
+
+It looks like a wire nut failure. After fishing out the corresponding wire,
+a new lever connected them and panel L block 1 was back in business.
+
+Panel H block 4 was identified as a concern yesterday, but it's not on
+mainline and it is heavily contaminated with leaves so it is lower priority
+for later.
+
+Clouse was working in that area whacking weeds and noticed a broken wire
+on panel L block 12. This wire bridged the outer rails of the switch and
+would explain the inconsistent detection on that block. This would mean the
+detector would see train on one side of the switch and not the other, and the
+detector would not see a fault. Installing a replacement wire restored
+block 12 detection.
+
+#### 1:15PM - 3:00PM (1.75 hours)
+
+Signal light LI green LED turned out to have _two_ intermittent connections.
+The wire not loose in the connector terminal. After that was reseated, found
+another loose connection between the connector and the LED backplane board.
+
+Hypothesis: The increased resistance associated with the loose wire heated
+up the connector plastic housing. Distorting the associated spring terminals
+which no longer gripped the solid metal post soldered to the LED backplane
+board.
+
+Proper fix: Replace all components suspected of heat damage, which means both
+the connector and the LED backplane.
+
+Today's hack: bend the LED backplane metal post a tiny bit so it makes better
+contact with connector spring terminals. If this doesn't work, then let's
+proceed with the proper fix.
+
+Between yesterday and today, we've restored all known signal issues relevant
+to standard Sunday public ride operations. However note light IE shows either
+yellow or red, never green. This is masked by the fact Sunday route goes up to
+the waterwheel. So IDA/IDB will show red/yellow. When this is true IE is
+supposed to show yellow anyway.
+
+#### 3:00PM - 5:45PM (2.75 hours)
+
+As Harper and Strawn departed, I saw Hitchcock setting up the fabled super
+sucker machine. I went over to learn how to use it. Brief training session
+was followed by getting some field experience with it.
+
+It's very cool but it isn't quite a miracle worker. The flexible suction hose
+is getting old and brittle and today's use ripped a pretty big hole. We had to
+take a break to find some duct tape for patch work.
+
+![Duct tape keeps super sucker going](./20260214_duct_tape_keeps_super_sucker_running.jpg)
+
+Even after it was patched I learned it is quite easy to overload the pipe
+causing a blockage. Between patching holes and clearing blockages, we lost
+daylight before we could vacuum up all the piles of leaves we had raked up.
+
+#### 5:45 PM - late (no club credit)
+
+The super sucker is stored on a pit rail dedicated to equipment, which is the
+center of three tent-covered rails. Also on that rail is the caboose that
+came as a set with engine No. 8. While the engine is kept in a barn, the
+caboose has been sitting outside. Hitchcock rolled it into the maintenance
+bay for some cleaning TLC. I watched and learned and chatted.
+
+This week's rain dropped some water on the old table saw, causing a few new
+rust spots. Being fresh and very minor they were quickly cleared up with a
+wipe of rust preventative LPS 2 highly recommended by Hitchcock. I should be
+able to find a can for myself near WD-40 on hardware store shelves.
+
+---
+
+## Friday 2026/2/13
+
+* 4.25 hours today, 14.75 hours this quarter.
+
+Mid-week signals work day focused on panel L
+
+#### 11:00AM - 11:45AM (0.75 hours)
+
+Preparation for running wires through underground vaults for detector block 11
+which will replace current above ground wires vulnerable to damage.
+
+#### 11:45AM - 1:15PM (No club credit)
+
+The panel J motor 1 project required some support from Nelson's home machine
+shop so made a trip combined with lunch.
+
+#### 1:15PM - 4:45PM (3.5 hours)
+
+Ran four wires through several underground conduits and vaults. Two wires for
+detector 11. One to adjacent potential timer block (future project), and the
+last wire as backup in case timer block could not share feed/return wire with
+detector 11.
+
+![Panel L block 11 wires attached](./20260213_panel_l_block_11_new_underground_4_wires.jpg)
+
+Afterwards, checked everything associated with panel L. Found several problems.
+* Block 1 failed to detect. Board sees full voltage indicating open circuit.
+* Block 4 failed to detect. Board sees proper voltage.
+* Block 12 (associated with switch motor 3) inconsistent detection.
+* Signal light LI green LED has intermittent connection somewhere.
+
+To be continued...
+
+---
+
 ## Sunday 2026/2/8
 
 * 4.5 hours today, 10.5 hours cumulative
