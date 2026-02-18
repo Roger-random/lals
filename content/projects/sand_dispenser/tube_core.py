@@ -57,7 +57,80 @@ class tube_core:
         # Extra margin to make ends easy to mount/dismount from tube.
         self.tube_margin = 0.25
 
+        # IBLS standard wheel gauge parameters for 7.5" gauge
+        # http://ibls.org/mediawiki/index.php?title=IBLS_Wheel_Standard
+        # Properly written CadQuery code should be able to accept
+        # parameters for another gauge and generate an IBLS conforming
+        # wheel profile. (This is not an immediate goal.)
+        self.ibls_TG = inch_to_mm(7.5)  # Track Gauge
+        self.ibls_T_min = inch_to_mm(0.75)  # Tire width
+        self.ibls_W_max = inch_to_mm(0.156)  # Flange width
+        self.ibls_F_max = inch_to_mm(0.187)  # Flange depth
+        self.ibls_R_min = inch_to_mm(0.094)  # Contour radius
+        self.ibls_R_max = inch_to_mm(0.125)
+        self.ibls_r = inch_to_mm(0.062)  # Flange radius (typical)
+        self.ibls_B = inch_to_mm(7.120)  # Back to back
+        self.ibls_WG = inch_to_mm(7.44)  # Wheel gauge
+        self.ibls_WC = inch_to_mm(7.281)  # Wheel check
+        self.ibls_flange_taper_radians = math.radians(10)  # 10 degrees
+        self.ibls_wheel_taper_radians = math.radians(2.5)  # 2.5 degrees
+
+    def wheel(self, diameter: float):
+        """
+        Generate a wheel of the specified diameter that conforms to IBLS
+        standard gauge requirements.
+
+        :param self: class instance
+        :param diameter: diameter of wheel in mm
+        :type diameter: float
+        """
+
+        # Generate the core wheel flange shape
+        wheel_flange_half = self.ibls_W_max / 2
+        no_fillet_flange_distance = wheel_flange_half / math.tan(
+            self.ibls_flange_taper_radians
+        )
+        wheel_flange = (
+            cq.Workplane("XY")
+            .lineTo(diameter / 2, 0)
+            .line(no_fillet_flange_distance, wheel_flange_half)
+            .line(-no_fillet_flange_distance, wheel_flange_half)
+            .line(-diameter / 2, 0)
+            .close()
+            .revolve(angleDegrees=360, axisStart=(0, 0, 0), axisEnd=(0, 1, 0))
+        )
+
+        # Generate the core wheel shape
+        wheel_slope_distance = self.ibls_T_min * math.tan(self.ibls_wheel_taper_radians)
+        wheel_core = (
+            cq.Workplane("XY")
+            .lineTo(diameter / 2, 0)
+            .line(-wheel_slope_distance, -self.ibls_T_min)
+            .lineTo(0, -self.ibls_T_min)
+            .close()
+            .revolve(angleDegrees=360, axisStart=(0, 0, 0), axisEnd=(0, 1, 0))
+        )
+
+        # Assemble wheel
+        wheel = wheel_flange + wheel_core
+
+        # Apply fillet between wheel core and flange
+        wheel = wheel.edges(sel.NearestToPointSelector((0, 0, 0))).fillet(
+            radius=self.ibls_R_max
+        )
+
+        # Apply fillet to flange
+        wheel = wheel.edges(
+            sel.NearestToPointSelector((0, wheel_flange_half, 0))
+        ).fillet(radius=self.ibls_r)
+
+        return wheel
+
     def end_fit_test(self):
+        """
+        Minimalist plastic ring used to verify proper fit on tube with
+        specified dimensions.
+        """
         flange_thickness = 1.6
         flange_height = 10
 
@@ -98,4 +171,10 @@ class tube_core:
 
 tc = tube_core()
 
-show_object(tc.end_fit_test(), options={"color": "green", "alpha": 0.25})
+solid_wheel = tc.wheel(inch_to_mm(3))
+
+wheel = solid_wheel - cq.Workplane("XZ").circle(radius=inch_to_mm(1)).extrude(
+    inch_to_mm(1), both=True
+)
+
+show_object(wheel, options={"color": "green", "alpha": 0.25})
