@@ -19,11 +19,12 @@ From reading the above Wikipedia link and a few other sources, it feels like
 sanding the rail is among the last resorts because of secondary consequences.
 That sand doesn't just sit obediently on the rail. The wheels can kick them up
 putting grit in all sorts of mechanical joints and electrical connectors that
-do not welcome friction.
+do not welcome them.
 
 Model railroads share the same concerns as full size trains: trading traction
 now for possible mechanical or electrical issues later. But if you need it,
-you need it.
+you need it. However, most model locomotives do not have functional sand
+dispensers, so we'll have to sprinkle sand manually.
 
 ## Goal
 
