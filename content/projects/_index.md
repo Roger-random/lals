@@ -5,7 +5,8 @@ title = 'Projects'
 
 ## My Projects
 
-Nothing yet - but hopefully soon!
+* A small gravity-powered [sand dispenser](./sand_dispenser/) to put a thin
+layer of fine sand on track for a bit of extra train traction.
 
 ## Candidate Projects
 
