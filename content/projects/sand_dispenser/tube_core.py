@@ -246,6 +246,12 @@ class tube_core:
             cq.Workplane("XY")
             .lineTo(0, funnel_inner_edge)
             .lineTo(
+                diameter / 2 - sand_outlet_thickness - sand_outlet_diameter * 3,
+                funnel_inner_edge,
+            )
+            .line(sand_outlet_diameter, -sand_outlet_diameter)
+            .line(sand_outlet_diameter, 0)
+            .lineTo(
                 diameter / 2 - sand_outlet_thickness,
                 funnel_inner_edge,
             )
@@ -283,10 +289,10 @@ class tube_core:
         reinforcement_overlap = (diameter / 2 - self.tube_diameter_inner / 2) / 2
         outlet_reinforcement = (
             cq.Workplane("ZY")
-            .lineTo(0, funnel_inner_edge, forConstruction=True)
+            .lineTo(0, funnel_inner_edge - sand_outlet_diameter, forConstruction=True)
             .lineTo(
                 self.tube_diameter_inner / 2 + reinforcement_overlap,
-                funnel_inner_edge,
+                funnel_inner_edge - sand_outlet_diameter,
             )
             .lineTo(
                 self.tube_diameter_inner / 2 + reinforcement_overlap,
