@@ -292,7 +292,7 @@ class tube_core:
 
         # Rib reinforcement grips the inner tube surface, the cone grips the
         # outer tube surface.
-        cone_outer_height = reinforcement_inner_height + reinforcement_chamfer
+        cone_outer_height = reinforcement_inner_height
         cone_thickness_inner = reinforcement_thickness_half * 2
         tube_outer_cone = (
             cq.Workplane("ZY")
