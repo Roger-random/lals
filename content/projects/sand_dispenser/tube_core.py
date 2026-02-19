@@ -321,7 +321,28 @@ class tube_core:
 
         return endcap
 
+    def endcap_shim(self, thickness):
+        """
+        The tube was purposely cut a little bit too short for endcap_wheel()
+        to reach target gauge width. Better a little bit too short than too
+        long because we can shim short. This method generates a shim of
+        specified thickness to help reach 7.5" gauge width.
+
+        :param self: Description
+        :param thickness: thickness of desired shim in millimeters
+        """
+        shim = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, 0, -self.ibls_W_max))
+            .circle(radius=self.tube_diameter_outer / 2 - self.tube_margin)
+            .circle(radius=self.tube_diameter_inner / 2 + self.tube_margin)
+            .extrude(-thickness)
+        )
+
+        return shim
+
 
 tc = tube_core()
 
 show_object(tc.endcap_wheel(inch_to_mm(5)), options={"color": "green", "alpha": 0.25})
+show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
