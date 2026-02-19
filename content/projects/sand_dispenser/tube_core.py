@@ -55,7 +55,7 @@ class tube_core:
         self.tube_diameter_outer = 109
 
         # Extra margin to make ends easy to mount/dismount from tube.
-        self.tube_margin = 0.25
+        self.tube_margin = 0.5
 
         # IBLS standard wheel gauge parameters for 7.5" gauge
         # http://ibls.org/mediawiki/index.php?title=IBLS_Wheel_Standard
@@ -75,7 +75,7 @@ class tube_core:
         self.ibls_flange_taper_radians = math.radians(10)  # 10 degrees
         self.ibls_wheel_taper_radians = math.radians(2.5)  # 2.5 degrees
 
-    def wheel(self, diameter: float):
+    def wheel(self, diameter: float, apply_fillet: bool = True):
         """
         Generate a wheel of the specified diameter that conforms to IBLS
         standard gauge requirements.
@@ -114,28 +114,27 @@ class tube_core:
         # Assemble wheel
         wheel = wheel_flange + wheel_core
 
-        # Apply fillet between wheel core and flange
-        wheel = wheel.edges(sel.NearestToPointSelector((0, 0, 0))).fillet(
-            radius=self.ibls_R_max
-        )
+        if apply_fillet:
+            # Apply fillet between wheel core and flange
+            wheel = wheel.edges(sel.NearestToPointSelector((0, 0, 0))).fillet(
+                radius=self.ibls_R_max
+            )
 
-        # Apply fillet to flange
-        wheel = wheel.edges(
-            sel.NearestToPointSelector((0, wheel_flange_half, 0))
-        ).fillet(radius=self.ibls_r)
+            # Apply fillet to flange
+            wheel = wheel.edges(
+                sel.NearestToPointSelector((0, wheel_flange_half, 0))
+            ).fillet(radius=self.ibls_r)
 
         return wheel
 
-    def end_fit_test(self):
+    def end_fit_test(self, flange_thickness=1.6, flange_height=10):
         """
         Minimalist plastic ring used to verify proper fit on tube with
         specified dimensions.
         """
-        flange_thickness = 1.6
-        flange_height = 10
 
         inner_flange = (
-            cq.Workplane("XY")
+            cq.Workplane("XZ")
             .circle(radius=self.tube_diameter_inner / 2 - self.tube_margin)
             .circle(
                 radius=self.tube_diameter_inner / 2
@@ -146,7 +145,7 @@ class tube_core:
         )
 
         outer_flange = (
-            cq.Workplane("XY")
+            cq.Workplane("XZ")
             .circle(
                 radius=self.tube_diameter_outer / 2
                 + self.tube_margin
@@ -157,7 +156,7 @@ class tube_core:
         )
 
         bottom_plate = (
-            cq.Workplane("XY")
+            cq.Workplane("XZ")
             .circle(
                 radius=self.tube_diameter_outer / 2
                 + self.tube_margin
@@ -168,13 +167,95 @@ class tube_core:
         )
         return inner_flange + outer_flange + bottom_plate
 
+    def endcap_wheel(self, diameter: float):
+        base_wheel = self.wheel(diameter)
+
+        tube_flange = self.end_fit_test(flange_thickness=3.6, flange_height=15).mirror(
+            "XZ"
+        )
+
+        bearing_radius = 11
+        bearing_subtract = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, 0, self.ibls_T_min))
+            .circle(radius=bearing_radius + self.print_margin)
+            .extrude(-7)
+            .faces(">Y")
+            .workplane()
+            .circle(radius=bearing_radius + self.print_margin)
+            .workplane(offset=bearing_radius / 2)
+            .circle(radius=bearing_radius / 2)
+            .loft()
+        )
+
+        sand_outlet_diameter = 4
+
+        sand_funnel = (
+            cq.Workplane("XY")
+            .line(
+                diameter / 2 - sand_outlet_diameter,
+                -sand_outlet_diameter - self.ibls_R_max * 1.5,
+            )
+            .line(0, sand_outlet_diameter)
+            .lineTo(
+                self.tube_diameter_inner / 2 - self.tube_margin - 3.6, self.ibls_W_max
+            )
+            .line(0, 25 - self.ibls_W_max)
+            .lineTo(0, 25)
+            .close()
+            .revolve(angleDegrees=360, axisStart=(0, 0, 0), axisEnd=(0, 1, 0))
+        )
+
+        sand_outlet_count = 18
+        sand_outlet_angle_degrees = 360 / sand_outlet_count
+        sand_outlet = (
+            cq.Workplane("XY")
+            .transformed(
+                offset=(
+                    0,
+                    -self.ibls_R_max * 1.5 - sand_outlet_diameter / 2,
+                    diameter / 2 - sand_outlet_diameter,
+                )
+            )
+            .circle(sand_outlet_diameter / 2)
+            .extrude(diameter / 2)
+        )
+        outlet_reinforcement = (
+            cq.Workplane("ZY")
+            .line(
+                diameter / 2 - sand_outlet_diameter,
+                -sand_outlet_diameter - self.ibls_R_max * 1.5,
+            )
+            .line(0, sand_outlet_diameter)
+            .lineTo(
+                self.tube_diameter_inner / 2 - self.tube_margin - 3.6, self.ibls_W_max
+            )
+            .close()
+            .extrude(sand_outlet_diameter / 2, both=True)
+            .rotate((0, 0, 0), (0, 1, 0), sand_outlet_angle_degrees / 2)
+        )
+        sand_outlet_collection = sand_outlet
+        outlet_reinforcement_collection = outlet_reinforcement
+        for outlet_count in range(1, sand_outlet_count):
+            sand_outlet_collection += sand_outlet.rotate(
+                (0, 0, 0), (0, 1, 0), sand_outlet_angle_degrees * outlet_count
+            )
+            outlet_reinforcement_collection += outlet_reinforcement.rotate(
+                (0, 0, 0), (0, 1, 0), sand_outlet_angle_degrees * outlet_count
+            )
+
+        endcap = (
+            base_wheel
+            + tube_flange
+            - bearing_subtract
+            - sand_funnel
+            - sand_outlet_collection
+            + outlet_reinforcement_collection
+        )
+
+        return endcap
+
 
 tc = tube_core()
 
-solid_wheel = tc.wheel(inch_to_mm(3))
-
-wheel = solid_wheel - cq.Workplane("XZ").circle(radius=inch_to_mm(1)).extrude(
-    inch_to_mm(1), both=True
-)
-
-show_object(wheel, options={"color": "green", "alpha": 0.25})
+show_object(tc.endcap_wheel(inch_to_mm(5)), options={"color": "green", "alpha": 0.25})
