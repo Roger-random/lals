@@ -389,6 +389,7 @@ class tube_core:
         connector_width = 20
         connector_thickness = 15
 
+        # Round end of connector that will wrap around 8mm axle
         axle_round = (
             cq.Workplane("XZ")
             .transformed(offset=(0, 0, self.ibls_T_min))
@@ -396,12 +397,14 @@ class tube_core:
             .extrude(connector_thickness)
         )
 
+        # Cut hole for metal axle
         axle_subtract = (
             cq.Workplane("XZ")
             .circle(radius=axle_diameter / 2 + self.print_margin / 2)
             .extrude(100)
         )
 
+        # Portion of connector that wraps around extrusion beam
         extrusion_wrap = (
             cq.Workplane("XZ")
             .transformed(offset=(0, wheel_center_to_beam_center, self.ibls_T_min))
@@ -414,6 +417,7 @@ class tube_core:
             .fillet(extrusion_wrap_thickness / 3)
         )
 
+        # Cut a hole for extrusion fastener
         extrusion_fastener_subtract = (
             cq.Workplane("XY")
             .transformed(
@@ -427,6 +431,7 @@ class tube_core:
             .extrude(20)
         )
 
+        # Cut a hole for extrusion beam profile
         extrusion_subtract = (
             cq.Workplane("XZ")
             .transformed(offset=(0, wheel_center_to_beam_center, self.ibls_T_min))
@@ -439,6 +444,7 @@ class tube_core:
             .fillet(0.5)
         )
 
+        # Simple box that connects axle support to beam support
         connector_body = (
             cq.Workplane("XZ")
             .transformed(offset=(0, 0, self.ibls_T_min))
@@ -450,6 +456,7 @@ class tube_core:
             .extrude(connector_thickness)
         )
 
+        # Put it all together!
         connector = (
             (
                 (
