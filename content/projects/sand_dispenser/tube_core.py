@@ -55,7 +55,7 @@ class tube_core:
         self.tube_diameter_outer = 109
 
         # Extra margin to make ends easy to mount/dismount from tube.
-        self.tube_margin = 0.3
+        self.tube_margin = 0.25
 
         # IBLS standard wheel gauge parameters for 7.5" gauge
         # http://ibls.org/mediawiki/index.php?title=IBLS_Wheel_Standard
@@ -195,6 +195,32 @@ class tube_core:
             .loft()
         )
 
+        # Crush ribs help grip the bearing
+        crush_rib_radius = 3
+        crush_rib_height = 0.2
+        crush_rib = (
+            cq.Workplane("XZ")
+            .transformed(
+                offset=(
+                    bearing_radius + crush_rib_radius - crush_rib_height,
+                    0,
+                    self.ibls_T_min,
+                )
+            )
+            .circle(radius=crush_rib_radius)
+            .extrude(-bearing_thickness)
+            .faces("<Y")
+            .chamfer(crush_rib_height)
+        )
+
+        crush_ribs = (
+            crush_rib
+            + crush_rib.rotate((0, 0, 0), (0, 1, 0), 120)
+            + crush_rib.rotate((0, 0, 0), (0, 1, 0), 240)
+        )
+
+        bearing_subtract = bearing_subtract - crush_ribs
+
         # Supporting wall around bearing hole
         bearing_wall = 4
         bearing_add = (
@@ -211,7 +237,7 @@ class tube_core:
         )
 
         # Parameters for sand dispensing outlet holes
-        sand_outlet_diameter = 3
+        sand_outlet_diameter = 2
         sand_outlet_thickness = 1.6
         funnel_inner_edge = -sand_outlet_diameter - self.ibls_R_max * 1.5
 
@@ -294,6 +320,7 @@ class tube_core:
         # outer tube surface.
         cone_outer_height = reinforcement_inner_height
         cone_thickness_inner = reinforcement_thickness_half * 2
+        cone_chamfer = reinforcement_thickness_half / 2
         tube_outer_cone = (
             cq.Workplane("ZY")
             .lineTo(
@@ -301,8 +328,9 @@ class tube_core:
                 self.ibls_W_max,
                 forConstruction=True,
             )
-            .line(0, cone_outer_height)
-            .line(cone_thickness_inner, 0)
+            .line(0, cone_outer_height - cone_chamfer)
+            .line(cone_chamfer, cone_chamfer)
+            .line(cone_thickness_inner - cone_chamfer, 0)
             .line(cone_thickness_inner, -cone_outer_height)
             .close()
             .revolve(angleDegrees=360, axisStart=(0, 0, 0), axisEnd=(0, 1, 0))
