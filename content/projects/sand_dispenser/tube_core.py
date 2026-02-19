@@ -362,7 +362,7 @@ class tube_core:
         long because we can shim short. This method generates a shim of
         specified thickness to help reach 7.5" gauge width.
 
-        :param self: Description
+        :param self: Class instance
         :param thickness: thickness of desired shim in millimeters
         """
         shim = (
@@ -375,8 +375,100 @@ class tube_core:
 
         return shim
 
+    def axle_to_cross_beam(self):
+        """
+        Cross beam is an aluminum extrusion. This shape connects cross beam to
+        wheel axle.
+
+        :param self: Class instance
+        """
+        wheel_center_to_beam_center = 90
+        extrusion_size = 20
+        extrusion_wrap_thickness = 7.5
+        axle_diameter = 8
+        connector_width = 20
+        connector_thickness = 15
+
+        axle_round = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, 0, self.ibls_T_min))
+            .circle(radius=connector_width / 2)
+            .extrude(connector_thickness)
+        )
+
+        axle_subtract = (
+            cq.Workplane("XZ")
+            .circle(radius=axle_diameter / 2 + self.print_margin / 2)
+            .extrude(100)
+        )
+
+        extrusion_wrap = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, wheel_center_to_beam_center, self.ibls_T_min))
+            .rect(
+                extrusion_size + extrusion_wrap_thickness * 2,
+                extrusion_size + extrusion_wrap_thickness * 2,
+            )
+            .extrude(connector_thickness)
+            .edges("|Y")
+            .fillet(extrusion_wrap_thickness / 3)
+        )
+
+        extrusion_fastener_subtract = (
+            cq.Workplane("XY")
+            .transformed(
+                offset=(
+                    0,
+                    -self.ibls_T_min - connector_thickness / 2,
+                    wheel_center_to_beam_center,
+                )
+            )
+            .circle(radius=2.5)
+            .extrude(20)
+        )
+
+        extrusion_subtract = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, wheel_center_to_beam_center, self.ibls_T_min))
+            .rect(
+                extrusion_size + self.print_margin,
+                extrusion_size + self.print_margin,
+            )
+            .extrude(connector_thickness)
+            .edges("|Y")
+            .fillet(0.5)
+        )
+
+        connector_body = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, 0, self.ibls_T_min))
+            .line(connector_width / 2, 0)
+            .line(0, wheel_center_to_beam_center)
+            .line(-connector_width, 0)
+            .line(0, -wheel_center_to_beam_center)
+            .close()
+            .extrude(connector_thickness)
+        )
+
+        connector = (
+            (
+                (
+                    (axle_round + extrusion_wrap + connector_body)
+                    .edges("|Y")
+                    .fillet(extrusion_wrap_thickness / 2)
+                )
+                - axle_subtract
+                - extrusion_subtract
+            )
+            .faces("|Z")
+            .chamfer(1)
+        ) - extrusion_fastener_subtract
+
+        return connector
+
 
 tc = tube_core()
 
 show_object(tc.endcap_wheel(inch_to_mm(5)), options={"color": "green", "alpha": 0.25})
 show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
+show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
