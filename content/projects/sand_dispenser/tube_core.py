@@ -168,14 +168,25 @@ class tube_core:
         return inner_flange + outer_flange + bottom_plate
 
     def endcap_wheel(self, diameter: float):
+        """
+        Generate a wheel that caps the end of the tube and dispenses sand
+
+        :param self: Instance
+        :param diameter: Diameter of wheel
+        :type diameter: float
+        """
+
+        # Build on top of the base wheel generator
         base_wheel = self.wheel(diameter)
 
-        bearing_radius = 11
+        # Cut a hole for a commodity 608 bearing
+        bearing_radius = 11  # 608 bearing diameter of 22mm
+        bearing_thickness = 7  # 608 bearing thickness 7mm
         bearing_subtract = (
             cq.Workplane("XZ")
             .transformed(offset=(0, 0, self.ibls_T_min))
             .circle(radius=bearing_radius + self.print_margin / 2)
-            .extrude(-7)
+            .extrude(-bearing_thickness)
             .faces(">Y")
             .workplane()
             .circle(radius=bearing_radius + self.print_margin / 2)
@@ -184,12 +195,13 @@ class tube_core:
             .loft()
         )
 
+        # Supporting wall around bearing hole
         bearing_wall = 4
         bearing_add = (
             cq.Workplane("XZ")
             .transformed(offset=(0, 0, self.ibls_T_min))
             .circle(radius=bearing_radius + bearing_wall)
-            .extrude(-7)
+            .extrude(-bearing_thickness)
             .faces(">Y")
             .workplane()
             .circle(radius=bearing_radius + bearing_wall)
@@ -198,10 +210,12 @@ class tube_core:
             .loft()
         )
 
+        # Parameters for sand dispensing outlet holes
         sand_outlet_diameter = 3
         sand_outlet_thickness = 1.6
         funnel_inner_edge = -sand_outlet_diameter - self.ibls_R_max * 1.5
 
+        # Cut shape that funnels sand out to outlet holes
         sand_funnel = (
             cq.Workplane("XY")
             .lineTo(0, funnel_inner_edge)
@@ -217,6 +231,7 @@ class tube_core:
             .revolve(angleDegrees=360, axisStart=(0, 0, 0), axisEnd=(0, 1, 0))
         )
 
+        # Cutting sand outlet holes
         sand_outlet_count = 18
         sand_outlet_angle_degrees = 360 / sand_outlet_count
         sand_outlet = (
@@ -232,6 +247,10 @@ class tube_core:
             .extrude(diameter / 2)
         )
 
+        # Cutting these holes and the funnel leading up to them severely
+        # weakens wheel structure. The inner reinforcement ribs add structural
+        # strength and also hooks to inner tube diameter. Each rib is placed
+        # halfway between two holes
         reinforcement_inner_height = 15
         reinforcement_chamfer = 2.4
         reinforcement_thickness_half = 1.2
@@ -259,6 +278,8 @@ class tube_core:
             .extrude(reinforcement_thickness_half, both=True)
             .rotate((0, 0, 0), (0, 1, 0), sand_outlet_angle_degrees / 2)
         )
+
+        # Repeat outlet holes and reinforcement ribs all around
         sand_outlet_collection = sand_outlet
         outlet_reinforcement_collection = outlet_reinforcement
         for outlet_count in range(1, sand_outlet_count):
@@ -269,6 +290,8 @@ class tube_core:
                 (0, 0, 0), (0, 1, 0), sand_outlet_angle_degrees * outlet_count
             )
 
+        # Rib reinforcement grips the inner tube surface, the cone grips the
+        # outer tube surface.
         cone_outer_height = reinforcement_inner_height + reinforcement_chamfer
         cone_thickness_inner = reinforcement_thickness_half * 2
         tube_outer_cone = (
@@ -285,6 +308,7 @@ class tube_core:
             .revolve(angleDegrees=360, axisStart=(0, 0, 0), axisEnd=(0, 1, 0))
         )
 
+        # Put it all together for an endcap wheel
         endcap = (
             base_wheel
             - sand_funnel
