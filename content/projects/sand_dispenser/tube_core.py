@@ -55,7 +55,7 @@ class tube_core:
         self.tube_diameter_outer = 109
 
         # Extra margin to make ends easy to mount/dismount from tube.
-        self.tube_margin = 0.5
+        self.tube_margin = 0.3
 
         # IBLS standard wheel gauge parameters for 7.5" gauge
         # http://ibls.org/mediawiki/index.php?title=IBLS_Wheel_Standard
@@ -170,36 +170,47 @@ class tube_core:
     def endcap_wheel(self, diameter: float):
         base_wheel = self.wheel(diameter)
 
-        tube_flange = self.end_fit_test(flange_thickness=3.6, flange_height=15).mirror(
-            "XZ"
-        )
-
         bearing_radius = 11
         bearing_subtract = (
             cq.Workplane("XZ")
             .transformed(offset=(0, 0, self.ibls_T_min))
-            .circle(radius=bearing_radius + self.print_margin)
+            .circle(radius=bearing_radius + self.print_margin / 2)
             .extrude(-7)
             .faces(">Y")
             .workplane()
-            .circle(radius=bearing_radius + self.print_margin)
+            .circle(radius=bearing_radius + self.print_margin / 2)
             .workplane(offset=bearing_radius / 2)
             .circle(radius=bearing_radius / 2)
             .loft()
         )
 
-        sand_outlet_diameter = 4
+        bearing_wall = 4
+        bearing_add = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, 0, self.ibls_T_min))
+            .circle(radius=bearing_radius + bearing_wall)
+            .extrude(-7)
+            .faces(">Y")
+            .workplane()
+            .circle(radius=bearing_radius + bearing_wall)
+            .workplane(offset=bearing_radius / 2 + bearing_wall)
+            .circle(radius=bearing_radius / 2 + bearing_wall)
+            .loft()
+        )
+
+        sand_outlet_diameter = 3
+        sand_outlet_thickness = 1.6
+        funnel_inner_edge = -sand_outlet_diameter - self.ibls_R_max * 1.5
 
         sand_funnel = (
             cq.Workplane("XY")
-            .line(
-                diameter / 2 - sand_outlet_diameter,
-                -sand_outlet_diameter - self.ibls_R_max * 1.5,
+            .lineTo(0, funnel_inner_edge)
+            .lineTo(
+                diameter / 2 - sand_outlet_thickness,
+                funnel_inner_edge,
             )
             .line(0, sand_outlet_diameter)
-            .lineTo(
-                self.tube_diameter_inner / 2 - self.tube_margin - 3.6, self.ibls_W_max
-            )
+            .lineTo(self.tube_diameter_inner / 2 - self.tube_margin, self.ibls_W_max)
             .line(0, 25 - self.ibls_W_max)
             .lineTo(0, 25)
             .close()
@@ -220,18 +231,32 @@ class tube_core:
             .circle(sand_outlet_diameter / 2)
             .extrude(diameter / 2)
         )
+
+        reinforcement_inner_height = 15
+        reinforcement_chamfer = 2.4
+        reinforcement_thickness_half = 1.2
+        reinforcement_overlap = (diameter / 2 - self.tube_diameter_inner / 2) / 2
         outlet_reinforcement = (
             cq.Workplane("ZY")
-            .line(
-                diameter / 2 - sand_outlet_diameter,
-                -sand_outlet_diameter - self.ibls_R_max * 1.5,
-            )
-            .line(0, sand_outlet_diameter)
+            .lineTo(0, funnel_inner_edge, forConstruction=True)
             .lineTo(
-                self.tube_diameter_inner / 2 - self.tube_margin - 3.6, self.ibls_W_max
+                self.tube_diameter_inner / 2 + reinforcement_overlap,
+                funnel_inner_edge,
+            )
+            .lineTo(
+                self.tube_diameter_inner / 2 + reinforcement_overlap,
+                0,
+            )
+            .lineTo(self.tube_diameter_inner / 2 - self.tube_margin, self.ibls_W_max)
+            .line(0, reinforcement_inner_height)
+            .line(-reinforcement_chamfer, reinforcement_chamfer)
+            .line(-reinforcement_chamfer, 0)
+            .lineTo(
+                self.tube_diameter_inner * 0.3,
+                -self.ibls_R_max * 1.5 - sand_outlet_diameter,
             )
             .close()
-            .extrude(sand_outlet_diameter / 2, both=True)
+            .extrude(reinforcement_thickness_half, both=True)
             .rotate((0, 0, 0), (0, 1, 0), sand_outlet_angle_degrees / 2)
         )
         sand_outlet_collection = sand_outlet
@@ -244,13 +269,30 @@ class tube_core:
                 (0, 0, 0), (0, 1, 0), sand_outlet_angle_degrees * outlet_count
             )
 
+        cone_outer_height = reinforcement_inner_height + reinforcement_chamfer
+        cone_thickness_inner = reinforcement_thickness_half * 2
+        tube_outer_cone = (
+            cq.Workplane("ZY")
+            .lineTo(
+                self.tube_diameter_outer / 2 + self.tube_margin,
+                self.ibls_W_max,
+                forConstruction=True,
+            )
+            .line(0, cone_outer_height)
+            .line(cone_thickness_inner, 0)
+            .line(cone_thickness_inner, -cone_outer_height)
+            .close()
+            .revolve(angleDegrees=360, axisStart=(0, 0, 0), axisEnd=(0, 1, 0))
+        )
+
         endcap = (
             base_wheel
-            + tube_flange
-            - bearing_subtract
             - sand_funnel
             - sand_outlet_collection
             + outlet_reinforcement_collection
+            + tube_outer_cone
+            + bearing_add
+            - bearing_subtract
         )
 
         return endcap
