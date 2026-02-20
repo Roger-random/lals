@@ -384,7 +384,7 @@ class tube_core:
         """
         wheel_center_to_beam_center = 90
         extrusion_size = 20
-        extrusion_wrap_thickness = 7.5
+        extrusion_wrap_thickness = 9
         axle_diameter = 8
         connector_width = 20
         connector_thickness = 15
@@ -395,13 +395,33 @@ class tube_core:
             .transformed(offset=(0, 0, self.ibls_T_min))
             .circle(radius=connector_width / 2)
             .extrude(connector_thickness)
+            .faces("<Y")
+            .workplane()
+            .circle(radius=axle_diameter / 2 + 3)
+            .extrude(2)
         )
 
         # Cut hole for metal axle
         axle_subtract = (
             cq.Workplane("XZ")
-            .circle(radius=axle_diameter / 2 + self.print_margin / 2)
+            .circle(radius=axle_diameter / 2 + self.print_margin)
             .extrude(100)
+        )
+
+        axle_subtract_rib = (
+            cq.Workplane("XZ")
+            .transformed(
+                offset=(0, axle_diameter / 2 + 2 - self.print_margin, self.ibls_T_min)
+            )
+            .circle(radius=2)
+            .extrude(connector_thickness)
+        )
+
+        axle_subtract = (
+            axle_subtract
+            - axle_subtract_rib
+            - axle_subtract_rib.rotate((0, 0, 0), (0, 1, 0), 120)
+            - axle_subtract_rib.rotate((0, 0, 0), (0, 1, 0), 240)
         )
 
         # Portion of connector that wraps around extrusion beam
