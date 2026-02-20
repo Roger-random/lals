@@ -427,7 +427,7 @@ class tube_core:
                     wheel_center_to_beam_center,
                 )
             )
-            .circle(radius=2.5)
+            .circle(radius=2.5 + self.print_margin)
             .extrude(20)
         )
 
@@ -473,9 +473,131 @@ class tube_core:
 
         return connector
 
+    def beam_to_handle(self):
+        """
+        Printed connector to install handle on cross beam
+
+        :param self: Class instance
+        """
+        wheel_center_to_beam_center = 90
+        connector_thickness = 30
+        handle_diameter = 18
+        handle_recess = 50
+        handle_crush_rib_radius = 2
+        handle_crush_rib_height = self.print_margin * 2
+
+        extrusion_size = 20
+        extrusion_wrap_thickness = 7.5
+
+        # Portion of connector that wraps around extrusion beam
+        extrusion_wrap = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, wheel_center_to_beam_center, 0))
+            .rect(
+                extrusion_size + extrusion_wrap_thickness * 2,
+                extrusion_size + extrusion_wrap_thickness * 2,
+            )
+            .extrude(-connector_thickness)
+            .edges("|Y")
+            .fillet(extrusion_wrap_thickness / 3)
+        )
+
+        # Cut a hole for extrusion beam profile
+        extrusion_subtract = (
+            cq.Workplane("XZ")
+            .transformed(offset=(0, wheel_center_to_beam_center, 0))
+            .rect(
+                extrusion_size + self.print_margin,
+                extrusion_size + self.print_margin,
+            )
+            .extrude(-connector_thickness)
+            .edges("|Y")
+            .fillet(0.5)
+        )
+
+        # Cut a hole for extrusion fastener
+        extrusion_fastener_subtract = (
+            cq.Workplane("YZ")
+            .transformed(
+                offset=(connector_thickness / 2, wheel_center_to_beam_center, 0)
+            )
+            .circle(radius=2.5 + self.print_margin)
+            .extrude(extrusion_size, both=True)
+        )
+
+        # Portion that wrapes around handle
+        handle_wrap = (
+            cq.Workplane("XY")
+            .transformed(
+                offset=(
+                    0,
+                    connector_thickness / 2,
+                    wheel_center_to_beam_center
+                    + extrusion_size / 2
+                    + extrusion_wrap_thickness,
+                )
+            )
+            .polygon(8, diameter=connector_thickness, circumscribed=True)
+            .extrude(handle_recess)
+        )
+
+        # Cut hole for handle
+        handle_subtract = (
+            cq.Workplane("XY")
+            .transformed(
+                offset=(
+                    0,
+                    connector_thickness / 2,
+                    wheel_center_to_beam_center + extrusion_size / 2,
+                )
+            )
+            .circle(radius=handle_diameter / 2)
+            .extrude(handle_recess + extrusion_wrap_thickness)
+        )
+
+        # Crush rib to help hold handle in place
+        handle_rib = (
+            cq.Workplane("XY")
+            .transformed(
+                offset=(
+                    0,
+                    connector_thickness / 2
+                    - handle_diameter / 2
+                    - handle_crush_rib_radius
+                    + handle_crush_rib_height,
+                    wheel_center_to_beam_center + extrusion_size / 2,
+                )
+            )
+            .circle(radius=handle_crush_rib_radius)
+            .extrude(handle_recess + extrusion_wrap_thickness)
+        )
+
+        # Account for rib in handle hole
+        handle_subtract = (
+            handle_subtract
+            - handle_rib
+            - handle_rib.rotate(
+                (0, connector_thickness / 2, 0), (0, connector_thickness / 2, 1), 120
+            )
+            - handle_rib.rotate(
+                (0, connector_thickness / 2, 0), (0, connector_thickness / 2, 1), 240
+            )
+        )
+
+        connector = (
+            extrusion_wrap
+            + handle_wrap
+            - handle_subtract
+            - extrusion_subtract
+            - extrusion_fastener_subtract
+        )
+
+        return connector
+
 
 tc = tube_core()
 
 show_object(tc.endcap_wheel(inch_to_mm(5)), options={"color": "green", "alpha": 0.25})
 show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
 show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
+show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
