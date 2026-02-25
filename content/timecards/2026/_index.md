@@ -14,9 +14,10 @@ Mid-week signals work
 #### 11:00AM - 12:30PM (1.5 hours)
 
 Arrived to find the crew at panel R hooking up wires to communicate status
-with panel S. This will allow some signals to show yellow warning of red on
-the adjacent block. Without these wires, those signals show green (this
-block is clear) and red (this block is occupied) and never yellow.
+with panel S. Without these wires, signals on the boundary today show green
+(this block is clear) or red (this block is occupied) but never yellow
+(adjacent block is red) because they don't know status of adjacent block under
+juristication of the other panel.
 
 #### 1:00PM - 4:00PM (3 hours)
 
@@ -25,18 +26,18 @@ replacing the prototype ESP32 board in panel S with a more full-featured
 [Freenove ESP32 breakout board](https://store.freenove.com/products/fnk0091)
 that I've been told is what the (western) panels will standardized on.
 
-After panel work was complete, we split up to validate new yellow signal
-shows properly on all the relevant lights. I adopted signal SB because it was
+After panel work was complete, we split up to verify new yellow signal
+shows properly on all relevant lights. I adopted signal SB because it was
 not showing yellow. I rewired the corroded connector and tried a replacement
-backplane, to no avail, but I did learn some lessons.
+backplane to no avail but I did learn some lessons.
 
-Lesson #1: useful step added to testing repertoire.
+Lesson #1: add to testing repertoire.
 1. Switch to test mode.
 2. Disconnect connector
 3. Measure voltage of each light output in the panel. They should be at supply
 voltage reflecting open circuit.
 4. Measure voltage of each light input at the signal. They should match #3.
-If they do not, the wire is bad because power is going into the dirt.
+If they do not, the wire is bad. Power is going into the dirt.
 
 Lesson #2: The physical geometry inside a signal head, combined with LED
 backplane and connectors, is not great for ferrules. I made it work by
@@ -44,9 +45,10 @@ rotating the ferrules so they point away from the threaded mounting post
 but this is not ideal mechanically.
 
 The bad wire hadn't mattered before because the signal would never show yellow
-anyway. Now it could and the only way SB will show yellow is if we run a
-replacement wire. Helped Harper dig accumulated dirt out of the associated
-vault and locate the wire within. Replacement will be a future project.
+anyway. But now it could though the only way SB will show yellow is if we run
+a replacement wire. In preparation for this, helped Harper dig accumulated
+dirt out of the associated vault for wire recon. New wire will be a future
+project.
 
 ![Signal head SB wires](./20260221_bad_wire_in_signal_head_sb.jpg)
 
@@ -84,6 +86,8 @@ tricky to adjust the distance so it is not too close and not too far. Harper
 and I got things delicately balanced to function correctly at the end of the
 day, but how long will that last? If this proves to be unreliable as I expect,
 I will push for cutting the roll pin shorter next time.
+
+![New switch motor in Smith valley](./20260220_smith_valley_new_switch_motor.jpg)
 
 ---
 
