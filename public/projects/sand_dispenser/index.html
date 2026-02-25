@@ -24,7 +24,7 @@ https://github.com/alex-shpak/hugo-book
   <meta itemprop="description" content="Sand Dispenser Project# Motivation# Steel wheels on steel rail means very low friction. Which is great for efficiency once a train is moving, but could be problematic when some extra friction would be helpful, for example climbing up an incline. For this reason trains have a reservoir of sand in a box or a dome. This allows the train crew the option to drop some sand on track, for the wheels to get a little extra grip as needed.">
   <meta itemprop="datePublished" content="2026-02-17T18:40:52-08:00">
   <meta itemprop="dateModified" content="2026-02-17T18:40:52-08:00">
-  <meta itemprop="wordCount" content="238">
+  <meta itemprop="wordCount" content="1019">
 
 <title>Sand Dispenser | Roger Cheng at LALS</title>
 <link rel="icon" href="/lals/favicon.png" >
@@ -34,7 +34,7 @@ https://github.com/alex-shpak/hugo-book
 
 
   <script defer src="/lals/fuse.min.js"></script>
-  <script defer src="/lals/en.search.min.d54b82ab2814744d612bdfcca4faf641fb1dcb5145e7a5120e1b85bc67b378f8.js" integrity="sha256-1UuCqygUdE1hK9/MpPr2Qfsdy1FF56USDhuFvGezePg=" crossorigin="anonymous"></script>
+  <script defer src="/lals/en.search.min.639e3b936ea47b9798d79251352481d179b405929cb1e769a52f1c9b2dab43ae.js" integrity="sha256-Y547k26ke5eY15JRNSSB0Xm0BZKcsedppS8cmy2rQ64=" crossorigin="anonymous"></script>
 
 
 <link rel="alternate" type="application/rss+xml" href="https://roger-random.github.io/lals/projects/sand_dispenser/index.xml" title="Roger Cheng at LALS" />
@@ -231,6 +231,12 @@ https://github.com/alex-shpak/hugo-book
   <ul>
     <li><a href="#motivation">Motivation</a></li>
     <li><a href="#goal">Goal</a></li>
+    <li><a href="#tube-core">Tube Core</a>
+      <ul>
+        <li><a href="#version-10">Version 1.0</a></li>
+        <li><a href="#version-11">Version 1.1</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -272,6 +278,87 @@ thus they will dictate primary design decisions including the following:</p>
 <li>Minimize operator training requirements.</li>
 <li>Built and maintained without specialized tools.</li>
 <li>Durable and reliable operation</li>
+</ul>
+<h2 id="tube-core">Tube Core<a class="anchor" href="#tube-core">#</a></h2>
+<p>LALS used to have a sand dispenser, which I&rsquo;ve been told was worn out and
+got tossed. That&rsquo;s not a surprise. Sand grittiness work both for and against
+us simultaneously. But this is why an easily built design was an explicit
+goal. Erosion will eventually win so we should expect to need replacements
+periodically.</p>
+<p>From verbal description the disposed dispenser was a cylindrical reservoir with
+caps that the end imitating train wheels, with small holes for sand to escape
+all around its perimeter. So that&rsquo;s what I built for my first prototype.</p>
+<h3 id="version-10">Version 1.0<a class="anchor" href="#version-10">#</a></h3>
+<p><img src="./20260220_tube_core_sand_dispenser_1_0_at_tux_lab.jpg" alt="Tube Core 1.0" /></p>
+<p>The cylindrical reservoir was a cardboard tube used by McMaster-Carr to ship
+certain items, cut to approximately 7&quot; in length. This tube forms the core of
+the dispenser.</p>
+<p>The rectangular cross-beam is a 20mm x 20mm extrusion beam from Misumi left
+from the
+<a href="https://hackaday.io/project/19583/">Luggagle PC project</a></p>
+<p>The handle is a length of electrical conduit.</p>
+<p>Two commodity 608 bearings help it roll.</p>
+<p>Plastic pieces were 3D printed with PLA filament.
+<a href="./tube_core.py">Click here for CadQuery design file</a>
+which is parametric for a design easily adjustable within a sensible (to me)
+range of values. Things like diameter of holes and number of holes.</p>
+<h4 id="2026221-test-run">2026/2/21 Test Run<a class="anchor" href="#2026221-test-run">#</a></h4>
+<p>I brought it to Descanso Gardens for their garden train maintenance staff to
+take it on a test drive. The good news is the concept proved very promising
+right off the bat, which always bodes well. It&rsquo;s not perfect but the initial
+prototype wasn&rsquo;t expected to be.</p>
+<p><img src="./20260221_tube_core_sand_dispenser_plugged_hole_leaves_gap.jpg" alt="Plugged hole leaves a gap" /></p>
+<p>Observations from the test run:</p>
+<ul>
+<li>Descanso rails get sanded in the morning due to morning condensation on
+rails. This water gets combined with sand and the resulting mud can plug up
+holes. A plugged hole leaves a gap in the line of sand. (Pictured above.)</li>
+<li>2mm hole diameter seems to dispense a good amount of sand, but smaller holes
+are more prone to clogging.</li>
+<li>3mm hole diameter is more resistant to clogging but dumps out more sand than
+necessary, emptying the reservoir faster.</li>
+<li>18 holes around the perimeter seems to work pretty well. More holes may be
+interesting to explore but not critical. Fewer holes are not expected to offer
+any practical advantages.</li>
+<li>I always envisoned pushing the sander ahead of the operator, so I was
+surprised when one test run was done dragging the device behind. This idea had
+never occurred to me and was a delightful surprise that seemed to work better.
+This is why prototypes should be tested by multiple people!</li>
+<li>Dragging it behind seems to help it stay on the rails better than pushing,
+but either way, it seems to be prone to fall off the rails. Especially when
+the handle is at an angle relative to rail centerline exerting a sideways
+push/pull force.</li>
+</ul>
+<p>Problems I expected ahead of time, but decided to not worry about it until the
+basic concept has proven to work:</p>
+<ul>
+<li>Refill is a time-consuming process and need to be easier.</li>
+<li>Holes start dribbling as soon as sand is put in the tube and continues
+until empty.  It would be nice to have some way to keep sand from falling out
+until we&rsquo;re ready.</li>
+</ul>
+<p>Now that the concept has been proven to work, I need to figure out fixes.</p>
+<h3 id="version-11">Version 1.1<a class="anchor" href="#version-11">#</a></h3>
+<p>After thinking over the results of 1.0 test run, plan for 1.1 are:</p>
+<ul>
+<li>For better stability staying on track, I recieved suggestion that I make
+the wheel flanges deeper with a sharper (less smooth) transition from
+horizontal to vertical. This will violate the official
+<a href="http://ibls.org/mediawiki/index.php?title=IBLS_Wheel_Standard">IBLS Wheel Standard</a>
+but maybe doing so is OK in this case.</li>
+<li>To improve refill time, I want to avoid the need to unbolt fasteners and
+pull the entire wheel cap to refill. I have yet to think of a good way to
+make wheel removal a fast tool-free experience, so I&rsquo;ll go with plan B: add
+a hole to the wheel so we can stick in a funnel inside for filling without
+taking the wheel off. Obviously this hole will need some kind of door or plug.</li>
+<li>To reduce likelihood of sand turning muddy, raise the holes slightly off
+the surface and see if that prevents them from soaking up surface moisture.
+This space will come from a small groove around the wheel. Will this fix the
+problem or will we just end up with a muddy groove? The next test will tell us!</li>
+<li>Print a ring that snaps into the groove to keep sand inside instead of
+dribbling. When we&rsquo;re ready to go, pop ring off groove to release sand.</li>
+<li>Turn a small piece of aluminum down to 2mm diameter end as a hole clearing
+tool, design and 3D print a holding clip to keep it handy on the dispenser.</li>
 </ul>
 </article>
  
@@ -354,6 +441,12 @@ thus they will dictate primary design decisions including the following:</p>
   <ul>
     <li><a href="#motivation">Motivation</a></li>
     <li><a href="#goal">Goal</a></li>
+    <li><a href="#tube-core">Tube Core</a>
+      <ul>
+        <li><a href="#version-10">Version 1.0</a></li>
+        <li><a href="#version-11">Version 1.1</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
