@@ -176,8 +176,20 @@ class tube_core:
         :type diameter: float
         """
 
+        # Experiment: try a squared-off flange to see if it has better ability
+        # to stay on track.
+
         # Build on top of the base wheel generator
-        base_wheel = self.wheel(diameter)
+        base_wheel = self.wheel(diameter, apply_fillet=False)
+
+        # Clip with cylinder of larger radius
+        base_wheel_intersect = (
+            cq.Workplane("XZ")
+            .circle(radius=diameter / 2 + inch_to_mm(1 / 4))
+            .extrude(self.ibls_T_min * 2, both=True)
+        )
+
+        base_wheel = base_wheel.intersect(base_wheel_intersect)
 
         # Cut a hole for a commodity 608 bearing
         bearing_radius = 11  # 608 bearing diameter of 22mm
@@ -618,6 +630,6 @@ class tube_core:
 tc = tube_core()
 
 show_object(tc.endcap_wheel(inch_to_mm(5)), options={"color": "green", "alpha": 0.25})
-show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
-show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
-show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
+# show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
+# show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
+# show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
