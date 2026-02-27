@@ -5,6 +5,93 @@ title = '2026 Timecards'
 
 ---
 
+## Thursday 2026/2/26
+
+* 6 hours today, 44.25 hours this quarter.
+
+Mid-week signals work + independent to-do
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Panel E network timer board seems to count down to zero but not cut power to
+the system. This board was recently swapped out with another board that only
+counts up and would also not cut power to the system. Maybe the timer is not
+the problem? There are multiple wires connected to the output signal wires
+when theoretically there should only be one. Why? Smith: "Well, I'll have to
+look at it." Until that happens, LALS signals stay on 24x7.
+
+Panel B+C (triple-head going into station) continues to mystify. It would
+seem to work, then it would not. There's at least one intermittent connection
+in the system but it's such a wide net across several Smith logic boards that
+we're getting a very poor time-to-productivity ratio.
+
+For a change of pace from banging forehead against wall, moved over to
+dwarf signal by Bresee barn. The signals team had been looking for a field
+test deployment opportunity for a new dwarf signal board. So when the old
+incadescent bulb burned out, that was our sign.
+
+On the plus side, all the mechanical and electrical steps we knew were
+needed went off almost exactly as planned.
+
+On the down side, the updated blink circuit does not blink.
+
+This was bench tested ahead of time so we verified it still works with a
+bench power supply in the tool car. Current hypothesis: the rectified DC power
+in panel G is not as smooth as a bench power supply and this dirtier power is
+somehow confusing the blink timing circuit.
+
+In the meantime the dwarf signal will accurately reflect state of the
+switch with an always-on white light for main and always-on red for divergent.
+A future iteration of the dwarf signal board and/or upgrading panel G DC
+power should make the red blink.
+
+#### 1:00PM - 1:30PM (0.5 hours)
+
+Reconnaissance run for super sucker gathered the following information
+* It is built around a Troy-Bilt Model 47286 This product (and indeed the
+entire product line) has been discontinued so there's no mention on
+Troy-Bilt's own site. From other sites I gathered it is an 8HP Chipper/Vac.
+* I measured the hose adapter nozzle tube diameter at 4 13/16", but there's
+a slight taper to the tube like a slight funnel. It probably opens up to 5"
+diameter.
+* The inside diameter of the existing hose is 5" +/- 1/16" or so depending
+on where I measure this old tired out-of-round hose.
+* The existing portable sucker hose has a relaxed (neither stretched nor
+compressed) length of 12 feet and the track sucker has a length of 17 inches.
+
+Conclusion:
+* It will fit any flexible hose with nominal inside diameter of 5" but it
+will need to be a flexible hose strong enough to withstand force of suction
+and tough enough to withstand debris that will be flowing through. A dryer
+hose from Home Depot will not cut it.
+
+Nominee:
+* McMaster-Carr 5136K24:
+[Clear Abrasion-Resistant Duct Hose for Metal Chips and Shavings, 5" ID](https://www.mcmaster.com/5136K24/)
+Stocked in 25' lengths so buying the whole thing is $14.08/ft and any shorter
+is $18.11/ft reflecting a processing fee for cutting. It also means if the
+ambition is any longer than 19 feet we might as well get the whole 25. So
+I will!
+
+#### 1:30PM - 3:00PM (1.5 hours)
+
+I bought a bottle of
+[3-in-1 Lock Dry Lube](https://3inone.com/product/3-in-one-lock-dry-lube/)
+and went around working it into several sticky general member locks. See how
+well this stuff works on high traffic exposed locks.
+* Power tool shed. (Pictured)
+* Hand tool shed.
+* Tool car door.
+* Club owned engines for sunday runs. (One for 1989+1, one for SPPA+1)
+
+Other GM locks I know about but not yet done:
+* Member entrance gate.
+* West gate for Sunday guest emergency exit.
+
+![Power tool shed with lock dry lube](./20260226_lock_dry_lube_on_gm_locks.jpg)
+
+---
+
 ## Saturday 2026/2/21
 
 * 4.5 hours today, 38.25 hours this quarter.
