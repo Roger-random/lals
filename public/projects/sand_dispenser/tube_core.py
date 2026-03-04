@@ -167,7 +167,7 @@ class tube_core:
         )
         return inner_flange + outer_flange + bottom_plate
 
-    def endcap_wheel(self, diameter: float):
+    def endcap_wheel_and_ring(self, diameter: float):
         """
         Generate a wheel that caps the end of the tube and dispenses sand
 
@@ -176,8 +176,20 @@ class tube_core:
         :type diameter: float
         """
 
+        # Experiment: try a squared-off flange to see if it has better ability
+        # to stay on track.
+
         # Build on top of the base wheel generator
-        base_wheel = self.wheel(diameter)
+        base_wheel = self.wheel(diameter, apply_fillet=False)
+
+        # Clip with cylinder of larger radius
+        base_wheel_intersect = (
+            cq.Workplane("XZ")
+            .circle(radius=diameter / 2 + inch_to_mm(1 / 4))
+            .extrude(self.ibls_T_min * 2, both=True)
+        )
+
+        base_wheel = base_wheel.intersect(base_wheel_intersect)
 
         # Cut a hole for a commodity 608 bearing
         bearing_radius = 11  # 608 bearing diameter of 22mm
@@ -241,18 +253,43 @@ class tube_core:
         sand_outlet_thickness = 1.6
         funnel_inner_edge = -sand_outlet_diameter - self.ibls_R_max * 1.5
 
+        # Groove around perimeter of wheel that keeps the dispensing holes
+        # a little bit away from the (likely damp) surface hopefully keeping
+        # them from getting mudded up. This groove will also hold a clip that
+        # keeps sand inside until we're ready to start sanding.
+        perimeter_groove_depth = 2.5
+        ring_base_thickness = 1.6
+        perimeter_groove_subtract = (
+            cq.Workplane("XY")
+            .lineTo(
+                diameter / 2,
+                funnel_inner_edge - perimeter_groove_depth,
+                forConstruction=True,
+            )
+            .line(-perimeter_groove_depth, perimeter_groove_depth)
+            .line(0, sand_outlet_diameter)
+            .line(perimeter_groove_depth, perimeter_groove_depth)
+            .line(ring_base_thickness, 0)
+            .line(0, -sand_outlet_diameter - perimeter_groove_depth * 2)
+            .close()
+            .revolve(angleDegrees=360, axisStart=(0, 0, 0), axisEnd=(0, 1, 0))
+        )
+
         # Cut shape that funnels sand out to outlet holes
         sand_funnel = (
             cq.Workplane("XY")
             .lineTo(0, funnel_inner_edge)
             .lineTo(
-                diameter / 2 - sand_outlet_thickness - sand_outlet_diameter * 3,
+                diameter / 2
+                - sand_outlet_thickness
+                - sand_outlet_diameter * 3
+                - perimeter_groove_depth,
                 funnel_inner_edge,
             )
             .line(sand_outlet_diameter, -sand_outlet_diameter)
             .line(sand_outlet_diameter, 0)
             .lineTo(
-                diameter / 2 - sand_outlet_thickness,
+                diameter / 2 - sand_outlet_thickness - perimeter_groove_depth,
                 funnel_inner_edge,
             )
             .line(0, sand_outlet_diameter)
@@ -272,11 +309,11 @@ class tube_core:
                 offset=(
                     0,
                     -self.ibls_R_max * 1.5 - sand_outlet_diameter / 2,
-                    diameter / 2 - sand_outlet_diameter,
+                    0,
                 )
             )
             .circle(sand_outlet_diameter / 2)
-            .extrude(diameter / 2)
+            .extrude(diameter)
         )
 
         # Cutting these holes and the funnel leading up to them severely
@@ -286,7 +323,9 @@ class tube_core:
         reinforcement_inner_height = 15
         reinforcement_chamfer = 2.4
         reinforcement_thickness_half = 1.2
-        reinforcement_overlap = (diameter / 2 - self.tube_diameter_inner / 2) / 2
+        reinforcement_overlap = (
+            diameter / 2 - self.tube_diameter_inner / 2
+        ) / 2 - perimeter_groove_depth
         outlet_reinforcement = (
             cq.Workplane("ZY")
             .lineTo(0, funnel_inner_edge - sand_outlet_diameter, forConstruction=True)
@@ -345,6 +384,7 @@ class tube_core:
         # Put it all together for an endcap wheel
         endcap = (
             base_wheel
+            - perimeter_groove_subtract
             - sand_funnel
             - sand_outlet_collection
             + outlet_reinforcement_collection
@@ -353,7 +393,45 @@ class tube_core:
             - bearing_subtract
         )
 
-        return endcap
+        # Using the perimeter groove subtract shape, build a matching ring to
+        # close dispensing holes until ready to sand.
+        ring_finger_hole_radius = inch_to_mm(1.25) / 2
+        ring_finger_hole_surround = 2.4
+        ring_finger_hole_angle = 25
+        ring_finger_hole = (
+            cq.Workplane("XZ")
+            .circle(radius=ring_finger_hole_radius + ring_finger_hole_surround)
+            .circle(radius=ring_finger_hole_radius)
+            .extrude(-sand_outlet_diameter - perimeter_groove_depth * 2)
+            .translate(
+                (
+                    0,
+                    funnel_inner_edge - perimeter_groove_depth,
+                    diameter / 2 + ring_finger_hole_radius + ring_finger_hole_surround,
+                )
+            )
+        )
+        ring_slot_width_half = 1
+        ring_slot_subtract = (
+            cq.Workplane("XZ")
+            .line(ring_slot_width_half, 0)
+            .line(0, diameter)
+            .line(-ring_slot_width_half, 0)
+            .line(0, -diameter)
+            .close()
+            .extrude(diameter, both=True)
+        )
+        ring = (
+            (
+                perimeter_groove_subtract
+                + ring_finger_hole.rotate((0, 0, 0), (0, 1, 0), ring_finger_hole_angle)
+                + ring_finger_hole.rotate((0, 0, 0), (0, 1, 0), -ring_finger_hole_angle)
+            )
+            .edges("|Y")
+            .fillet(2)
+        ) - ring_slot_subtract
+
+        return (endcap, ring)
 
     def endcap_shim(self, thickness):
         """
@@ -617,7 +695,10 @@ class tube_core:
 
 tc = tube_core()
 
-show_object(tc.endcap_wheel(inch_to_mm(5)), options={"color": "green", "alpha": 0.25})
-show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
+(wheel, ring) = tc.endcap_wheel_and_ring(inch_to_mm(5))
+
+show_object(wheel, options={"color": "green", "alpha": 0.25})
+show_object(ring, options={"color": "purple", "alpha": 0.25})
+# show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
 show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
-show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
+# show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
