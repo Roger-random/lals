@@ -5,6 +5,153 @@ title = '2026 Timecards'
 
 ---
 
+## Tuesday 2026/3/3
+
+* 5.5 hours today, 69.5 hours this quarter.
+
+Annual fire extinguisher service
+
+#### 9:30AM - 3:00PM (5.5 hours)
+
+Arrived to meet with Crabbe and witness inspector recertifying fire
+extinguishers for service.
+Learned the seals and gauges are replaced at 6-year intervals regardless
+of inspection results. Saw more than a few spider nests being cleaned out
+of hoses. Also learned these are more durable than I thought, they're not
+fragile bubblees ready to pop.
+
+![Freshly certified fire extinguishers](./20260303_freshly_serviced_fire_extinguishers.jpg)
+
+After the recertification process completed at around 11AM came the fun
+part: put all the extinguishers back in their cubbies all around LALS!
+
+TODO: Get contact information for our "regular" guy Tony, and ask about
+replacing some clear plastic panels with the glass they're supposed to be.
+
+---
+
+## Monday 2026/3/2
+
+* 4 hours today, 64 hours this quarter.
+
+Meet with John for signals critical issues then independent projects before
+attending board meeting.
+
+#### 1:30PM - 5:30PM (4 hours)
+
+Met with Smith and Strawn to resolve the two most critical signals issues.
+
+Panel C spooky behavior was traced to a bad pole switch combined with discrete
+digital logic undefined behavior plus intermittent train detection. I'm not
+thrilled at how the undefied logic behavior was dismissed by Smith as "that's
+just how the board works." I see it as a risky flaw that needs to be fixed
+but I certainly won't get that from Smith.
+
+Panel E timer keeping the lights on 24x7 was traced by Smith to a soldering
+error by Smith.
+
+Got a quick lesson from Smith on how some of the existing boards worked. I
+want to get to a point where I know which terminals to probe when debugging
+signal issues with these boards. This will be very useful, and better work-
+to-usefulness ratio than learning enough to diagnose faults within a board.
+
+After signals crew disbanded I went to wipe down new rust from the table saw
+because it's been sitting out exposed. I got most of it off but a few shadows
+remained.
+
+Then I went to install the new super sucker hose with my 3D-printed adapters.
+It seems to work, and a quick test suck looked promising. Once these have
+proven themselves in a real work session I will print with more expensive and
+durable material. If not, then I'll need to iterate.
+
+The new hose offers greatly increased reach over the old.
+
+![New super sucker hose next to old](./20260302_new_sucker_hose_next_to_old_hose.jpg)
+
+---
+
+## Sunday 2026/3/1
+
+* 6 hours today, 60 hours this quarter.
+
+Sunday public run operations
+
+#### 8:30AM - 2:30PM (6 hours)
+
+Started the day by helping Cammarata adjust Sherwood station clock to the
+correct time. A public-facing embarassment finally rectified!
+
+West loop track walk including leaf blower clearing. It finally feels like the
+trees are running low on leaves to drop.
+
+Floating helper for Sunday public run operations. No conducting today due to
+inability to project voice. (Recovering from sickness.)
+
+Kitchen beverage refrigerator restocking.
+
+#### 2:30PM - 4:30PM (No club credit)
+
+After public run concluded, gave Alexander a tour of LALS signals and discuss
+potential project ideas. And sightsee features like "structural wiring"
+
+After Alexander left, went to the super sucker to check fit of my 3D-printed
+hose adapter sleeve. It can be a little bigger.
+
+![Hose adapter fit test](./20260301_super_sucker_hose_adapter_fit_test_1.jpg)
+
+---
+
+## Saturday 2026/2/28
+
+* 7.75 hours today, 54 hours this quarter.
+
+Mid-week signals work
+
+#### 9:00AM - 12:45PM (3.75 hours)
+
+Panel C still spooky with derailment risk, and now Strawn somehow managed to
+trigger it while digging weeds out from around the switch.
+
+Panel G DC power analysis. 1000uF in parallel did not help dwarf blink.
+
+Panel G signal bridge fault traced to broken feed wire on block 4, fixed.
+
+![G block 4 feed wire repair](./20260228_panel_g_feed_wire_repair.jpg)
+
+Clouse has a Chevy Blazer EV, ask to check with a tape measure and it has at
+most 6ft of length behind the front seats for a train. Usable length probably
+less due to shape of hatch, etc.
+
+#### 1:45PM - 5:45PM (4 hours)
+
+Panel J switch motor board upgrade went poorly. SM-1 refuses to switch polarity
+and SM-2 triggers panel brownout.
+
+KD red light was caused by detector failure on track inbound from Akins, then
+also from a bond wire, then the green is really dim.
+
+New super sucker hose is a little bigger than the old, and being more rigid
+the worm screw clamp couldn't squeeze it down enough.
+
+---
+
+## Friday 2026/2/27
+
+* 2 hours today, 46.25 hours this quarter.
+
+Emergency signals work - motor deactivation
+
+#### 9:00AM - 11:00AM (2 hours)
+
+Signals team received reports of switch throwing under train. The high risk
+of derailment meant somebody had to go out there pronto for some data gathering
+followed by switch motor deactivation. I now have access to LALS Signals team
+communications (Slack and Trello) so details will be documented there.
+
+![Switch error test site](./20260227_station_switch_test_site.jpg)
+
+---
+
 ## Thursday 2026/2/26
 
 * 6 hours today, 44.25 hours this quarter.
