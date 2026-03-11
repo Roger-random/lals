@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Grand Plan on Roger Cheng at LALS</title>
-    <link>https://roger-random.github.io/lals/</link>
+    <link>http://localhost:1313/lals/</link>
     <description>Recent content in The Grand Plan on Roger Cheng at LALS</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://roger-random.github.io/lals/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/lals/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
