@@ -5,6 +5,136 @@ title = '2026 Timecards'
 
 ---
 
+## Tuesday 2026/3/10
+
+* 9 hours today, 90 hours this quarter.
+
+Signal work + Super sucker
+
+#### 10-15AM-1:15PM (3 hours)
+
+Track in proximity of panel K has never been properly documented (or
+documentation has been lost) which makes it hard to diagnose problems or plan
+for a more resiliant system. Went around with meters to map detection block
+boundaries.
+
+#### 2:15PM - 6:00PM (3.75 hours)
+
+While going around, found some panels were not powered on as expected. Chased
+down a broken wire between panels K and S network timers.
+
+Made progress getting KAA/KAB and KEA/KEB (on either end of reversing track)
+to indicate as desired. Closer, not quite there yet.
+
+Armed with this morning's track map, modified some track blocks and matching
+wiring to make signal lights more usefully informative.
+
+![Track modifications](./20260310_track_rework.jpg)
+
+#### 6:00PM - 8:15PM (2.25 hours)
+
+I didn't want to drive through rush hour traffic and I wanted to see if the
+adapter sleeves for new super sucker hose works as planned. Good news: it
+does! Bad news: suction hose congestion is still a vexing problem. Good
+news: clear hose makes it super easy to see it when it happens and enable
+faster clearing. Next up: print adapter sleeves out of more durable material.
+Maybe even a flexible material to see if that holds better, because hard
+and slippery PLA fell off the nozzle when I was trying to clear a blockage.
+
+---
+
+## Sunday 2026/3/8
+
+* 7.5 hours today, 81 hours this quarter.
+
+Sunday public runs
+
+#### 8:30AM - 4:00PM (7.5 hours)
+
+Spring Forward Sunday! Adjusted clocks at the following locations:
+* Kitchen.
+* East-facing Sutchville Station clock. Somebody already adjusted west-facing
+but didn't know or notice or care there was a east-facing one two inches away?
+* Fire pit.
+* Sherwood station by the public restrooms has two clocks as part of a fancy
+ceiling fan. I didn't even know these clocks were here
+until today. One of them was stopped and started running after I installed
+a new battery. The other one was running but way off and... stopped after I
+installed a new battery? I un-stuck it by tapping but this is suspicious.
+* Pump house with Alexander assistance. Indeed we were able to do it much
+faster this time around.
+* No need to touch big Sherwood Station clock - it adjusted automatically.
+
+There were strong winds Saturday and Sherwood Station is a bit of a mess.
+Recruited Alexander, Louis, and Bickel to help clean up using brooms and leaf
+blowers. Now the public will enter to find a presentable ticketing area and
+train platform.
+
+Several signals issues came up today. Perform preliminary investigation and
+report information for the rest of signals team. Most severe: track 1/2
+station switch threw under a train again, this time under UP1989. Fortunately
+it was just staging into the station before taking on passengers.
+
+Miscellany: handle exit gate for a bit, restock beverages, wash dishes.
+
+Help McCabe put away UP1989 at the end of the day.
+
+#### 4:00PM - late (no club credit)
+
+Watch Alexander bring a dormant steam locomotive to life. First time
+witnessing a pressure test, obstruction cleared from propane system, etc.
+
+![Alexander 4-4-0](./20260308_alexander_steam_engine.jpg)
+
+Familiarization session with center cab work train.
+
+---
+
+## Saturday 2026/3/7
+
+* 4 hours today, 73.5 hours this quarter.
+
+Signals work day
+
+#### 12:00PM - 4:00PM (4 hours)
+
+Remove unused Ethernet cable and retract unused WiFi cable so we can finally
+close UP caboose upper window. Not sure who cares about Ethernet cable as
+it's not connected to anything. The other end of obsolete WiFi antenna cable
+goes into a cabinet with a label saying to contact McMurry who told me to do
+the removal to begin with so I should be OK.
+
+GH dwarf power filtering experiments found success with 3300uF capacitor in
+parallel and IN4007 diode in series. Oscillosope trace shows smooth power and
+red blinks at around 1.5Hz.
+
+![Power filter test with schematic](./20260307_gh_blink_power_filter_with_schematic.jpg)
+
+Less successful:
+* 22 Ohm resistor and 3300uF didn't seem to do anything, 22 Ohm resistor
+probably too small to have an effect.
+* IN4007 diode and 330uF didn't seem to do anything, either. Oscilloscope
+shows better but still very visible sawtooth
+* IN1007 diode and 1000uF helped. Oscilloscope shows a barely visible
+sawtooth. GH blinks approx. 2.5Hz, noticeably faster than with 3300uF cap.
+
+Found three holes drilled in bridge structure matching three holes in LAA+LAB
+junction box but wires are too short to reach. Creative tilting got one of
+them to line up. One screw is not as good as three but far better than zero.
+Wire is also tilted so water won't just fall straight in. There was corrosion
+in the box already but at least it doesn't need to get worse.
+
+![Wiring box no longer dangling](./20260307_laa_lab_junction_box_held_with_one_screw.jpg)
+
+Tried to diagnose BAA green light not illuminating, but it was showing a false
+red. Found and fixed a loose bond wire to enable green, which is not lit.
+
+Took BAA faceplate off to get a better look. But while verbally explanining
+each LED module had 8 pins to enable installation in two orientations, the
+green LED illuminated without touching or changing anything.
+
+---
+
 ## Tuesday 2026/3/3
 
 * 5.5 hours today, 69.5 hours this quarter.
@@ -18,15 +148,16 @@ extinguishers for service.
 Learned the seals and gauges are replaced at 6-year intervals regardless
 of inspection results. Saw more than a few spider nests being cleaned out
 of hoses. Also learned these are more durable than I thought, they're not
-fragile bubblees ready to pop.
+fragile bubblees ready to pop. The plastic nozzles, however, are a different
+story experiencing premature falures breaking off at a touch.
 
 ![Freshly certified fire extinguishers](./20260303_freshly_serviced_fire_extinguishers.jpg)
 
 After the recertification process completed at around 11AM came the fun
 part: put all the extinguishers back in their cubbies all around LALS!
 
-TODO: Get contact information for our "regular" guy Tony, and ask about
-replacing some clear plastic panels with the glass they're supposed to be.
+Certification done by Tony Avila of
+[Pioneer Fire Professionals](https://pioneerfirepro.com/)
 
 ---
 
@@ -34,7 +165,7 @@ replacing some clear plastic panels with the glass they're supposed to be.
 
 * 4 hours today, 64 hours this quarter.
 
-Meet with John for signals critical issues then independent projects before
+Meet with Smith for signals critical issues then independent projects before
 attending board meeting.
 
 #### 1:30PM - 5:30PM (4 hours)
