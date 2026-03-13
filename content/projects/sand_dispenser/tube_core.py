@@ -258,7 +258,7 @@ class tube_core:
         # them from getting mudded up. This groove will also hold a clip that
         # keeps sand inside until we're ready to start sanding.
         perimeter_groove_depth = 2.5
-        ring_base_thickness = 1.6
+        ring_base_thickness = 4
         perimeter_groove_subtract = (
             cq.Workplane("XY")
             .lineTo(
@@ -396,9 +396,9 @@ class tube_core:
         # Using the perimeter groove subtract shape, build a matching ring to
         # close dispensing holes until ready to sand.
         ring_lip_start_radius = diameter / 2
-        ring_lip_depth = 8
-        ring_lip_outer = 3.6
-        ring_lip_inner = 1.6
+        ring_lip_depth = 12
+        ring_lip_outer = 5
+        ring_lip_inner = 3
         ring_lip_thickness = -sand_outlet_diameter - perimeter_groove_depth * 2
         ring_offset_z = -funnel_inner_edge + perimeter_groove_depth
         ring_lip_half = (
