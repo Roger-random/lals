@@ -395,41 +395,35 @@ class tube_core:
 
         # Using the perimeter groove subtract shape, build a matching ring to
         # close dispensing holes until ready to sand.
-        ring_finger_hole_radius = inch_to_mm(1.25) / 2
-        ring_finger_hole_surround = 2.4
-        ring_finger_hole_angle = 25
-        ring_finger_hole = (
+        ring_lip_start_radius = diameter / 2
+        ring_lip_depth = 8
+        ring_lip_outer = 3.6
+        ring_lip_inner = 1.6
+        ring_lip_thickness = -sand_outlet_diameter - perimeter_groove_depth * 2
+        ring_offset_z = -funnel_inner_edge + perimeter_groove_depth
+        ring_lip_half = (
             cq.Workplane("XZ")
-            .circle(radius=ring_finger_hole_radius + ring_finger_hole_surround)
-            .circle(radius=ring_finger_hole_radius)
-            .extrude(-sand_outlet_diameter - perimeter_groove_depth * 2)
-            .translate(
-                (
-                    0,
-                    funnel_inner_edge - perimeter_groove_depth,
-                    diameter / 2 + ring_finger_hole_radius + ring_finger_hole_surround,
-                )
-            )
+            .transformed(offset=(0, 0, ring_offset_z))
+            .lineTo(0, ring_lip_start_radius, forConstruction=True)
+            .line(ring_lip_inner, 0)
+            .line(ring_lip_outer - ring_lip_inner, ring_lip_depth)
+            .lineTo(0, ring_lip_start_radius + ring_lip_depth)
+            .close()
+            .extrude(ring_lip_thickness)
         )
-        ring_slot_width_half = 1
+        ring_lip = ring_lip_half + ring_lip_half.mirror("YZ")
+        ring_slot_width_half = 0.5
         ring_slot_subtract = (
             cq.Workplane("XZ")
             .line(ring_slot_width_half, 0)
             .line(0, diameter)
-            .line(-ring_slot_width_half, 0)
+            .line(-ring_slot_width_half * 2, 0)
             .line(0, -diameter)
             .close()
             .extrude(diameter, both=True)
         )
-        ring = (
-            (
-                perimeter_groove_subtract
-                + ring_finger_hole.rotate((0, 0, 0), (0, 1, 0), ring_finger_hole_angle)
-                + ring_finger_hole.rotate((0, 0, 0), (0, 1, 0), -ring_finger_hole_angle)
-            )
-            .edges("|Y")
-            .fillet(2)
-        ) - ring_slot_subtract
+
+        ring = perimeter_groove_subtract + ring_lip - ring_slot_subtract
 
         return (endcap, ring)
 
@@ -699,6 +693,6 @@ tc = tube_core()
 
 show_object(wheel, options={"color": "green", "alpha": 0.25})
 show_object(ring, options={"color": "purple", "alpha": 0.25})
-# show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
+show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
 show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
-# show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
+show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
