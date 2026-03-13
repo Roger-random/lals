@@ -686,13 +686,86 @@ class tube_core:
 
         return connector
 
+    def twist_plug_and_hole(
+        self, funnel_radius=inch_to_mm(0.5), plug_height=inch_to_mm(0.5), step_unit=2
+    ):
+        """
+        An insert-and-twist plug and the hole that can be used to subtract
+        from where we want the plug.
+        """
+        steps_needed = 5
+        if plug_height < step_unit * steps_needed:
+            raise ValueError(
+                f"Plug height {plug_height} is too short to accommodate {steps_needed} steps of {step_unit} each"
+            )
+
+        tab_width = step_unit * 4
+        plug_outer = (
+            cq.Workplane("XY")
+            .line(funnel_radius, 0)
+            .line(step_unit * 2, step_unit * 2)
+            .line(0, step_unit)
+            .line(-step_unit, step_unit)
+            .lineTo(funnel_radius + step_unit, plug_height)
+            .lineTo(0, plug_height)
+            .close()
+            .revolve(360, (0, 0, 0), (0, 1, 0))
+        )
+
+        plug_inner = (
+            cq.Workplane("XY")
+            .line(funnel_radius, 0)
+            .line(step_unit, step_unit)
+            .lineTo(funnel_radius + step_unit, plug_height)
+            .lineTo(0, plug_height)
+            .close()
+            .revolve(360, (0, 0, 0), (0, 1, 0))
+        ) + (
+            cq.Workplane("XZ")
+            .rect((funnel_radius + step_unit * 2) * 2, tab_width)
+            .extrude(-plug_height)
+        )
+
+        handle_oversize = funnel_radius * 2
+        handle_subtract = (
+            cq.Workplane("ZY")
+            .lineTo(tab_width / 2, step_unit * 4, forConstruction=True)
+            .line(handle_oversize, 0)
+            .line(0, handle_oversize)
+            .line(-handle_oversize, 0)
+            .line(0, -handle_oversize)
+            .close()
+            .extrude(funnel_radius * 2, both=True)
+            .edges("|X")
+            .fillet(step_unit / 2)
+        )
+
+        plug = (
+            (
+                plug_outer.intersect(plug_inner)
+                - handle_subtract
+                - handle_subtract.mirror("XY")
+            )
+            .faces(">Y")
+            .fillet(step_unit / 4)
+        )
+
+        return plug
+
 
 tc = tube_core()
 
 (wheel, ring) = tc.endcap_wheel_and_ring(inch_to_mm(5))
 
-show_object(wheel, options={"color": "green", "alpha": 0.25})
-show_object(ring, options={"color": "purple", "alpha": 0.25})
-show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
-show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
-show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
+# show_object(wheel, options={"color": "green", "alpha": 0.25})
+# show_object(ring, options={"color": "purple", "alpha": 0.25})
+# show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
+# show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
+# show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
+
+plug = tc.twist_plug_and_hole()
+
+show_object(plug, options={"color": "aliceblue", "alpha": 0.25})
+
+blank_cylinder = cq.Workplane("XZ").circle(radius=inch_to_mm(1)).extrude(inch_to_mm(1))
+show_object(blank_cylinder, options={"color": "purple", "alpha": 0.25})
