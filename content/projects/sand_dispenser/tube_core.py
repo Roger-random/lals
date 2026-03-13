@@ -700,18 +700,6 @@ class tube_core:
             )
 
         tab_width = step_unit * 4
-        plug_outer = (
-            cq.Workplane("XY")
-            .line(funnel_radius, 0)
-            .line(step_unit * 2, step_unit * 2)
-            .line(0, step_unit)
-            .line(-step_unit, step_unit)
-            .lineTo(funnel_radius + step_unit, plug_height)
-            .lineTo(0, plug_height)
-            .close()
-            .revolve(360, (0, 0, 0), (0, 1, 0))
-        )
-
         plug_inner = (
             cq.Workplane("XY")
             .line(funnel_radius, 0)
@@ -720,11 +708,27 @@ class tube_core:
             .lineTo(0, plug_height)
             .close()
             .revolve(360, (0, 0, 0), (0, 1, 0))
-        ) + (
+        )
+
+        tab_ring = (
+            cq.Workplane("XY")
+            .line(funnel_radius + step_unit, step_unit, forConstruction=True)
+            .line(step_unit, step_unit)
+            .line(0, step_unit)
+            .line(-step_unit, step_unit)
+            .lineTo(0, step_unit * 4)
+            .line(0, -step_unit * 3)
+            .close()
+            .revolve(360, (0, 0, 0), (0, 1, 0))
+        )
+
+        tab_block_intersect = (
             cq.Workplane("XZ")
             .rect((funnel_radius + step_unit * 2) * 2, tab_width)
             .extrude(-plug_height)
         )
+
+        tab = tab_ring.intersect(tab_block_intersect).edges().fillet(step_unit / 2)
 
         handle_oversize = funnel_radius * 2
         handle_subtract = (
@@ -741,11 +745,7 @@ class tube_core:
         )
 
         plug = (
-            (
-                plug_outer.intersect(plug_inner)
-                - handle_subtract
-                - handle_subtract.mirror("XY")
-            )
+            (plug_inner + tab - handle_subtract - handle_subtract.mirror("XY"))
             .faces(">Y")
             .fillet(step_unit / 4)
         )
