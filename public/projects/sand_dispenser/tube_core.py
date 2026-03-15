@@ -258,7 +258,7 @@ class tube_core:
         # them from getting mudded up. This groove will also hold a clip that
         # keeps sand inside until we're ready to start sanding.
         perimeter_groove_depth = 2.5
-        ring_base_thickness = 1.6
+        ring_base_thickness = 4
         perimeter_groove_subtract = (
             cq.Workplane("XY")
             .lineTo(
@@ -395,41 +395,35 @@ class tube_core:
 
         # Using the perimeter groove subtract shape, build a matching ring to
         # close dispensing holes until ready to sand.
-        ring_finger_hole_radius = inch_to_mm(1.25) / 2
-        ring_finger_hole_surround = 2.4
-        ring_finger_hole_angle = 25
-        ring_finger_hole = (
+        ring_lip_start_radius = diameter / 2
+        ring_lip_depth = 12
+        ring_lip_outer = 5
+        ring_lip_inner = 3
+        ring_lip_thickness = -sand_outlet_diameter - perimeter_groove_depth * 2
+        ring_offset_z = -funnel_inner_edge + perimeter_groove_depth
+        ring_lip_half = (
             cq.Workplane("XZ")
-            .circle(radius=ring_finger_hole_radius + ring_finger_hole_surround)
-            .circle(radius=ring_finger_hole_radius)
-            .extrude(-sand_outlet_diameter - perimeter_groove_depth * 2)
-            .translate(
-                (
-                    0,
-                    funnel_inner_edge - perimeter_groove_depth,
-                    diameter / 2 + ring_finger_hole_radius + ring_finger_hole_surround,
-                )
-            )
+            .transformed(offset=(0, 0, ring_offset_z))
+            .lineTo(0, ring_lip_start_radius, forConstruction=True)
+            .line(ring_lip_inner, 0)
+            .line(ring_lip_outer - ring_lip_inner, ring_lip_depth)
+            .lineTo(0, ring_lip_start_radius + ring_lip_depth)
+            .close()
+            .extrude(ring_lip_thickness)
         )
-        ring_slot_width_half = 1
+        ring_lip = ring_lip_half + ring_lip_half.mirror("YZ")
+        ring_slot_width_half = 0.5
         ring_slot_subtract = (
             cq.Workplane("XZ")
             .line(ring_slot_width_half, 0)
             .line(0, diameter)
-            .line(-ring_slot_width_half, 0)
+            .line(-ring_slot_width_half * 2, 0)
             .line(0, -diameter)
             .close()
             .extrude(diameter, both=True)
         )
-        ring = (
-            (
-                perimeter_groove_subtract
-                + ring_finger_hole.rotate((0, 0, 0), (0, 1, 0), ring_finger_hole_angle)
-                + ring_finger_hole.rotate((0, 0, 0), (0, 1, 0), -ring_finger_hole_angle)
-            )
-            .edges("|Y")
-            .fillet(2)
-        ) - ring_slot_subtract
+
+        ring = perimeter_groove_subtract + ring_lip - ring_slot_subtract
 
         return (endcap, ring)
 
@@ -692,13 +686,86 @@ class tube_core:
 
         return connector
 
+    def twist_plug_and_hole(
+        self, funnel_radius=inch_to_mm(0.5), plug_height=inch_to_mm(0.5), step_unit=2
+    ):
+        """
+        An insert-and-twist plug and the hole that can be used to subtract
+        from where we want the plug.
+        """
+        steps_needed = 5
+        if plug_height < step_unit * steps_needed:
+            raise ValueError(
+                f"Plug height {plug_height} is too short to accommodate {steps_needed} steps of {step_unit} each"
+            )
+
+        tab_width = step_unit * 4
+        plug_inner = (
+            cq.Workplane("XY")
+            .line(funnel_radius, 0)
+            .line(step_unit, step_unit)
+            .lineTo(funnel_radius + step_unit, plug_height)
+            .lineTo(0, plug_height)
+            .close()
+            .revolve(360, (0, 0, 0), (0, 1, 0))
+        )
+
+        tab_ring = (
+            cq.Workplane("XY")
+            .line(funnel_radius + step_unit, step_unit, forConstruction=True)
+            .line(step_unit, step_unit)
+            .line(0, step_unit)
+            .line(-step_unit, step_unit)
+            .lineTo(0, step_unit * 4)
+            .line(0, -step_unit * 3)
+            .close()
+            .revolve(360, (0, 0, 0), (0, 1, 0))
+        )
+
+        tab_block_intersect = (
+            cq.Workplane("XZ")
+            .rect((funnel_radius + step_unit * 2) * 2, tab_width)
+            .extrude(-plug_height)
+        )
+
+        tab = tab_ring.intersect(tab_block_intersect).edges().fillet(step_unit / 2)
+
+        handle_oversize = funnel_radius * 2
+        handle_subtract = (
+            cq.Workplane("ZY")
+            .lineTo(tab_width / 2, step_unit * 4, forConstruction=True)
+            .line(handle_oversize, 0)
+            .line(0, handle_oversize)
+            .line(-handle_oversize, 0)
+            .line(0, -handle_oversize)
+            .close()
+            .extrude(funnel_radius * 2, both=True)
+            .edges("|X")
+            .fillet(step_unit / 2)
+        )
+
+        plug = (
+            (plug_inner + tab - handle_subtract - handle_subtract.mirror("XY"))
+            .faces(">Y")
+            .fillet(step_unit / 4)
+        )
+
+        return plug
+
 
 tc = tube_core()
 
 (wheel, ring) = tc.endcap_wheel_and_ring(inch_to_mm(5))
 
-show_object(wheel, options={"color": "green", "alpha": 0.25})
-show_object(ring, options={"color": "purple", "alpha": 0.25})
+# show_object(wheel, options={"color": "green", "alpha": 0.25})
+# show_object(ring, options={"color": "purple", "alpha": 0.25})
 # show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
-show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
+# show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
 # show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
+
+plug = tc.twist_plug_and_hole()
+
+show_object(plug, options={"color": "aliceblue", "alpha": 0.25})
+
+blank_cylinder = cq.Workplane("XZ").circle(radius=inch_to_mm(1)).extrude(inch_to_mm(1))
+show_object(blank_cylinder, options={"color": "purple", "alpha": 0.25})

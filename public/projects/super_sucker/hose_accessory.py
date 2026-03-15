@@ -57,13 +57,18 @@ class hose_accessory:
 
     def adapter_sleeve(self, sleeve_length, sleeve_twist_angle, sleeve_gap_width=3):
 
-        sleeve_shell = (
+        sleeve_outer = (
             cq.Workplane("XY")
-            .circle(radius=self.handle_outer_radius)
             .circle(radius=self.hose_inner_radius)
             .extrude(sleeve_length)
             .faces("+Z")
-            .fillet(inch_to_mm(1 / 32))
+            .fillet(inch_to_mm(1 / 16))
+        )
+
+        sleeve_inner = (
+            cq.Workplane("XY")
+            .circle(radius=self.handle_outer_radius)
+            .extrude(sleeve_length)
         )
 
         sleeve_slot = (
@@ -83,13 +88,13 @@ class hose_accessory:
             .loft()
         )
 
-        return sleeve_shell - sleeve_slot
+        return sleeve_outer - sleeve_inner - sleeve_slot
 
 
 ha = hose_accessory()
 
 adapter_sleeve = ha.adapter_sleeve(
-    sleeve_length=inch_to_mm(2.75), sleeve_twist_angle=45, sleeve_gap_width=1
+    sleeve_length=inch_to_mm(2.75), sleeve_twist_angle=15, sleeve_gap_width=1
 )
 
 show_object(adapter_sleeve, options={"color": "green", "alpha": 0.25})
