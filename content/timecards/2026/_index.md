@@ -5,6 +5,48 @@ title = '2026 Timecards'
 
 ---
 
+## Saturday 2026/3/14
+
+* 5.5 hours today, 95.5 hours this quarter.
+
+Pi Day Work Day
+
+#### 9:00AM - 12:00PM (3 hours)
+
+Cleaning out signal vaults near panel M innundated by surrounding dirt so we
+can see what wires exist in each to know what we have available to work with
+as planning begins for signals on siding planned for that area.
+
+#### 1:00PM - 3:30PM (2.5 hours)
+
+Troubleshoot member entrance gate. Clouse found the pedal to re-engage the
+gate motor chain mechanism. Power-cycling via switch in the ticket booth
+recalibrated gate endpoints.
+
+Trial run of tool car door rust removal. This is going to be messy. Need to
+work on air circulation to keep removed rust from choking the space and I will
+need to wear some sort of respiratory filter.
+
+Super sucker sleeve adapters printed out of TPU are ready but I got pulled
+away to other tasks before I could install them or take them on a test run.
+
+Can't follow McMurray recommendation to remove the obsolete cable yet - the
+other end disappeared into a locked cabinet.
+
+![Inaccessible wiring cabinet](./20260314_mcmurray_cabinet.jpg)
+
+Helped the Perez father and son duo track down an air leak. Though sadly we
+don't know what we can do about it besides notifying others who might know.
+
+![Vault with air leak](./20260314_vault_with_air_leak.jpg)
+
+![Air leak location](./20260314_air_leak_location.jpg)
+
+Wiring vault immediately in front of panel M could not be closed because of
+improperly installed power wire. The vault can now be closed.
+
+---
+
 ## Tuesday 2026/3/10
 
 * 9 hours today, 90 hours this quarter.
