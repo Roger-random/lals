@@ -5,6 +5,73 @@ title = '2026 Timecards'
 
 ---
 
+## Tuesday 2026/3/17
+
+* 7.5 hours today, 109 hours this quarter.
+
+Sucker now online, followed by tool car door rust removal.
+
+#### 11:15AM - 12:45PM (1.5 hours)
+
+Installed new super sucker hose adapter sleeves, printed out of TPU.
+
+Cut a segment off of the hose to install on the track sucker.
+
+![New track sucker hose](./20260317_new_track_sucker_hose.jpg)
+
+This hose is very tough. In the long term a promising sign for service life,
+in the short term a pain in the butt to work with.
+
+#### 1:30PM - 3:00PM (1.5 hours)
+
+Test run around the track, verified both track sucker and suction hose both
+worked. Didn't try to pick up very much, though, as the organics bin is full
+so I wouldn't be able to empty the bag.
+
+#### 3:00PM - 7:30PM (4.5 hours)
+
+Worked on assignment from Finch: removing rust from steel door panel intended
+for the tool car. It's far too heavy for me to move by myself so I could only
+go over the parts I can access.
+
+Here's the "before" or actually two minutes in to the job as I had done a bit
+before I thought to take the picture.
+
+![New tool car door panel before](./20260317_tool_car_door_1.jpg)
+
+Here's the "after" when I decided to call it a day and put a thin layer of
+lanolin oil to mitigate immediate rusting.
+
+![New tool car door panel after](./20260317_tool_car_door_2.jpg)
+
+Also did the same for the already-mounted door panel. Didn't take pictures.
+
+---
+
+## Sunday 2026/3/15
+
+* 6 hours today, 101.5 hours this quarter.
+
+Sunday public run crew
+
+#### 9:30AM - 1:30PM (4 hours)
+
+Morning setup, including following up on signals issues I saw while doing a
+pre-public run for Schirmer family. Some are known intermittent problems we
+haven't been able to track down. The biggest mainline safety concern is the
+triple-head coming into the station, showing red/yellow/dark (track 1) or
+red/red/yellow (track 2) but that doesn't matter. You're coming into the
+station either way and the track 1/2 switch is on manual operation.
+
+#### 1:30PM - 3:30PM (2 hours)
+
+Conductor for SPSF operated by Rodstein and Lincoln. Uneventful except for
+retrieving a dropped yellow plush bear after Rodstein spotted it and stopped.
+Apparently I missed the drama at the station courtesy of the bear's owner who
+was _quite_ distraught.
+
+---
+
 ## Saturday 2026/3/14
 
 * 5.5 hours today, 95.5 hours this quarter.
