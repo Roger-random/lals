@@ -5,6 +5,225 @@ title = '2026 Timecards'
 
 ---
 
+## Tuesday 2026/3/31
+
+* 10 hours today, 138.25 hours this quarter.
+
+More signals! Less rust!
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Earlier work session wired up the control panel for Stutson crossing bell,
+but left the bell inside panel S. Today it gets mounted up high where it
+belongs. The block detection board also got swapped out for a modified one
+with longer timeout. As a bonus side effect, I get to do some of the wiring
+cleanup I wanted to do: there are now ferrules on all wires coming into and
+out of bell control and block detection boards.
+
+![Panel S with ferrules on two boards](./20260331_panel_s_wired_for_bell.jpg)
+
+McMurray was here today with key for the old network cabinet.
+
+![Mystery cabinet](./20260331_mcmurray_cabinet_first_look.jpg)
+
+The other end of the mystery cable went into a box on the top shelf that had
+something to do with the old DSL service. Everything on that shelf isn't
+even powered and can be discarded.
+
+Below that shelf is active equipment. One cable inbound from Sherwood station
+and multiple cables outbound. One of them goes to the kitchen register for
+credit card payments, the rest lead to security cameras which get their power
+from injectors in this panel.
+
+#### 1:00PM - 5:30PM (4.5 hours)
+
+After lunch I asked Harper to access the meeting car, which has a fire
+extinguisher that missed out on the new service and certification routine.
+Good thing Crabb spotted the miss: the extinguisher was below operating
+pressure. No good.
+
+![Meeting car extinguisher](./20260331_old_meeting_car_fire_extinguisher_needs_recharge.jpg)
+
+An extinguisher was planned to be added inside the pump house, but those plans
+are now put on hold. Because there's another extinguisher only a few feet
+outside of the pump house, it's less bad to go without one inside. So the
+planned pump house interior extinguisher will be repurposed for the meeting
+car and pump house resumes waiting for its own internal extinguisher.
+
+Once that was sorted, signals crew started work on panel M. Harper and Strawn
+worked on installing new underground vaults to support upcoming project wiring.
+
+![Vault digging](./20260331_panel_m_vault_physical.jpg)
+
+I cut a hole in a mesh to accommodate the new conduit, then I took on the
+challenge of sorting out wires in the existing vault. The mess had been pulled
+out and pushed back down into the vault so many times the wires had become
+tangled with each other. We need to know which wires are associated with
+which conduits so we know where to put wires supporting the new siding.
+
+Since panel M was decommissioned earlier, most of the wires in the vault came
+in one conduit and out another without visiting the panel. There were also a
+lot of wires that came in a and wasn't connected to anything.
+
+After several hours of carefully pulling wire around each other, trying not
+to dislodge any wire nuts as I go, I coiled all unconnected wires from the
+same conduit together so they are out of the way. The remaining wires still
+need to be mapped but now it should be a much easier task.
+
+I was tired, but the day isn't over yet!
+
+![Tired Roger](./20260331_tired_after_vault_work.jpg)
+
+#### 5:30PM - 7:00PM (1.5 hours)
+
+I had brought my Dremel kit, and I had wire brushes to put in it. I deployed
+them to attack rust built up inside corners on the tool car door. Not as much
+brute force as the grinding wheel so it was slow going tiny bits at a time.
+The results aren't as clean as the angle grinder rust removal wheel but far
+better than nothing.
+
+Since I had rust on my mind, I revisited my past table saw project. It has
+picked up a tiny bit of rust but not enough to justify another round of power
+tools. I polished and oiled it to keep it that way.
+
+---
+
+## Sunday 2026/3/29
+
+* 10.5 hours today, 128.25 hours this quarter.
+
+Sunday public run with extra fun both before and after.
+
+#### 7:30AM - 10:30AM (3 hours)
+
+Train locomotive engineer orientation and familiarization using UP1989.
+Got informative tips from Murphy, Cammarata, and Alexander. I can take it
+slow and get smooth starts and stops, but fail at maintaining smoothness when
+going faster. There's the theory of using air brakes to keep tension on car
+couplers during transitions... but the practice still needs, well, practice.
+
+#### 10:30AM - 3:00PM (4.5 hours)
+
+Sunday run operations crew. Today's excitement included a rattlesnake out by
+Dustry Shorts which I was happy to keep my distance from and just act as radio
+comms relay for the people taking care of it. There was also a derailment by
+the UP1989 engine whose cause is not entirely clear. Lots of people looked
+over the rail afterwards and there was no consensus.
+
+![Many eyes on derail site](./20260329_derail_aftermath_many_eyes.jpg)
+
+We do have consensus that a kink in the switch rail is not a good thing, but
+this may have been an effect of derailment (UP1989 is __heavy__) instead of
+caused it.
+
+![Suspicious rail kink](./20260329_derail_suspect_top_view.jpg)
+
+Several signals issues cropped up as the day went on, mostly false reds
+absent from morning test laps. We don't want to mess with signals and risk
+accidentally breaking something while Sunday runs are underway, so we can only
+log them for later investigation.
+
+There were personal trains running on the layout today and this caused a few
+personal friction issues. My first meeting with Bresee did not go well.
+
+#### 3:00PM - 4:30PM (1.5 hours)
+
+Since I was not attached to any specific train, once public rides wrapped up
+I didn't need to help put a train away so I found something useful to do:
+restock the beverage refrigerator then washing dishes.
+
+I also had a good chat with Davis about the hillside mine and how that can be
+brought back online. I don't know when I'll find the time to do it, but at
+least now I have the information.
+
+#### 4:30PM - 6:00PM (1.5 hours)
+
+There are several project ideas that need data infrastructure at the club,
+from serious signals stuff to fun train game stuff. Right now the minimal
+connectivity is only sufficient to run credit card machines at registers and
+Zoom club meetings twice a month. Got to talk to Dorado about his plans
+focused around upgrading security camera capability. Theoretically the
+club just needs one set of physical networking infrastructure and all
+usage can be partitioned into isolated VLAN so signals crew don't interfere
+with security cameras and nobody messes with credit card processing. Dorado
+seems onboard with the general concept and we can get into implementation
+later.
+
+On that topic, I brought my three currently unused Google Wifi (AC1200) mesh
+networking nodes. These worked so well at home that I didn't need mesh
+capability: one node was enough! So I brought the rest of the Costco multi
+pack to see how they work at LALS. Are they so good that we'd only need three
+nodes to cover the entire club? The experiment delivered a very definitive
+"No" as our answer. Now we know!
+
+---
+
+## Saturday 2026/3/28
+
+* 8.75 hours today, 117.75 hours this quarter.
+
+Signals work followed by more tool car door rust removal.
+
+#### 9:00AM - 12:30PM (3.5 hours)
+
+Start by fixing all the issues critical to Sunday runs. Top of the list was
+the mainline / Disney loop switch in front of the restroom that failed to
+switch all the way over and likely derailing Santa Fe Electric last Sunday.
+Followed by less drastic failures like failed bond wire causing false reds.
+
+![Strawn and Harper bond wire repair](./20260328_bond_wire_repair.jpg)
+
+Signal head KD, exiting Dusty Shorts signal towards covered bridge, will be
+a headache. Green is intermittently fine, very dim, or completely dark.
+Flipping the light over to test mode, increasing brightness on one LED dims
+the others implying the common wire is also bad. Complete underground wire
+replacement is looking more and more likely.
+
+#### 2:15PM - 5:00PM (2.75 hours)
+
+After investigating all issues with immediate Sunday run impact, we moved on
+to other issues. Removing suspiciously old and unused equipment in panel S
+seemed to have cure its propensity to blow fuses, clearing the way for new
+Stutson crossing bell.
+
+A new driver board was installed in panel M to illuminate the adjacent signal
+head that had been disconnected. There was an existing switchmode power supply
+in the panel but we had to decipher the power board in order to (1) continue
+powering the timer board at all times and (2) power off the driver board when
+the system goes to sleep.
+
+After Strawn left, Alexander and I cleaned up Sherwood station to ease the
+work of tomorrow's Sunday morning setup crew. (Which may be us.)
+
+Once we started losing daylight we walked out to verify the new lights turned
+off as expected.
+
+![New lights off](./20260328_new_lights_off.jpg)
+
+We also saw that only two out of three solar spotlights are
+still functioning at the hillside mine.
+
+![Hillside mine solar lights](./20260328_2_out_of_3_solar_lights.jpg)
+
+#### 7:30PM - 10:00PM (2.5 hours)
+
+Solo project: Earlier today Merchant and Figueroa mounted the second door panel
+up to the tool car doorway with a temporary fixture. This exposed the inner
+panel surface which I could not access earlier. Time for the rust removal wheel!
+
+![Door inside before](./20260328_door_panel_before.jpg)
+
+I couldn't get behind the temporary fixture beams, but I got most of the other
+wide flat surfaces.
+
+![Door inside after](./20260328_door_panel_after.jpg)
+
+I couldn't get into the corners, either. I'll have to use something else.
+
+![Door inside after](./20260328_door_panel_corner.jpg)
+
+---
+
 ## Tuesday 2026/3/17
 
 * 7.5 hours today, 109 hours this quarter.
