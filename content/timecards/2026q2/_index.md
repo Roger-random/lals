@@ -5,6 +5,98 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Friday 2026/4/10
+
+* No logged club hours today, 170.25 hours this track year.
+
+Chessie TLC
+
+#### 12:00PM - 3:00PM (no club hours)
+
+Helped fix damage to Chessie locomotive. Two burnt wires were replaced
+with generic automotive battery cables from O'Reilly Auto Parts. No luck
+finding a local source for replacement 3PDT relay so that'll have to
+wait to be delivered. A remnant of speaker box for engine sound system
+was removed, which should improve ventilation. I got my first look at the
+lighting system inside the cover. Whoever worked on that before did not
+belive in trimming wires to length.
+
+After Chessie was put away to rest while relay is in transit, I got to see
+an OS Engines Mogul steam locomotive that can use some exercise. It won't
+get run today but hopefully soon.
+
+![OS Engines Mogul](./20260410_os_engines_mogul.jpg)
+
+---
+
+## Thursday 2026/4/9
+
+* 9.5 hours today, 170.25 hours this track year.
+
+Minor landscape and major signals work.
+
+#### 8:30AM - 1:30PM (5 hours)
+
+Started the day by installing a
+[Harbor Freight solar spotlight](https://www.harborfreight.com/40-lumen-8-in-solar-led-black-finish-spotlight-57704.html)
+to replace one that has stopped illuminating. When digging up the old one I
+found source of failure: something had chewed through a wire. I might be able
+to bring this back and asked Davis where a fourth spotlight could go if I do.
+He nominated up on high, second illumination source for the upper structure.
+
+The new light sat charging up through the workday. At the end of the day I
+could verify this rail side feature has three spotlights again.
+
+![Three lights on railside mine](./20260409_three_spotlights_on_hillside_mine_again.jpg)
+
+Then it is on to a lot of signals work! As an appetizer to the main wheel we
+stopped at a switch known to throw only partway. There were two parts to this
+puzzle. The first one is adjustment of motor limit switch positions, and the
+second is clearing out a long thin branch that had wedged in the mechanism
+preventing it from moving all the way.
+
+![Jensen siding switch](./20260409_jensen_switch_repair.jpg)
+
+Then we moved on to experiments gathering data points on the new purple switch
+motor board failures. Today's focus was on wiring quality as a contributing
+factor, with three experiments:
+1. Run new wires over the grass. Result: 100% success.
+2. Re-test with current in-ground motor wires. Result: 30% success.
+3. Re-test with in-ground point switch wires moved over to motor duty. Result:
+30% success
+
+Experiment #3 was very valuable because without it #2 might have been dismissed
+as a failed wire. But two entirely different pairs of wires failing in
+identical ways? Something weird is going on.
+
+![Motor wire swap test](./20260409_motor_wire_swap_test.jpg)
+
+Signal lights JFA/JFB near this test motor has been very dim. Opening
+the head immediately exposed the reason: an ant colony had moved in. They
+had brought all the comforts of home not caring they blocked light, and their
+activities also damaged the circuit board. Hopefully at least the wires might
+be OK.
+
+![JFA ant farm](./20260409_jfa_ant_farm.jpg)
+
+Then we went to map out rail detection blocks in preparation for upcoming work,
+and map out existing in-ground wires we might be able to repurpose. Sadly we
+found out our Chessie locomotive is not happy staying on "brake mode" to
+hold position on a hill for an extended period of time. Some electrical
+components were damaged and will need to be replaced before our signals buddy
+can return to work. Next time: use mechanical chocks.
+
+At the end of the day I tried to bring a yard rail switch back online as a solo
+project. It was the old style of rail switch motor and a never-used spare of
+the type had recently surfaced. I asked for it thinking this would be an easy
+easy swap but sadly it was not. Two rusted fastener breakage
+later, I admitted defeat and stopped digging myself any deeper. I closed it
+back up, still in failing state, with intent to revisit later.
+
+![Failed G SM3 swap](./20260409_failed_g_sm3_gearmotor_swap.jpg)
+
+---
+
 ## Tuesday 2026/4/7
 
 * 3.5 hours today, 160.75 hours this track year.
