@@ -5,6 +5,73 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Saturday 2026/4/11
+
+* 8 hours today, 178.25 hours this track year.
+
+Signals work with a bit of landscaping for variety's sake.
+
+#### 8:30AM - 11:00AM (2.5 hours)
+
+Finish mapping out wires in the 8-wire bundle running between panel M and
+panel K. The good news is that we should have enough to work with, though we'd
+have to see if the unconnected wires were unused because they were found to be
+broken sometime in the past.
+
+Showed Stark location of hand tools, garbage cans, utility carts, and the
+organics bin. All set to rake leaves!
+
+#### 11:00AM - Noon (1 hour)
+
+Q&A session with Smith to sort out some open questions on signals system
+design intent and implementation.
+
+#### Noon - 2:30PM (2.5 hours)
+
+Fire up the super sucker for some leaf cleanup action alongside Stark and
+Alexander.
+
+![Super sucker at work](./20260411_super_sucker_in_action.jpg)
+
+#### 4:00PM - 6:00PM (2 hours)
+
+Returned to panel K to continue working. One of my assigned tasks is to
+install a new signal head driver board, my first. I quickly relized I had
+a problem as the new board is not compatible with the old form factor. I could
+solve this any number of ways so I shoud check if there's a recommended method
+before I do anything drastic.
+
+![New signal head driver board does not fit in old slot](./20260411_new_signal_driver_does_not_fit_in_old_space.jpg)
+
+The official task is on hold, but we're here and panel K is open so might as
+well make good use of the opportunity. Alexander and I brought up the iOS
+reference app, spread the reference printouts before us, and sank our teeth
+into learning how all this works together. It was a very productive sesson.
+
+One focus were the signals on either side of the reversing track. Panel
+schematic describes design intent of red over flashing red when the reversing
+track is selected. Eastbound KEA/B does this but westbound KAA/B
+shows dark over flashing red instead. Studying how they differed, we determined the
+KAA red signal wire had been repurposed to notify panel I so the previous
+signal (IN?) can turn yellow. Armed with that knowedge we returned to KEA/B:
+how did it notify its previous signal to turn yellow? The answer: It doesn't!
+That's LEA/B which does not turn yellow
+when KEA is red. So right now it looks like we can have the intended
+red/blinking-red OR transmit status to turn previous signal yellow, but not
+both. How would we wire up panel K so we get both? To be continued...
+
+#### Non-club hours
+
+Got to examine a flat bed car being repainted, with components disassembled.
+I was most interested in the wheel bogie (truck) because I am still not
+confident I understand the articulations required to operate on track. I now
+think I have enough of a grasp to 3D print a few ideas and see how they work
+before I make them out of metal.
+
+![Rail wheel truck](./20260411_flat_bed_truck.jpg)
+
+---
+
 ## Friday 2026/4/10
 
 * No logged club hours today, 170.25 hours this track year.
