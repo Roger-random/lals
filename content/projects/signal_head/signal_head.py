@@ -76,6 +76,11 @@ class signal_head:
         pass
 
     def plate(self, chamfer_surround=0, chamfer_end=5):
+        """
+        Returns plain back plate upon which all other signal head features are built.
+        Optional chamfer all around by setting chamfer_surround to nonzero size in mm.
+        Optional cut chamfer at top end by setting chamfer_end to nonzero size in mm.
+        """
         plate_quarter = (
             cq.Workplane("YZ")
             .line(self.plate_end_radius, 0)
@@ -106,6 +111,11 @@ class signal_head:
         return plate
 
     def hood(self):
+        """
+        A hood sits over a light to provide minimal shade to help light visibility.
+        Dimensions copied from reference 3D printed version, which looks a little
+        different from the metal ones already on site.
+        """
         hood_tube = (
             cq.Workplane("YZ")
             .circle(self.hood_outer_diameter / 2)
@@ -135,6 +145,11 @@ class signal_head:
         return hood
 
     def reference_hole_cut(self):
+        """
+        Object to use to subtract for cutting a hole for one of the lights.
+        Dimension copied from reference 3D printed object, not sure what this
+        hole is supposed to fit.
+        """
         hole_cut = (
             cq.Workplane("YZ")
             .circle(self.reference_hole_diameter / 2 + self.print_margin)
@@ -144,6 +159,9 @@ class signal_head:
         return hole_cut
 
     def screw_mount_holes_cut(self):
+        """
+        A two-part object for cutting mounting screw holes.
+        """
         hole = (
             cq.Workplane("YZ")
             .circle(self.screw_mount_diameter / 2 + self.print_margin)
@@ -157,6 +175,10 @@ class signal_head:
         )
 
     def face_plate_2(self, screw_holes=False):
+        """
+        Generate a face plate for two lights.
+        Screw mounting holes optional. (Defaults to none.)
+        """
         back_plate = self.plate()
         hole_cut = self.reference_hole_cut()
         hood_add = self.hood()
@@ -176,6 +198,10 @@ class signal_head:
         return face_plate
 
     def face_plate_3(self, screw_holes=False):
+        """
+        Generate a face plate for three lights.
+        Screw mounting holes optional. (Defaults to none.)
+        """
         back_plate = self.plate()
         hole_cut = self.reference_hole_cut()
         hood_add = self.hood()
