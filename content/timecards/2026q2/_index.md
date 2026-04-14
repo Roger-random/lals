@@ -5,6 +5,33 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Tuesday 2026/4/14
+
+* 4 hours today, 182.25 hours this track year.
+
+Signals @ Home
+
+#### 10:00AM - 11:30AM (1.5 hours)
+
+Getting oriented with the Arduino sketch running in panel S. The basics seem
+sound but there was a diagnostic blinking LED pattern (binary counting)
+running on unused pins and I couldn't find the code for it. Turns out that was
+because Brock never committed them to the repository.
+
+Voiced my position that code repository must match deployed code.
+
+#### 1:30PM - 4:30PM (3 hours)
+
+I've been told the vendor who provided signal heads currently at LALS has new
+management who turned highly mercenary about the deal. We may be better off
+producing our own in the future. There was past work to generate a 3D-printable
+variant but those people are no longer working on the project. I was given a
+STL file so I sat down to reverse engineer its dimensions into a CadQuery file.
+
+Now I have a baseline for future work.
+
+---
+
 ## Saturday 2026/4/11
 
 * 8 hours today, 178.25 hours this track year.
