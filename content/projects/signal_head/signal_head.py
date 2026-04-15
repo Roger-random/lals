@@ -53,15 +53,19 @@ class signal_head:
         # Back plate dictating exterior profile of the signal head.
         self.plate_width = inch_to_mm(3)
         self.plate_length = inch_to_mm(8)
-        self.plate_thickness = inch_to_mm(3 / 8)
+        self.plate_thickness = inch_to_mm(3 / 16)
         self.plate_end_radius = self.plate_width / 2
 
         # Hood that shades a single light
         self.hood_outer_diameter = inch_to_mm(1.5)
         self.hood_thickness = inch_to_mm(3 / 16)
-        self.hood_length_lower = inch_to_mm(3 / 4)
-        self.hood_length_upper = inch_to_mm(1 + 5 / 8)
+        self.hood_length_upper = inch_to_mm(1.8)
         self.hood_flat_height = inch_to_mm(1 / 8)
+        self.hood_length_lower = (
+            self.hood_length_upper
+            - self.hood_outer_diameter / 2
+            + self.hood_flat_height
+        )
 
         # Hole in reference plate accommodated something but I don't know what.
         self.reference_hole_diameter = 27
@@ -73,9 +77,25 @@ class signal_head:
         # Distance between screw mounting holes.
         self.screw_mount_hole_distance = 123
         self.screw_mount_diameter = 4.6
+
+        # "20mm" diameter acrylic lens dimensions rounded up 0.5mm for a bit of
+        # wiggle room lining up with LED behind.
+        self.lens_diameter_lip = 20.5
+        self.lens_diameter_flat = 18
+        self.lens_thickness = 10
+        self.lens_mount_wall_thickness = 4
+        self.lens_mount_lip_thickness = 2
+        self.lens_mount_wall_chamfer = 2.5
+
+        # Hold things together with zip-ties. If this idea works out I can then
+        # justify spending time to design a better system.
+        self.zip_tie_slot_width = 3
+        self.zip_tie_slot_length = 7
+        self.lens_pcb_width = 25
+        self.fitting_width = inch_to_mm(2)
         pass
 
-    def plate(self, chamfer_surround=0, chamfer_end=5):
+    def plate(self, chamfer_surround: float = 0, chamfer_end: float = 0):
         """
         Returns plain back plate upon which all other signal head features are built.
         Optional chamfer all around by setting chamfer_surround to nonzero size in mm.
@@ -95,7 +115,7 @@ class signal_head:
         plate = plate_half + plate_half.mirror("XY")
 
         if chamfer_surround > 0:
-            plate = plate.faces("<X").chamfer(chamfer_surround)
+            plate = plate.faces().chamfer(chamfer_surround)
 
         if chamfer_end > 0:
             end_cut = (
@@ -174,48 +194,146 @@ class signal_head:
             (0, 0, -hole_offset)
         )
 
-    def face_plate_2(self, screw_holes=False):
+    def zip_tie_slot(self, distance):
         """
-        Generate a face plate for two lights.
-        Screw mounting holes optional. (Defaults to none.)
+        Two-part object for two symmetric zip 'distance' from vertical center
         """
-        back_plate = self.plate()
-        hole_cut = self.reference_hole_cut()
-        hood_add = self.hood()
-        offset = self.hole_distance_2 / 2
-
-        face_plate = (
-            back_plate
-            - hole_cut.translate((0, 0, -offset))
-            - hole_cut.translate((0, 0, offset))
-            + hood_add.translate((0, 0, -offset))
-            + hood_add.translate((0, 0, offset))
+        offset = distance / 2 + self.zip_tie_slot_width / 2
+        slot_cut = (
+            cq.Workplane("YZ")
+            .rect(xLen=self.zip_tie_slot_width, yLen=self.zip_tie_slot_length)
+            .extrude(self.plate_thickness)
         )
 
-        if screw_holes:
-            face_plate = face_plate - self.screw_mount_holes_cut()
+        ties_cut = slot_cut.translate((0, offset, 0)) + slot_cut.translate(
+            (0, -offset, 0)
+        )
 
-        return face_plate
+        return ties_cut
 
-    def face_plate_3(self, screw_holes=False):
+    def zip_ties_cut(self):
         """
-        Generate a face plate for three lights.
+        Cut slots for zip ties.
+        """
+
+        pcb_slots = self.zip_tie_slot(self.lens_pcb_width)
+        body_slots = self.zip_tie_slot(self.fitting_width)
+
+        return pcb_slots + body_slots
+
+    def lens_mount_add(self):
+        """
+        Volume to be added for mounting a 20mm acrylic lens, then subtracted
+        by counterpart cut shape.
+        """
+        add = (
+            cq.Workplane("YZ")
+            .circle(radius=self.lens_diameter_lip / 2 + self.lens_mount_wall_thickness)
+            .extrude(self.lens_thickness + self.lens_mount_lip_thickness)
+            .faces(">X")
+            .chamfer(self.lens_mount_wall_chamfer)
+        )
+
+        return add
+
+    def lens_mount_cut(self):
+        """
+        After adding volume of counterpart add shape, subtract this cut shape.
+        """
+        cut_main = (
+            cq.Workplane("YZ")
+            .circle(radius=self.lens_diameter_lip / 2 + self.print_margin)
+            .extrude(self.lens_thickness)
+        )
+
+        cut_leave_lip = (
+            cq.Workplane("YZ")
+            .circle(radius=self.lens_diameter_flat / 2 + self.print_margin)
+            .extrude(self.lens_thickness * 2)
+        )
+
+        cut_base_flare = (
+            cq.Workplane("YZ")
+            .circle(
+                radius=self.lens_diameter_lip / 2
+                + self.print_margin
+                + self.lens_mount_wall_chamfer
+            )
+            .workplane(offset=self.lens_mount_wall_chamfer)
+            .circle(radius=self.lens_diameter_lip / 2 + self.print_margin)
+            .loft()
+            .faces(">X")
+            .workplane()
+            .circle(radius=self.lens_diameter_lip / 2 + self.print_margin)
+            .extrude(self.lens_thickness - self.lens_mount_wall_chamfer)
+            .faces(">X")
+            .workplane()
+            .circle(radius=self.lens_diameter_lip / 2 + self.print_margin)
+            .workplane(offset=self.lens_mount_lip_thickness)
+            .circle(
+                radius=self.lens_diameter_lip / 2
+                + self.print_margin
+                - self.lens_mount_lip_thickness
+            )
+            .loft()
+        )
+
+        cut = cut_base_flare
+
+        return cut
+
+    def face_plate(self, lights, screw_holes=False):
+        """
+        Generate a face plate for number of lights as per 'lights' param
         Screw mounting holes optional. (Defaults to none.)
         """
-        back_plate = self.plate()
-        hole_cut = self.reference_hole_cut()
+        face_plate = self.plate(chamfer_surround=0, chamfer_end=0)
+        mount_add = self.lens_mount_add()
+        hole_cut = self.lens_mount_cut()
         hood_add = self.hood()
-        offset = self.hole_distance_3 / 2
 
-        face_plate = (
-            back_plate
-            - hole_cut
-            - hole_cut.translate((0, 0, -offset))
-            - hole_cut.translate((0, 0, offset))
-            + hood_add
-            + hood_add.translate((0, 0, -offset))
-            + hood_add.translate((0, 0, offset))
-        )
+        if lights == 3:
+            offset = self.hole_distance_3 / 2
+            zip_tie_position = (
+                self.hood_outer_diameter / 2 + self.zip_tie_slot_length / 2
+            )
+
+            face_plate = (
+                face_plate
+                + mount_add
+                + mount_add.translate((0, 0, -offset))
+                + mount_add.translate((0, 0, offset))
+                - hole_cut
+                - hole_cut.translate((0, 0, -offset))
+                - hole_cut.translate((0, 0, offset))
+                + hood_add
+                + hood_add.translate((0, 0, -offset))
+                + hood_add.translate((0, 0, offset))
+                - self.zip_ties_cut().translate((0, 0, zip_tie_position))
+                - self.zip_ties_cut().translate(
+                    (0, 0, -zip_tie_position + self.zip_tie_slot_length)
+                )
+            )
+        elif lights == 2:
+            offset = self.hole_distance_2 / 2
+
+            face_plate = (
+                face_plate
+                + mount_add.translate((0, 0, -offset))
+                + mount_add.translate((0, 0, offset))
+                - hole_cut.translate((0, 0, -offset))
+                - hole_cut.translate((0, 0, offset))
+                + hood_add.translate((0, 0, -offset))
+                + hood_add.translate((0, 0, offset))
+                - self.zip_ties_cut()
+            )
+        elif lights == 1:
+            face_plate = face_plate + mount_add - hole_cut + hood_add
+            pass
+        else:
+            raise ValueError(
+                f"Not yet able to generate face plate for {lights} lights."
+            )
 
         if screw_holes:
             face_plate = face_plate - self.screw_mount_holes_cut()
@@ -226,5 +344,5 @@ class signal_head:
 sh = signal_head()
 
 show_object(
-    sh.face_plate_3(screw_holes=True), options={"color": "aliceblue", "alpha": 0.25}
+    sh.face_plate(3, screw_holes=True), options={"color": "aliceblue", "alpha": 0.25}
 )
