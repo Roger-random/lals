@@ -5,9 +5,211 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Monday 2026/4/20
+
+* 6.5 hours today, 214.75 hours this track year.
+
+Level 1 Enginner in-class lecture and on-track practice.
+
+#### 8:30AM - 3:00PM (6.5 hours)
+
+Started the day in the meeting car with PowerPoint presentation on Level 1
+Enginner responsibilities during public runs. Thankfully none of
+the major concepts were new, though there were some fun history. Because of
+my time working on signals, I'm past that particular common hurdle for club
+engine operators. That lets me focus on the other aspects like synchronizing
+throttle and air brakes for smooth starts and stops.
+
+After the in-class portion, fellow classmate Campbell and I pulled out UP1989
+for a few practice laps. Got some good tips from Nelson that I don't need to
+bleed air all the way down. This makes sense: when coming to a stop in a car
+I don't press the brake pedal all the way down. Doing so can result in a jerky
+stop - just like what I've been getting with a train! Easing off to 30 PSI or
+so instead of 0 PSI seems to help.
+
+For half of my final lap I simulated heavy stop-and-go traffic, stopping at
+every signal. Not only was it a good practice of stopping and restarting, the
+signal head also serves as a good target for me to practice stopping at a
+place of my choosing.
+
+A little more practice is needed, probably this coming Sunday. I'm not ready
+for my final exam check ride just yet but I think I'm close.
+
+---
+
+## Sunday 2026/4/19
+
+* 6.75 hours today, 208.25 hours this track year.
+
+Sunday public run crew - Disney intern event
+
+#### 8:30AM - 2:45PM (6.25 hours)
+
+Morning setup and miscellany ended with early lunch so I can relieve crews
+getting their lunch. Conductor for Santa Fe Electric with Chavez and Ronne
+then switched over to Alexander to more easily transition to intern event.
+
+#### 2:45PM - 5:00PM (No club hours)
+
+Alexander hosted a group of Disney Imagineering interns, who arrived in the
+afternoon to visit Carolwood barn then came over to LALS side for a train tour
+of our model railroad layout. The group BARELY all fit on a single train.
+There were some Q&A both before and after the headline train ride.
+
+Alexander let me handle CN2002 for a lap. I took it down to Smith Valley
+where I promptly derailed it. *sigh* Not a great start! The first truck was
+fine but the second truck popped off. There were no obvious causes for
+derailment, further investigation needed.
+
+![CN2002 derailed in Smith Valley](./20260419_cn2002_smith_valley_derail.jpg)
+
+#### 5:00PM - 5:30PM (0.5 hours)
+
+Put away bench cars and CN2002.
+
+---
+
+## Saturday 2026/4/18
+
+* 8 hours today, 201.5 hours this track year.
+
+Big signals work day reblocking and activating panel M!
+
+#### 8:45AM - 12:00PM (3.25 hours)
+
+Taking care of the list of issues yesterday cleared the board today for
+the rail reblocking work in preparation for new siding. Pederson joined
+Strawn and myself in getting ready. The morning started with reversible
+tasks, meaning if we encounter problems we could still restore the
+system back to the way it was in time for Sunday public runs. Things
+like replacing a few rail links with electrically isolating bars at
+new block boundaries, then electrically reconnecting them with
+bond wires so they act as they did before.
+
+![Panel M reblocking](./20260418_panel_m_reblock.jpg)
+
+#### 1:00PM - 5:45PM (4.75 hours)
+
+After lunch we quickly ran out of reversible tasks. Looking at the clock
+and looking at the remaining tasks, we decided to go for it! Those
+backwards-compatible bond wires were removed, new feed wires enegized
+then connected to detectors in panel M, as did two signal lights. It all
+went about as smoothly as can be expected, and we didn't break anything
+critical to Sunday run operations. This was a long, but successful, day.
+
+---
+
+## Friday 2026/4/17
+
+* 6.25 hours today, 193.5 hours this track year.
+
+Signals stuff that needed to get done before panel M rework.
+
+#### 8:00AM - 12:30PM (4.5 hours)
+
+Arrived to see signals already powered on and nobody on the track. Good
+opportunity to figure out who's triggering the false powerup and why.
+Unfortunately the diagnostics method is to walk around turning off panels
+with NT boards and see if the whole layout turns off along with signals
+near that board.
+
+Panel M was supposed to join in the timer ring network via panel I, but
+panel M did not turn on when everybody else did. Looks like the wire to I
+is a dud so we have to use a wire to K for the purpose.
+
+When I opened up panel S, I saw 12 minutes on the timer which was absent
+from other panels. I turned off panel S, and everything went dark. Visual
+inspection found no obvious problems with panel S NT block but we can at
+least mitigate its effects by reducing timer duration from 120 minutes down
+to 30 minutes.
+
+While at panel S we could try the other experiment: a second ESP32 board
+flashed with code from the repository was swapped into the panel to test
+field-swap capability, and it worked! As a secondary bonus we now have
+improved logic for triggering Stutson crossing bell.
+
+Swapped out JFA clear lenses for faceted (bugeye) lenses. Strawn and I
+preferred the faceted lens, Harper didn't think they looked very different.
+Proceeded to try swapping out JFB as well but.... GAAAH ANTS! The ants are
+back trying to rebuild their home. I'll need to bring reinforcements later.
+
+To test new lens, panel J was opened up to switch signal to test mode, and
+we noticed its NT board to be dark. It should at least be showing 000 on its
+7-segment LED. Probing the wiring, found its arrangement made no sense. It
+appears to have been wired with N+/N- mixed up with VCC/GND and a mystery how
+that could have possibly worked. Compounding that mystery, it shouldn't kill
+the board, either.
+
+#### 2:00PM - 3:45PM (1.75 hours)
+
+Lunch break included a detour to Home Depot to pick up a few items including
+a can of RAID ant spray. That cleared out JFB so lenses can be swapped out
+without ants crawling all over me.
+
+Leaving the lenses out for their trial run, we installed a motor cover box
+just built by Davis for the larger motors. We'll need another anchor to
+screw the box tabs into, but we have enough today so it doesn't flop around.
+
+---
+
+## Wednesday 2026/4/15
+
+* 4.5 hours today, 187.25 hours this track year.
+
+Signals @ LALS
+
+#### Morning (no club hours)
+
+Fix Chessie locomotive. Motor field cables were replaced earlier, today a
+relay to replace the melted one was installed. Didn't move. Looking closer
+we found a cable that would have been power supply for a lot of auxiliary
+components (LEDs that shine downwards, etc.) and its insulation had degraded
+from heat and is now vulnerable to occasionally shorting against a terminal
+that is usually ground. Not good. Once that's fixed, Chessie still didn't
+move, but then we figured out it was because "Master On/Off" got bumped
+sometime during this morning's work. Flip that to "On" and Chessie is back in
+business.
+
+#### 3:00PM - 7:30PM (4.5 hours)
+
+(Lost notes on what happened after lunch in Smith Valley)
+
+Went over to check out latest siding track work by De Philips to compare
+against plan for initial & future signals support. The siding work had some
+deviation from original plan due to terrain and vegetation, so signals plan
+must be updated to suit.
+
+Disconnected all panel J motor 2 wires so I could measure resistance across
+them. They are all in the single digit ohms of resistance. The white one is
+a little worse but not a huge deal.
+
+|  | Black | Green | White |
+|----|----|----|----|
+| Red | 2.39 | 2.83 | 4.9|
+| Black | - | 3.2 | 4.5|
+| Green | | - | 6 |
+
+Went to look at JFA/B wiring. Start by cutting off about 1cm from end of nasty
+ant stuff contaminated and corroded ends. This brought back five out of six
+wires but JFA green still has about 470 kilo ohms of resistance instead of
+single digits like the rest. There's a chance I might just need to cut it some
+more to reach shiny copper but it's more likely the wire is gone and need to
+be replaced.
+
+Since the wire is degraded and we have no standard lights to replace ant
+damaged JFA/B I decided this was an opportunity to try out the 3D-printed
+single LED + lens signal head I built, derived from the STL I reverese
+engineered. Green is still dim due to wire but the rest look very promising.
+
+![LED signal head trial back](./20260415_led_signal_head_trial_back.jpg)
+
+![LED signal head trial front](./20260415_led_signal_head_trial_front.jpg)
+
+---
+
 ## Tuesday 2026/4/14
 
-* 4 hours today, 182.25 hours this track year.
+* 4.5 hours today, 182.75 hours this track year.
 
 Signals @ Home
 
