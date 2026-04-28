@@ -5,6 +5,248 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Saturday 2026/4/26
+
+* 13.75 hours today, 242 hours this track year.
+
+Sunday operations plus so much more!
+
+#### 7:45AM - 5:30PM (9.75 hours)
+
+Arriving early eastbound on Zoo Drive by Travel Town, looked over at Smith
+Valley to see signal lights. "Oh, someone's already running!" Pulled into the
+parking lot to find all signals off. "Uh-oh." Need to look into panel S power
+after Sunday public runs.
+
+I asked to run my morning practice laps on Santa Fe Electric. Around and around
+I went, learning lessons along the way. The electric drivetrain has more
+immediately response than the gasoline-hydraulic of UP1989. Also generally
+smoother in transitions, though the transition from resisting sliding backwards
+to forward powered motion is quite jarring and must be managed with air brake
+system.
+
+On the first and second practice laps, I saw the four-head signal coming down
+Davis mine and the three-head entering station were both set to mainline and
+both showing false reds. They indicate two different track blocks so it can't
+be the same issue... can it? By my third lap, they showed the expected green.
+Have to watch for return of this issue and hopefully get more data later.
+
+Since I started my practice before the pre-run inspection checklist basket was
+set out, I staged SFE in the station and got it done before the safety meeting.
+Found an air leak in the line to caboose. Asked M. Bassett for a second opinion
+and he hand-tightened it enough that bubbles no longer formed. Cammarata said
+that is good enough: do not use a wrench to tighten any further.
+
+Asked around to see if there's a certified engineer to take over SFE for Sunday
+operations, and Cammarata said it can be me if I want it.  Recruited Bickel as
+my conductor. OK let's go!
+
+First lap: Cammarata sat immediately behind with feedback along the way. Lap
+completed uneventfully and no critical problems requiring Cammarata to take
+over. A good start! Cammarata signed off and returned to his normal ops duties.
+
+Second lap: Alexander sat immediately behind me, again with feedback and as
+backstop alternate in case he needs to take over.
+
+Third lap: Alexander sat in one of the bench cars further back. Still
+available as backup if needed but no more hand-holding for me.
+
+Fourth and onwards: I got confident enough to run solo and did so for the rest
+of the day (minus lunch break) all the way to final public train and locking up
+west gate.
+
+A successful first day running public!
+
+After Santa Fe Electric was put away, I asked about the proposal to swap two
+club owned locomotives: 2468, which is in Alkire behind a general member lock
+but not commonly used for public runs, and the center cab work locomotive,
+which is locked in Phil West which not everyone has a key. (I don't!) I learned
+the next step is to measure overall length of those two engines to see if
+there's enough physical space available. Hollis and I went and measured center
+cab at 144" coupler-to-coupler and locomotive 2468 at 148" long. The center
+cab has about 18" of space to spare between it and the Santa Fe Electric so
+the swap is physically feasible. Data points and submitted for consideration!
+
+I then took the center cab to carry my tools over to panel S to examine its
+power board. It is indeed stuck on: continuity across the AC line terminals
+regardless of NT signal. I see two possibilities:
+1. Relay has failed closed, regardless of audible clicking in response to NT
+signal.
+2. Auto/Manual switch has failed closed, regardless of physical position of
+switch lever.
+
+Since they had been soldered in parallel, there's no way to tell without
+unsoldering one of them. Which is not a field repair. So in goes the second
+power board I received as backup for panel K repair earlier.
+
+![Panel S power board before swap](./20260426_S_power_board_before_swap.jpg)
+
+I returned to east end intending to look into a false red, but took a break to
+chat with H. Finch for a bit.
+
+#### 6:30PM - 9:30PM (3 hours)
+
+After the chat I looked into a false red that started happening in the middle
+of the day. It is signal GF, easatbound entering the Eppich tunnel, an area
+with limited visibility and thus important for safety. Looking at surrounding
+lights I also saw GD red and GG yellow, all consistent with a failure in panel
+G block 10. Opening up panel G I saw the expected fault indicator. I measured
+voltage across the detector board terminals to be ~14V and voltage across
+feed wire rail terminals to be 0V. Broken feed wire is not good, the fact this
+wire was only installed recently is worse. I'm losing daylight so I'll have to
+come back later.
+
+![G10 feed wire no volts](./20260426_G10_feed_wire_failure.jpg)
+
+When I returned to the east end I got word the locomotive move has been
+approved and I'm free to execute it whenever I want. I liked the idea of being
+able to get the center cab out without finding somebody with a Phil West key
+so I started immediately on my little Towers of Hanoi project shuffling three
+club locomotives around.
+
+A bit after all three trains are at their new homes, I noticed the Santa Fe
+Electric cooling fan is not running. This usually happens when it is charging
+so I was concerned. Suncin confirmed that the fan is supposed to run.
+
+Maybe it just needs a bit of time before getting warm enough to need a fan?
+I decided to wait, taking a break to chat with Burden as he packed up the
+Heisler to run at
+[Joshua Tree and Southern](https://www.jtsrr.org/home.html).
+
+#### 10:00PM - 11:00PM (1 hour)
+
+I returned to my locomotive move project by pulling out my label maker and
+start labeling for the new train positions plus a small forwarding pointer
+at their old location explaining where they had gone. Checking the Santa Fe
+Electric afterwards and:
+* The good news: it is charging as battery percentage is climbing.
+* The bad news: the fan is still not spinning.
+* The ugly news: metal grate over the non-spinning fan is getting warm just
+from convection airflow. I am worried about how hot it must be getting inside.
+
+No combination of levers and switches I tried had managed to turn the fan back
+on. I'm not comfortable leaving it plugged in, getting hot without active
+ventilation. I'm going to unplug it before I leave and ask Suncin for pointer
+on what to do next.
+
+---
+
+## Friday 2026/4/24
+
+* 2.5 hours today, 228.25 hours this track year.
+
+Signals victorious!
+
+#### 8:00AM - 9:30AM (1.5 hours)
+
+Picked up where I left off with false reds HA and HB on McKelvey signal bridge.
+Traced it back to bad feed wire joint inside one of the vaults, where the
+indoor-use security wire fell apart in this outdoor application. Black wire
+and insulation had broken apart. Red wire was barely holding on, but there
+wasn't much left of the wire, either. Most of it had turned to greenish dust.
+
+![Decayed H10 feed wire](./20260424_H10_wire_turned_to_dust.jpg)
+
+#### 12:30PM - 1:30PM (1 hour)
+
+After going home to get my panel keys I had left there, I could get in panel I
+to test a hypothesis formed after a good night's rest: the reason IDA red
+would light up in test mode is because both red and white wires received power.
+
+The four-conductor wire bundle for IDA from panel I to signal head had indeed
+degraded. There were mega ohms of resistance from ground and green light wires
+to other wires, which should have been open circuit (infinite resistance) so
+they're already bad. White and red wires are worse, with only kilo ohms of
+resistance between them. When dealing with milliamps for lighting LEDs, that
+is a problem.
+
+If only red or only yellow received power, as is the case during normal
+operation, this degraded insulation meant electrons can find their way to
+the other wire and an escape path easier than pushing through to light up the
+LED. But when both red and yellow are powered in test mode, the easiest path
+to ground is through the red LED.
+
+In order to simulate this condition, I tied red and white wires together
+at both ends treating them as a single wire for delivering power to the red
+LED. This worked, at the expense of yellow, which I think isn't used anyway.
+
+But still, this is only a hacky workaround. The real fix is to run new wires.
+
+![Wire tie hack for IDA red](./20260424_IDA_red_yellow_tied_signal.jpg)
+
+#### Playing with Trains (no club hours)
+
+Spent the rest of the afternoon watching Cammarata work on Gold Rusher and
+helped isolate the drivetrain resistance to right hand side piston stroke
+moved out of range due to loose set nut.
+
+---
+
+## Thursday 2026/4/23
+
+* 11 hours today, 225.75 hours this track year.
+
+Signals work
+
+#### 8:15AM - 12:30PM (4.25 hours)
+
+During Monday's training train run I noticed every panel K signal stayed dark
+the whole time. Even if it were disconnected from NT ring it should have turned
+on when we crossed its detector block. Went to look there and found a power
+board that never comes on. A replacement board will have to be found and
+installed.
+
+Panel S was also off. Opened up the panel and saw master power switch was off.
+Flipped it back on and all was well. Last time we remembered working on this
+panel was to do ESP32 reflash on 4/17 which improved Stutson crossing bell
+logic. We wouldn't have turned the panel off and left it off that day. Weird.
+
+While panel M did turn on when we crossed its detector block, it should have
+already been on when we got there. Found a bad connection in the vault right
+under panel M, with wire nut holding together NT+ wires for panels I, K, and M.
+Cut back damaged wires to expose clean(er) wire and reconnected. Looks like
+K-M is back but I-M is still not doing anything. Something for later.
+
+![Panel M vault NT+ wire nut](./20260423_M_NT_wires_in_vault.jpg)
+
+#### 1:30PM - 8:15PM (6.75 hours)
+
+After returning from lunch break and before we head west again, went into IS-1
+looking for power board. I was handed two boards. One for panel K today and
+another on standby for later.
+
+Most of the afternoon was spent banging our head against IDA red which would
+light up in test mode but stays dark during operation. Went down many false
+leads, such as concluding we lost power to the board until we learned the
+crossover mechanism is supposed to cut main power and then auxiliary power
+comes in another terminal. An... unorthodox... approach that threw us off.
+Tried a different signal board. (Same behavior.) Tried a different signal
+head right at the panel. (Everything worked.) Couldn't figure out a plausible
+hypothesis for the "works in test mode" behavior before team had to disperse.
+
+After Strawn and Harper left I went to perform my solo assignments. The first
+one was swapping out the power board in panel K as decided earlier today.
+This restored K to proper NT ring operation.
+
+![Panel K power board before swap](./20260423_K_power_board_before_swap.jpg)
+
+Next was signal head KD, the one exiting Dusty Shores before covered bridge.
+This has been dimming over the past few weeks. It used to get really dark
+after a rain but now it's dark rain or shine. The underground green wire has
+gone bad. As a short term workaround, the lights for green and yellow lights
+were swapped. Now green shines bright but yellow is dark. We need to run new
+wire soon.
+
+Final task of the day was GG, the Pennsy signal everybody sees on their way
+into the parking lot. There was a collection of retired bulbs and I dug up two
+green lights for installation. Green now shines steadily to greet LALS members
+when they arrive.
+
+I turned around and saw HA/HB were showing false reds. Well, that's new!
+Ugh. I'm not dealing with it tonight.
+
+---
+
 ## Monday 2026/4/20
 
 * 6.5 hours today, 214.75 hours this track year.
@@ -96,6 +338,20 @@ backwards-compatible bond wires were removed, new feed wires enegized
 then connected to detectors in panel M, as did two signal lights. It all
 went about as smoothly as can be expected, and we didn't break anything
 critical to Sunday run operations. This was a long, but successful, day.
+
+At the end of the day I took a detour out to signal GG, the Pennsy light
+everybody sees on their way into the parking lot. It has been blinking
+erratically so I opened it up expecting to hunt for a loose connection.
+What I found are old style incadescent bulb sockets with LED retrofit
+modules sitting inside. At the time of diagnosis, the bottom green was
+blinking and the top was steady.
+
+Experiments:
+* Swap two green bulbs. The same bulb (now top) blinks.
+* Swap green with yellow bulbs. The yellow bulbs stay on solid.
+
+Not a loose connection, then. It's failure of LED driver module doing its best
+to pretend to be an incandescent bulb. I'll have to get some of those bulbs.
 
 ---
 
