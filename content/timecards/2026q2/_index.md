@@ -5,7 +5,108 @@ title = '2026 Q2 Timecards'
 
 ---
 
-## Saturday 2026/4/26
+## Tuesday 2026/4/28
+
+* 6.25 hours today, 248.25 hours this track year.
+
+Signals work, track work, and Santa Fe Electric
+
+#### 8:45AM - 1:00PM (4.25 hours)
+
+Arrived to find Valley division signals on again when the rest of the layout
+was off. Walked over to panel S and was surprised to find the power board I
+replaced on Sunday is doing the same thing as the previous board: continuity
+across AC line terminals regardless of NT status. Is this just an amazing
+coincidence that a board failed in less than 48 hours _and_ in the exact
+way as the previous? Or is there something else? Since I don't have another
+power board to swap in, I have time to ponder while panel S stays on.
+
+Afterwards I resumed signal GF false red investigation. Harper was on hand to
+describe recent work in this area and help dig up underground wires. As soon
+as I pulled them up I saw the problem: their insulation had been damaged
+allowing corrosion to do their thing.
+
+![G10 black wire failure](./20260428_G10_black_wire.jpg)
+
+![G10 red wire failure](./20260428_G10_red_wire.jpg)
+
+Harper pulled out some extra wire that was previously left in the vault as
+spare, and I used that spare capacity to trim the damaged wire and try this
+again. GF (and GD and GG) now correctly show green, let's hope it lasts longer
+this time around.
+
+Having resolved this signal issues with Sunday impact, I was curious and
+followed Harper as he moved on to track work. First on the list was the point
+of derailment by UP1989 on Sunday. Determined the rails were a little too
+narrow, the rails were not level, and the outside rail took a nontrivial dip
+right around that area. This combination of factors could explain derailment.
+
+![Inner main loop in front of station too narrow](./20260428_track_too_narrow.jpg)
+
+Helped Harper widen the rails a bit and make the two sides more level. The dip
+is more challenging to address plus a higher risk of making things worse.
+(Like turning a dip into a launch ramp.) So we will await De Phillip opinion.
+
+Second on the list was a short segment of track that was supported by only a
+single tie in the middle of the span. Stress of running over this segment went
+into loosening the joiner bolts, resulting a short segment that would see-saw
+as a train went by. It's only a matter of time before it comes apart and the
+train derails. Since this segment was on the rail leading into station, that
+raises the priority of getting this fixed.
+
+Tightening the joiner bolts would address the immediate symptoms but not solve
+the underlying problem. Doing it right means moving some ties around plus
+adding one in order to support all rail joints in that area. Once done, weight
+of train goes into the ties instead of into loosening bolts.
+
+![See-saw short track repaired](./20260428_see_saw_no_more.jpg)
+
+#### 2:00PM - 4:00PM (2 hours)
+
+After lunch break Harper resumed his signals block labeling project using
+washers of various colors. I went to look at Santa Fe Electric. My first
+lesson is that she's not to be pushed around. After huffing and puffing for
+a few feet I gave up and powered her up. Sometime later I want to determine if
+this is just the nature of the drivetrain or if there's undue friction that
+needs attention. Or perhaps she's got a parking brake that automatically
+applied when unpowered? I know that exists on my salvaged wheelchair motors.
+
+![Santa Fe Electric in maintenance bay](./20260428_sfe_in_maintenance_bay.jpg)
+
+This orientation lookaround was informative. I now know the drivetrain
+consists of motor gearboxes whose output shafts are wheel axles. Four
+sets of them, one for each axle. The front-most axle also has a skid plate
+under the gearbox to protect it from debris. I don't understand how her
+suspension articulation works yet, that'll require more future study.
+
+Looking at seams on the body, I have a guess it comes off in two sections but
+I won't try it until I can do it under supervision of someone who's at least
+seen it done.
+
+Looked around inside the storage box of the riding car and found many items of
+interest and a few that can be tossed. For example, a small orange safety cone
+that has become brittle with age and cracked in half.
+
+As for actually doing something useful, without lifting the body I really can't
+deploy my multimeter. But I can do the first step of electrical diagnostics:
+reseat all the connectors. There were several between the engine and the riding
+car. Some of them look a little toasty and their replacement would be good
+future candidate project. I found a medium-sized two-prong plug was
+loose, and the large
+[Amphenol connector](https://en.wikipedia.org/wiki/Amphenol_connector) was
+also loose. I was able to turn the external ring about 3/4 of a turn before I
+encountered resistance, and that resistance felt like it was pushing the plug
+back into place.
+
+Once that was done, I plugged in an extension cord already in the maintenance
+bay. Within a few seconds, I can hear the cooling fan spin up. I'm not sure if
+reseating connectors did the job or merely a big coincidence, but the result
+is that we can charge in preparation for next Sunday operations. I'll take that
+as a win.
+
+---
+
+## Sunday 2026/4/26
 
 * 13.75 hours today, 242 hours this track year.
 
@@ -87,7 +188,7 @@ chat with H. Finch for a bit.
 #### 6:30PM - 9:30PM (3 hours)
 
 After the chat I looked into a false red that started happening in the middle
-of the day. It is signal GF, easatbound entering the Eppich tunnel, an area
+of the day. It is signal GF, eastbound entering the Eppich tunnel, an area
 with limited visibility and thus important for safety. Looking at surrounding
 lights I also saw GD red and GG yellow, all consistent with a failure in panel
 G block 10. Opening up panel G I saw the expected fault indicator. I measured
