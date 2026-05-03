@@ -5,6 +5,87 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Thursday 2026/5/2
+
+* 6.5 hours today, 6.5 hours this track year.
+
+#### 9:00AM - 3:30PM (6.5 hours)
+
+Track hours reset to zero at the beginning of May for a new year of accounting!
+My first task of the new year is to join the club equipment recertification
+crew at Cammarata's direction. We inspected the locomotives, bench cars, and
+cabooses. Most of them passed but we did find a few issues. Some
+we could fix now (couplers that had lost their springs) but others will have to
+wait for later.
+
+We got some peace of mind our equipment is in good shape, and we got a really
+fun club engine group photo out of it.
+
+![Club engines on recertification day](./20260502_club_engines_recertification.jpg)
+
+---
+
+## Thursday 2026/4/30
+
+* 10.25 hours today, 258.5 hours this track year.
+
+Signals + Track work with Harper, Santa Fe Electric cosmetic cleaning
+
+#### 8:45AM - 12:15PM (3.5 hours)
+
+Came in at Harper's request to help finish up the underground wiring
+infrastructure labeling project, adding color-coded washers to mark locations
+of concern to signals team. Mostly to review and compare against reference
+map but also to help resolve some mysteries like helping to find feed wires
+that aren't where we expected them to be.
+
+![Feed wires for block B5 and B5](./20260430_feed_wires_for_b4_b5.jpg)
+
+#### 1:15PM - 5:00PM (3.75 hours)
+
+After lunch we wrapped up the label project and start fixing some track issues
+we spotted while looking for wires. Such as this fiberglass rail joiner with
+only bolts on one side. Where did the bolts for the other side go?
+
+![Missing rail joiner bolts](./20260430_missing_rail_joiner_bolts.jpg)
+
+We couldn't fix everything on our plate. While we fixed the insulating rail
+switch joiner for reversing track towards valley division, the counterpart for
+southern end of narrow gauge barn will need a machine shop to tap and thread
+screws at the correct locations.
+
+#### 5:00PM - 8:00PM (3 hours)
+
+After we wrapped up track work I went back to Santa Fe Electric for a cosmetic
+refresh. Following Suncin instructions of using lemon-scented Endust and a
+micro fiber towel, I got to work making the club's workhorse look
+spiffy. Guests take pictures of this engine and it could look better than it
+did when I was running public rides with it last weekend.
+
+The biggest danger are decals, which are turning brittle after some number of
+years. This is not helped by the fact that whoever applied these decals
+took some shortcuts that are now going to bite me. Look at this decal bridging
+right over a surface feature hanging over air. This is just begging to get
+caught on something and rip.
+
+![S of Santa Fe Electric flying over air](./20260430_sfe_decal_over_air.jpg)
+
+But even if all decalas were applied well, age and sun takes its toll.
+This is especially visible on the yellow band on top of the locomotive,
+which is visibly cracking and peeling. I'm not sure what can be done about
+this except to carefully trim off the peeling bits so they don't pull more
+up behind them.
+
+![Peeling yellow decal up top](./20260430_sfe_decal_cracked_peeling.jpg)
+
+Stuck-on grime below the main deck needed something more powerful than Endust,
+and for that purpose I brought Simple Green and switched over to some old
+terry cloth towels. Then for the operator's console, I tried some Barkeeper's
+Friend which helps but the amount of manual buffing I had to do implies I'm
+not using the right tool for the job.
+
+---
+
 ## Tuesday 2026/4/28
 
 * 6.25 hours today, 248.25 hours this track year.
