@@ -5,6 +5,55 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Saturday 2026/5/9
+
+* 11.25 hours today
+
+Signals power restoration + East Valley Lines event train crew
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Investigated suspicion around the 110V outlet in Inchville and suspicion was
+justified: that's where the power came from. Wires led to a vault next to
+a 4.75" gauge storage barn and to outlets within it. We could access one of
+the outlets and confirmed it had lost power as well, but none of signals team
+members had access to the rest of the barn and could backtrack no further.
+
+Armed with a borrowed tone tracer I verified all of yesterday's findings: that
+everything we thought was on the same circuit was indeed so. Panels A, B, C,
+Disney crossing compressor, unconnected wire in shack, Inchberg outlet, and
+storage barn.
+
+McMurray joined the crew to lend his electrical expertise. Reviewing our
+current findings he agreed they sound reasonable. A plan was devised: we will
+sever electrical connection at the defect detector junction box, disconnecting
+signals A+B+C+compressor from Inchberg. We will then power it from a separate
+source. Long term source is the electric breaker panel behind the kitchen, we
+will run a power conduit underground to panel C. But we need power NOW so we
+also have a short term solution using a Home Depot extension cord.
+
+Panels A, B, and C returned to life, as did the crossing air compressor.
+Inchberg remains without power but committee head Guzman has been notified.
+
+#### 1:00PM - 8:15PM (7.25 hours)
+
+Wrapped up some details after lunch then switched gears to prepare for a
+club sanctioned event with East Valley Lines. Connected Strawn's locomotive
+("Chessie") to a set of bench cars and also brought out Santa Fe Electric.
+It'll be an all-electric ride service today, fitting for a N-gauge train club
+as all of their trains are electric.
+
+Chessie didn't look great sitting adjacent to clean and shiny Santa Fe Electric
+so I gave Chessie a cursory wipe-down while we wanted for EVL. It made a big
+difference but there are many places where I need to come back with cotton
+swabs for detail.
+
+After EVL event I returned to signals work, pulling out a bag of zip-ties. I
+didn't like having the temporary extension cord strewn all over Bowlus siding
+so I coiled them up and hung them on the chain-link fence.
+
+---
+
 ## Friday 2026/5/8
 
 * 7.25 hours today, 40.25 hours this track year.
@@ -22,6 +71,9 @@ Sometime in the past the team determined a specific electrical panel breaker
 would cut power to those signals panels. That breaker was fine, so tracing
 begain in both directions: from that electrical panel breaker downstream
 and from signals panels upstream.
+
+We learned about several electrical breaker panels that we have never noticed
+before.
 
 There is a set of power outlets about 18 inches from panel A and, curiously,
 they are a completely separate circuit. They both enter into the same
