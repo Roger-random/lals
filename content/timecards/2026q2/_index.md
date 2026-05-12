@@ -5,9 +5,33 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Sunday 2026/5/10
+
+* 8.5 hours today, 60 hours this track year
+
+Sunday public ride operations crew
+
+#### 8:30AM - 5:00PM (8.5 hours)
+
+Started the day with miscellaneous Sunday public ride setup work, including
+helping with certifying Fuad engine for operations, pump house bulb, and
+taking a loop with Lincoln to verify signals functionality. No false reds,
+everything worked well except two known problematic signal heads. Quad-head
+coming down from Davis mine and triple-head entering station.
+
+Was told I would be on lunch relief alongside Alexander. Ate early so we don't
+end up doing that on an empty stomach. Mostly conducted but got a loop as
+Santa Fe Electric locomotive engineer. Relief crew duty was interleaved with
+kitchen fridge restocking.
+
+After wrapping up for the day with Santa Fe Electric back in its quarters,
+I found Dorado cleaning the kitchen by himself so I decided to help.
+
+---
+
 ## Saturday 2026/5/9
 
-* 11.25 hours today
+* 11.25 hours today, 51.5 hours this track year
 
 Signals power restoration + East Valley Lines event train crew
 
