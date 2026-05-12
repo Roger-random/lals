@@ -25,7 +25,9 @@ Santa Fe Electric locomotive engineer. Relief crew duty was interleaved with
 kitchen fridge restocking.
 
 After wrapping up for the day with Santa Fe Electric back in its quarters,
-I found Dorado cleaning the kitchen by himself so I decided to help.
+I walked N. Guzman physically through the known situation around Inchberg so
+he knows what we know. After that I found Dorado cleaning the kitchen by
+himself so I decided to help.
 
 ---
 
@@ -87,16 +89,16 @@ Troubleshoot loss of 110V AC power to panels A, B, C.
 #### 7.45AM - 3:00PM (7.25 hours)
 
 The signals team reconvened to pick up where we left off Thursday but we had
-to throw that plan out the window when panels A, B, and C failed to power on
-in the morning. I started troubleshooting a power ring network issue but it
-was worse than that: we lost 110V AC power to those panels.
+to throw that plan out the window when panels A, B, and C failed to power on.
+I started troubleshooting a power ring network issue but it was worse than
+that: we lost 110V AC power to those panels.
 
 Sometime in the past the team determined a specific electrical panel breaker
 would cut power to those signals panels. That breaker was fine, so tracing
 begain in both directions: from that electrical panel breaker downstream
 and from signals panels upstream.
 
-We learned about several electrical breaker panels that we have never noticed
+We learned about several electrical breaker panels that we had never noticed
 before.
 
 There is a set of power outlets about 18 inches from panel A and, curiously,
@@ -116,7 +118,7 @@ but it's not connected to anything else and the shack is empty.
 One box west of the defect detector has a conduit going underground sweeping
 south. This was traced to a pair of 110V power outlets poking out of the ground
 in the middle of Inchberg. The wiring in this area is suspiciously complex
-for merely a power outlet.
+for a power outlet.
 
 ---
 
@@ -153,7 +155,7 @@ and shoe scuff marks. There's one big blob of... bubble gum? I'll have to
 attack later with Goo-Gone or similar. Vacuumed off all the benches but
 they still look pretty ratty. LALS will need to reupholster these benches
 at some point. The caboose also got a wipe-down, though I stopped short of
-cleaning off the internal electronics equipment. I'll have to come back later
+cleaning off its internal electronics equipment. I'll have to come back later
 to learn what they are before I touch them.
 
 ---
@@ -169,9 +171,9 @@ Santa Fe Electric diagnosis then cleanup
 Started by fixing the false reds on McKelvey signal bridge. (HA/HB) Thanks to
 color-coded washers  it was quick to find the ends of the physical detection
 block. I found a track resistor with one end loose. Santa Fe Electric and Cook
-derailed in this area on their morning test run, due to fallen rocks. It is
-likely someone who helped re-rail the engine inadvertently kicked it loose. I
-reattached the track resistor with a shiny new screw and conductive grease.
+derailed in this area on their morning test run, due to fallen rocks. I think
+someone who helped re-rail the engine inadvertently kicked the resistor loose.
+I reattached the track resistor with a shiny new screw and conductive grease.
 
 With false red fixed, I resumed troubleshooting Santa Fe Electric bench car
 derailing issue. Some of the couplers were fixed during recertification, but
@@ -184,11 +186,11 @@ always useful. He saw no obvious problems, either, but did notice the couplers
 were thrown to near or at end of their swing range in the middle of the S-curve
 where derailment always happens. He also brought a bubble level and found the
 track was not level in this area. After he leveled the track, derailment
-stopped. Went to pick up the rest of the train (instead of just a single bench
-car) and ran through full length twice with no derailments.
+stopped. I went back to the yard to pick up the rest of the train (instead of
+just a single bench car) and ran through full length twice with no derailments.
 
 There's still something unique and mysterious about this bench car underlying
-its sensitivity to out-of-level track. The criticical symptom of derailment
+its sensitivity to out-of-level track. The critical symptom of derailment
 has been mitigated and that'll have to be enough for today.
 
 Had a bit of time to spare so I cleaned out the storage bin on the engineer's
