@@ -13,19 +13,26 @@ Santa Fe Electric diagnosis then cleanup
 
 #### 1:45PM - 7:00PM (5.25 hours)
 
-Resumed troubleshooting Santa Fe Electric bench car derailing issue. Thought of
-one other variable: some of the couplers were fixed during recertification, but
+Started by fixing the false reds on McKelvey signal bridge. (HA/HB) Thanks to
+color-coded washers  it was quick to find the ends of the physical detection
+block. I found a track resistor with one end loose. Santa Fe Electric and Cook
+derailed in this area on their morning test run, due to fallen rocks. It is
+likely someone who helped re-rail the engine inadvertently kicked it loose. I
+reattached the track resistor with a shiny new screw and conductive grease.
+
+With false red fixed, I resumed troubleshooting Santa Fe Electric bench car
+derailing issue. Some of the couplers were fixed during recertification, but
 the derailing bench car's coupler was untouched. Thought it still might be some
 sort of multi-car interaction, tried running through with just the problematic
 bench car as the only car. Still happens.
 
 Recruited Harper to help diagnose, a second set of eyes and another brain is
 always useful. He saw no obvious problems, either, but did notice the couplers
-were thrown to near or end of their swing range in the middle of the S-curve
+were thrown to near or at end of their swing range in the middle of the S-curve
 where derailment always happens. He also brought a bubble level and found the
 track was not level in this area. After he leveled the track, derailment
 stopped. Went to pick up the rest of the train (instead of just a single bench
-car) and ran through twice more, no derailments.
+car) and ran through full length twice with no derailments.
 
 There's still something unique and mysterious about this bench car underlying
 its sensitivity to out-of-level track. The criticical symptom of derailment
