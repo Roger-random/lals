@@ -5,9 +5,51 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Monday 2026/5/4
+
+* 5.25 hours today, 23.5 hours this track year.
+
+Santa Fe Electric diagnosis then cleanup
+
+#### 1:45PM - 7:00PM (5.25 hours)
+
+Resumed troubleshooting Santa Fe Electric bench car derailing issue. Thought of
+one other variable: some of the couplers were fixed during recertification, but
+the derailing bench car's coupler was untouched. Thought it still might be some
+sort of multi-car interaction, tried running through with just the problematic
+bench car as the only car. Still happens.
+
+Recruited Harper to help diagnose, a second set of eyes and another brain is
+always useful. He saw no obvious problems, either, but did notice the couplers
+were thrown to near or end of their swing range in the middle of the S-curve
+where derailment always happens. He also brought a bubble level and found the
+track was not level in this area. After he leveled the track, derailment
+stopped. Went to pick up the rest of the train (instead of just a single bench
+car) and ran through twice more, no derailments.
+
+There's still something unique and mysterious about this bench car underlying
+its sensitivity to out-of-level track. The criticical symptom of derailment
+has been mitigated and that'll have to be enough for today.
+
+Had a bit of time to spare so I cleaned out the storage bin on the engineer's
+riding car. Several broken things got tossed (we don't need to hold on to a
+broken eye bolt...) and the rest rearranged.
+
+I found a trio of identical screws rattling on the bottom. Looked around and
+saw they were supposed to help hold the infrequently used rearward-facing
+second seat and I returned them to their job.
+
+The lid is designed to be held open with two chains, one towards the front of
+the train had come loose leaving just the rear chain. Reattached front chain
+so now we have redundancy again.
+
+---
+
 ## Sunday 2026/5/3
 
 * 11.75 hours today, 18.25 hours this track year.
+
+Sunday operations
 
 #### 8:00AM - 3:30PM (7.5 hours)
 
