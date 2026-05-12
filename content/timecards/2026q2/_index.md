@@ -5,6 +5,45 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Friday 2026/5/8
+
+* 7.25 hours today, 40.25 hours this track year.
+
+Troubleshoot loss of 110V AC power to panels A, B, C.
+
+#### 7.45AM - 3:00PM (7.25 hours)
+
+The signals team reconvened to pick up where we left off Thursday but we had
+to throw that plan out the window when panels A, B, and C failed to power on
+in the morning. I started troubleshooting a power ring network issue but it
+was worse than that: we lost 110V AC power to those panels.
+
+Sometime in the past the team determined a specific electrical panel breaker
+would cut power to those signals panels. That breaker was fine, so tracing
+begain in both directions: from that electrical panel breaker downstream
+and from signals panels upstream.
+
+There is a set of power outlets about 18 inches from panel A and, curiously,
+they are a completely separate circuit. They both enter into the same
+underground wiring vault adjacent to panel A but they are not connected.
+Those outlets have power and panel A does not.
+
+No power feed wires were found adjacent to signals panels B or C, either.
+
+The air compressor driving Disney crossing gates is on the same circuit as
+these three panels and has also lost power.
+
+Smith remembered that power fed in from a small wooden shack next to the
+Disney crossing air compressor. There is indeed an AC power wire in that shack
+but it's not connected to anything else and the shack is empty.
+
+One box west of the defect detector has a conduit going underground sweeping
+south. This was traced to a pair of 110V power outlets poking out of the ground
+in the middle of Inchberg. The wiring in this area is suspiciously complex
+for merely a power outlet.
+
+---
+
 ## Thursday 2026/5/7
 
 * 9.5 hours today, 33 hours this track year.
