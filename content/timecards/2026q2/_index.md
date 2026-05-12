@@ -5,6 +5,44 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Thursday 2026/5/7
+
+* 9.5 hours today, 33 hours this track year.
+
+Signals work day + Santa Fe Electric cleanup
+
+#### 8:30AM - 12:00PM (3.5 hours)
+
+Returned to panel L switch motor 1 (main/Akins) which I disconnected Sunday
+morning. We could reproduce the unreliable switching behavior that caused it
+to be disconnected. Not switching upon button press is merely annoying, but
+the loss of trust in a switch motor board means we can't be certain it won't
+switch underneath a passing train. A replacement motor control board was the
+solution for today.
+
+Resolving the immediate public ride impact issue allowed us to resume working
+on panel M and K so they can keep each other updated and turn signals yellow
+to warn of red block ahead under juristiction of an adjacent panel.
+
+#### 12:45PM - 4:00PM (3.25 hours)
+
+After a lunch helping us cool off from the heat, continued working on panel
+prep concluding with installing a new block detection board in panel L as a
+step towards consolidating space so there's room to support new block 13
+
+#### 4:00PM - 6:45PM (2.75 hours)
+
+After the signals crew dispersed, worked on Santa Fe Electric as my solo
+project. Wiped down all five bench cars, cleaning off majority of dust, dirt,
+and shoe scuff marks. There's one big blob of... bubble gum? I'll have to
+attack later with Goo-Gone or similar. Vacuumed off all the benches but
+they still look pretty ratty. LALS will need to reupholster these benches
+at some point. The caboose also got a wipe-down, though I stopped short of
+cleaning off the internal electronics equipment. I'll have to come back later
+to learn what they are before I touch them.
+
+---
+
 ## Monday 2026/5/4
 
 * 5.25 hours today, 23.5 hours this track year.
