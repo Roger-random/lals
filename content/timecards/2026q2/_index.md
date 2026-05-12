@@ -5,7 +5,67 @@ title = '2026 Q2 Timecards'
 
 ---
 
-## Thursday 2026/5/2
+## Sunday 2026/5/3
+
+* 11.75 hours today, 18.25 hours this track year.
+
+#### 8:00AM - 3:30PM (7.5 hours)
+
+My Sunday operations began with deactivating an unpredictable switch motor
+(L SM1 main/Akins) and scoping out new signals issues. Two side-by-side reds
+coming out of Davis mine/entering station that cleared up as weather warmed up
+and two side-by-side reds on McKelvey that stayed the entire day.
+
+Traced down another odd noise. Fortunately this one was not a piece of rail
+threatening to cause derailment, but a tall plant tapping against the underside
+of bench cars.
+
+It was an eventful day with high rail traffic and a few derailments. We had
+six locomotives on public ride operations though I don't think they were all
+running at the same time. The cloudy weather reduced the number of public ride
+passengers which was helpful because the operations crew were kept plenty busy
+learning how to operate with so many trains.
+
+My public ride operations day concluded with conductor duty for the last few
+public rides pulled by CN2002 and locking up west gate at the end.
+
+#### 3:30PM - 4:15PM (0.75 hours)
+
+Orientation and familiarization with engine CN2002, whose throttle control is
+very similiar to UP1989 but air brake control is different. There's an air
+pressure gauge but it is not easily visible to the engineer so I couldn't use
+the same techniques of watching pressure gauge. Alexander is trained enough to
+detect brake activation by feel alone, I'm not there yet. Should not run public
+ride operations until I do.
+After the familiarization lap, help put CN2002 away.
+
+#### 4:15PM - 7:45 (3.5 hours)
+
+Santa Fe Electric usually stays coupled to its own set of bench cars, which had
+proven trouble-free but today the last car derailed several times at the same
+location in Davis Mine when unloaded. Wheel gauge tests checked out clear, and
+all points of articulation are operable. (Though lubricated with graphite dry
+lube anyway.)
+
+It is easily reproducible at a specific location in Davis Mine, except at very
+low speeds. Nothing visually obvious stood out about that segment of track.
+It is the middle of the S-curve, so I took the train through both stations and
+their S-curves, no problem.
+
+During recertification day this set of cars were broken up to fit on steam bay
+rails, and there was no guaranetee they were put back together in the same
+order. As an experiment I moved the last car to the front, and the same car
+derails. So it's not some issue of certain bench cars not playing well with
+others. At least I can hear it happening more easily, and I don't have to walk
+as far to re-rail the bench car.
+
+I lost daylight before I could figure it out. Will have to resume later.
+
+All this practice means I'm getting really good at re-railing bench cars.
+
+---
+
+## Saturday 2026/5/2
 
 * 6.5 hours today, 6.5 hours this track year.
 
