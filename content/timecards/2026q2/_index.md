@@ -73,6 +73,10 @@ Chessie didn't look great sitting adjacent to clean and shiny Santa Fe Electric
 so I gave Chessie a cursory wipe-down while we wanted for EVL. It made a big
 difference but there are many places where I need to come back with cotton
 swabs for detail.
+Some EVL people came over to chat while I worked and one of them said Chessie
+is modeled after a
+[EMD SD50](https://en.wikipedia.org/wiki/EMD_SD50)
+locomotive.
 
 After EVL event I returned to signals work, pulling out a bag of zip-ties. I
 didn't like having the temporary extension cord strewn all over Bowlus siding
@@ -347,6 +351,14 @@ and for that purpose I brought Simple Green and switched over to some old
 terry cloth towels. Then for the operator's console, I tried some Barkeeper's
 Friend which helps but the amount of manual buffing I had to do implies I'm
 not using the right tool for the job.
+
+Chatting with Murphy who came over to see what I was doing, I also learned it
+was modeled after
+[EMD GP60 M](https://en.wikipedia.org/wiki/EMD_GP60)
+and there's even a very similar looking engine on that Wikipedia page wearing
+the same livery. However that was number 147 and this number 163 does not seem
+to correspond to a historically notable engine. Perhaps that number meant
+something to the club members who had built it, instead of an actual unit.
 
 ---
 
