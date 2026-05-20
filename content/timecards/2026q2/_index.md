@@ -24,15 +24,16 @@ old gray thing.
 Helped solve a Carolwood morning emergency: the souvenir hut has no power. They
 might have lost power the same time Inchberg (and panels A-C) did but nobody
 checked until today. Backtracking power wire we saw it was connected to our
-steam, which also had no power. As a workaround we found an outlet coming out of
-the ground next steam plant fence far side of Carolwood souvenir hut, and
-running an extension cord would have to suffice for today.
+steam plant, which also had no power. As a workaround we found an outlet
+coming out of the ground next steam plant fence far side of Carolwood souvenir
+hut, and running an extension cord would have to suffice for today. On the
+upside this gave me an opprtunity to meet more Carolwood people.
 
-SPSF conductor through lunch. After lunch break, was reassigned to lunch relief
-for Santa Fe Electric engineer Ronne. After Ronne came back online, I went to
-wash and dry dishes and cookware in the kitchen. Almost double the usual amount
-today because Disney Sunday meant a breakfast as well as lunch was prepared in
-the kitchen.
+SPSF conductor through lunch. After lunch break was reassigned to lunch relief
+for Ronne, Santa Fe Electric engineer. After Ronne came back online, I went to
+wash and dry dishes and cookware in the kitchen. Disney Sunday meant a
+breakfast as well as lunch was prepared in the kitchen so there was double the
+amount of stuff stacked in the sink.
 
 ---
 
