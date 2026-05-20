@@ -5,6 +5,190 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Sunday 2026/5/17
+
+* 10 hours today, 96.25 hours this track year.
+
+Disney Sunday operations crew
+
+#### 7:15AM - 5:15PM (10 hours)
+
+An equally long, but not as exhausting day, as public ride operations crew
+because it's fun to see happy faces of kids (and kids at heart) excited for
+train rides.
+
+Started with showing Carolwood Foundation crew how to lift the lid on the new
+air compressor barn Davis has built. It looks much better than the broken down
+old gray thing.
+
+Helped solve a Carolwood morning emergency: the souvenir hut has no power. They
+might have lost power the same time Inchberg (and panels A-C) did but nobody
+checked until today. Backtracking power wire we saw it was connected to our
+steam, which also had no power. As a workaround we found an outlet coming out of
+the ground next steam plant fence far side of Carolwood souvenir hut, and
+running an extension cord would have to suffice for today.
+
+SPSF conductor through lunch. After lunch break, was reassigned to lunch relief
+for Santa Fe Electric engineer Ronne. After Ronne came back online, I went to
+wash and dry dishes and cookware in the kitchen. Almost double the usual amount
+today because Disney Sunday meant a breakfast as well as lunch was prepared in
+the kitchen.
+
+---
+
+## Saturday 2026/5/16
+
+* 10 hours today, 86.25 hours this track year.
+
+A very long and tiring day on signals.
+
+#### 9:00AM - 12:00PM (3 hours)
+
+Drove into the parking lot to find Strawn and Brock already in conversation.
+Once the topic moved beyond where I can contribute, I drifted off to fix
+problems. Top of the list: KAA whose behavior changed yesterday. I found a
+wire loose near where I had been working, and a pretty obvious location for
+it to go back into, and it is in a chain of wires leading to KAA. That's all
+consistent! I put the wire into the obvious place and that appears to have
+restored KAA behavior.
+
+I was tracing through wires with a goal of fully understanding what's going
+on with KAA (why does it blink weirdly?) when I was called in to join a
+meeting talking about how to interface the new signal head driver boards
+with old Smith XO boards. I think I understand the concepts now, next up:
+hands-on to see if it works.
+
+#### 12:30PM - 7:30PM (7 hours)
+
+Williams arrived at lunchtime, and after food we started looking at power for
+panel C. Being a wise man, Williams did not blindly trust our work and asked
+to review the whole wiring run. Knowing we are human, I gladly welcome an
+experienced set of eyes and walked through our findings and execution of plan.
+
+Satisfied we're not a bunch of boneheads, Williams helped to disconnect the
+temporary extension cord workaround. Then he flipped the breaker and there was
+light. And no smoke or fire. We are happy.
+
+I had zip-tied the extension cord to adjacent chain-link fence to keep things
+tidy. Now I can cut those ties and coil the cord for storage in the tool car
+cabinet alongside appliance cord.
+
+Next headache: false red on EAA. Started with the usual suspects: bond wires
+and track resistors. Everything worked fine so it didn't make sense why there
+is a false detection. I replaced the detector board, and the "detect" LED is
+still on even though there's no fault and voltages are good. Spent several
+hours trying to backtrack through nonsensical situations until I started
+selectively disconnecting wires to isolate elements. This is when I discovered
+the "3-into-1" board managing merge priority is backfeeding voltage out of
+its input ports, which does things like lighting up a detect LED on a detector
+board even when there's no detection. That was a very misleading situation
+that wasted several hours.
+
+I disconnected power for 3-into-1 board so it could no longer actively feed
+back into the input signal network. We lose the priority referee but at least
+we have true red indicating occupied blocks instead of false reds.
+
+![3-into-1 board disconnected and labeled](./20260516_3_into_1_board_disconnected_due_to_backfeeding.jpg)
+
+#### 7:30PM Playtime (No club hours)
+
+Fortunately the Russos were visiting and it's always uplifting to chat with
+fellow train fans. Gave them a train ride, because why not, and told them
+about Disney Sunday tomorrow.
+
+---
+
+## Friday 2026/5/15
+
+* 8.5 hours today, 76.25 hours this track year.
+
+Signals panel K and others.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Started the day by fixing the Phil West transfer table. The chain has been
+popping off and the easiest thing to try first is making sure all chain
+sprokets are coplanar. Somehow the topmost sproket has migrated almost two
+inches and that could not have helped. Helped De Philip pound that thing
+back into proper place.
+
+Picked up where we left off before power crapped out: completing wiring for
+panel I-M-K communication. Now short trains won't get lost by the signals
+system and potentially causing a false green.
+
+Strawn and Harper investigated pulling fresh wire to KD to address a failed
+wire, which has been swapped around so we sacrificed yellow. This will be a
+bigger job than originally expected. New signal wire that would have supported
+KD yellow remains unconnected until we can actually light KD yellow again.
+
+#### 12:30PM - 5:00PM (4.5 hours)
+
+While Strawn and Harper investigated running new wires for JFA (which has a
+dead wire problem similiar to KD) I went over to panel J for another item
+that's been sitting on the to-do list: get data on how switch motor board
+rev. D interacts with panel J. Voltage and current of unconnected wires were
+unremarkable. In comparison, oscilloscope trace was very interesting. The motor
+received voltage to flip in the correct direction, but only for less than ten
+milliseconds, before power polarity flipped again. This explains why we could
+sometimes see a tiny twitch when the rail switch failes to flip.
+
+![Oscilloscope trace for motor polarity flip](./20260515_switch_motor_board_fast_polarity_flip_on_oscilloscope.jpg)
+
+Took an evaluation lap around the layout afterwards looking for problems. Saw
+a new one: KAA isn't turning red like it used to (weirdly blinky but still
+red) when train entered the block. Crap, I might have broken something and
+will need to get back to it tomorrow morning.
+
+---
+
+## Thursday 2026/5/14
+
+* 7.75 hours today, 67.75 hours this track year.
+
+Signals panel C new power conduit
+
+#### 7:45AM - 12:30PM (4.75 hours)
+
+Started the day by turning on signals to see if we have dual side-by-side
+false reds on both quad-head coming down Davis and triple-head entering
+station. Good news: it's there! Opened up panel C and found another
+infamous touch-sensitive block detector boards. Likely bad solder joint
+which can also misbehave based on temperature.
+
+One half of this board was responsible for a block on main inner loop, and
+the other half a block on main outer loop. So when it faults, it causes
+false reds on both inner loop (quad) and outer loop (triple) signals.
+
+The perforated prototype board cracked apart at mount when pulled, slicing
+my finger open in the process. That's a bit of extra excitement I did not
+need.
+
+![Intermittent fault block detector replaced](./20260514_intermittent_faulting_block_detector.jpg)
+
+I started troubleshooting a signal that was showing both red and green
+simultaneously which it should never do. I got as far as knowing both panels
+B and C are involved before I was summoned to help with the new power
+conduit project. This faulting signal is lower priority for now as it is for
+the opposite direction.
+
+![Simultaneous red and gree](./20260514_simultaneous_red_and_green_signals.jpg)
+
+Got as far as we could on the conduit project and built a Home Depot shopping
+list for what we still need. Combine shopping run with lunch.
+
+![Panel C power conduit trench](./20260514_panel_c_power_trench.jpg)
+
+#### 1:30PM - 4:30PM (3 hours)
+
+Finish up the power conduit project then run a trio of wires through the fresh
+conduit. They are not connected at either end, that'll be done by people who
+know what they're doing with 120V AC.
+
+Fill the trench back in and clean dirt from track so it almost looks like we
+were never here.
+
+---
+
 ## Sunday 2026/5/10
 
 * 8.5 hours today, 60 hours this track year
