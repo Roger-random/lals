@@ -5,11 +5,53 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Sunday 2026/5/31
+
+* 10.5 hours today, 147.25 hours this track year.
+
+Sunday crew + SFE
+
+#### 7:30AM - 4:00PM (8.5 hours)
+
+Sunday morning setup work including a signals verification run and monthly
+check of fire extinguisher gauge needle in green. (It's close enough to
+June.)
+
+Three trains were set up to run public ride operations, so Alexander and I
+decided to help the club live up to its name by firing up his live steam
+locomotive. The steam and smoke is a delight to our guests. Alexander ran
+his engine and I help do things like flipping rail switches ahead and
+behind him to minimize disruption to Sunday ride operations.
+
+#### 4:00PM - 6:00PM (2 hours)
+
+After Sunday ride concluded and everything was put away, Alexander helped
+me dig into Santa Fe 163 electric locomotive as the maintenance bay hoist
+track is now available. The fan is a
+[Comair Rotron PT2B3](https://www.comairrotron.com/uploads/pdf/Patriot%20AC/19028254A-02-PT2B3.pdf)
+and
+[Digi-Key sells a direct replacement](https://www.digikey.com/en/products/detail/comair-rotron/19028254A/10786).
+I'm sure compatible alternatives exist but until I have a better feel of what's
+going on I'm going for the safety of an identical unit.
+
+As a practice dry run for fan replacement, we determined the fan grill will
+need to be removed. We were amazed those tiny little hex heads are real
+fasteners, and they are as much of a pain in the butt as we were afraid they
+would be. Looks like one snapped off sometime in the past and someone glued it
+back on. The other pain in the butt will be the power wires, as the small
+spade connectors are right next to one of the nylon lock nuts holding the fan
+in place.
+
+Do I remove the nylon locknut first or the spade power wire connectors? That
+will be a difficult decision I'd need to make when the replacement arrives.
+
+---
+
 ## Saturday 2026/5/30
 
 * 8 hours today, 136.75 hours this track year.
 
-Train crew for club sanctioned event w/ASEPO train crew, etc.
+Train crew for club sanctioned event w/ASEPO train crew + signals + SFE.
 
 #### 9:00AM - 5:00PM (8 hours)
 
