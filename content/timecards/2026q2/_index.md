@@ -5,6 +5,34 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Thursday 2026/5/28
+
+* 7 hours today, 122.25 hours this track year.
+
+Signals work early + late, with a play break in between.
+
+#### 8:00AM - 11:00AM (3 hours)
+
+Prepare panel M for ESP32 microcontroller brain upgrade.
+
+#### Play break!
+
+Cammarata's Gold Rusher
+
+#### 3:30PM - 7:30PM (4 hours)
+
+Finish up first statge of panel M prep, then moved on to panel J for more
+debugging on switch motor board. Caught oscilloscope traces that it can flip
+polarity not just once but multiple times, and caught scope trace that panel
+voltage sags down to as low as ~6V for a few milliseconds.
+
+Swapped green and yellow wires for JH, sacrificing yellow so we have green.
+
+Performed a quick test loop running in July-Dec direction. Cautiously
+encouraged by mostly functional signals.
+
+---
+
 ## Tuesday 2026/5/26
 
 * 6 hours today, 115.25 hours this track year.
