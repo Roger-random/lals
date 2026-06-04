@@ -34,6 +34,14 @@ and
 I'm sure compatible alternatives exist but until I have a better feel of what's
 going on I'm going for the safety of an identical unit.
 
+One new discovery today: since the fan no longer has control over its
+initial startup, it might end up spinning in either direction depending
+on the gust of wind (or flick of the finger) that started it. When it is
+running in the designed direction, it moves a lot of air with impressively
+little noise. When it is spinning the wrong way, that's when it howls like
+a banshee. A loud fan had been noted as a problem weeks ago, so this has been
+a problem for quite some time. Glad there's an actual explanation now.
+
 As a practice dry run for fan replacement, we determined the fan grill will
 need to be removed. We were amazed those tiny little hex heads are real
 fasteners, and they are as much of a pain in the butt as we were afraid they
