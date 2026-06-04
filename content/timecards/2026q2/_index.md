@@ -5,6 +5,105 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Tuesday 2026/5/26
+
+* 6 hours today, 115.25 hours this track year.
+
+Santa Fe Electric orientation with Burden, get to work.
+
+#### 2:00PM - 8:00PM (6 hours)
+
+Now that fun time is over, it's back to work. Burden still have a few vacation
+days left so I grabbed a time slot to go over what to do with the club-owned
+Santa Fe 163 electric locomotive. Covered basics like how to properly remove
+the cover and battery water top-off procedure, and some recent history project
+to-do like a new fuse holder that fits in with the existing ones.
+
+Once our meeting was over, I got to work. First wiped down dust and battery
+acid seepage, then start tracing wires. I found no thermal switch for the
+ventilation fan, and I found disconnected wires where the axle reed switch was
+indicated on the schematic. More mysteries for later.
+
+---
+
+## Monday 2026/5/25
+
+* 5.5 hours today, 109.25 hours this track year.
+
+Infrastructure crew back at work + cleanup.
+
+#### 11:00AM - 4:30PM (5.5 hours)
+
+Help Harper with siding work moving some track panels around.
+
+Trim some trees whose low-hanging branches are hitting guests in the face.
+
+Fire extinguisher wrangler for green container cleanup. Three extinguishers
+were dug up in the debris. One looks like a tiny plastic toy, none of them
+have been certified.
+
+General party cleanup. Emptying garbage cans, etc.
+
+---
+
+## Sunday 2026/5/24
+
+* 2 hours today, 103.75 hours this track year.
+
+Gate duty
+
+#### 9:00AM - 11:00AM (2 hours)
+
+Front gate duty with Naimy and Famolore
+
+---
+
+## Saturday 2026/5/23
+
+* 1.5 hours today, 101.75 hours this track year.
+
+Spring meet official club duties
+
+#### 1:30PM - 3:00PM (1.5 hours)
+
+Conductor for special thank-you train ride for middle school band playing at
+our memorial ceremony, on top of assisting Walker and Tucker running that
+event.
+
+---
+
+## Wednesday 2026/5/20
+
+* 4 hours today, 100.25 hours this track year.
+
+Final prep before spring meet
+
+#### 3:00PM - 6:00PM (3 hours)
+
+Took a lap around most of the layout, not just our Sunday public routes
+because Spring Meet guests will be using the full thing. Valley division as
+well as highline, mountain division as well as Disney loop. Ignoring the known
+standing issues, all signals look good and all switches functional.
+
+After a few minor repairs, it's pencils down time for signals team! Trains will
+start running soon and we aren't going to risk making anything worse by making
+haphazard repairs in the middle of the meet. All signals cabinets will remain
+locked until at least Monday afternoon.
+
+Campers starting to set up tent. While the club officially didn't promise power
+hookup, some people have a medical need. (CPAP machine.) Pulled out extension
+cords so people could route around our failed 110V AC power sources.
+
+#### 8:00PM - 9:00PM (1 hour)
+
+After spending some time socializing and admiring incoming equipment, resumed
+being club staff hosting our guests. Helped with a few last-minute repairs with
+stuff found in the work car, and used the center cab work train as yard
+switcher to move some passenger cars into the pit while their steam locomotives
+are moved onto a steaming bay to be fired up later.
+
+---
+
 ## Sunday 2026/5/17
 
 * 10 hours today, 96.25 hours this track year.
