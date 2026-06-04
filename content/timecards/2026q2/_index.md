@@ -5,6 +5,26 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Friday 2026/5/29
+
+* 6.5 hours today, 128.75 hours this track year.
+
+Signals work day
+
+#### 8:00AM - 12:30PM (4.5 hours)
+
+Finish what we started yesterday with panel M upgrade to microcontroller brain.
+By lunchtime we have replicated existing functionality that was previously done
+with hard wiring, but now software control will allow future complexity.
+
+#### 1:30PM - 3:30PM (2 hours)
+
+Once the brain was up and running, we wired up communication from panel K to
+panel M so signals can finally properly turn yellow in response to following
+signal being red. Something it couldn't do before.
+
+---
+
 ## Thursday 2026/5/28
 
 * 7 hours today, 122.25 hours this track year.
