@@ -5,6 +5,44 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Saturday 2026/5/30
+
+* 8 hours today, 136.75 hours this track year.
+
+Train crew for club sanctioned event w/ASEPO train crew, etc.
+
+#### 9:00AM - 5:00PM (8 hours)
+
+Some members of LALS are also members of ASEPO, the Alliance of Special
+Effects & Porytechnic Operators, so they're hosting a party here. This is a
+club sactioned event so Strawn and I prepped the Santa Fe Electric to ensure
+there's a train ride available if anyone wants one. This turned out not to be
+a critical problem as Morris and Baker also brought out their trains so there
+was enough capacity.
+
+Given there was enough capacity, when intermittent false red on KAA cropped up,
+we jumped on it with tools and instruments. Diagnosis: false detection due to
+guard rails on O'Brien-Moore Bridge, installed just before Spring Meet. They
+conducted electricity across multiple detection blocks, confusing the circuit
+board into thinking there was a train on the bridge. This intermittent false
+red was a problem during the meet as well so it's nice to have an explanation.
+
+After we had an explanation, the issue was filed away for a future signals work
+day and we went back to giving train rides. I noticed Santa Fe Electric's fan
+was acting up again.
+
+After the party wrapped up I started probing fan wiring. 120V AC throughout
+the circuit. Given there was power, it occurred to me to check the fan itself
+and that's the problem: it could no longer spin from a dead stop by itself, so
+even though it receives power it couldn't do its job unless an opportune
+gust of wind started it turning.
+
+I wanted to pull the cover off again so I could read specifications and start
+researching a replacement fan, but the maintenance bay track was occupied and
+I will have to wait.
+
+---
+
 ## Friday 2026/5/29
 
 * 6.5 hours today, 128.75 hours this track year.
