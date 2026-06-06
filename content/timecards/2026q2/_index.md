@@ -5,6 +5,51 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Thursday 2026/6/4
+
+* 11.5 hours today, 158.75 hours this track year.
+
+Major rework for signals panel K
+
+#### 7:30AM - 12:30PM (5 hours)
+
+Strawn has been working up to this point for quite a while with extensive
+planning and preparation, and today is go time. Signals panel K upgrade
+from relay logic to microcontroller software defined logic. This will be
+a long work day.
+
+Power management and switch motor control board remains in place.
+
+Train presence detection circuits were upgraded beforehand.
+
+Everything else was removed and holes drilled in the backplane to
+accommodate an ESP32 microcontroller board, buck converter to power that
+board, I/O boards to communicate with that board, and new signal head driver
+boards to illuminate lights based on software in that board.
+
+Connecting them all were wires. Lots and lots of wires.
+
+#### 1:00PM - 7:30PM (6.5 hours)
+
+After a quick lunch (short on time! get back to work!) we worked through
+getting all internals reconnected and functional. We also got about a third
+of boundary conditions communication with adjacent panels by the time the team
+ran out of time today.
+
+Some minor wiring issues were found and fixed in the verification and testing
+phase, like switch motor polarity needed to be flipped so its power on default
+state is mainline instead of diverging.
+
+A long standing mystery was solved today: that dimmer switch in panel K, which
+is drawing power but not connected to any signals logic, was for the covered
+bridge interior lights. Now we know, and I've labeled it accordingly.
+
+Went down to panel J to reconnect rail switch position sensing wiring for JF.
+Got most of the way there but didn't have the proper crimped connector to
+reconnect to micro switch spade connectors. Will have to finish this later.
+
+---
+
 ## Sunday 2026/5/31
 
 * 10.5 hours today, 147.25 hours this track year.
