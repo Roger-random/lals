@@ -235,7 +235,7 @@ Gate duty
 
 #### 9:00AM - 11:00AM (2 hours)
 
-Front gate duty with Naimy and Famolore
+Front gate duty with Naimy and Famolare
 
 ---
 
