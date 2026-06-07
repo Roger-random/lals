@@ -14,12 +14,13 @@ Santa Fe 163 electric locomotive maintenance.
 #### 9:15AM - 3:45PM (6.5 hours)
 
 Replaced dying fan with a new Comair Rotron PT2B3 purchased from Digi-Key.
-The fan is secured with four flat-head screws with 5/16" nylon lock nuts
-underneath. The height of the body meant it is nearly impossible for me to
-hold both a wrench inside and screwdriver outside to tighten this myself. This
-really needed two people. Recruited Kallgren to help remove old fan and
-Famolare to help install the new one. The electrical connectors were no
-cakewalk, either, but at least I could do them on my own given enough time.
+The fan is secured with four flat-head Philips screws with 5/16" nylon lock
+nuts underneath. Engine 163 body height meant it is nearly impossible for me
+to hold a wrench inside and screwdriver outside simultaneously myself. This
+task needed two people, one inside and one outside. Recruited Kallgren to help
+remove old fan and Famolare to help install the new one. The electrical
+connectors were no cakewalk, either, but at least I could do them on my own
+given enough time.
 
 ![SF163 fan replacement](./20260606_sfe_fan_replacement.jpg)
 
@@ -31,25 +32,27 @@ wrench to turn those tiny bolts. Now it is a real fastener again.
 
 ![SF163 cosmetic fan cover collapsed](./20260606_sfe_cosmetic_fan_grate_collapsed.jpg)
 
-Once 163 had a functional fan again, I proceeded with two cosmetic repairs.
-The first was to reinstall the collapsed grate over the center of three false
+Once 163 had a functional fan, I proceeded with two cosmetic repairs.
+The first was to reinstall the collapsed grate over the middle of three false
 fan exhausts at the rear of the locomotive. PB Blaster and judicious use of
 the 1/8" socket allowed removing tiny fasteners without damage. Looks like
 the grate was held with epoxy or similiar material that has since become
-brittle and cracked. There's enough in there for me to snap the grate back
-into place but if this happens 2-3 more times there won't be enough of the
-brittle stuff left to keep the grate up. Then I will have to decide on an
-adhesive or something but that is a concern for the future.
+brittle and cracked. There's enough remaining inside for me to mechanically
+snap the grate back into place but if this happens 2-3 more times there won't
+be enough of the brittle stuff left to keep the grate up. Then I will have to
+decide on an adhesive or something but that is a concern for later.
+Fortunately I have an adhesive repair test run already lined up for that
+possibility.
 
 ![SF163 cab window gaffer tape didn't hold](./20260606_sfe_cab_window_gaffer_tape_did_not_work.jpg)
 
-After that I started looking at one of the cab windows that had fallen.
-Somebody tried to tape the window back up with gaffer's tape but that did not
-hold forever. Upon Burden's suggestion I bought a tube of RTV silicone for
-this job. I bought the clear colored type in case it bled outside but
-fortunately I managed to avoid that. This stuff takes an hour to cure. In
-hindsight I should have done this first and let it cure while I worked on
-other problems. Oh well.
+One of the cab windows that had fallen. Somebody tried to tape the window back
+up with gaffer's tape but that did not hold for long. Upon Burden's suggestion
+I bought a tube of RTV silicone for this job. I bought the clear colored type
+in case it bled outside but fortunately I managed to avoid that. This stuff
+takes an hour to cure. In hindsight I should have done this first and let it
+cure while I worked on other problems. Oh well. If this works out I may use it
+to repair the center false fan grate above.
 
 Met [Dolce Wang](https://www.instagram.com/dolcewang/) on the way out.
 
