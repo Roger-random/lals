@@ -5,6 +5,41 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Sunday 2026/6/7
+
+* 7.5 hours today, 172.75 hours this track year.
+
+Sunday public ride operations crew.
+
+#### 8:00AM - 3:30PM (7.5 hours)
+
+Prepped CN2002 for sunday rides: brought it out of the barn, connected dark
+green bench car set, performed most checks. Had to wait for Alexander to arrive
+with air compressor battery before test lap could take place. During test lap
+all signals looked good for public ride operations.
+
+Ronne brought a nifty rail gauge tool. It will be on loan to LALS for a while
+under care of Nelson for track evaluation.
+
+Tried 3D-printed bar to see if it'd make SF163 pedal less annoying to use.
+Ronne did not care for it, and that's enough to end the project here. Glad a
+cheap and simple 3D printed part was enough to get an answer.
+
+Conducted for CN2002 for most of the day. Strawn substituted one run so I could
+update Burden and Kristman on Santa Fe 163 status. Lunch break was overly late
+and my body crashed hard. Recovered after I got some food but let's not do that
+again.
+
+CN2002 had a weird buckling problem that justified a trip into the maintenance
+bay. Prime suspect is the rear truck cotter pin chattering against rear mid
+axle. Replacement pin now sits at a different position, see if that is better.
+
+Went to refuel at the end of the day and oops the fuel pump is dead. My mistake
+in the morning forgetting to turn the switch back to "Off" and now I owe
+Alexander a replacement fuel pump.
+
+---
+
 ## Saturday 2026/6/6
 
 * 6.5 hours today, 165.25 hours this track year.
