@@ -37,7 +37,7 @@ upgrade for J would have to wait as well.
 This whole episode could have been avoided if we used components that had any
 kind of QA process and plenty of spares for easy direct replacement if they
 fail. The reason we don't have that are not technical, they are people, and
-those people weren't here dealing with the consequences of their decisions.
+those people weren't here facing the consequences of their decisions.
 
 ---
 
@@ -53,7 +53,7 @@ Started the morning by finishing rail switch position sensor for JF. Now the
 signal head correctly shows red over yellow for diverging switch. Then to
 panel K to continue wiring up some of the cross-panel status wires that mostly
 serve to turn signals yellow when the next one is red. Strawn and Harper moved
-KB from inside to outside O'Brien-Moore Bridge while I worked on wires.
+signal KB from inside to outside O'Brien-Moore Bridge while I worked on wires.
 
 #### 2:15PM - 8:15PM (6 hours)
 
@@ -72,10 +72,10 @@ through and a project for later.
 
 The worst news: I installed new power boards in K and S, and the new board
 for K was defective. Panel K stopped working and a frantic debugging session
-ensued. Just before daylight the cause was pinpointed to a bad solder joint on
-the new power board, so one of the ground terminals weren't connected to
-ground. Lacking a proper ground, 15.6V DC found their own way to ground through
-I2C components expecting 3.3V DC and that's why they fried.
+ensued. Just before we lost daylight the cause was pinpointed to a bad solder
+joint on the new power board, so one of the ground terminals weren't connected
+to ground. Lacking a proper ground, 15.6V DC found their own way to ground
+through I2C components expecting 3.3V DC and that's very bad for their health.
 
 ![Bad solder joint on ground terminal](./20260608_bad_solder_joint.jpg)
 
