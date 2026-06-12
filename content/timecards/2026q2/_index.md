@@ -5,6 +5,51 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Monday 2026/6/8
+
+* 11 hours today, 183.75 hours this track year.
+
+Signals work - one step forward, two steps back.
+
+#### 8:15AM - 1:15PM (5 hours)
+
+Started the morning by finishing rail switch position sensor for JF. Now the
+signal head correctly shows red over yellow for diverging switch. Then to
+panel K to continue wiring up some of the cross-panel status wires that mostly
+serve to turn signals yellow when the next one is red. Strawn and Harper moved
+KB from inside to outside O'Brien-Moore Bridge while I worked on wires.
+
+#### 2:15PM - 8:15PM (6 hours)
+
+After lunch I finished up connected the known wires followed by a few tests to
+verify they were connected. Easy part was over! Now we need to find the wires
+that we know should exist but they were not labeled so we don't know which ones
+they are. Some annoying wire tracing followed.
+
+The good news: it looks like we have five unused wires running between K and
+L available for future plans like LB13.
+
+The bad news: switch 3 wires weren't what we thought they were. Wire color and
+thickness at the switch doesn't match anything coming into the panel, so there
+is a wire joint somewhere. That's going to be even more annoying to trace
+through and a project for later.
+
+The worst news: I installed new power boards in K and S, and the new board
+for K was defective. Panel K stopped working and a frantic debugging session
+ensued. Just before daylight the cause was pinpointed to a bad solder joint on
+the new power board, so one of the ground terminals weren't connected to
+ground. Lacking a proper ground, 15.6V DC found their own way to ground through
+I2C components expecting 3.3V DC and that's why they fried.
+
+![Bad solder joint on ground terminal](./20260608_bad_solder_joint.jpg)
+
+It's bad enough that I had to carefully read inconsistent terminal labels, am
+I expected to verify every solder joint as well? This is unreasonable.
+
+![Inconsistent terminal positions](./20260608_inconsistent_terminals.jpg)
+
+---
+
 ## Sunday 2026/6/7
 
 * 7.5 hours today, 172.75 hours this track year.
@@ -36,7 +81,8 @@ axle. Replacement pin now sits at a different position, see if that is better.
 
 Went to refuel at the end of the day and oops the fuel pump is dead. My mistake
 in the morning forgetting to turn the switch back to "Off" and now I owe
-Alexander a replacement fuel pump.
+Alexander a replacement fuel pump. (UPDATE: Strawn said he did it which
+would explain why I didn't remember making that mistake at all.)
 
 ---
 
