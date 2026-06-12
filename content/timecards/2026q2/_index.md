@@ -5,6 +5,42 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Tuesday 2026/6/9
+
+* 4.5 hours today, 188.25 hours this track year.
+
+Emergency panel K rescue
+
+#### 7:45AM - 12:15PM (4.5 hours)
+
+Morning started with a quick Finch assignment to cut away busted old handle
+covers on the Phil West transfer table as part of preparation for painting.
+
+![Cut off covers from transfer table](./20260609_phil_west_transfer_table_old_handles.jpg)
+
+Then it was time for the unpleasant stuff.
+
+In order to repair panel K, I was given the ESP32 brain and I/O boards that
+were slated for panel J. The I/O boards weren't identical so the ESP32 code
+had to face some ugly hacks in order to perform today's emergency rescue.
+Doing this on my laptop sitting next to panel K under the scorching sun
+squinting to read the screen was a 0/5 star experience. Would not recommend.
+
+I got K back up to feature parity with where it was before I installed the
+defective power board, but the older rev. C boards didn't have input capability
+which means some of the future to-do items for K would have to wait until we
+get more rev. E boards to replace those that got fried.
+
+Since this replacement hardware was originally slated for panel J, the ESP32
+upgrade for J would have to wait as well.
+
+This whole episode could have been avoided if we used components that had any
+kind of QA process and plenty of spares for easy direct replacement if they
+fail. The reason we don't have that are not technical, they are people, and
+those people weren't here dealing with the consequences of their decisions.
+
+---
+
 ## Monday 2026/6/8
 
 * 11 hours today, 183.75 hours this track year.
