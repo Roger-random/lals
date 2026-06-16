@@ -5,6 +5,53 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Saturday 2026/6/13
+
+* 10 hours today, 198.25 hours this track year.
+
+Steaming bay bench refinishing begins
+
+#### 8:15AM - 12:00PM (3.75 hours)
+
+Started the day with a signals team discussion on how we can move forward.
+The current approach is not trending in a good direction. A crisis point still
+feels inevitable. Despite all our efforts we've only slowed the slope of
+descent moving the crash site downrange. We need to find a way to gain
+altitude again and there's no obvious way to do so.
+
+After an unsatisfying session I changed gears to something with better odds of
+success: stripping off old cracking paint from steam bay benches and try to
+refinish them.
+
+Starting with the same paint & rust removal angle grinder wheel I used for
+earlier rust removal projects.
+
+![Starting to strip first bench](./20260613_bench_1_start.jpg)
+
+I took the first bench down to bare wood.
+
+![First bench now bare wood](./20260613_bench_1_bare.jpg)
+
+Then put on a few coats of primer.
+
+![First bench primed](./20260613_bench_1_primed.jpg)
+
+Let the primer dry over lunch and evaluate afterwards.
+
+#### 1:00PM - 7:15PM (6.25 hours)
+
+After lunch the primer seemed to have cured and it looks good. Encouraged
+by this success I tackled three more benches. Another one with the plank
+in good shape, and two others in marginal condition. All taken down to
+bare wood and primed.
+
+I am not optimistic about the two marginal planks, but they got primed as
+well because I wanted to see if the primer is good enough to cover the
+cracked and rotted areas. The result: they are not. I'm not going to prime
+any more benches that show large cracks or rot after paint removal.
+
+---
+
 ## Tuesday 2026/6/9
 
 * 4.5 hours today, 188.25 hours this track year.
