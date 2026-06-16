@@ -9,14 +9,15 @@ title = '2026 Q2 Timecards'
 
 * 8.25 hours today, 206.5 hours this track year.
 
-Sunday public ride staff
+Sunday public rides crew
 
 #### 7:45AM - 4:00PM (8.25 hours)
 
 Started the day by checking how the primed wood held up to overnight dew. I
 can see where water has pooled on some of the lower areas. I should paint over
-them soon (instructions say within 7 days) and not leave the primer for more
-than a few hours (instructions say at least one) before painting top coat.
+them soon (instructions say within 7 days) and in the future I should not leave
+the primer for more than a few hours (instructions say at least one) before
+painting top coat.
 
 Pulled CN2002 out of Phil West barn and connected it up to a set of bench cars.
 Alexander arrived with replacement fuel pump and proceeded with installation.
@@ -46,7 +47,7 @@ to be level with the ground. Might still be good enough to learn on. I tried a
 bit and got a few inches at a time but I'm not putting any serious effort into
 it until I can find my old rollerblade protective gear.
 
-Alexander brought out his Serious Business unicycle and showed how it should
+Alexander brought out his Serious Business unicycle to showed how one should
 behave. And pulled out his one wheel as well because why not. Calimbahin got
 started on the one wheel and made impressive progress for a first session.
 Certainly better than what I've done on my unicycle.
@@ -62,9 +63,9 @@ Steaming bay bench refinishing begins
 #### 8:15AM - 12:00PM (3.75 hours)
 
 Started the day with a signals team discussion on how we can move forward.
-The current approach is not trending in a good direction. A crisis point still
+The current approach is trending generally downward. A crisis point still
 feels inevitable. Despite all our efforts we've only slowed the slope of
-descent moving the crash site downrange. We need to find a way to gain
+descent moving the crash site further downrange. We need to find a way to gain
 altitude again and there's no obvious way to do so.
 
 After an unsatisfying session I changed gears to something with better odds of
