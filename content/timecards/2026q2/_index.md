@@ -5,6 +5,54 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Sunday 2026/6/14
+
+* 8.25 hours today, 206.5 hours this track year.
+
+Sunday public ride staff
+
+#### 7:45AM - 4:00PM (8.25 hours)
+
+Started the day by checking how the primed wood held up to overnight dew. I
+can see where water has pooled on some of the lower areas. I should paint over
+them soon (instructions say within 7 days) and not leave the primer for more
+than a few hours (instructions say at least one) before painting top coat.
+
+Pulled CN2002 out of Phil West barn and connected it up to a set of bench cars.
+Alexander arrived with replacement fuel pump and proceeded with installation.
+I helped data gathering for upcoming "musical trains" storage shed move.
+
+Conducted for CN2002 pulling public rides for the whole day, minus the lunch
+break I'm a little more assertive about today.
+
+After the last public ride train I asked to take CN2002 on a lap around the
+public loop. I've gained more confidence with the unique air brake system
+and getting close to the point where I feel comfortable running a public ride
+with this locomotive.
+
+Alexander was one of the first beneficiaries of this morning's research,
+getting to move from a third-level to second-level track.
+
+Defect detector power was restored for reprogramming by Perez. In theory it
+should now power up on channel 4. If it starts interfering with channel 1 I'm
+cutting power again.
+
+#### Fun time
+
+After train time was done, I asked Alexander to evaluate my thrift store
+electric unicycle. It appears to be large functional but have some definite
+problems that resulted in a tilted neutral position when pedals are supposed
+to be level with the ground. Might still be good enough to learn on. I tried a
+bit and got a few inches at a time but I'm not putting any serious effort into
+it until I can find my old rollerblade protective gear.
+
+Alexander brought out his Serious Business unicycle and showed how it should
+behave. And pulled out his one wheel as well because why not. Calimbahin got
+started on the one wheel and made impressive progress for a first session.
+Certainly better than what I've done on my unicycle.
+
+---
+
 ## Saturday 2026/6/13
 
 * 10 hours today, 198.25 hours this track year.
