@@ -5,6 +5,45 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Wednesday 2026/6/17
+
+* 11.5 hours today, 218 hours this track year.
+
+Non-signals maintenance: leaves, benches, train relocation
+
+#### 7:45AM - 10:30AM (3.75 hours)
+
+Found Clouse available as extra pair of hands so recruited into some leaf
+cleanup in the Bagley area. Since this is definitely official club work it was
+also an opportunity to give Clouse an orientation in running the center cab
+work locomotive.
+
+#### 10:30AM - 1:15PM (1.75 hours)
+
+After Clouse left I switched to my original goal: more steaming bay bench paint
+removal using angle grinder with paint/rust removal wheel.
+
+#### 2:15PM - 5:15PM (3 hours)
+
+Continued paint removal after lunch until I learned it was time to move Strawn
+train to a new track.
+
+#### 5:15PM - 8:15PM (3 hours)
+
+Moved Strawn train out of old track and stage it in the designated order for
+backing into new track. Because the new track is shorter, three of the cars
+have to sit separately in the pit until other track moves are complete.
+
+Logistics of the move were mildly complicated by somebody enjoying dinner
+and I didn't want to interrupt them. Or more accurately, I didn't want to
+spook them into leaving their catch behind because I didn't want to clean it
+up. About a half hour later, they took the leftovers home with them leaving
+only a few tufts of fur to mark the picnic site. I appreciate their tidiness.
+
+![Bird of prey with remanants of prey](./20260617_bird_of_prey.jpg)
+
+---
+
 ## Sunday 2026/6/14
 
 * 8.25 hours today, 206.5 hours this track year.
