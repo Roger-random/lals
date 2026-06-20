@@ -5,11 +5,78 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Thursday 2026/6/18
+
+* 9.5 hours today, 227.5 hours this track year.
+
+Signals work day followed by more bench plank paint removal.
+
+#### 8:45AM - 12:15PM (3.5 hours)
+
+Started the day scratching our heads trying to understand the unexpected
+interaction between panels I, K, and M. A train wheel rolling past the point
+where KB4 and MB1 meet can briefly conduct electricity across those two
+panels' electrical systems. Which then somehow affects the panel M NT block
+adjacent to IB11, dropping its voltage between rails down to about 3.8V,
+which is below detection range but not what a real train would do. This
+false detection on IB11 triggered the false reds on II and IG.
+
+No plausible explanation on how this happens but the discovery is enough to
+formulate a short term workaround: Disconnect NT block wires from the NT board
+in panel M, removing one element of the electrical path. This is acceptable
+for Sunday public rides with the rest of the work to be done later. It is
+possibly related to the fact power boards for K and S have both failed closed
+again, staying on 24x7, less than two weeks after they've been replaced.
+
+I think there's something going with the NT circuit. These are 12V DC relays
+and we're running at least 13-15V DC through it in the typical case. If panel
+M NT was doing something weird, K and S are two of the closest panels to
+suffer electrical consequnces.
+
+Looking at the situation in panel S, Strawn gave the dark NT board a flick and
+it came back to life. Wow seriously? Thinking maybe it'll stay on, we closed
+up the panel and that was enough of a jolt for it to die again. Bah. Replacing
+it with another NT board was straightforward, but the replacement failed to
+put power on NT circuit. Few minutes of probing found a loose solder joint.
+I have a soldering iron but not immediately at hand. Good time to break
+for lunch.
+
+#### 1:30PM - 4:30PM (3 hours)
+
+After lunch resoldering the loose NT board wire restored functionality. We then
+moved on to panel J where Strawn could get up to speed on what I've done with
+the switch motor board. On the way out we looked at one thing I noticed
+earlier: some signals seem to turn from red to green quicker than they should.
+Found panel J diode 12 to have failed open circuit and re-routed it to diode
+29.
+
+With that small win under our belt we reversed directions to evaluate track
+situation for upcoming direction switch on July 1st. The good news is nothing
+is fundamentally broken, the bad news is we do have a list of stuff to sort
+through some with Sunday run impact. I was afraid we would discover an entire
+section of the layout to be dark or something nasty, so this is good news.
+
+#### 4:30PM - 7:30PM (3 hours)
+
+After Strawn left I evalauted reverse direction in Valley division and Disney
+loop. A few notes, nothing too major. Tried to fix a few noted issues and found
+them working correctly. Intermittent issues, my favorite!
+
+After parking the Strawn engine in new track (so much easier now) went back to
+steaming bay benches and took paint off another plank. I started with the
+bottom of the plank and a more aggressive wire brush wheel and found the wheel
+lacking. It took too much of the soft wood off, and at the same time, wasn't
+aggressive enough at taking off thicker bits of paint. The uneven behavior left
+a very rough finish. I switched back to the Merryland discs which are slower
+but more consistent and leaves a smoother finish.
+
+---
+
 ## Wednesday 2026/6/17
 
 * 11.5 hours today, 218 hours this track year.
 
-Non-signals maintenance: leaves, benches, train relocation
+Non-signals maintenance: leaves, benches, train relocation.
 
 #### 7:45AM - 10:30AM (3.75 hours)
 
