@@ -5,11 +5,73 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Thursday 2026/6/25
+
+* 11 hours today, 258 hours this track year.
+
+Signals followed by siding rails.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+A pleasantly productive signals day started by disconnecting the malfunctioning
+5-way switch and reverting it to a basic switch that toggles between mainline
+and yard. Mainline trains won't have to stop and yard trains are probably
+stopping soon anyway and so manually throwing the rest of the switches should
+not be significant hardship. Let's see what people say after July 1st.
+
+Volt meter says signal BH is putting voltage on red LED and on red out even
+when there's no detection. This is consistent with a relay that has failed
+closed so the signal driver board was replaced with another.
+
+Signal board CB has been going dark occasionally, usually when things got hot.
+Volt meter confirms it wasn't putting power on any lights when it was supposed
+to be green, so the driver board was replaced. Unfortunately the replacement
+had its own problem: an intermittent connection somewhere meant green is
+sometimes fine but sometimes very dark. We're out of Smith boards for today so
+this will have to wait a bit longer.
+
+#### 1:00PM - 4:00PM (3 hours)
+
+After lunch we un-isolated the isolated power supply in M and, despite my
+fears, nothing blew up. At least not immediately. We're not hooking the NT
+board back up yet, just watch this as-is for a while.
+
+While testing the new voltages realized KB4 detection does not turn MB red as
+it should. There's no available wire to fix this but fortunately KB4 is pretty
+short so this will only be a problem for short trains. Public ride trains are
+all long enough to avoid the problem.
+
+Panel R was upgraded to the latest firmware featuring BLE interface for
+diagnostics support. This is promising but had some significant first draft
+issues. It is also our first taste of RF problems. It is strong enough to
+punch through a closed panel, so we can't count on it as a security barrier.
+Yet it is also not strong enough to cover the entire physical footprint of
+panel R signals.
+
+Ended the signals work day by remapping panel I. We need accurate information
+on start/end of each detection block before we can safely perform any upgrades.
+
+#### 4:00PM - 8:00PM (4 hours)
+
+After the signals crew dispersed for the day, moved on to solo project of
+removing loose surface rust from a pile of rail selected as candidates for the
+new siding project. This was satisfying because we just need the easy part of
+rust removal. I don't need to tackle the annoying hard black layer to unveil
+shiny metal. Taking off the loose brown stuff is enough for the siding track
+crew to see which ones are likely usable and which are likely too rusted and
+pitted to use. Got about 2/3 of the way through the pile before I lost
+daylight. That's enough for the track crew to get started and I'll finish the
+rest later.
+
+![Rails with varying top surface quality](./20260625_rails_of_varying_top_surface_quality.jpg)
+
+---
+
 ## Sunday 2026/6/21
 
 * 8.5 hours today, 247 hours this track year.
 
-Disney Sunday crew
+Disney Sunday train crew.
 
 #### 8:00AM - 4:30PM (8.5 hours)
 
@@ -42,7 +104,7 @@ while operating SF163.
 
 * 11 hours today, 238.5 hours this track year.
 
-Club sanctioned event train crew + bench planks
+Club sanctioned event train crew + bench planks.
 
 #### 8:00AM - 3:00PM (7 hours)
 
@@ -89,6 +151,11 @@ Final status report:
 22. No bench.
 23. Black dot.
 24. No bench (hydraulic lift.)
+
+Now that we know only a small fraction are in good usable shape, Finch decided
+we might as well pitch them all and get new planks all around the entire bay.
+We didn't know until I started removing paint to see what's underneath, so I'll
+still call it a worthwhile research project.
 
 ---
 
