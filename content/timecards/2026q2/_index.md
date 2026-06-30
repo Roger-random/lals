@@ -28,10 +28,10 @@ learn to do my speech at a lower and more sustainable volume.
 After my lunch I went to cover east gate so McCabe can go get lunch. I don't
 need to speak nearly as loudly at this post.
 
-Once McCabe was done with lunch I went to turn in Carolwood paperwork then
-returned to the station. I stepped in as Santa Fe 163 engineer so I don't need
-my voice. Thankfully Ronne was willing to switch to conductor role for the rest
-of the afternoon.
+Once McCabe was done with lunch I turned in Carolwood paperwork then returned
+to the station. I stepped in as Santa Fe 163 engineer so I don't need my voice.
+Thankfully Ronne was willing to switch to conductor role for the rest of the
+afternoon.
 
 After the train was put away, emptied a few trash cans I noticed had overflowed
 while operating SF163.
