@@ -5,6 +5,60 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Saturday 2026/6/20
+
+* 11 hours today, 238.5 hours this track year.
+
+Club sanctioned event train crew + bench planks
+
+#### 8:00AM - 3:00PM (7 hours)
+
+Arrived in the morning to get Santa Fe 163 electric out and ready for rides
+for Harris event. Part of train crew with Famolare organized by McCabe. First
+outing of my Santa Fe warbonnet scheme colors outfit.
+
+After the official event ended I continued chatting with a few people who were
+curious about trains, my favorite audience. When one of them expressed some
+disappointment that they didn't see any steam engines today, I pulled out
+Sankey for them to look over.
+
+#### 3:00PM - 7:00PM (4 hours)
+
+After all the guests have left I changed into grubby work clothes to continue
+steaming bay bench plank paint stripping work. Seeing before/after paint
+stripping is teaching me to recognize problems hiding under paint. Towards the
+end of the day I started going straight for these potential problems for the
+final few planks. It saves time, effort, and disc wear to uncover big deal-
+breaking problems instead of doing the whole plank.
+
+Final status report:
+1. Primed and in great shape
+2. Already marked with black dot for discard.
+3. Primed but with mild warping
+4. Primed but has a significant end crack.
+5. Bare wood with significant end cracks.
+6. Primed but with rot at end.
+7. Black dot
+8. Bare with minor end cracks.
+9. Black dot
+10. No bench (ramp to track.)
+11. Significant rotted crack.
+12. No bench (bridge to other bay.)
+13. Rotted end.
+14. Warped with a lengthy crack.
+15. Rotted end and knot
+16. Cracks all over
+17. Bare and looks good except for knot with rot.
+18. Warped and misshappen when it was last painted.
+19. Black dot.
+20. Bare and looks pretty good.
+21. Minor warp, small knot, tiny end cracks.
+22. No bench.
+23. Black dot.
+24. No bench (hydraulic lift.)
+
+---
+
 ## Thursday 2026/6/18
 
 * 9.5 hours today, 227.5 hours this track year.
