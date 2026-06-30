@@ -5,6 +5,39 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Sunday 2026/6/21
+
+* 8.5 hours today, 247 hours this track year.
+
+Disney Sunday crew
+
+#### 8:00AM - 4:30PM (8.5 hours)
+
+Morning prep included a signals check lap with Strawn. False red verified gone
+but also found ICA is turning yellow then green too early. As soon as we saw it
+we knew it was an overlooked consequence of moving signal IM to MB and
+shortening panel I rail blocks. We don't have available wire to fix this so
+it'll have to wait for new wires.
+
+Conducted for Smitrovich on UP1989 until lunch time when my voice started
+giving out. I first thought it was because I was doing train crew twice in a
+row but now I think I've been causing damage to my voice box doing my conductor
+safety briefing at the volume I've been doing it. I need to let it heal then
+learn to do my speech at a lower and more sustainable volume.
+
+After my lunch I went to cover east gate so McCabe can go get lunch. I don't
+need to speak nearly as loudly at this post.
+
+Once McCabe was done with lunch I went to turn in Carolwood paperwork then
+returned to the station. I stepped in as Santa Fe 163 engineer so I don't need
+my voice. Thankfully Ronne was willing to switch to conductor role for the rest
+of the afternoon.
+
+After the train was put away, emptied a few trash cans I noticed had overflowed
+while operating SF163.
+
+---
+
 ## Saturday 2026/6/20
 
 * 11 hours today, 238.5 hours this track year.
