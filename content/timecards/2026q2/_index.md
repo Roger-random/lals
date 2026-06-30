@@ -5,6 +5,34 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Saturday 2026/6/27
+
+* 9 hours today, 267 hours this track year.
+
+Jackson event + bench planks
+
+#### 9:00AM - 1:00PM (4 hours)
+
+With permission from Strawn, brought out Chessie for train rides at Jackson's
+event for California Southern Model Railroad HO Gauge club. Always fun to show
+and tell to fellow train enthusiasts. Also marked debut of my Chessie colors
+outfit.
+
+#### 1:00PM - 6:00PM (5 hours)
+
+Changed into grubby work clothes for some grunt work: acting on Finch's
+decision and of dispose all steaming bay bench planks. This means cutting off
+a lot of rusty old bolts with an angle grinder cutting wheel because it's
+pretty hopeless to try to unfastening them. They're all way past the point
+where PB Blaster would do any good.
+
+#### Movie night!
+
+After all the old busted planks were in the dumpster, changed back into my
+Chessie colors outfit for movie night fun.
+
+---
+
 ## Thursday 2026/6/25
 
 * 11 hours today, 258 hours this track year.
