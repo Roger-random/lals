@@ -5,11 +5,50 @@ title = '2026 Q2 Timecards'
 
 ---
 
+## Sunday 2026/6/28
+
+* 12 hours today, 279 hours this track year.
+
+Sunday public runs crew + reverse direction of club equipment.
+
+#### 7:30AM - 4:00PM (8.5 hours)
+
+Brought out Santa Fe 163 electric locomotive. Topped off battery water and
+prepared it for Sunday operations. Test lap also pulled double duty to verify
+there were no new signals issues. Shined her up for show then also did the same
+for NS9867 and NS9925.
+
+A surprisingly small crew today! I continued in SF163 engineer's seat for most
+of the day, appreciated the lunch break which was not a sure thing in the
+morning. Mid afternoon Bickel had to leave for grandchild birthday party so
+Chu stepped in as conductor for the rest of the day. He also got a first look
+at putting SF163 at the end of the day, bonus for seeing it the July-Dec
+direction.
+
+#### 4:00PM - 7:30PM (3.5 hours)
+
+Once SF163 was put away I volunteered to reverse direction for remaining club
+owned Sunday run equipment. The reward was the chance to run my longest train
+yet. UP1989 and three sets of bench cars total up to 16 units. Coincidentally
+the same as a full service Shinkansen train. Hmm...
+
+![UP1989 and bench car sets 1, 3, and 4](./20260628_up1989_and_bench_cars_1_3_4.jpg)
+
+After that was done I proceeded to lower priority items. SPPA and SPSF both
+still have their red tags keeping them from Sunday duty but I am optimistic
+that will happen so I reversed them along with bench car sets 5 and 6 which
+were not reserved for Sunday runs. Running SPPA felt like driving a classic
+car and it was kind of fun. Surprisingly SPSF did not fill me with the same
+enthusiasm and it felt like a real chore. Maybe I was just feeling tired at
+the end of the day? If I get another chance, see if the sensation persists.
+
+---
+
 ## Saturday 2026/6/27
 
 * 9 hours today, 267 hours this track year.
 
-Jackson event + bench planks
+Jackson event + bench planks.
 
 #### 9:00AM - 1:00PM (4 hours)
 
