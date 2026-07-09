@@ -5,6 +5,40 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Friday 2026/7/3
+
+* 5.5 hours today, 294 hours this track year.
+
+Final signals verification before first Sunday run in new direction.
+
+#### 7:45AM - 12:00PM (4.25 hours)
+
+Completed tasks, some of which I postponed earlier. I found there was a second
+set of power wires for the 5-way switch that were still connected, explaining
+the surprising switch moves. Removing those wires depowered the motors and
+eliminated risk of future surprises.
+
+Since we've lost yellow for signal JH, disconnected wire connecting JFA red
+out to JH yellow in. Now JH will show green when it would previously try to
+show the yellow it doesn't have. Not ideal, but better than a dark signal. We
+can reinstall that wire after JH yellow is restored.
+
+Then we went to the false yellow I diagnosed to a failed closed relay for red
+of the following signal BH. Replacing that signal driver board resolved this
+particular issue.
+
+#### 1:15PM - 2:30PM (1.25 hours)
+
+After a long lunch in an air conditioned space, ventured back out into the
+heat for final verification laps. Disappointed to find CCA (where the false
+yellow was triggered by BH red relay stuck on) has its own weirdness
+illuminating red and green at the same time when set to crossover. Since the
+sun is blasting and it works fine for non-crossing-over trains, we'll come
+back to this later. Helped put away SPSF and other pieces of equipment, then
+retreated from the heat.
+
+---
+
 ## Wednesday 2026/7/1
 
 * 9.5 hours today, 288.5 hours this track year.
