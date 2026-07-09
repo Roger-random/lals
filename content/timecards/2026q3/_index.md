@@ -5,6 +5,20 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/7/5
+
+* 8 hours today, 306 hours this track year.
+
+Smooth and successful first Sunday public run in new direction
+
+#### 8:15AM - 4:15PM (8 hours)
+
+Sunday public ride operations crew! Miscellaneous tasks including restocking
+beverage refrigerator in the kitchen and engineering UP1989 for a few runs.
+First start was an embarassing hard start but things were fine after that.
+
+---
+
 ## Saturday 2026/7/4
 
 * 4 hours today, 298 hours this track year.
