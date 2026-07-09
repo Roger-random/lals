@@ -5,6 +5,22 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Saturday 2026/7/4
+
+* 4 hours today, 298 hours this track year.
+
+Switch motor rev. D oscilloscope diagnostics w/Brock
+
+#### 9:30AM - 1:30PM (4 hours)
+
+Sat in front of panel J with oscilloscope and other tools so Brock can see
+the same diagnostics information I gathered earlier. Motor board revision D
+is not resiliant against voltage sagging and so its onboard digital logic
+circuits behave erratically ("lose their minds" was the phrase I used) when
+the motor starts turning and drawing power.
+
+---
+
 ## Friday 2026/7/3
 
 * 5.5 hours today, 294 hours this track year.
