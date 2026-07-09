@@ -5,6 +5,20 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Monday 2026/7/6
+
+* 2 hours today, 308 hours this track year.
+
+#### 4:30PM - 6:30PM (2 hours)
+
+Arrived early afternoon intending to study documentation stored on board the
+club's Santa Fe 163 electric locomotive. Got a ride on Davis' steam train and
+a bit of socializing before I started studying in earnest, and the study
+period stopped once people started gathering for the evening's board meeting.
+In between I got two solid hours of reading.
+
+---
+
 ## Sunday 2026/7/5
 
 * 8 hours today, 306 hours this track year.
