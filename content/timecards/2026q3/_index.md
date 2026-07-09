@@ -5,6 +5,88 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Tuesday 2026/7/7
+
+* 9.5 hours today, 317.5 hours this track year.
+
+A productive signals repair day
+
+#### 8:15AM - 12:15PM (4 hours)
+
+Started in panel K where KAA (signal indicating reversing track by covered
+bridge) sensor needed a minor adjustment. Then the rev. C I/O board I installed
+as part of the emergency repair on 6/9 was replaced with the intended rev. E
+board allowing the corresponding emergency repair ESP32 code to be reverted.
+
+With rev. E in place, we can connected an input wire for detection state of
+IB15. This signal has to travel a long way through two separate lengths of
+wire, and it was labeled "Does not work". Traced through and reconnected the
+wire to an IB15 signal so now it works, but that raised an interesting
+question: If the wire was not connected to anything, we could not have traced
+it back to IB15. If so, why was it labeled "IB15"? I can't remember.
+
+Finally a loose 2.5mm ID barrel jack power cable was replaced with a properly
+sized 2.1mm ID barrel jack cable.
+
+Returning to panel I, we investigated II yellow not illuminating during this
+past Sunday public run. Flipping II over to test mode confirmed that yellow
+was not illuminaating. Looking inside the panel I noticed the yellow wire had
+fallen out of the LED adapter pigtail board. Putting the wire back in the
+connector seemed to have done the trick. I like easy fixes.
+
+Also noted from Sunday run is EJA yellow failing to illuminate. Opened it up
+again and jiggled the bulb again. I unscrewed the socket itself from the
+housing to look for any signsl of damage, I found nothing. The clamping force
+of the socket is quite strong, so it's not like the bulb is loose. Not sure why
+the connection is not reliable. If this second jiggle doesn't work, I'll bring
+in my electronic contact cleaning spray. If that doesn't work, either, it'll be
+time for a little dab of my conductive grease.
+
+After putting EJA back together and taking the train through the tunnel, we
+took another look at CCA. It didn't do the weird green + red thing... then it
+did! We figured out it was triggered by a train being present in a particular
+segment of outer main, from the Nelson exit switch to after the CCA crossover
+merge. A quick probe indicated the problem is not a red relay stuck on, as was
+the case for BH and BG, but that the Smith XO power off + "force red" system
+had broken down somewhere. The next step is to sit in front of panel C with a
+meter but that's not happening at high noon under SoCal summer sun. Will have
+to come back later.
+
+We went to panel J to examine feasibility of installing a regulated power
+supply. The good news is that there's no NT board in this panel so that's one
+headache crossed off the power supply headaches list. In order to leave
+existing 110V AC lines untouched for the duration of this experiment (for
+easy reverting if need be) we'll wire up the test power supply with a power
+plug. Off to lunch and Home Depot.
+
+#### 1:30PM - 7:00PM (5.5 hours)
+
+Just as we were setting up to work in panel J, the NT ring blipped off.
+Driving the train around to panel S NT block didn't do anything, that's a
+problem for later investigation.
+
+Home Depot power plug in hand, a regulated power supply claiming 12V 10A
+capability was installed in panel J and the old linear power supply
+disconnected but not removed. Verified the new power supply turns on and off
+correctly with the NT ring, and that it had no problem supplying power as two
+switch motors spun simultaneously. Very promising step forward.
+
+Investigation of panel S NT board found that it would have time on the clock
+but no volts on N+/-. Solder joints on the big relay looked fine. Probing
+the smaller blue relay on the timer module, I found panel voltage on C but not
+on NC or NO. If there's panel voltage on C, there should be panel voltage on
+one of those! As I lifted my voltage probe away, I heard relay click. I
+measured again and this time the NO pin has panel V+. Is the pressure of my
+voltage probe affecting a loose connection or something? No definitive answer
+just yet.
+
+Reconnaissance of panel H found the crossing bell relay activation wire, as
+well as candidate locations to tap into panel ground and panel V+. That's the
+information I need to support Perez project with gate warning lights, the next
+step is up to him.
+
+---
+
 ## Monday 2026/7/6
 
 * 2 hours today, 308 hours this track year.
