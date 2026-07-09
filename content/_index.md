@@ -3,7 +3,7 @@ date = '2025-10-01T00:00:00-08:00'
 title = 'The Grand Plan'
 +++
 
-# >> [Click for latest log activity](./timecards/2026q2/) <<
+# >> [Click for latest log activity](./timecards/2026q3/) <<
 
 
 

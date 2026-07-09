@@ -3,6 +3,12 @@ date = '2026-01-01T00:00:00-08:00'
 title = 'Timecards'
 +++
 
+## [2026 Q3](./2026q3)
+
+Established and building timecard hours rapidly with many projects around the
+club... possibly too many? If I spend all my free time here I would never get
+around to building my own train.
+
 ## [2026 Q2](./2026q2)
 
 Now a full member and started helping with more specialized needs like signals
