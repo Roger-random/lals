@@ -5,6 +5,90 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Thursday 2026/7/9
+
+* 10 hours today, 327.5 hours this track year.
+
+An unsatisfying signals work day.
+
+#### 7:45AM - 12:30PM (4.75 hours)
+
+Started the morning at panel C tracing through CCA GRed weirdness. The key
+is something not following the Smith "Force Red" concept, as there is voltage
+on the signal driver board power input pin when it should be turned off by a
+XO board. Is this malfunction inside the signal driver board, or is it a
+malfunction from outside the signal driver board?
+
+The answer was apparently "Why not both?"
+
+The power wire was disconnected from the board. I probed the signal driver
+board V+ and saw panel voltage. Aha! This board is broken and leaking "Force
+Red" voltage back out to its V+ pin. This board needs to be replaced.
+
+Then I probed the disconnected power wire, expecting to find panel ground,
+and was disappointed to find panel voltage here as well. Crap. There's more
+to this puzzle. At this point the sun started blazing hotly on panel C so
+we retreated to panel J which have shaded trees.
+
+Today's task for panel J was to map out all wires in preparation for ESP32
+upgrade in the near future. Fortunately it already has the newer block detector
+and signal driver boards, so those wires can be left untouched. The motor
+driver situation is also moved up to the latest, with rev. D board now in
+charge of both motors and the old Smith board retired. This sorted out the
+pole button wires and they can stay untouched during the upgrade as well.
+
+Rail switch position sensing microswitches accounted for two more wires,
+one per switch, and they were located and labeled. That took me to lunch time
+so I could tackle the biggest challenge with a full stomach.
+
+#### 2:00PM - 7:15PM (5.25 hours)
+
+After lunch it was time for the hard part: find and label all the wires that
+carried signals to and from adjacent panels and move them to the isolator
+and driver boards as appropriate. There were five wires to find: two red-out
+yellow-in signal pairs, and passing along train detection for a block that
+didn't match signal/panel boundary. Technically we also needed two ground
+wires to send out as reference ground for adjacent panels R and S, but right
+now those two panels have ground planes tied to each other due to unrelated
+wiring issue so I could get away with just one ground wire. It also meant all
+panel R signal wires make a pit stop in panel S with a wire nut, which might
+be related but not important today.
+
+That means I need six wires total, and I found seven wires already routed for
+the job and already attached to old circuit boards that make sense for their
+respective designated duties. I labeled them all so I don't lose them, and
+moved outputs to driver board and inputs to isolator board. It all looked neat
+and elegant as I powered the panel up to verify my work.
+
+It didn't work. Nothing worked. No driver signals were received by S, and no
+isolater signals were received from S. I disconnected wires and put a low
+voltage across them to see if I'm looking at the right wires, and I was. But
+no signals went through.
+
+After going in (semi)circles a few times I had the hypothesis these wires might
+have degraded. I picked five wires out of seven for the test, disconnected them
+from the circuit, and tied them all together in a single 5-pole lever-lock
+connector inside panel S.
+
+![Wire continuity test setup](./20260709_wire_continuity_test.jpg)
+
+I then went over to panel J and measured continuity between each pair of wires.
+I'm supposed to get single digit ohms of resistance through these wires, but I
+got megaohm level resistance if I got anything at all. I was losing daylight so
+I didn't have time to check the last two. But the trend doesn't look good and
+even if the last two worked perfectly (which I doubt) they're not enough to
+meet the needs.
+
+All my work labeling and organizing these wires were a waste of time, these
+wires are toast. I wrote up this bad news of a status update to the team and..
+
+"Oh yeah, I knew that."
+
+Well that would have been useful to tell me earlier! Or maybe label the known
+bad wires when they were found to be bad? Is that so much to ask?
+
+---
+
 ## Tuesday 2026/7/7
 
 * 9.5 hours today, 317.5 hours this track year.
