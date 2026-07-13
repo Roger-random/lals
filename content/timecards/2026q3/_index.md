@@ -5,6 +5,85 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Saturday 2026/7/11
+
+* 11 hours today, 338.5 hours this track year.
+
+A much more satisfying signals work day.
+
+#### 8:00AM - 12:15PM (4.25 hours)
+
+This is an official club work day and it was a fortunate coincidence that
+track work was underway in front of Sherwood station. Removing track triggers
+a train detection fault similar to a train detection and that is convenient for
+two projects on my to-do list. I had planned to park a train on this segment of
+track while I diagnose... and now I don't have to!
+
+![De Philip, Nelson, and Kallgren at track work project](./20260711_de_philip_nelson_kalgren_sherwood_track_project.jpg)
+
+Taking advantage of this situation, I went to EJA yellow to try more ideas
+against its persistent intermittent illumination. It always lights up
+immediately after we touch it but goes dark again sometime afterwards. There
+were multiple short sessions spread throughout the day but I'm writing them
+together here. First I tried an emery board in the hopes I can scrape off
+surface corrosion. After EJA yellow went dark again, I sprayed some electric
+contact cleaner spray. When that didn't work, I put some of my conductive
+grease on the contacts. That didn't work so I replaced the incadescent
+automotive bulb LED retrofit module that isn't technically a bulb. Once that
+was replaced, EJA yellow seemed to behave well again. I didn't think a simple
+circuit like that LED module could hide an intermittent connection, but this
+data point says I was wrong.
+
+![EJA yellow with contact cleaner spray](./20260711_eja_yellow_and_electronic_cleaner_spray.jpg)
+
+On the far side of the track work project I have CCA green+red when crossover
+is active and there's a train in front of Sherwood. Or in today's case, track
+work. Earlier sessions replaced the CCA signal driver board and traced it back
+to a XO board that seemed to be working. Today I backtracked further and found
+CAA signal board (on the other end of the crossover facing the opposite
+direction) was connected to the same XO board, and CAA was doing the same
+voltage backfeed that CCA was doing. I don't have a replacement board handy so
+the short-term fix is to disconnect CAA's power wire so it can't backfeed. This
+means it'll still light up in "Force Red" mode but would be dark outside of it.
+As CAA is facing oppsite of the current operating direction, this is the lesser
+of two evils until proper repair can be done.
+
+#### 1:00PM - 7:45PM (6.75 hours)
+
+During one of my trips to and from checking how EJA yellow has held up, I
+noticed GF green is dark. This was intermittent during movie night a few weeks
+ago and seemed to just be dark all the time now. I opened it up to replaced the
+green "bulb" and that seemed to have been the problem.
+
+![GF Green replaced](./20260711_gf_green_new_bulb.jpg)
+
+Returned to panel S+J for further testing of the seven wires between them. Good
+news: two of the seven may be usable. When I connect red (from 4-conductor
+bundle) and blue (individually run wire) in S and measure resistance in J, the
+round trip over those two wires measured just 4 ohms.
+
+Three of the seven are heavily degraded. green from 4-conductor bundle,
+individually run pink, and individually run purple measure megaohms or higher.
+
+Black and white in the 4-conductor bundle are flat out open circuits.
+
+When I returned from valley back to the station, I saw the track work crew had
+wrapped up without reconnecting the signal feed and bond wires that they had
+disconnected for the job. Strange, we went over how they were to be properly
+reconnected. I found one member and was told "Well, we figured you can do a
+better job than we could so we thought we'd let you do it."
+
+Fine. I'll do it, and I'll do it my way. Both bond wires were replaced with
+fresh new bond wires, and all fastening screws had conductive grease to
+mitigate corrosion.
+
+Ended the work day with a round of club bench car air line upgrade to metal
+units that won't get fatally damaged in event of bench car separation. The
+black and yellow bench sets were upgraded up to but not including the
+locomotive connection. Let's see what happens tomorrow.
+
+---
+
 ## Thursday 2026/7/9
 
 * 10 hours today, 327.5 hours this track year.
