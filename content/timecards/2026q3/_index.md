@@ -5,6 +5,56 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/7/12
+
+* 8 hours today, 346.5 hours this track year.
+
+Sunday operations crew
+
+#### 8:00AM - 4:00PM (8 hours)
+
+Started the morning with intent to check fire extinguisher gauges but got
+distracted by the black bench car set failing pressure leak test in one of
+its new air lines. Pulled out my tool boxes and jumped in. Eventually pin
+pointed the problem to the Schrader valve barb fitting for the rubber hose.
+So, thankfully not the new novel hardware. There's a clamp that can be
+installed for a more secure fit but redoing the connection seemed to have done
+the job.
+
+The yellow set didn't get pulled out today so its pressure holding capability
+remains untested. I don't want to do the blue set until yellow set tests OK.
+
+Also had an unexpected detour through UP1989 control panel during this
+adventure as one of its internal air hoses fell out of its connector. Couldn't
+imagine how fiddling with an air line at the back of the train could cause an
+air line within the front control console to pop out but that's what happened.
+
+As UP1989 was set up to depart from track 1, pruned the vines reaching out from
+the chain link fence so they won't hit our guests in the face on the way out.
+
+Restocked kitchen beverage refrigerator.
+
+Lunch break engineer for Santa Fe 163 electric locomotive.
+
+Consult Kristman about club bench car couplers, who seemed surprised to learn
+some of the springs are no longer springing. Pointed me to a stockpile of
+couplers available for immediate repairs without having to order newe units.
+He prefers spring units, but rubber absorption is preferable to solid units
+with no shock absorption capability. But even that is better than having a
+freely sliding slot within which bench cars could build up momentum before
+slamming into an end.
+
+![Samples from coupler stockpile](./20260712_coupler_types_in_stockpile.jpg)
+
+More reconnissance of existing network infrastructure as part of consultation
+on what the club might want to install to support future projects.
+
+Shut down water wheel and locked west gate.
+
+Kitchen dishwashing.
+
+---
+
 ## Saturday 2026/7/11
 
 * 11 hours today, 338.5 hours this track year.
@@ -70,8 +120,8 @@ Black and white in the 4-conductor bundle are flat out open circuits.
 When I returned from valley back to the station, I saw the track work crew had
 wrapped up without reconnecting the signal feed and bond wires that they had
 disconnected for the job. Strange, we went over how they were to be properly
-reconnected. I found one member and was told "Well, we figured you can do a
-better job than we could so we thought we'd let you do it."
+reconnected. I found one member and was told "Well, we knew you would do a
+better job than we could, so we figured we'd let you do it."
 
 Fine. I'll do it, and I'll do it my way. Both bond wires were replaced with
 fresh new bond wires, and all fastening screws had conductive grease to
