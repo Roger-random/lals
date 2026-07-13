@@ -9,7 +9,7 @@ title = '2026 Q3 Timecards'
 
 * 8 hours today, 346.5 hours this track year.
 
-Sunday operations crew
+Sunday operations crew.
 
 #### 8:00AM - 4:00PM (8 hours)
 
@@ -32,22 +32,31 @@ air line within the front control console to pop out but that's what happened.
 As UP1989 was set up to depart from track 1, pruned the vines reaching out from
 the chain link fence so they won't hit our guests in the face on the way out.
 
+Took a signals status verification lap with Cammarata so he can see firsthand
+all the issues covered in the signals status email sent yesterday. This might
+become a regular thing. We turned on the water wheel on the way out but forgot
+to unlock the west gate. Bassett covered for us on that front.
+
 Restocked kitchen beverage refrigerator.
 
 Lunch break engineer for Santa Fe 163 electric locomotive.
 
-Consult Kristman about club bench car couplers, who seemed surprised to learn
-some of the springs are no longer springing. Pointed me to a stockpile of
-couplers available for immediate repairs without having to order newe units.
-He prefers spring units, but rubber absorption is preferable to solid units
-with no shock absorption capability. But even that is better than having a
-freely sliding slot within which bench cars could build up momentum before
-slamming into an end.
+Club bench car coupler consultation with Kristman, who seemed surprised to
+learn some of the springs are no longer springing. Can't imagine this being a
+new thing but perhaps it's not considered normal wear and tear? Kristman
+pointed me to a stockpile of couplers available for immediate repairs without
+having to order new units. He prefers spring units, but rubber absorption is
+preferable to solid units with no shock absorption capability. But even that is
+better than a freely sliding slot allowing bench cars to build up momentum
+before slamming into an end.
 
 ![Samples from coupler stockpile](./20260712_coupler_types_in_stockpile.jpg)
 
 More reconnissance of existing network infrastructure as part of consultation
 on what the club might want to install to support future projects.
+
+Sunday operations were shut down early today due to slight drizzle around 2:20
+making the track slippery.
 
 Shut down water wheel and locked west gate.
 
@@ -77,8 +86,8 @@ immediately after we touch it but goes dark again sometime afterwards. There
 were multiple short sessions spread throughout the day but I'm writing them
 together here. First I tried an emery board in the hopes I can scrape off
 surface corrosion. After EJA yellow went dark again, I sprayed some electric
-contact cleaner spray. When that didn't work, I put some of my conductive
-grease on the contacts. That didn't work so I replaced the incadescent
+contact cleaner spray. When that didn't last, I put some of my conductive
+grease on the contacts. Yellow went dark again so I replaced the incadescent
 automotive bulb LED retrofit module that isn't technically a bulb. Once that
 was replaced, EJA yellow seemed to behave well again. I didn't think a simple
 circuit like that LED module could hide an intermittent connection, but this
@@ -100,10 +109,10 @@ of two evils until proper repair can be done.
 
 #### 1:00PM - 7:45PM (6.75 hours)
 
-During one of my trips to and from checking how EJA yellow has held up, I
-noticed GF green is dark. This was intermittent during movie night a few weeks
-ago and seemed to just be dark all the time now. I opened it up to replaced the
-green "bulb" and that seemed to have been the problem.
+During one of my trips checking how EJA yellow has held up, I noticed GF green
+is dark. This was intermittent during movie night a few weeks ago and seemed to
+be dark all the time now. Since I had the box of automotive style "bulbs" in
+hand for EJA yellow, I opened up GF to replace the green "bulb".
 
 ![GF Green replaced](./20260711_gf_green_new_bulb.jpg)
 
@@ -118,19 +127,21 @@ individually run pink, and individually run purple measure megaohms or higher.
 Black and white in the 4-conductor bundle are flat out open circuits.
 
 When I returned from valley back to the station, I saw the track work crew had
-wrapped up without reconnecting the signal feed and bond wires that they had
-disconnected for the job. Strange, we went over how they were to be properly
-reconnected. I found one member and was told "Well, we knew you would do a
-better job than we could, so we figured we'd let you do it."
+wrapped up their mechanical work without reconnecting the electrical signal
+feed and bond wires that they had disconnected for the job. This was a surprise
+because we had talked about how wires were to be reconnected. I found Nelson
+and was told "Well, we knew you would do a better job than we could, so we
+figured we'd let you do it."
 
 Fine. I'll do it, and I'll do it my way. Both bond wires were replaced with
-fresh new bond wires, and all fastening screws had conductive grease to
+fresh new bond wires, and six new fastening screws with conductive grease to
 mitigate corrosion.
 
 Ended the work day with a round of club bench car air line upgrade to metal
-units that won't get fatally damaged in event of bench car separation. The
-black and yellow bench sets were upgraded up to but not including the
-locomotive connection. Let's see what happens tomorrow.
+units that won't be fatally damaged in event of bench car separation. The
+black and yellow bench sets were upgraded up to, but not including, the
+locomotive connection. Let's see what happens tomorrow and upgrades will
+proceed incrementally if things work well.
 
 ---
 
