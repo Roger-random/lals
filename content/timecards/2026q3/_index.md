@@ -5,6 +5,36 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/7/19
+
+* 9.5 hours today, 360 hours this track year.
+
+Sunday public run day alongside Carolwood's monthly activities.
+
+#### 7:00AM - 4:30PM (9.5 hours)
+
+Started the day pulling UP1989 out just for the sake of verifying that the
+yellow bench car set can hold pressure. Once verified, I handed UP1989
+to Cook to run for the day. I then proceeded to start pulling CN2002 out to be
+turned around. Alexander joined me for that task and also connected up to the
+dark green bench car set to run for the day.
+
+I conducted for CN2002 the whole day and aside from two passenger safety stops
+there was an embarassing derailment as the first train through Disney crossing
+but no harm done.
+
+We started with four trains and a light crowd. By the end of the day we
+ended up with just two trains that couldn't keep up with the rate of
+incoming guests. To ensure everyone got a ride, we kept running past the point
+Carolwood people packed up.
+
+After the final load of public passengers disembarked, I took CN2002 for
+another practice run without passengers. Thanks to advice from Alexander on
+what to try, I now feel comfortable enough with CN2002 to start running with
+passengers on board.
+
+---
+
 ## Thursday 2026/7/16
 
 * 4 hours today, 350.5 hours this track year.
