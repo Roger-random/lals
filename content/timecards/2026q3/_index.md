@@ -29,9 +29,9 @@ incoming guests. To ensure everyone got a ride, we kept running past the point
 Carolwood people packed up.
 
 After the final load of public passengers disembarked, I took CN2002 for
-another practice run without passengers. Thanks to advice from Alexander on
-what to try, I now feel comfortable enough with CN2002 to start running with
-passengers on board.
+another familiarization run without passengers. Thanks to advice from Alexander
+on what to practice, I now feel comfortable enough with CN2002 to start running
+with passengers on board.
 
 ---
 
@@ -47,24 +47,25 @@ Revisited the CAA+CCA green+red problem and it appears that back-feeding power
 when there's both a force-red and detect is just what these relay-based signal
 driver boards do all the time. We checked two other boards and they both do the
 same thing. It is rare for multiple signal driver boards to be connected
-together on an XO board port, so this behavior doesn't usually cause a problem.
+to the same XO board port, so that behavior doesn't usually cause a problem but
+knowing that doesn't help us.
 
-Well, it causes a problem here. And since replacing a board isn't going to
+Since replacing a board isn't going to
 solve any problems today, the next thing to do is to put a diode in the CAA
 V+ port so it doesn't back-feed into CCA. This will make CAA dimmer but it's
 facing the opposite direction so that is less critical. Perhaps we'll have to
 move the diode from CAA to CCA in six months when running direction flips.
 
 After we verified the diode hack was sufficient for today, we headed towards
-panel R to look at erratic behavior for RSM2. But we barely left our panel C
-work area when we noticed BH didn't turn red as the train entered BB5. Looked
-in panel B to see not only dangling wires but dangling boards on top of
+panel R to look at erratic behavior of RSM2. But we barely left our panel C
+work area when we noticed BH didn't turn red as the train entered BB5. Looking
+in panel B we saw not only dangling wires but dangling boards on top of
 dangling boards in front of the relevant wires we have to trace through.
-Decided there was a high risk of causing unintended changes if we should dig
-any deeper by moving those dangling boards out of the way. Other issues have
+Decided there was a high risk of causing unintended changes if we move those
+dangling boards out of the way to dig any deeper. Other issues have
 priority today so we closed panel B back up. And it turns out we were right!
 Because BB5 now turns BH red. We did not intend to change anything yet we
-"fixed" it.
+"fixed" it. Is this a win or is this a loss?
 
 Deliberately not thinking too much about that, onward to panel R we go. The
 suspect was erratic pole switch behavior outside of the debounce time window
@@ -84,8 +85,8 @@ pieces of information were wrong.
 At least now we know what's going on and the upcoming rev. E motor control
 board will be designed to handle the situation.
 
-With a short time before it got too hot to work, the ESP32 firmware for panel
-R was upgraded to the latest version and we moved onward to the adjacent
+Before we closed up panel R its ESP32 firmware
+was upgraded to the latest version and we moved onward to the adjacent
 panel S to do the same thing. While we had panel S open we get started on
 wiring up cross-panel communication to panel J. Panel S didn't have a signal
 driver board so that was the first step we could do today before it got
