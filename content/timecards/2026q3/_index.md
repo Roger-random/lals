@@ -22,7 +22,8 @@ but it did.
 Once we got all the planks back to the club we could start shaping them to
 fit, drill mounting holes (unique for every single bay), and apply wood
 treatment. We had ten bench planks drilled and fitted, with six of those
-treated. Looks like about another ten to go before this first steaming bay
+treated, before it got too hot for Nelson and he declared an end to the day's
+work. Looks like about another ten to go before this first steaming bay
 is done and we can see how people feel.
 
 ![Starting first set of steaming bay planks](./20260723_start_new_steaming_bay_bench_planks.jpg)
