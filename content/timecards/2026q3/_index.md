@@ -5,6 +5,30 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Thursday 2026/7/15
+
+* 5.5 hours today, 365.5 hours this track year.
+
+Start installing first batch of steaming bay benches.
+
+#### 8:15AM - 1:45PM (5.5 hours)
+
+Met Nelson in the morning for a Home Depot run. They didn't have the wood
+treatment Nelson wanted so we went to Lowes. But then found Lowes didn't
+have enough lumber of the desired dimension and quality, so back to Home
+Depot again to finish the shopping list. This shouldn't have taken two hours
+but it did.
+
+Once we got all the planks back to the club we could start shaping them to
+fit, drill mounting holes (unique for every single bay), and apply wood
+treatment. We had ten bench planks drilled and fitted, with six of those
+treated. Looks like about another ten to go before this first steaming bay
+is done and we can see how people feel.
+
+![Starting first set of steaming bay planks](./20260723_start_new_steaming_bay_bench_planks.jpg)
+
+---
+
 ## Sunday 2026/7/19
 
 * 9.5 hours today, 360 hours this track year.
