@@ -5,7 +5,46 @@ title = '2026 Q3 Timecards'
 
 ---
 
-## Thursday 2026/7/15
+## Friday 2026/7/24
+
+* 9.5 hours today, 375 hours this track year.
+
+Steaming bay benches, continued.
+
+#### 7:45AM - 12:00PM (4.25 hours)
+
+Started the day by dealing with a random piece of skylight(?) that someone
+dumped over the fence. Chopped it up so it fits in a dumpster.
+
+After that I continued working on steaming bay benches, cutting corners off
+the raw boards, rounding off edges, and drilling holes to match each unique
+steaming bay. By lunchtime I have all the phase 1 bays prepared and it was
+too hot to continue in the direct sun.
+
+![Steaming bay phase 1 planks prepared](./20260724_steaming_bay_planks_cut_and_drilled.jpg)
+
+#### 1:00PM - 6:15PM (5.25 hours)
+
+After lunch I went to investigate signals issues that are conveniently
+located in tree-shaded areas, specifically panel J which Strawn upgraded to
+ESP32 control. There were a few oddities that I traced down to signals trying
+to show yellow that aren't there. I removed yellow-in wires from the old logic
+and they had since been installed as part of the upgrade. It pained me to
+disconnect the same wires again but we would rather have a green than a dark
+signal because yellow doesn't work.
+
+I also found a detection failure that traced down to a marginal bond issue,
+preventing the train axles from pulling rail voltage down to zero. The wire
+itself and the two crimped connectors at the end (with solder sealing) seemed
+fine, the problem was the interface between end connector and rail. This feeds
+my confirmation bias that I should continue sanding off loose rust and apply
+conductive grease to these mating surfaces.
+
+![Conductive grease on bonding wire](./20260724_bond_wire_end_conductive_grease.jpg)
+
+---
+
+## Thursday 2026/7/23
 
 * 5.5 hours today, 365.5 hours this track year.
 
