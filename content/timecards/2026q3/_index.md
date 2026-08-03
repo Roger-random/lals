@@ -5,6 +5,31 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Thursday 2026/7/30
+
+* 9.5 hours today, 411 hours this track year.
+
+Signals half day, other half spent annoying squirrels.
+
+#### 8:00AM - 12:15PM (4.25 hours)
+
+Signals in the morning: installed dwarf signal GJ (we need a clear lens cover)
+then installed a regulated power supply in panel R.
+
+#### 1:15PM - 6:30PM (5.25 hours)
+
+After lunch I went to verify panel R power supply upgrade in the morning fixed
+the erratic behavior in RSM2. It got better... but not fixed. To be continued.
+
+I hitched up two gondolas filled with dirt, which had been sitting in the pit
+for months, and gave the dirt some purpose in life filling squirrel holes out
+on the west end of the layout. In a few days we should see which of these holes
+are active and important enough for squirrels to open back up.
+
+![Two gondolas of dirt looking for a purpose](./20260730_two_gondolas_of_dirt_looking_for_a_purpose.jpg)
+
+---
+
 ## Tuesday 2026/7/28
 
 * 4 hours today, 401.5 hours this track year.
