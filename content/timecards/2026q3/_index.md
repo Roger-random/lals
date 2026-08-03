@@ -5,6 +5,26 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Tuesday 2026/7/28
+
+* 4 hours today, 401.5 hours this track year.
+
+Signals half-day.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Started the morning expecting to learn how to fix WC but as it turned out the
+it was the signal head driver board that had failed.
+
+Replaced green "bulb" in CD to bring that back to life.
+
+New wire for signal SB. It has yellow for the first time in years!
+
+After lunch, I got to learn the basics of steam locomotive operation on the
+club-owned beam engine.
+
+---
+
 ## Monday 2026/7/27
 
 * 10.5 hours today, 397.5 hours this track year.
