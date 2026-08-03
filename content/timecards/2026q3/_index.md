@@ -5,6 +5,24 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/8/2
+
+* 8.5 hours today, 419.5 hours this track year.
+
+Sunday operations crew.
+
+#### 8:00AM - 4:30PM (8.5 hours)
+
+Prepared CN2002 for Sunday ops in the morning. Conducted for part of the day
+and sat in the engineer's seat for part of the afternoon. Also helped a few new
+members become familiar with Sunday operations from conductor duty to mister
+shutdown and west gate lock.
+
+Also helped Perez install the prototype gate strobe module. Let's see how this
+works out.
+
+---
+
 ## Thursday 2026/7/30
 
 * 9.5 hours today, 411 hours this track year.
