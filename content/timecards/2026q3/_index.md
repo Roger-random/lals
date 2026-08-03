@@ -5,6 +5,19 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/7/26
+
+* 8 hours today, 387 hours this track year.
+
+Sunday operations crew.
+
+#### 8:30AM - 4:30PM (8 hours)
+
+Spent most of the day as engineer for Santa Fe 164 electric locomotive but
+mixed in some kitchen beverage cooler restocking and dish washing.
+
+---
+
 ## Saturday 2026/7/25
 
 * 4 hours today, 379 hours this track year.
