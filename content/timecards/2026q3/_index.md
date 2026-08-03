@@ -5,11 +5,38 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Saturday 2026/7/25
+
+* 4 hours today, 379 hours this track year.
+
+Steaming bay bench wood treatment + minor signals work.
+
+#### 7:45AM - 11:00AM (3.25 hours)
+
+Joined Nelson in the morning applying wood treatment to steaming bay bench
+planks, then fastened them down securely. It's need some time to dry and the
+club is having their movie night. Got out the caution tape to advise people
+not to sit on freshly treated benches.
+
+![Freshly treated steaming bay benches. Do not sit!](./20260725_steaming_bay_bench_treated.jpg)
+
+#### 1:30PM - 2:15PM (0.75 hours)
+
+After lunch I thought I would get some signals work done but only replaced
+red bulb in Pennsy (GG) that was flickering. I also wanted to fix WC before
+movie night because that's at Sutchville exit and people will be using that
+area, but it was a new signal type and I didn't know what to do.
+
+Besides, people started arriving for movie night and I went to help. Well,
+mostly socialize, so not counting hours once I stopped signals work.
+
+---
+
 ## Friday 2026/7/24
 
 * 9.5 hours today, 375 hours this track year.
 
-Steaming bay benches, continued.
+Steaming bay benches, continued, then signals.
 
 #### 7:45AM - 12:00PM (4.25 hours)
 
