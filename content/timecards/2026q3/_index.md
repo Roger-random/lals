@@ -5,6 +5,40 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Monday 2026/7/27
+
+* 10.5 hours today, 397.5 hours this track year.
+
+Working on club-owned locomotives.
+
+#### 8:15AM - 1:45PM (5.5 hours)
+
+Most of the day was spent understanding what has been done to the Toonerville
+Trolley, which used to belong to a club member but is now a club-owned asset.
+It's been clear that various people has had a hand in its modifications, and
+not everything makes sense to Dorado and myself. For example, we couldn't find
+any way to service the electronics control board. It seems like the designed
+service rooftop had been nailed shut!
+
+Had some distraction in the form of UP1989 under investigation for a hydraulic
+control issue. Dorado and I disagreed with the Titan tech support answer, but
+maybe we don't know what we are talking about.
+
+![Toonerville Trolley and UP1989 in the maintenance bay](./20260727_toonerville_and_up1989_in_maintenance_bay.jpg)
+
+#### 2:45PM - 7:45PM (5 hours)
+
+Continued Toonerville exploration after lunch. We got to a point where we got
+the roof off. It will have to be redone in a way that allowed its removal for
+future servicing. Once the roof came off, we could probe the electrical panel
+in ernest. By the end of the day we have a pretty good idea of the purpose of
+all the wires that come out of the control panel and several of the circuit
+boards within. However the rest of the circuit boards are Smith specials and
+opaque to us. Do we run the trolley as-is until something breaks? Or do we
+pull out the Smith boards now? Have to think about this one.
+
+---
+
 ## Sunday 2026/7/26
 
 * 8 hours today, 387 hours this track year.
