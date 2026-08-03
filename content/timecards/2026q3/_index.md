@@ -80,8 +80,8 @@ Most of the day was spent understanding what has been done to the Toonerville
 Trolley, which used to belong to a club member but is now a club-owned asset.
 It's been clear that various people has had a hand in its modifications, and
 not everything makes sense to Dorado and myself. For example, we couldn't find
-any way to service the electronics control board. It seems like the designed
-service rooftop had been nailed shut!
+an easily accessible way to service the electronics control board. It seems
+like the designed service rooftop had been nailed shut!
 
 Had some distraction in the form of UP1989 under investigation for a hydraulic
 control issue. Dorado and I disagreed with the Titan tech support answer, but
@@ -92,8 +92,8 @@ maybe we don't know what we are talking about.
 #### 2:45PM - 7:45PM (5 hours)
 
 Continued Toonerville exploration after lunch. We got to a point where we got
-the roof off. It will have to be redone in a way that allowed its removal for
-future servicing. Once the roof came off, we could probe the electrical panel
+the roof off. It will have to be rebuilt in a way that allow easy removal for
+future servicing. Once the roof came off, we could probe the electrical system
 in ernest. By the end of the day we have a pretty good idea of the purpose of
 all the wires that come out of the control panel and several of the circuit
 boards within. However the rest of the circuit boards are Smith specials and
@@ -110,7 +110,7 @@ Sunday operations crew.
 
 #### 8:30AM - 4:30PM (8 hours)
 
-Spent most of the day as engineer for Santa Fe 164 electric locomotive but
+Spent most of the day as engineer for Santa Fe 163 electric locomotive but
 mixed in some kitchen beverage cooler restocking and dish washing.
 
 ---
@@ -124,8 +124,8 @@ Steaming bay bench wood treatment + minor signals work.
 #### 7:45AM - 11:00AM (3.25 hours)
 
 Joined Nelson in the morning applying wood treatment to steaming bay bench
-planks, then fastened them down securely. It's need some time to dry and the
-club is having their movie night. Got out the caution tape to advise people
+planks, then fastened them down securely. It'll need some time to dry and the
+club is having our movie night. Got out the caution tape to advise people
 not to sit on freshly treated benches.
 
 ![Freshly treated steaming bay benches. Do not sit!](./20260725_steaming_bay_bench_treated.jpg)
@@ -135,7 +135,7 @@ not to sit on freshly treated benches.
 After lunch I thought I would get some signals work done but only replaced
 red bulb in Pennsy (GG) that was flickering. I also wanted to fix WC before
 movie night because that's at Sutchville exit and people will be using that
-area, but it was a new signal type and I didn't know what to do.
+area, but it was a signal type new to me and I didn't know what to do.
 
 Besides, people started arriving for movie night and I went to help. Well,
 mostly socialize, so not counting hours once I stopped signals work.
