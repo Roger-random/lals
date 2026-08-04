@@ -27,23 +27,23 @@ apply wood treatment, then bolt them all down.
 With that loose end tied up, I left the wood treatment to dry in the sun and
 switched to finish another project: removing loose surface rust from the pile
 of candidate rails for the siding project. I started this project on
-[June 25th]https://roger-random.github.io/lals/timecards/2026q2/#thursday-2026625
+[June 25th](https://roger-random.github.io/lals/timecards/2026q2/#thursday-2026625)
 and got about 2/3 of the way through, enough for the siding project to get
 started. Now that the project is underway I finished off the rest of the pile
-so the siding crew has the full set to choose from.
+so the siding crew has a full set to choose from.
 
 Cleaning up messes from both projects took longer than I thought it would,
 lunch is very late.
 
 #### 3:00PM - 7:00PM (4 hours)
 
-After lunch I switched over to work with less muscle exertion on account of the
-heat. First up: signal WB green's flickering "bulb" was replaced. The socket is
-very loose so several replacement candidates couldn't make good electrical
-contact. Eventually I found one whose legs could be bent out to make good
-contact but I'm sure that's only going to last a few hot/cold cycles before it
-falls out too. Strawn wants to upgrade this signal head soon and I think that's
-a great idea. In the meantime at least it's not blinking.
+After lunch I switched over to work that demanded less muscle exertion on
+account of the heat. First up: signal WB green's flickering "bulb" was replaced.
+The socket is very loose so several replacement candidates couldn't make good
+electrical contact. Eventually I found one whose legs could be bent out to make
+good contact but I'm sure that's only going to last a few hot/cold cycles
+before it falls out too. Strawn wants to upgrade this signal head soon and I
+think that's a great idea. In the meantime at least it's not blinking.
 
 Next project was the monthly check of fire extinguishers, verifying all yellow
 needles are within the green range. I can't get into the caretaker's caboose or
@@ -55,7 +55,10 @@ Battery water was topped off. There are no worrisome battery fluid leaks. Two
 of the four axles show a tiny bit of shininess that may indicate oil seepage,
 something to keep an eye on. Nothing visibly out of place with axle and brake
 mechanical linkages. No electronics visibly darkened or burnt. This champ should
-be good to go for another month.
+be good to go for another month. And tonight the board voted to buy more spare
+gearmotor assemblies. The history of this locomotive reached far enough back
+people had different memories on how it came to be at the club, and with this
+vote it should keep running for a long time to come.
 
 ---
 
