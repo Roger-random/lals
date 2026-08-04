@@ -5,6 +5,60 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Monday 2026/8/3
+
+* 10 hours today, 429.5 hours this track year.
+
+Miscellany Monday.
+
+#### 8:15AM - 2:15PM (6 hours)
+
+There was a miscommunication or a miscount but we had four extra planks of wood
+after doing steaming bays phase 1. Well, we've already paid for them and cut
+them down from the original 12 feet length so they can't be returned, so might
+as well put them to work getting started on phase 2!
+
+Removed four old benches from the 3.5" and 4.75" gauge steaming bay, where I
+learned somebody put in double the effort and fastened them with four bolts
+rather than two so twice the cutting. Then I did the usual routine of beveling
+corners as shin protection, sand and round off corners, drill mounting holes,
+apply wood treatment, then bolt them all down.
+
+With that loose end tied up, I left the wood treatment to dry in the sun and
+switched to finish another project: removing loose surface rust from the pile
+of candidate rails for the siding project. I started this project on
+[June 25th]https://roger-random.github.io/lals/timecards/2026q2/#thursday-2026625
+and got about 2/3 of the way through, enough for the siding project to get
+started. Now that the project is underway I finished off the rest of the pile
+so the siding crew has the full set to choose from.
+
+Cleaning up messes from both projects took longer than I thought it would,
+lunch is very late.
+
+#### 3:00PM - 7:00PM (4 hours)
+
+After lunch I switched over to work with less muscle exertion on account of the
+heat. First up: signal WB green's flickering "bulb" was replaced. The socket is
+very loose so several replacement candidates couldn't make good electrical
+contact. Eventually I found one whose legs could be bent out to make good
+contact but I'm sure that's only going to last a few hot/cold cycles before it
+falls out too. Strawn wants to upgrade this signal head soon and I think that's
+a great idea. In the meantime at least it's not blinking.
+
+Next project was the monthly check of fire extinguishers, verifying all yellow
+needles are within the green range. I can't get into the caretaker's caboose or
+the ticket booth, but everything else looks good. (Meeting car was checked
+during the evening's board meeting.)
+
+Finally I brought SF163 into the maintenance bay for a quick monthly checkup.
+Battery water was topped off. There are no worrisome battery fluid leaks. Two
+of the four axles show a tiny bit of shininess that may indicate oil seepage,
+something to keep an eye on. Nothing visibly out of place with axle and brake
+mechanical linkages. No electronics visibly darkened or burnt. This champ should
+be good to go for another month.
+
+---
+
 ## Sunday 2026/8/2
 
 * 8.5 hours today, 419.5 hours this track year.
