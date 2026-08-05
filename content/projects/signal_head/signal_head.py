@@ -76,7 +76,9 @@ class signal_head:
 
         # Distance between screw mounting holes.
         self.screw_mount_hole_distance = 123
-        self.screw_mount_diameter = 4.6
+        self.screw_mount_diameter = (
+            6  # Generously sized to accommodate enclosure variation
+        )
 
         # "20mm" diameter acrylic lens dimensions rounded up 0.5mm for a bit of
         # wiggle room lining up with LED behind.
