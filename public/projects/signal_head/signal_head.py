@@ -56,10 +56,15 @@ class signal_head:
         self.plate_thickness = inch_to_mm(3 / 16)
         self.plate_end_radius = self.plate_width / 2
 
+        # Dwarf plate that extends barely beyond the enclosure
+        self.plate_dwarf_width = inch_to_mm(2)
+        self.plate_dwarf_length = inch_to_mm(5.75)
+        self.plate_dwarf_end_radius = self.plate_dwarf_width / 2
+
         # Hood that shades a single light
         self.hood_outer_diameter = inch_to_mm(1.5)
         self.hood_thickness = inch_to_mm(3 / 16)
-        self.hood_length_upper = inch_to_mm(1.8)
+        self.hood_length_upper = inch_to_mm(1.25)
         self.hood_flat_height = inch_to_mm(1 / 8)
         self.hood_length_lower = (
             self.hood_length_upper
@@ -76,7 +81,9 @@ class signal_head:
 
         # Distance between screw mounting holes.
         self.screw_mount_hole_distance = 123
-        self.screw_mount_diameter = 4.6
+        self.screw_mount_diameter = (
+            6  # Generously sized to accommodate enclosure variation
+        )
 
         # "20mm" diameter acrylic lens dimensions rounded up 0.5mm for a bit of
         # wiggle room lining up with LED behind.
@@ -127,6 +134,28 @@ class signal_head:
                 .extrude(self.plate_width, both=True)
             )
             plate = plate - end_cut
+
+        return plate
+
+    def plate_dwarf(self):
+        """
+        Smaller back plate for dwarf signals that extend only a bit outside of
+        the enclosure.
+        """
+        plate_quarter = (
+            cq.Workplane("YZ")
+            .line(self.plate_dwarf_end_radius, 0)
+            .line(0, self.plate_dwarf_length / 2 - self.plate_dwarf_end_radius)
+            .tangentArcPoint(
+                endpoint=(-self.plate_dwarf_end_radius, self.plate_dwarf_end_radius)
+            )
+            .close()
+            .extrude(self.plate_thickness)
+        )
+
+        plate_half = plate_quarter + plate_quarter.mirror("XZ")
+
+        plate = plate_half + plate_half.mirror("XY")
 
         return plate
 
@@ -340,9 +369,29 @@ class signal_head:
 
         return face_plate
 
+    def dwarf(self):
+        plate_base = self.plate_dwarf()
+        hood_add = self.hood()
+        hole_cut = self.lens_mount_cut()
+        mount_add = self.lens_mount_add()
+
+        offset = self.hole_distance_2 / 2
+
+        face_plate = (
+            plate_base
+            + mount_add.translate((0, 0, -offset))
+            + mount_add.translate((0, 0, offset))
+            - hole_cut.translate((0, 0, -offset))
+            - hole_cut.translate((0, 0, offset))
+            + hood_add.translate((0, 0, -offset))
+            + hood_add.translate((0, 0, offset))
+        )
+
+        face_plate = face_plate - self.screw_mount_holes_cut()
+
+        return face_plate
+
 
 sh = signal_head()
 
-show_object(
-    sh.face_plate(3, screw_holes=True), options={"color": "aliceblue", "alpha": 0.25}
-)
+show_object(sh.dwarf(), options={"color": "green", "alpha": 0.25})
