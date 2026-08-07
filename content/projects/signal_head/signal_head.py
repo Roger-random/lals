@@ -520,10 +520,45 @@ class signal_head:
 
         return sign
 
+    def absolute_sign_2_part(self):
+        width = inch_to_mm(2 + 3 / 4)
+        height = inch_to_mm(3 + 3 / 4)
+        thickness = inch_to_mm(1 / 8)
+        fillet = inch_to_mm(0.25)
+        hole_spacing = inch_to_mm(2 + 1 / 2)
+        hole_diameter = inch_to_mm(1 / 8)
+
+        back = (
+            cq.Workplane("XY")
+            .rect(xLen=width, yLen=height)
+            .extrude(thickness)
+            .edges("|Z")
+            .fillet(fillet)
+            .edges()
+            .chamfer(0.6)
+        )
+
+        hole = cq.Workplane("XY").circle(radius=hole_diameter / 2).extrude(thickness)
+
+        text = cq.Workplane("XY").text(txt="A", fontsize=90, distance=thickness)
+
+        sign = (
+            back
+            - hole.translate((hole_spacing / 2, 0, 0))
+            - hole.translate((-hole_spacing / 2, 0, 0))
+            - text
+        )
+
+        return sign, text
+
     def type_v_face_plate(self):
         pass
 
 
 sh = signal_head()
 
-show_object(sh.absolute_sign(), options={"color": "green", "alpha": 0.25})
+sign_white, sign_black = sh.absolute_sign_2_part()
+
+# show_object(sh., options={"color": "green", "alpha": 0.25})
+show_object(sign_white, options={"color": "green", "alpha": 0.25})
+show_object(sign_black, options={"color": "black", "alpha": 0.25})
