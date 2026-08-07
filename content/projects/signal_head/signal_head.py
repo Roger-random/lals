@@ -57,8 +57,8 @@ class signal_head:
         self.plate_end_radius = self.plate_width / 2
 
         # Dwarf plate that extends barely beyond the enclosure
-        self.plate_dwarf_width = inch_to_mm(2)
-        self.plate_dwarf_length = inch_to_mm(5.75)
+        self.plate_dwarf_width = 46
+        self.plate_dwarf_length = 137
         self.plate_dwarf_end_radius = self.plate_dwarf_width / 2
 
         # Hood that shades a single light
@@ -190,6 +190,62 @@ class signal_head:
             .edges("|X")
             .fillet(self.hood_thickness / 3)
         )
+
+        return hood
+
+    def hood_2(self):
+        """
+        Now that I have an actual existing metal hood on hand, I will try to
+        copy majority of its curvature. Intended to be a directly replacement
+        to hood() so they can be swapped around as desired.
+        """
+        hood_2_outer_diameter = 44
+        hood_2_thickness = 5
+        hood_2_length = 36
+        hood_2_outer_radius = hood_2_outer_diameter / 2
+        hood_2_taper_degrees = 2
+        hood_2_taper_radians = math.radians(hood_2_taper_degrees)
+        hood_2_taper_radius = math.atan(hood_2_taper_radians) * hood_2_length
+        hood_2_bottom_taper_degrees = 5
+        hood_2_bottom_taper_length = hood_2_length / 2
+        hood_2_bottom_taper_radians = math.radians(hood_2_bottom_taper_degrees)
+        hood_2_bottom_taper_rise = (
+            math.atan(hood_2_bottom_taper_radians) * hood_2_bottom_taper_length
+        )
+
+        hood_tube_outer = (
+            cq.Workplane("YZ")
+            .circle(hood_2_outer_radius)
+            .workplane(hood_2_length)
+            .circle(hood_2_outer_radius - hood_2_taper_radius)
+            .loft()
+        )
+
+        hood_tube_inner = (
+            cq.Workplane("YZ")
+            .circle(hood_2_outer_radius - hood_2_thickness)
+            .workplane(hood_2_length)
+            .circle(hood_2_outer_radius - hood_2_thickness + hood_2_taper_radius)
+            .loft()
+        )
+
+        hood_tube_intersect = (
+            cq.Workplane("XZ")
+            .lineTo(hood_2_bottom_taper_length, hood_2_bottom_taper_rise)
+            .tangentArcPoint(
+                (
+                    hood_2_length,
+                    hood_2_outer_radius - hood_2_thickness + hood_2_taper_radius,
+                ),
+                relative=False,
+            )
+            .lineTo(hood_2_length, hood_2_outer_radius)
+            .lineTo(0, hood_2_outer_radius)
+            .close()
+            .extrude(hood_2_outer_diameter, both=True)
+        )
+
+        hood = (hood_tube_outer - hood_tube_inner).intersect(hood_tube_intersect)
 
         return hood
 
@@ -370,8 +426,11 @@ class signal_head:
         return face_plate
 
     def dwarf(self):
+        """
+        Whip up something quick to test at dwarf signal GJ
+        """
         plate_base = self.plate_dwarf()
-        hood_add = self.hood()
+        hood_add = self.hood_2()
         hole_cut = self.lens_mount_cut()
         mount_add = self.lens_mount_add()
 
@@ -390,6 +449,48 @@ class signal_head:
         face_plate = face_plate - self.screw_mount_holes_cut()
 
         return face_plate
+
+    def side_marker_fit_test(self):
+        """
+        Small object to fit a commodity vehicle side marker light module.
+
+        Firsthand experience found the modules aren't as uniform across
+        manufacturers as I had hoped. While it is possible there's a hole
+        size where they'll all fit (loosely or tightly) I'm going to treat
+        them as different sizes.
+        """
+
+        ring_radius = 15
+        hole_height = 10
+
+        radius_g = 19.2 / 2
+        radius_ry = 18.2 / 2
+        height_g = 4.8
+        height_ry = 5.3
+
+        fit_test_plate = cq.Workplane("XY").rect(xLen=110, yLen=40).extrude(3)
+        fit_test_plate = fit_test_plate.edges("|Z").fillet(10)
+
+        ring_g = cq.Workplane("XY").circle(radius=ring_radius).extrude(height_g)
+        hole_g = cq.Workplane("XY").circle(radius=radius_g).extrude(hole_height)
+
+        ring_ry = cq.Workplane("XY").circle(radius=ring_radius).extrude(height_ry)
+        hole_ry = cq.Workplane("XY").circle(radius=radius_ry).extrude(hole_height)
+
+        fit_test_plate = (
+            fit_test_plate
+            + ring_g.translate((-35, 0, 0))
+            + ring_ry
+            + ring_ry.translate((35, 0, 0))
+            - hole_g.translate((-35, 0, 0))
+            - hole_ry
+            - hole_ry.translate((35, 0, 0))
+        )
+
+        return fit_test_plate
+
+    def type_v_face_plate(self):
+        pass
 
 
 sh = signal_head()
