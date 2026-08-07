@@ -26,16 +26,16 @@ when we worked on it.
 ![Two extra long benches in 1" bay](./20260806_two_extra_long_benches_in_inch_bay.jpg)
 
 We started the day intending to install nine 6' benches. We cut up five 12'
-boards so we expected one extra. With an too-wide set of brackets and one
+boards so we expected one extra. With one too-wide set of brackets and one
 broken bracket, we're now up to three extra 6' boards. Rather than letting them
-sit liable to get lost, I got started on Richardson bays.
+sit around and liable to get lost, I got started on Richardson bays.
 
 ![Starting Richardson benches](./20260806_first_three_benches_in_richardson.jpg)
 
 #### 1:00PM - 7:30PM (6.5 hours)
 
 Nelson didn't want to work on the Richardson benches so I continued solo after
-lunch to finish it up. Learning from today's mistake, I took the measuring tape
+lunch to finish it up. Learning from today's mistake, I took my tape measure
 to check out remaining benches. I confirmed 6' length for Richardson bays and
 measured 8' length for Alkire bays.
 
@@ -61,7 +61,7 @@ for omnidirectional visibility instead of focused into a beam.
 
 However, I found a related type that had all three colors in a single dome, and
 that might work for the searchlight type signal heads.
-[I bought one](www.amazon.com/dp/B0GWTTHV1Q)
+[I bought one](https://www.amazon.com/dp/B0GWTTHV1Q)
 and brought it in for a size sanity check, which it passed.
 
 ![Dome warning light might work for searchlight](./20260806_light_dome-searchlight_candidate.jpg)
@@ -72,18 +72,20 @@ how it comes apart and how one of these lights might adapt.
 * Electrical connection. These include LED current-limiting circuitry to take
 12V DC directly so I'll need to get my hands on the older style signal driver
 boards that lack LED current-limiter on board.
+* Visibility. How well can these actually communicate the information it needs
+to communicate to locomotive engineers?
 
 Switching gears again, I took dimensions of the V-style faceplate as used by
-signal head CD. There is no near term plan to upgrade these so I might as well
-take the initiative here.
+signal head CD. There is no near term plan to upgrade these types of signal
+heads so it's an opportunity for me to take the initiative.
 
 Earlier while poking around the currently-dark Sutchville station signals, I
 found signs of an earlier experiement in commodity 12V DC LED modules. They
 were held into existing faceplates with RTV silicone (or similiar) and not very
 securely. Those modules looked like mass-produced commodities and once I knew
-they existed I found them to be light modules sold for vehicle markers. Red and
-green for boats, yellow for trucks. They won't fit in existing faceplates
-(hence the RTV earlier) but that's a problem 3D printing can solve. I'll
+they existed I found them to be light modules sold for vehicle side markers.
+Red and green for boats, yellow for trucks. They won't fit in existing
+faceplates (hence the RTV) but that's a problem 3D printing can solve. I'll
 [order a few](https://www.amazon.com/dp/B08L56L759)
 for experimentation.
 
@@ -110,7 +112,7 @@ of time before something fails. In preparation for that eventuality I probed
 wires and voltages to see what it's supposed to look like while running. When
 we last looked at this we found the wire colors don't even match on either side
 of the connector. I looked for a frame of reference and was relieved to find
-the connector had official pin numbering. I'll use that!
+the connector had official pin numbering stamped on the sides. I'll use that!
 
 ![Toonerville control box connector numbering](./20260806_toonerville_control_box_pin_numbers.jpg)
 
