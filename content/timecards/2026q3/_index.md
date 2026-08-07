@@ -5,6 +5,117 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Thursday 2026/8/6
+
+* 10 hours today, 439.5 hours this track year.
+
+1" bay benches, signals experiments, and more Toonerville.
+
+#### 8:30AM - 12:00PM (3.5 hours)
+
+Met Nelson at Home Depot to get the next batch of bench planks and start
+working on their installation. This work day was on short notice or else I
+would have removed the old benches beforehand so this morning would go faster.
+Encountered a few curveballs on this phase: two of the benches in the 1" area
+were not six feel like the rest, they were longer. One of these had brackets
+just a hair over six feet apart so a six foot board won't work. The other one
+had brackets just a hair under six feet apart so theoretically a six foot board
+would work but unfortunately one of the brackets had a weak weld that broke
+when we worked on it.
+
+![Two extra long benches in 1" bay](./20260806_two_extra_long_benches_in_inch_bay.jpg)
+
+We started the day intending to install nine 6' benches. We cut up five 12'
+boards so we expected one extra. With an too-wide set of brackets and one
+broken bracket, we're now up to three extra 6' boards. Rather than letting them
+sit liable to get lost, I got started on Richardson bays.
+
+![Starting Richardson benches](./20260806_first_three_benches_in_richardson.jpg)
+
+#### 1:00PM - 7:30PM (6.5 hours)
+
+Nelson didn't want to work on the Richardson benches so I continued solo after
+lunch to finish it up. Learning from today's mistake, I took the measuring tape
+to check out remaining benches. I confirmed 6' length for Richardson bays and
+measured 8' length for Alkire bays.
+
+Remaining To-Do:
+* 6 more 6' benches to finish Richardson bays
+* 16 total 8' benches. 2 to finish 1" bay (after bracket is welded back) and
+14 for Alkire bays.
+
+After I put away all my bench work tools I switched gear to signals. There were
+a few low priority investigations that had been sitting on my list and this is
+a good day to knock them out.
+
+When we installed dwarf signal GJ on 7/30 there was no clear lens cover. I was
+asked if I can rig up something with the commodity LED lenses currently on
+field trial at JFA/B so I did. These lenses were designed for a single LED in
+the center, so the trio of LEDs on the dwarf board didn't work very well. It is
+still better than nothing but I'll keep thinking about ways to do better.
+
+I had been window-shopping stack lights designed to show status of industrial
+machinery with the hope for finding a commodity product that can be repurposed
+to vertical signal heads, but striking out so far because they were designed
+for omnidirectional visibility instead of focused into a beam.
+
+However, I found a related type that had all three colors in a single dome, and
+that might work for the searchlight type signal heads.
+[I bought one](www.amazon.com/dp/B0GWTTHV1Q)
+and brought it in for a size sanity check, which it passed.
+
+![Dome warning light might work for searchlight](./20260806_light_dome-searchlight_candidate.jpg)
+
+Future steps:
+* Mechanical mounting. I haven't worked on searchlight signals so I don't know
+how it comes apart and how one of these lights might adapt.
+* Electrical connection. These include LED current-limiting circuitry to take
+12V DC directly so I'll need to get my hands on the older style signal driver
+boards that lack LED current-limiter on board.
+
+Switching gears again, I took dimensions of the V-style faceplate as used by
+signal head CD. There is no near term plan to upgrade these so I might as well
+take the initiative here.
+
+Earlier while poking around the currently-dark Sutchville station signals, I
+found signs of an earlier experiement in commodity 12V DC LED modules. They
+were held into existing faceplates with RTV silicone (or similiar) and not very
+securely. Those modules looked like mass-produced commodities and once I knew
+they existed I found them to be light modules sold for vehicle markers. Red and
+green for boats, yellow for trucks. They won't fit in existing faceplates
+(hence the RTV earlier) but that's a problem 3D printing can solve. I'll
+[order a few](https://www.amazon.com/dp/B08L56L759)
+for experimentation.
+
+Last signals item (or at least marginally so) are the absolute signs around the
+layout. Some are in pretty bad shape. I took some measurements with the intent
+of trying a 3D-printed replacement and see if it holds up better.
+
+![Decayed absolute sign](./20260806_decayed_absolute.jpg)
+
+Signals activities above wrapped up in the peak of afternoon rush hour traffic.
+With no desire to sit in traffic I rolled out Toonerville Trolley for more
+study time.
+
+For the light wiring organization project (where Dorado started) I bought some
+lever-lock type connectors that has mounting holes so we could screw them into
+the trolley instead of letting wires just dangle. Won't fasten for real until
+Dorado has a chance to look it over and we know how much room we need to leave
+for the revamped roof.
+
+![Toonerville side light wiring connector candidate](./20260806_toonerville_side_light_connector.jpg)
+
+The Toonerville control box wiring has no strain relief, so it's only a matter
+of time before something fails. In preparation for that eventuality I probed
+wires and voltages to see what it's supposed to look like while running. When
+we last looked at this we found the wire colors don't even match on either side
+of the connector. I looked for a frame of reference and was relieved to find
+the connector had official pin numbering. I'll use that!
+
+![Toonerville control box connector numbering](./20260806_toonerville_control_box_pin_numbers.jpg)
+
+---
+
 ## Monday 2026/8/3
 
 * 10 hours today, 429.5 hours this track year.
