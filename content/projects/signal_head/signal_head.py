@@ -464,7 +464,7 @@ class signal_head:
         hole_height = 10
 
         radius_g = 19.2 / 2
-        radius_ry = 18.2 / 2
+        radius_ry = 18.7 / 2
         height_g = 4.8
         height_ry = 5.3
 
