@@ -463,7 +463,7 @@ class signal_head:
         ring_radius = 15
         hole_height = 10
 
-        radius_g = 19.2 / 2
+        radius_g = 19 / 2
         radius_ry = 18.7 / 2
         height_g = 4.8
         height_ry = 5.3
@@ -489,10 +489,41 @@ class signal_head:
 
         return fit_test_plate
 
+    def absolute_sign(self):
+        width = inch_to_mm(2 + 3 / 4)
+        height = inch_to_mm(3 + 3 / 4)
+        thickness = inch_to_mm(1 / 8)
+        fillet = inch_to_mm(0.25)
+        hole_spacing = inch_to_mm(2 + 1 / 2)
+        hole_diameter = inch_to_mm(1 / 8)
+
+        back = (
+            cq.Workplane("XY")
+            .rect(xLen=width, yLen=height)
+            .extrude(thickness)
+            .edges("|Z")
+            .fillet(fillet)
+            .edges()
+            .chamfer(0.6)
+        )
+
+        hole = cq.Workplane("XY").circle(radius=hole_diameter / 2).extrude(thickness)
+
+        text = cq.Workplane("XY").text(txt="A", fontsize=90, distance=thickness + 1)
+
+        sign = (
+            back
+            - hole.translate((hole_spacing / 2, 0, 0))
+            - hole.translate((-hole_spacing / 2, 0, 0))
+            + text
+        )
+
+        return sign
+
     def type_v_face_plate(self):
         pass
 
 
 sh = signal_head()
 
-show_object(sh.dwarf(), options={"color": "green", "alpha": 0.25})
+show_object(sh.absolute_sign(), options={"color": "green", "alpha": 0.25})
