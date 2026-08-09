@@ -552,13 +552,77 @@ class signal_head:
         return sign, text
 
     def type_v_face_plate(self):
-        pass
+        plate_radius = inch_to_mm(8) / 2
+        plate_thickness = inch_to_mm(1 / 8)
+        mounting_hole_offset_h = inch_to_mm(6) / 2
+        mounting_hole_offset_v = inch_to_mm(4 + 1 / 8) / 2
+        mounting_hole_radius = inch_to_mm(3 / 16) / 2
+        mounting_hole_bevel_radius = inch_to_mm(3 / 8) / 2
+        mounting_hole_bevel_height = mounting_hole_bevel_radius - mounting_hole_radius
+        placement_radius = inch_to_mm(4 + 1 / 4) / 2
+
+        placement_offset_v = math.cos(math.radians(60)) * placement_radius
+        placement_offset_h = math.sin(math.radians(60)) * placement_radius
+
+        hole_radius = 19 / 2
+
+        plate = cq.Workplane("YZ").circle(plate_radius).extrude(plate_thickness)
+
+        hole_cut = cq.Workplane("YZ").circle(hole_radius).extrude(20)
+
+        ring_radius = 15
+        height_g = 4.8
+        height_ry = 5.3
+
+        ring_g = cq.Workplane("YZ").circle(radius=ring_radius).extrude(height_g)
+        ring_ry = cq.Workplane("YZ").circle(radius=ring_radius).extrude(height_ry)
+
+        hood = self.hood_2()
+
+        translate_g = (0, -placement_offset_h, placement_offset_v)
+        translate_y = (0, placement_offset_h, placement_offset_v)
+        translate_r = (0, 0, -placement_radius)
+
+        mounting_hole = (
+            cq.Workplane("YZ")
+            .circle(mounting_hole_radius)
+            .extrude(plate_thickness - mounting_hole_bevel_height)
+            .faces(">X")
+            .workplane()
+            .circle(mounting_hole_radius)
+            .workplane(mounting_hole_bevel_height)
+            .circle(mounting_hole_bevel_radius)
+            .loft()
+        )
+
+        face_plate = (
+            plate
+            + ring_g.translate(translate_g)
+            + ring_ry.translate(translate_y)
+            + ring_ry.translate(translate_r)
+            + hood.translate(translate_g)
+            + hood.translate(translate_y)
+            + hood.translate(translate_r)
+            - hole_cut.translate(translate_g)
+            - hole_cut.translate(translate_y)
+            - hole_cut.translate(translate_r)
+            - mounting_hole.translate(
+                (0, mounting_hole_offset_h, mounting_hole_offset_v)
+            )
+            - mounting_hole.translate(
+                (0, -mounting_hole_offset_h, mounting_hole_offset_v)
+            )
+            - mounting_hole.translate(
+                (0, mounting_hole_offset_h, -mounting_hole_offset_v)
+            )
+            - mounting_hole.translate(
+                (0, -mounting_hole_offset_h, -mounting_hole_offset_v)
+            )
+        )
+
+        return face_plate
 
 
 sh = signal_head()
 
-sign_white, sign_black = sh.absolute_sign_2_part()
-
-# show_object(sh., options={"color": "green", "alpha": 0.25})
-show_object(sign_white, options={"color": "green", "alpha": 0.25})
-show_object(sign_black, options={"color": "black", "alpha": 0.25})
+show_object(sh.type_v_face_plate(), options={"color": "green", "alpha": 0.25})
