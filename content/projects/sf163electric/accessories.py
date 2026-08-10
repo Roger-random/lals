@@ -58,11 +58,12 @@ class accessories:
         beneath the outermost area of the ring to support it from beneath.
         This should work better when someone accidentally leans on it.
         """
-        inner_radius = inch_to_mm(6 + 1 / 16) / 2
-        outer_radius = inner_radius + inch_to_mm(1 / 16)
+        outer_radius = (
+            (inch_to_mm(6 + 1 / 16) / 2) + inch_to_mm(1 / 16) + inch_to_mm(3 / 16)
+        )
+        inner_radius = outer_radius - inch_to_mm(1 / 8)
 
-        # Outer height - metal wire diameter - height of the surround
-        height = inch_to_mm(3 / 4 - 1 / 16) - 1
+        height = inch_to_mm(1 / 2)
 
         ring = (
             cq.Workplane("XY").circle(outer_radius).circle(inner_radius).extrude(height)
