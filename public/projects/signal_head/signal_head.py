@@ -57,8 +57,8 @@ class signal_head:
         self.plate_end_radius = self.plate_width / 2
 
         # Dwarf plate that extends barely beyond the enclosure
-        self.plate_dwarf_width = inch_to_mm(2)
-        self.plate_dwarf_length = inch_to_mm(5.75)
+        self.plate_dwarf_width = 46
+        self.plate_dwarf_length = 137
         self.plate_dwarf_end_radius = self.plate_dwarf_width / 2
 
         # Hood that shades a single light
@@ -190,6 +190,62 @@ class signal_head:
             .edges("|X")
             .fillet(self.hood_thickness / 3)
         )
+
+        return hood
+
+    def hood_2(self):
+        """
+        Now that I have an actual existing metal hood on hand, I will try to
+        copy majority of its curvature. Intended to be a directly replacement
+        to hood() so they can be swapped around as desired.
+        """
+        hood_2_outer_diameter = 44
+        hood_2_thickness = 5
+        hood_2_length = 36
+        hood_2_outer_radius = hood_2_outer_diameter / 2
+        hood_2_taper_degrees = 2
+        hood_2_taper_radians = math.radians(hood_2_taper_degrees)
+        hood_2_taper_radius = math.atan(hood_2_taper_radians) * hood_2_length
+        hood_2_bottom_taper_degrees = 5
+        hood_2_bottom_taper_length = hood_2_length / 2
+        hood_2_bottom_taper_radians = math.radians(hood_2_bottom_taper_degrees)
+        hood_2_bottom_taper_rise = (
+            math.atan(hood_2_bottom_taper_radians) * hood_2_bottom_taper_length
+        )
+
+        hood_tube_outer = (
+            cq.Workplane("YZ")
+            .circle(hood_2_outer_radius)
+            .workplane(hood_2_length)
+            .circle(hood_2_outer_radius - hood_2_taper_radius)
+            .loft()
+        )
+
+        hood_tube_inner = (
+            cq.Workplane("YZ")
+            .circle(hood_2_outer_radius - hood_2_thickness)
+            .workplane(hood_2_length)
+            .circle(hood_2_outer_radius - hood_2_thickness + hood_2_taper_radius)
+            .loft()
+        )
+
+        hood_tube_intersect = (
+            cq.Workplane("XZ")
+            .lineTo(hood_2_bottom_taper_length, hood_2_bottom_taper_rise)
+            .tangentArcPoint(
+                (
+                    hood_2_length,
+                    hood_2_outer_radius - hood_2_thickness + hood_2_taper_radius,
+                ),
+                relative=False,
+            )
+            .lineTo(hood_2_length, hood_2_outer_radius)
+            .lineTo(0, hood_2_outer_radius)
+            .close()
+            .extrude(hood_2_outer_diameter, both=True)
+        )
+
+        hood = (hood_tube_outer - hood_tube_inner).intersect(hood_tube_intersect)
 
         return hood
 
@@ -370,8 +426,11 @@ class signal_head:
         return face_plate
 
     def dwarf(self):
+        """
+        Whip up something quick to test at dwarf signal GJ
+        """
         plate_base = self.plate_dwarf()
-        hood_add = self.hood()
+        hood_add = self.hood_2()
         hole_cut = self.lens_mount_cut()
         mount_add = self.lens_mount_add()
 
@@ -391,7 +450,179 @@ class signal_head:
 
         return face_plate
 
+    def side_marker_fit_test(self):
+        """
+        Small object to fit a commodity vehicle side marker light module.
+
+        Firsthand experience found the modules aren't as uniform across
+        manufacturers as I had hoped. While it is possible there's a hole
+        size where they'll all fit (loosely or tightly) I'm going to treat
+        them as different sizes.
+        """
+
+        ring_radius = 15
+        hole_height = 10
+
+        radius_g = 19 / 2
+        radius_ry = 18.7 / 2
+        height_g = 4.8
+        height_ry = 5.3
+
+        fit_test_plate = cq.Workplane("XY").rect(xLen=110, yLen=40).extrude(3)
+        fit_test_plate = fit_test_plate.edges("|Z").fillet(10)
+
+        ring_g = cq.Workplane("XY").circle(radius=ring_radius).extrude(height_g)
+        hole_g = cq.Workplane("XY").circle(radius=radius_g).extrude(hole_height)
+
+        ring_ry = cq.Workplane("XY").circle(radius=ring_radius).extrude(height_ry)
+        hole_ry = cq.Workplane("XY").circle(radius=radius_ry).extrude(hole_height)
+
+        fit_test_plate = (
+            fit_test_plate
+            + ring_g.translate((-35, 0, 0))
+            + ring_ry
+            + ring_ry.translate((35, 0, 0))
+            - hole_g.translate((-35, 0, 0))
+            - hole_ry
+            - hole_ry.translate((35, 0, 0))
+        )
+
+        return fit_test_plate
+
+    def absolute_sign(self):
+        width = inch_to_mm(2 + 3 / 4)
+        height = inch_to_mm(3 + 3 / 4)
+        thickness = inch_to_mm(1 / 8)
+        fillet = inch_to_mm(0.25)
+        hole_spacing = inch_to_mm(2 + 1 / 2)
+        hole_diameter = inch_to_mm(1 / 8)
+
+        back = (
+            cq.Workplane("XY")
+            .rect(xLen=width, yLen=height)
+            .extrude(thickness)
+            .edges("|Z")
+            .fillet(fillet)
+            .edges()
+            .chamfer(0.6)
+        )
+
+        hole = cq.Workplane("XY").circle(radius=hole_diameter / 2).extrude(thickness)
+
+        text = cq.Workplane("XY").text(txt="A", fontsize=90, distance=thickness + 1)
+
+        sign = (
+            back
+            - hole.translate((hole_spacing / 2, 0, 0))
+            - hole.translate((-hole_spacing / 2, 0, 0))
+            + text
+        )
+
+        return sign
+
+    def absolute_sign_2_part(self):
+        width = inch_to_mm(2 + 3 / 4)
+        height = inch_to_mm(3 + 3 / 4)
+        thickness = inch_to_mm(1 / 8)
+        fillet = inch_to_mm(0.25)
+        hole_spacing = inch_to_mm(2 + 1 / 2)
+        hole_diameter = inch_to_mm(1 / 8)
+
+        back = (
+            cq.Workplane("XY")
+            .rect(xLen=width, yLen=height)
+            .extrude(thickness)
+            .edges("|Z")
+            .fillet(fillet)
+            .edges()
+            .chamfer(0.6)
+        )
+
+        hole = cq.Workplane("XY").circle(radius=hole_diameter / 2).extrude(thickness)
+
+        text = cq.Workplane("XY").text(txt="A", fontsize=90, distance=thickness)
+
+        sign = (
+            back
+            - hole.translate((hole_spacing / 2, 0, 0))
+            - hole.translate((-hole_spacing / 2, 0, 0))
+            - text
+        )
+
+        return sign, text
+
+    def type_v_face_plate(self):
+        plate_radius = inch_to_mm(8) / 2
+        plate_thickness = inch_to_mm(1 / 8)
+        mounting_hole_offset_h = inch_to_mm(6) / 2
+        mounting_hole_offset_v = inch_to_mm(4 + 1 / 8) / 2
+        mounting_hole_radius = inch_to_mm(3 / 16) / 2
+        mounting_hole_bevel_radius = inch_to_mm(3 / 8) / 2
+        mounting_hole_bevel_height = mounting_hole_bevel_radius - mounting_hole_radius
+        placement_radius = inch_to_mm(4 + 1 / 4) / 2
+
+        placement_offset_v = math.cos(math.radians(60)) * placement_radius
+        placement_offset_h = math.sin(math.radians(60)) * placement_radius
+
+        hole_radius = 19 / 2
+
+        plate = cq.Workplane("YZ").circle(plate_radius).extrude(plate_thickness)
+
+        hole_cut = cq.Workplane("YZ").circle(hole_radius).extrude(20)
+
+        ring_radius = 15
+        height_g = 4.8
+        height_ry = 5.3
+
+        ring_g = cq.Workplane("YZ").circle(radius=ring_radius).extrude(height_g)
+        ring_ry = cq.Workplane("YZ").circle(radius=ring_radius).extrude(height_ry)
+
+        hood = self.hood_2()
+
+        translate_g = (0, -placement_offset_h, placement_offset_v)
+        translate_y = (0, placement_offset_h, placement_offset_v)
+        translate_r = (0, 0, -placement_radius)
+
+        mounting_hole = (
+            cq.Workplane("YZ")
+            .circle(mounting_hole_radius)
+            .extrude(plate_thickness - mounting_hole_bevel_height)
+            .faces(">X")
+            .workplane()
+            .circle(mounting_hole_radius)
+            .workplane(mounting_hole_bevel_height)
+            .circle(mounting_hole_bevel_radius)
+            .loft()
+        )
+
+        face_plate = (
+            plate
+            + ring_g.translate(translate_g)
+            + ring_ry.translate(translate_y)
+            + ring_ry.translate(translate_r)
+            + hood.translate(translate_g)
+            + hood.translate(translate_y)
+            + hood.translate(translate_r)
+            - hole_cut.translate(translate_g)
+            - hole_cut.translate(translate_y)
+            - hole_cut.translate(translate_r)
+            - mounting_hole.translate(
+                (0, mounting_hole_offset_h, mounting_hole_offset_v)
+            )
+            - mounting_hole.translate(
+                (0, -mounting_hole_offset_h, mounting_hole_offset_v)
+            )
+            - mounting_hole.translate(
+                (0, mounting_hole_offset_h, -mounting_hole_offset_v)
+            )
+            - mounting_hole.translate(
+                (0, -mounting_hole_offset_h, -mounting_hole_offset_v)
+            )
+        )
+
+        return face_plate
+
 
 sh = signal_head()
 
-show_object(sh.dwarf(), options={"color": "green", "alpha": 0.25})
+show_object(sh.type_v_face_plate(), options={"color": "green", "alpha": 0.25})
