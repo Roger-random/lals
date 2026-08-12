@@ -5,6 +5,70 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Saturday 2026/8/8
+
+* 8.5 hours today, 448 hours this track year.
+
+TTOS event train ride crew, signals diagnosis, annoy more squirrels.
+
+#### 8:30AM - 12:30PM (4 hours)
+
+By the time I arrived Strawn had already pulled out SF163 and got it ready so
+we had time to fiddle with minor signals issues like trying and failing to
+upgrade signal head WC. (Darned missing part!) Then the
+[TTOS (Toy Train Operators Society Southwestern Division)](https://ttos-sw.org/)
+event got rolling and we started giving train rides. Always a pleasure to give
+rides to train lovers.
+
+#### 1:00PM - 5:30PM (4.5 hours)
+
+After lunch guest volume picked up and SPSF was brought out so we could run two
+trains. Nelson and Strawn on SPSF, myself and Katz on SF163. Then the event
+wound down enough for SPSF to be put away.
+
+Before I put SF163 away I tried to fix the broken cosmetic fan grate. It didn't
+snap back together the way I thought it did the last time. I also test fitted
+the 3D-printed ring I made to try supporting the grate. The size was off but
+that wasn't a surprise for a first draft.
+
+Today we started seeing an intermittent false red at Sherwood exit. Opened up
+panel B to see it is a false detection in block 6. A false detection on BB6
+has the following symptoms:
+1. BGA false red telling outer mainline train the next block (BB6) is occupied
+when there is in fact no train.
+2. BIB false red telling train engineers leaving Sherwood station to wait for
+nonexistent train to pass before merging onto mainline.
+
+I measured voltage across rail to be 1.5V. This was consistent at detector
+board output, at feed wire connection, and at track resistor connection.
+Suggesting this is not an underground wire issue, not a bond wire issue, and
+not a broken track resistor. As I walked back to panel B, the symptom
+disappeared. Further diagnosis will have to wait for the issue to return.
+
+First draft of 3D-printed absolute sign turns out to be smaller than existing
+signs, then I found the existing signs are too small to fit on existing holes
+on pipe brackets that were used so new holes were drilled. Hence the two I
+looked at actually had slightly different dimensions as they were custom
+drilled to fit each sign. This is silly. I'm going to change my 3D printed sign
+dimensions to match the standardized existing hole on those pipe brackets. If
+it works out great, if not I'll learn why they did the custom drilling.
+
+Test fit for first draft of V-style signal went better. The fastener holes
+lined up though I was a bit too generous on the bevel head allowance. That can
+be smaller. I also got feedback the vehicle marker lights are small and left
+too much blank surface area on the face plate. Will try to figure out if I
+can find a larger commodity LED module.
+
+Brought out the pick and shovel to annoy some squirrels by filling several
+of their holes near the pit a.k.a. Pennsy signal a.k.a. signal head GG.
+
+A water pipe broke underneath concrete slabs of the guest line section of
+Sherwood station. This pipe feeds water to our guest restrooms in Sherwood
+and also member restroom/shower building and caretaker's caboose. This is
+going to be a problem starting with cancellation of tomorrow's public runs.
+
+---
+
 ## Thursday 2026/8/6
 
 * 10 hours today, 439.5 hours this track year.
