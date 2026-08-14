@@ -46,6 +46,15 @@ def inch_to_mm(length_inch: float):
 
 
 class signal_head:
+    """
+    3D-printed shapes to solve various problems relating to signals heads for
+    traffic control on the train track layout for Los Angeles Live Steamers.
+    Filament material must account for the harsh hot SoCal sunshine:
+    * PLA will quickly deform and is pretty hopeless.
+    * PETG is sufficient for experimentation but will only last a few months.
+    * ASA (or some new hotness) for long-term deployment.
+    """
+
     def __init__(self):
         # Extra margin for 3D printed parts to fit.
         self.print_margin = 0.2
@@ -490,6 +499,10 @@ class signal_head:
         return fit_test_plate
 
     def absolute_sign(self):
+        """
+        Some of the absolute signs are in very bad shape. This is an effort to
+        create 3D-printed replacements.
+        """
         width = inch_to_mm(4)
         height = inch_to_mm(4)
         thickness = inch_to_mm(1 / 8)
@@ -525,6 +538,14 @@ class signal_head:
         return sign
 
     def type_v_face_plate(self):
+        """
+        The "type V" or "V style" signal consists of three separate lights on a
+        large circular faceplate located on the same circular radius about the
+        center but 120 degrees apart. Green is to the upper left, yellow upper
+        right, and red is directly below center. At the moment there is no plan
+        on how to upgrade these automotive-style bulb sockets to newer LED
+        types so I'm experimenting with commodity vehicle side marker LEDs.
+        """
         plate_radius = inch_to_mm(8) / 2
         plate_thickness = inch_to_mm(1 / 8)
         mounting_hole_offset_h = inch_to_mm(6) / 2
@@ -596,6 +617,14 @@ class signal_head:
         return face_plate
 
     def dome_searchlight(self):
+        """
+        Found a RGB status indicator light that is intended to be a more
+        compact all-in-one version of a vertical stack light. However,
+        if we turn it sideways, it might work for a searchlight-type
+        signal. This is the 3D-printed back plate to give it the right
+        shape to look like it belong. The back side is flat until I figure
+        out how it'll be mounted on the pillar.
+        """
         back_plate_radius = inch_to_mm(6) / 2
         back_plate_thickness = inch_to_mm(3 / 16)
         through_hole_radius = 32 / 2
