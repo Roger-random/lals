@@ -595,7 +595,34 @@ class signal_head:
 
         return face_plate
 
+    def dome_searchlight(self):
+        back_plate_radius = inch_to_mm(6) / 2
+        back_plate_thickness = inch_to_mm(3 / 16)
+        through_hole_radius = 32 / 2
+        body_clearance_radius = 51 / 2
+
+        back_plate = (
+            cq.Workplane("YZ")
+            .circle(back_plate_radius)
+            .circle(body_clearance_radius)
+            .extrude(back_plate_thickness)
+        )
+
+        # Can either protrude or be a recess depending on aesthetic preferences
+        dome_area = (
+            cq.Workplane("YZ")
+            .circle(body_clearance_radius)
+            .circle(through_hole_radius)
+            .extrude(back_plate_thickness)
+        )
+
+        hood = self.hood_2().val().scale(1.6)
+
+        searchlight = back_plate + dome_area + hood
+
+        return searchlight
+
 
 sh = signal_head()
 
-show_object(sh.absolute_sign(), options={"color": "green", "alpha": 0.25})
+show_object(sh.dome_searchlight(), options={"color": "green", "alpha": 0.25})
