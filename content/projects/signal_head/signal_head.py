@@ -490,12 +490,12 @@ class signal_head:
         return fit_test_plate
 
     def absolute_sign(self):
-        width = inch_to_mm(2 + 3 / 4)
-        height = inch_to_mm(3 + 3 / 4)
+        width = inch_to_mm(4)
+        height = inch_to_mm(4)
         thickness = inch_to_mm(1 / 8)
         fillet = inch_to_mm(0.25)
-        hole_spacing = inch_to_mm(2 + 1 / 2)
-        hole_diameter = inch_to_mm(1 / 8)
+        hole_spacing = inch_to_mm(3 + 1 / 16)
+        hole_diameter = inch_to_mm(5 / 32)
 
         back = (
             cq.Workplane("XY")
@@ -509,7 +509,11 @@ class signal_head:
 
         hole = cq.Workplane("XY").circle(radius=hole_diameter / 2).extrude(thickness)
 
-        text = cq.Workplane("XY").text(txt="A", fontsize=90, distance=thickness + 1)
+        text = (
+            cq.Workplane("XY")
+            .transformed(offset=(0, inch_to_mm(0.2)))
+            .text(txt="A", fontsize=110, distance=thickness + 1, font="Arial Black")
+        )
 
         sign = (
             back
@@ -519,37 +523,6 @@ class signal_head:
         )
 
         return sign
-
-    def absolute_sign_2_part(self):
-        width = inch_to_mm(2 + 3 / 4)
-        height = inch_to_mm(3 + 3 / 4)
-        thickness = inch_to_mm(1 / 8)
-        fillet = inch_to_mm(0.25)
-        hole_spacing = inch_to_mm(2 + 1 / 2)
-        hole_diameter = inch_to_mm(1 / 8)
-
-        back = (
-            cq.Workplane("XY")
-            .rect(xLen=width, yLen=height)
-            .extrude(thickness)
-            .edges("|Z")
-            .fillet(fillet)
-            .edges()
-            .chamfer(0.6)
-        )
-
-        hole = cq.Workplane("XY").circle(radius=hole_diameter / 2).extrude(thickness)
-
-        text = cq.Workplane("XY").text(txt="A", fontsize=90, distance=thickness)
-
-        sign = (
-            back
-            - hole.translate((hole_spacing / 2, 0, 0))
-            - hole.translate((-hole_spacing / 2, 0, 0))
-            - text
-        )
-
-        return sign, text
 
     def type_v_face_plate(self):
         plate_radius = inch_to_mm(8) / 2
@@ -625,4 +598,4 @@ class signal_head:
 
 sh = signal_head()
 
-show_object(sh.type_v_face_plate(), options={"color": "green", "alpha": 0.25})
+show_object(sh.absolute_sign(), options={"color": "green", "alpha": 0.25})
