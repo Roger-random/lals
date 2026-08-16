@@ -5,6 +5,57 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Thursday 2026/8/13
+
+* 10 hours today, 458 hours this track year.
+
+Signals work day including more experiments at the end.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Started the day by revisiting WC upgrade to new searchlight signal head, which
+was foiled last Saturday by a missing part. It looks good! The crew then moved
+to panel R for multiple items. I mounted the regulated power supply properly
+while Strawn and Harper got the new dwarf signal RL physically set up. Once the
+power supply was secure I moved on to supporting with electrical wiring work
+for dwarf signal RL.
+
+#### 1:00PM - 7:00PM (6 hours)
+
+After lunch we went to Home Depot for a few remaining hardware support items to
+complete RL dwarf work, then we moved on to panel L for the long-standing work
+item of wiring up block 13 detection and switch 4 position sensing micro-switch
+so signal heads LEA/LEB can indicate track is set to diverge. Both turned out
+to need a little more work than needed. There were bad wire connections in
+block 13 that needed to be redone, one bond wire and the track resistor. They
+were removed, loose rust cleaned off, and reinstalled with conductive grease.
+And the LEA/LEB circuitry is not the standard XO board, so we had to decipher
+Smith documentation to understand what was going on. And even then, the
+diverging path occupancy is not working correctly because we don't have any
+detection on the switchback tracks. More work for the future!
+
+After Strawn left I went and installed my prototype 3D-printed absolute sign.
+Let's see how it holds up in deployment. If successful I'll print more for
+replacing other signs. One annoyance: the existing sign is narrower than the
+commodity pipe bracket used to hold them and required drilling narrower holes,
+leaving the rest of the bracket sticking out the side of the sign. I thought
+that was silly and designed my sign to use the standard holes. After
+installation, I paid more attention around the layout and saw somebody had
+"solved" that width problem by cutting off the outer portions of the bracket,
+including the holes I wanted to use. Nuts.
+
+I ended the day by pulling SF163 out for more study of its wiring setup, with
+particular focus on the audio system motivated by Suncin and Westfal's claim
+that it used to sound better. What might have worn out during its lifetime?
+The amplifier? The speakers?
+
+While looking around the speakers I noticed a sticker on the air compressor
+sitting between speakers: "FOR OPTIMAL COMPRESSOR PERFORMANCE, REPLACE FILTER
+ELEMENT PERIODICALLY". I am going to go out on a limb and declar it hasn't been
+replaced in some time. I should ask Kristman for some replacement filters.
+
+---
+
 ## Saturday 2026/8/8
 
 * 8.5 hours today, 448 hours this track year.
