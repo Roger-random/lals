@@ -5,6 +5,69 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Saturday 2026/8/15
+
+* 9.5 hours today, 467.5 hours this track year.
+
+Official club work day mostly spent annoying squirrels.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+The headline project of this club work day is dismantling vestigial traces of a
+chain-link fence between high line and valley division. I did not join that
+crew as I had other assignments. I started the day looking for squirrel
+tunnels along Zoo Drive. When I find one, collapse a foot or two worth near the
+entrance with a pick, then shovel some dirt over it. Fortunately dirt is easily
+available along Zoo Drive. Concluded by trying to fill the void underneath the
+Minden water tower. I thought it was a small gap but I dumped at least five
+gallons of dirt into that hole. It must have been a massive squirrel mansion.
+
+I then moved on to the old battleground on the west end of O'Brien-Moore Bridge
+where I saw many of the holes I filled earlier had stay filled but some of them
+had been dug back out bigger than ever. The squirrels have apparently decided
+the rotted rail ties on that hill side are good to use as cover and they are
+very smart to do so: I can't collapse their tunnels behind the ties and it's a
+pain to stuff dirt down those holes around the ties. But still, I have a
+pickaxe and a shovel and a train for ferrying dirt, and they only have tiny
+paws and more time than I do to work on the problem. I think they have the
+advantage and long term I expect to lose. But I'm going to fight the Swiss-
+chess-ification of that hill!
+
+#### Lunch
+
+During lunch, Dorado and I played around with the two 12V horns. The little
+scooter horn sounds about right for Toonerville Trolley. The big horn sounded
+like a car horn and doesn't feel like it fit a cartoon character. I also got
+to ask Kirstman about the air compressor filter, and to my surprise he said
+that was the first time he's heard of such a thing. He suggested asking Burden
+so I guess I should do that.
+
+#### 1:00PM - 6:30PM (5.5 hours)
+
+After lunch I took a break from shoveling dirt by walking around with a can of
+graphite lube, a worn flat screwdriver, and a leaf blower. I visited all the
+rail switches on our public run route. Clearing up a switch means alternatively
+using the leaf blower to blow away the loose fluffy stuff and the worn
+screwdriver as a dull chisel to peck away at the sturdier stuff. I also got
+pine needles and such out of the small crevices in each switch. Once cleaned,
+they got a squirt of graphite dry lubricatant on moving surfaces.
+
+I started my tour at the station and ended my tour at the station, where R.
+Guzman was clearing out vines and asked if I knew where the other leaf blower
+was. I said I was done, so I handed it over for him to use. I fetched another
+battery pack because I knew there wasn't much left in that pack. And then I
+decided to stick around and help out with that project.
+
+Once the station looked great, I returned to my squirrel nemesis duties. I
+was amazed to see one of the holes had already been dug out within these few
+hours. Industrious little critters! This is why I think I'll ultimately lose
+but like I said: I have shovel, I have pickaxe, I have train. I'm not going
+to cede that land without a fight.
+
+It's also great exercise.
+
+---
+
 ## Thursday 2026/8/13
 
 * 10 hours today, 458 hours this track year.
