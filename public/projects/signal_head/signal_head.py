@@ -46,6 +46,15 @@ def inch_to_mm(length_inch: float):
 
 
 class signal_head:
+    """
+    3D-printed shapes to solve various problems relating to signals heads for
+    traffic control on the train track layout for Los Angeles Live Steamers.
+    Filament material must account for the harsh hot SoCal sunshine:
+    * PLA will quickly deform and is pretty hopeless.
+    * PETG is sufficient for experimentation but will only last a few months.
+    * ASA (or some new hotness) for long-term deployment.
+    """
+
     def __init__(self):
         # Extra margin for 3D printed parts to fit.
         self.print_margin = 0.2
@@ -490,12 +499,16 @@ class signal_head:
         return fit_test_plate
 
     def absolute_sign(self):
-        width = inch_to_mm(2 + 3 / 4)
-        height = inch_to_mm(3 + 3 / 4)
+        """
+        Some of the absolute signs are in very bad shape. This is an effort to
+        create 3D-printed replacements.
+        """
+        width = inch_to_mm(4)
+        height = inch_to_mm(4)
         thickness = inch_to_mm(1 / 8)
         fillet = inch_to_mm(0.25)
-        hole_spacing = inch_to_mm(2 + 1 / 2)
-        hole_diameter = inch_to_mm(1 / 8)
+        hole_spacing = inch_to_mm(3 + 1 / 16)
+        hole_diameter = inch_to_mm(5 / 32)
 
         back = (
             cq.Workplane("XY")
@@ -509,7 +522,11 @@ class signal_head:
 
         hole = cq.Workplane("XY").circle(radius=hole_diameter / 2).extrude(thickness)
 
-        text = cq.Workplane("XY").text(txt="A", fontsize=90, distance=thickness + 1)
+        text = (
+            cq.Workplane("XY")
+            .transformed(offset=(0, inch_to_mm(0.2)))
+            .text(txt="A", fontsize=110, distance=thickness + 1, font="Arial Black")
+        )
 
         sign = (
             back
@@ -520,38 +537,15 @@ class signal_head:
 
         return sign
 
-    def absolute_sign_2_part(self):
-        width = inch_to_mm(2 + 3 / 4)
-        height = inch_to_mm(3 + 3 / 4)
-        thickness = inch_to_mm(1 / 8)
-        fillet = inch_to_mm(0.25)
-        hole_spacing = inch_to_mm(2 + 1 / 2)
-        hole_diameter = inch_to_mm(1 / 8)
-
-        back = (
-            cq.Workplane("XY")
-            .rect(xLen=width, yLen=height)
-            .extrude(thickness)
-            .edges("|Z")
-            .fillet(fillet)
-            .edges()
-            .chamfer(0.6)
-        )
-
-        hole = cq.Workplane("XY").circle(radius=hole_diameter / 2).extrude(thickness)
-
-        text = cq.Workplane("XY").text(txt="A", fontsize=90, distance=thickness)
-
-        sign = (
-            back
-            - hole.translate((hole_spacing / 2, 0, 0))
-            - hole.translate((-hole_spacing / 2, 0, 0))
-            - text
-        )
-
-        return sign, text
-
     def type_v_face_plate(self):
+        """
+        The "type V" or "V style" signal consists of three separate lights on a
+        large circular faceplate located on the same circular radius about the
+        center but 120 degrees apart. Green is to the upper left, yellow upper
+        right, and red is directly below center. At the moment there is no plan
+        on how to upgrade these automotive-style bulb sockets to newer LED
+        types so I'm experimenting with commodity vehicle side marker LEDs.
+        """
         plate_radius = inch_to_mm(8) / 2
         plate_thickness = inch_to_mm(1 / 8)
         mounting_hole_offset_h = inch_to_mm(6) / 2
@@ -622,7 +616,42 @@ class signal_head:
 
         return face_plate
 
+    def dome_searchlight(self):
+        """
+        Found a RGB status indicator light that is intended to be a more
+        compact all-in-one version of a vertical stack light. However,
+        if we turn it sideways, it might work for a searchlight-type
+        signal. This is the 3D-printed back plate to give it the right
+        shape to look like it belong. The back side is flat until I figure
+        out how it'll be mounted on the pillar.
+        """
+        back_plate_radius = inch_to_mm(6) / 2
+        back_plate_thickness = inch_to_mm(3 / 16)
+        through_hole_radius = 32 / 2
+        body_clearance_radius = 51 / 2
+
+        back_plate = (
+            cq.Workplane("YZ")
+            .circle(back_plate_radius)
+            .circle(body_clearance_radius)
+            .extrude(back_plate_thickness)
+        )
+
+        # Can either protrude or be a recess depending on aesthetic preferences
+        dome_area = (
+            cq.Workplane("YZ")
+            .circle(body_clearance_radius)
+            .circle(through_hole_radius)
+            .extrude(back_plate_thickness)
+        )
+
+        hood = self.hood_2().val().scale(1.6)
+
+        searchlight = back_plate + dome_area + hood
+
+        return searchlight
+
 
 sh = signal_head()
 
-show_object(sh.type_v_face_plate(), options={"color": "green", "alpha": 0.25})
+show_object(sh.dome_searchlight(), options={"color": "green", "alpha": 0.25})

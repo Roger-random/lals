@@ -58,9 +58,7 @@ class accessories:
         beneath the outermost area of the ring to support it from beneath.
         This should work better when someone accidentally leans on it.
         """
-        outer_radius = (
-            (inch_to_mm(6 + 1 / 16) / 2) + inch_to_mm(1 / 16) + inch_to_mm(3 / 16)
-        )
+        outer_radius = (inch_to_mm(6 + 1 / 16) / 2) + inch_to_mm(1 / 8)
         inner_radius = outer_radius - inch_to_mm(1 / 8)
 
         height = inch_to_mm(1 / 2)
