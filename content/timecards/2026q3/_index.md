@@ -5,6 +5,46 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/8/16
+
+* 11 hours today, 478.5 hours this track year.
+
+Sunday public ride operations + bench car couplers + squirrel war
+
+#### 8:00AM - 7:00PM (11 hours)
+
+Floating operations staff for Sunday public rides. In between assignments,
+went over couplers of yellow bench car set because I thought it didn't feel
+right the last time I pulled it. Found two of the couplers were solid types
+with no spring at all, and three of the couplers had collapsed springs. In
+hindsight I wish I recorded which direction (acceleration or braking) those
+collapsed springs were. Maybe I'll remember next time. Replacement springs
+came out of a coffee can and Kristman said they were intended to be bench
+car suspension springs but I should try to make them work. Suspension springs
+see a different duty cycle than coupler springs so we'll see if they hold up.
+
+After public ride concluded I took the reworked bench set on a test lap. I
+brought out UP1989 to do this test so I could perform two tests with one lap.
+The first test was to verify the reworked couplers on the yellow bench car
+set worked well, and they did! I noticed a significant reduction in coupler
+slack clunking on both acceleration and deceleration. The second test was to
+verify UP1989 behaved as I expected: a reduction in top speed but no reduction
+in pulling power up until that point. This was also an affirmative. Next step
+is to see if the replacement actuator control board helps at all, which neither
+I nor Dorado believed it would.
+
+After putting away the yellow bench car set and UP1989 I brought out Chessie
+and a gondola to move more dirt from Crystal Springs drive to west end of
+O'Brien-Moore bridge. I don't mind squirrels trying to build homes, I mind
+them undermining our track doing so. So I'm filling holes that lead to tunnels
+under a track. Holes away from the track is not my concern.
+
+After I "clocked out" of club work I got a few fun laps around on
+(last name)'s newly built electric locomotive. It included a lesson on signals
+and short wiring diagnostics session. I guess I just can't help myself...
+
+---
+
 ## Saturday 2026/8/15
 
 * 9.5 hours today, 467.5 hours this track year.
