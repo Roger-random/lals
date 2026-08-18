@@ -71,7 +71,7 @@ pain to stuff dirt down those holes around the ties. But still, I have a
 pickaxe and a shovel and a train for ferrying dirt, and they only have tiny
 paws and more time than I do to work on the problem. I think they have the
 advantage and long term I expect to lose. But I'm going to fight the Swiss-
-chess-ification of that hill!
+cheese-ification of that hill!
 
 #### Lunch
 
