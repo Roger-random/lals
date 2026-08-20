@@ -5,6 +5,67 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Wednesday 2026/8/19
+
+* 6 hours today, 495.5 hours this track year.
+
+Toonerville work day with Dorado + relay census
+
+#### 11:00AM - 1:00PM (2 hours)
+
+Time to put my Toonerville study to work! Or so I thought because the first
+problem Dorado noticed was a drive chain cutting into a metal bar like a
+very dull but persistent chain saw. Yikes! The bar looks too thin to be any
+use structurally, the best guess right now is that it keeps the opposing
+direction chains from hitting each other. Which is the frying pan and which is
+the fire we're not sure.
+
+![Chain cut into bar](./20260819_toonerville_chain_sawing_at_bar.jpg)
+
+Electrically, one of my goals was to understand why headlight low beam does
+not work. Turns out it is working just fine, or at least consistent with the
+very intentional wiring work. Side light and headlight high beams work as
+soon as main battery power is available. Headlight low beam only works when
+motor power is also active. I don't know why it was done this way, but the
+wiring involved was not accidental. I also found that the lower potentiometer
+inside the control pendant will adjust brightness of low beam. The upper
+potentiometer has something to do with the throttle and I'll look into that
+later.
+
+![Pendant low beam adjustment](./20260819_toonerville_low_beam_adjustment.jpg)
+
+#### 1:45PM - 5:45PM (4 hours)
+
+After lunch I worked on another ongoing project: cleaning up loosely dangling
+wires. When we started, the side light wires were just dangling all over the
+place connected by wire nuts. Now some of the wires are secured inside lever
+lock connectors that can be fastened to the wooden structure. Taming wild wires
+on this thing is definitely a long term project, one step at a time.
+
+![Lever lock connector secured](./20260819_toonerville_side_light_wiring_fastened.jpg)
+
+Dorado's major project was to get the roof glued back together after we
+unsealed the body to access electronics. The reworked roof is intended to be
+removable going forward but we still have some finishing work to do.
+
+Secondary project was to redo the electronics board mounting mechanism.
+The front edge was precariously dangling on a wooden cross beam which was
+glued to the front edge once upon a time but that glue has failed. A secondary
+goal was to raise the board so metal components don't hang so scarily close to
+shorting out battery terminals. Raising the board did mean we had to rotate the
+bell so it would still fit.
+
+We also found that rining the bell would cause the motor controller to
+disengage and cut power until throttle is turned back to zero and turned back
+on. This doesn't feel like an intentional design choice. We'll have to look
+into that later.
+
+After Dorado's departure I went around the layout and opened up panels so I
+can get a census of which relays are used on which power boards. Data points to
+try diagnosing the recurring panel board failure in panels K and S.
+
+---
+
 ## Tuesday 2026/8/18
 
 * 11 hours today, 489.5 hours this track year.
