@@ -5,6 +5,55 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Tuesday 2026/8/18
+
+* 11 hours today, 489.5 hours this track year.
+
+Signals + Squirrels + Toonerville
+
+#### 8:00AM - 12:15PM (4.25 hours)
+
+Started the day by cleaning the microswitch box just outside Nelson tunnel so
+signal can correctly indicate track 1 instead of falsely claiming mainline.
+
+Next is a similiar microswitch for reversing track by KAA. This one has become
+unreliable. The box was cleaned as well but we looked at that rusty dusty
+switch and decided to replace it. Of course its mounting screws had also rusted
+so they broke instead of unfasten and we ended up drilling new holes.
+
+A refurbished power board was installed in panel S to see if it would hold up.
+The biggest variable is panel M's isolated regulated power supply is no longer
+putting power on NT ring. If the relay dies again, we can exonerate panel M
+power supply as the cause of relay deaths.
+
+There was an unused transformer in panel J. Take it for a bench test later.
+Also in panel J is a new set of wires for a dwarf signal indicating status of
+switch leading up to the switchback.
+
+For panel K, verified KB7 is detecting correctly and indicating correctly for
+panel K signals. Next step is to drive a wire to panel L so LEA can properly
+display occupancy. Also in K: scouted wire path for signal KD (which has one
+degraded wire) and look for the lost wires leading to microswitch on the other
+end of the reversing track. It's too hot out, we'll have to continue later.
+
+#### 1:15PM - 8:00PM (6.75 hours)
+
+After lunch which included a bit of air conditioning, returned to valley
+division to investigate dim RG green. Green and yellow LED assemblies replaced.
+
+After Strawn and Harper departed I switched gears to moving dirt. Connected
+a gondola and filled it with fresh dirt from Crystal Springs drive so I can
+gift them to squirrels on the west end of O'Brien-Moore Bridge.
+
+After I got tired of moving dirt I put Chessie away and rolled Toonerville back
+out to trace through wires. By the end of the day I have a good understanding
+of wires connecting every component. The workings inside specific modules or
+circuit boards are still mysterious black boxes, but I now know how they all
+connect together. Pretty similiar to my understanding level of signals panels
+internals.
+
+---
+
 ## Sunday 2026/8/16
 
 * 11 hours today, 478.5 hours this track year.
@@ -40,7 +89,7 @@ them undermining our track doing so. So I'm filling holes that lead to tunnels
 under a track. Holes away from the track is not my concern.
 
 After I "clocked out" of club work I got a few fun laps around on
-(last name)'s newly built electric locomotive. It included a lesson on signals
+Aivazian's newly built electric locomotive. It included a lesson on signals
 and short wiring diagnostics session. I guess I just can't help myself...
 
 ---
