@@ -72,6 +72,8 @@ https://www.ncry.org/
 
 Multiple steam locomotives including Clover Valley Lumber Co. #4 2-6-6-2 Mallet.
 
+![Clover Valley Lumber No. 4](./20260322_ncry_clover_valley_lumber_no_4.jpg)
+
 ## Railtown 1897
 Jamestown, CA
 
@@ -87,6 +89,8 @@ San Bernardino, CA
 https://www.sbrhs.org/
 
 Stewards of Santa Fe 3751. https://en.wikipedia.org/wiki/Santa_Fe_3751
+
+![SF3751 at Union Station](./20250920_atsf_3751_at_union_station.jpg)
 
 ## Southern California Railway Museum
 Perris, CA
