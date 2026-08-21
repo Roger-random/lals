@@ -118,8 +118,13 @@ They have an old BART.
 
 # Japan
 
-## Kyoto Railway Museum
-Kyoto, Japan
+## Hokkaido Railway Technology Museum (JR Hokkaido)
+Sapporo
+
+Open only on a few days of the month and very limited support for visitors that don't read/speak Japanese.
+
+## Kyoto Railway Museum (JR West)
+Kyoto
 
 https://www.kyotorailwaymuseum.jp/en/
 
@@ -127,17 +132,41 @@ https://www.kyotorailwaymuseum.jp/en/
 
 D51 steam locomotive in operating condition.
 
+## Kyushu Railway History Museum (JR Kyushu)
+Kitakyushu
+
+https://www.k-rhm.jp/
+
+## SCMAGLEV and Railroad Park (JR Central)
+Nagoya
+
+https://museum.jr-central.co.jp/
+
+## The Railway History Park in Saijo (JR Shikoku)
+Saijo
+
+https://s-trp.jp/
+
+## The Railway Museum (JR East)
+Saitama
+
+https://www.railway-museum.jp/
+
+Note: Hands-on program participants are selected via raffle app for privilege of paying for an experience.
+
+D51 steam locomotive operations simulator. (¥600)
+
 # 臺灣 (Taiwan)
 
 ## 阿里山森林鐵路 (Alishan Forest Railway)
-嘉義 (Chiayi) Taiwan
+嘉義 (Chiayi)
 
 https://afrch.forest.gov.tw/En
 
 Sometimes the scenic rail service is operated by an old Shay steam locomotive.
 
 ## 臺南市體育公園 (Tainan Sports Park)
-臺南 (Tainan) Taiwan
+臺南 (Tainan)
 
 DT251 (once mislabeled as DT259) C55 steam locomotive on static exhibit
 
@@ -146,12 +175,12 @@ DT652 D51 steam locomotive on static exhibit
 ![RC and CC in locomotive cab](./DT652%20with%20RC%20and%20CC.jpg)
 
 ## 臺灣高鐵探索館 (Taiwan High Speed Rail Museum)
-桃園 (Taoyuan) Taiwan
+桃園 (Taoyuan)
 
 https://tdiscovery.thsrc.com.tw/index_en.html
 
 ## 哈瑪星台灣鐵道館 (Hamasen Museum of Taiwan Railway)
-高雄 (Kaohsiung) Taiwan
+高雄 (Kaohsiung)
 
 https://museums.moc.gov.tw/EN/MusData/Detail?museumsId=ad8619af-19cc-4489-81c2-e3cb25841f74
 
