@@ -7,6 +7,8 @@ title = 'Train Places'
 
 TODO: Put this on a map for a spatial layout instead of alphabetical list.
 
+# United States
+
 ## California State Railroad Museum
 Sacramento, CA
 
@@ -113,3 +115,46 @@ Suisun City, CA
 https://www.wrm.org/
 
 They have an old BART.
+
+# Japan
+
+## Kyoto Railway Museum
+Kyoto, Japan
+
+https://www.kyotorailwaymuseum.jp/en/
+
+500 Series Shinkansen end unit in display hall.
+
+D51 steam locomotive in operating condition.
+
+# 臺灣 (Taiwan)
+
+## 阿里山森林鐵路 (Alishan Forest Railway)
+嘉義 (Chiayi) Taiwan
+
+https://afrch.forest.gov.tw/En
+
+Sometimes the scenic rail service is operated by an old Shay steam locomotive.
+
+## 臺南市體育公園 (Tainan Sports Park)
+臺南 (Tainan) Taiwan
+
+DT251 (once mislabeled as DT259) C55 steam locomotive on static exhibit
+
+DT652 D51 steam locomotive on static exhibit
+
+![RC and CC in locomotive cab](./DT652%20with%20RC%20and%20CC.jpg)
+
+## 臺灣高鐵探索館 (Taiwan High Speed Rail Museum)
+桃園 (Taoyuan) Taiwan
+
+https://tdiscovery.thsrc.com.tw/index_en.html
+
+## 哈瑪星台灣鐵道館 (Hamasen Museum of Taiwan Railway)
+高雄 (Kaohsiung) Taiwan
+
+https://museums.moc.gov.tw/EN/MusData/Detail?museumsId=ad8619af-19cc-4489-81c2-e3cb25841f74
+
+DT295 (once mislabeled as DT251) C55 steam locomotive on moving exhibit
+
+Looks like they have a ride-on train in the ballpark of 7.5" gauge.
