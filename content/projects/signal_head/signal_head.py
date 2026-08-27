@@ -498,6 +498,61 @@ class signal_head:
 
         return fit_test_plate
 
+    def side_marker_test_ring(self):
+        """
+        The commodity side marker LED modules vary more than I had thought
+        they would. This is the (futile?) search for a design that can fit all
+        of them. It takes advantage of the fact they all have a rubber surround
+        for some dimensional tolerance. It may not be a perfect fit for all of
+        the different vendors, but maybe I can find a point where they can all
+        fit snugly enough for our purposes.
+        """
+
+        ring_radius_top = 18.7 / 2
+        ring_radius_bottom = 19 / 2
+        ring_thickness = 4.8
+
+        barrel_radius_outer = 38 / 2
+        barrel_thickness = 2.4
+        barrel_radius_inner = barrel_radius_outer - barrel_thickness
+        barrel_height = 15
+        barrel_taper_angle_radians = math.radians(60)
+        barrel_taper_height = (barrel_radius_inner - ring_radius_bottom) / math.tan(
+            barrel_taper_angle_radians
+        )
+        barrel_taper_start = barrel_height - ring_thickness - barrel_taper_height
+        barrel_fillet = 2
+
+        barrel_outer = (
+            cq.Workplane("YZ")
+            .circle(radius=barrel_radius_outer)
+            .extrude(barrel_height)
+            .faces(">X")
+            .fillet(barrel_fillet)
+        )
+
+        barrel_inner = (
+            cq.Workplane("YZ")
+            .circle(radius=barrel_radius_inner)
+            .extrude(barrel_taper_start)
+            .faces(">X")
+            .workplane()
+            .circle(radius=barrel_radius_inner)
+            .workplane(barrel_taper_height)
+            .circle(radius=ring_radius_bottom)
+            .loft()
+            .faces(">X")
+            .workplane()
+            .circle(radius=ring_radius_bottom)
+            .workplane(ring_thickness)
+            .circle(radius=ring_radius_top)
+            .loft()
+        )
+
+        marker_housing = barrel_outer - barrel_inner
+
+        return marker_housing
+
     def absolute_sign(self):
         """
         Some of the absolute signs are in very bad shape. This is an effort to
@@ -645,7 +700,9 @@ class signal_head:
             .extrude(back_plate_thickness)
         )
 
-        hood = self.hood_2().val().scale(1.6)
+        hood = (
+            self.hood_2()
+        )  # .val().scale(1.6) # VSCode really doesn't like the 1.6X scale. Not sure why?
 
         searchlight = back_plate + dome_area + hood
 
@@ -654,4 +711,4 @@ class signal_head:
 
 sh = signal_head()
 
-show_object(sh.dome_searchlight(), options={"color": "green", "alpha": 0.25})
+show_object(sh.side_marker_test_ring(), options={"color": "green", "alpha": 0.25})
