@@ -457,12 +457,12 @@ class signal_head:
 
     def dwarf(self):
         """
-        Whip up something quick to test at dwarf signal GJ
+        Dwarf signal faceplate using side marker LED modules.
         """
         plate_base = self.plate_dwarf()
         hood_add = self.hood_2()
-        hole_cut = self.lens_mount_cut()
-        mount_add = self.lens_mount_add()
+        hole_cut = self.side_marker_barrel_inner()
+        mount_add = self.side_marker_barrel_outer()
 
         offset = self.hole_distance_2 / 2
 
@@ -730,4 +730,4 @@ class signal_head:
 
 sh = signal_head()
 
-show_object(sh.side_marker_test_ring(), options={"color": "green", "alpha": 0.25})
+show_object(sh.dwarf(), options={"color": "green", "alpha": 0.25})
