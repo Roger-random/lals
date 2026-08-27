@@ -397,22 +397,18 @@ class signal_head:
 
         return cut
 
-    def face_plate(self, lights, screw_holes=False):
+    def face_plate(self, lights):
         """
         Generate a face plate for number of lights as per 'lights' param
         Screw mounting holes optional. (Defaults to none.)
         """
         face_plate = self.plate(chamfer_surround=0, chamfer_end=0)
-        mount_add = self.lens_mount_add()
-        hole_cut = self.lens_mount_cut()
-        hood_add = self.hood()
+        mount_add = self.side_marker_barrel_outer()
+        hole_cut = self.side_marker_barrel_inner()
+        hood_add = self.hood_2()
 
         if lights == 3:
             offset = self.hole_distance_3 / 2
-            zip_tie_position = (
-                self.hood_outer_diameter / 2 + self.zip_tie_slot_length / 2
-            )
-
             face_plate = (
                 face_plate
                 + mount_add
@@ -424,10 +420,6 @@ class signal_head:
                 + hood_add
                 + hood_add.translate((0, 0, -offset))
                 + hood_add.translate((0, 0, offset))
-                - self.zip_ties_cut().translate((0, 0, zip_tie_position))
-                - self.zip_ties_cut().translate(
-                    (0, 0, -zip_tie_position + self.zip_tie_slot_length)
-                )
             )
         elif lights == 2:
             offset = self.hole_distance_2 / 2
@@ -440,7 +432,6 @@ class signal_head:
                 - hole_cut.translate((0, 0, offset))
                 + hood_add.translate((0, 0, -offset))
                 + hood_add.translate((0, 0, offset))
-                - self.zip_ties_cut()
             )
         elif lights == 1:
             face_plate = face_plate + mount_add - hole_cut + hood_add
@@ -450,8 +441,7 @@ class signal_head:
                 f"Not yet able to generate face plate for {lights} lights."
             )
 
-        if screw_holes:
-            face_plate = face_plate - self.screw_mount_holes_cut()
+        face_plate = face_plate - self.screw_mount_holes_cut()
 
         return face_plate
 
@@ -730,4 +720,4 @@ class signal_head:
 
 sh = signal_head()
 
-show_object(sh.dwarf(), options={"color": "green", "alpha": 0.25})
+show_object(sh.face_plate(3), options={"color": "green", "alpha": 0.25})
