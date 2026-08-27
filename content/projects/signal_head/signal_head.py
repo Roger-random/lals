@@ -109,7 +109,28 @@ class signal_head:
         self.zip_tie_slot_length = 7
         self.lens_pcb_width = 25
         self.fitting_width = inch_to_mm(2)
-        pass
+
+        # Dimensions for accommodating side marker lights
+        self.side_marker_ring_radius_top = 18.7 / 2
+        self.side_marker_ring_radius_bottom = 19 / 2
+        self.side_marker_ring_thickness = 4.8
+
+        self.side_marker_barrel_radius_outer = 38 / 2
+        self.side_marker_barrel_thickness = 2.4
+        self.side_marker_barrel_radius_inner = (
+            self.side_marker_barrel_radius_outer - self.side_marker_barrel_thickness
+        )
+        self.side_marker_barrel_height = 15
+        self.side_marker_barrel_taper_angle_radians = math.radians(55)
+        self.side_marker_barrel_taper_height = (
+            self.side_marker_barrel_radius_inner - self.side_marker_ring_radius_bottom
+        ) / math.tan(self.side_marker_barrel_taper_angle_radians)
+        self.side_marker_barrel_taper_start = (
+            self.side_marker_barrel_height
+            - self.side_marker_ring_thickness
+            - self.side_marker_barrel_taper_height
+        )
+        self.side_marker_barrel_fillet = 5
 
     def plate(self, chamfer_surround: float = 0, chamfer_end: float = 0):
         """
@@ -498,6 +519,42 @@ class signal_head:
 
         return fit_test_plate
 
+    def side_marker_barrel_outer(self):
+        """
+        A barrel shape to accommodate side marker LED modules. Used to build
+        the outer volume, follow by subtraction of matchining inner shape.
+        """
+        return (
+            cq.Workplane("YZ")
+            .circle(radius=self.side_marker_barrel_radius_outer)
+            .extrude(self.side_marker_barrel_height)
+            .faces(">X")
+            .fillet(self.side_marker_barrel_fillet)
+        )
+
+    def side_marker_barrel_inner(self):
+        """
+        Shape for cutting a cavity to accommodate side marker LED modules out
+        of the matching outer shape.
+        """
+        return (
+            cq.Workplane("YZ")
+            .circle(radius=self.side_marker_barrel_radius_inner)
+            .extrude(self.side_marker_barrel_taper_start)
+            .faces(">X")
+            .workplane()
+            .circle(radius=self.side_marker_barrel_radius_inner)
+            .workplane(self.side_marker_barrel_taper_height)
+            .circle(radius=self.side_marker_ring_radius_bottom)
+            .loft()
+            .faces(">X")
+            .workplane()
+            .circle(radius=self.side_marker_ring_radius_bottom)
+            .workplane(self.side_marker_ring_thickness)
+            .circle(radius=self.side_marker_ring_radius_top)
+            .loft()
+        )
+
     def side_marker_test_ring(self):
         """
         The commodity side marker LED modules vary more than I had thought
@@ -507,47 +564,9 @@ class signal_head:
         the different vendors, but maybe I can find a point where they can all
         fit snugly enough for our purposes.
         """
+        barrel_outer = self.side_marker_barrel_outer()
 
-        ring_radius_top = 18.7 / 2
-        ring_radius_bottom = 19 / 2
-        ring_thickness = 4.8
-
-        barrel_radius_outer = 38 / 2
-        barrel_thickness = 2.4
-        barrel_radius_inner = barrel_radius_outer - barrel_thickness
-        barrel_height = 15
-        barrel_taper_angle_radians = math.radians(60)
-        barrel_taper_height = (barrel_radius_inner - ring_radius_bottom) / math.tan(
-            barrel_taper_angle_radians
-        )
-        barrel_taper_start = barrel_height - ring_thickness - barrel_taper_height
-        barrel_fillet = 2
-
-        barrel_outer = (
-            cq.Workplane("YZ")
-            .circle(radius=barrel_radius_outer)
-            .extrude(barrel_height)
-            .faces(">X")
-            .fillet(barrel_fillet)
-        )
-
-        barrel_inner = (
-            cq.Workplane("YZ")
-            .circle(radius=barrel_radius_inner)
-            .extrude(barrel_taper_start)
-            .faces(">X")
-            .workplane()
-            .circle(radius=barrel_radius_inner)
-            .workplane(barrel_taper_height)
-            .circle(radius=ring_radius_bottom)
-            .loft()
-            .faces(">X")
-            .workplane()
-            .circle(radius=ring_radius_bottom)
-            .workplane(ring_thickness)
-            .circle(radius=ring_radius_top)
-            .loft()
-        )
+        barrel_inner = self.side_marker_barrel_inner()
 
         marker_housing = barrel_outer - barrel_inner
 
