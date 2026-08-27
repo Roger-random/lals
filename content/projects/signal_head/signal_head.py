@@ -300,7 +300,7 @@ class signal_head:
         hole = (
             cq.Workplane("YZ")
             .circle(self.screw_mount_diameter / 2 + self.print_margin)
-            .extrude(self.plate_thickness)
+            .extrude(inch_to_mm(3))
         )
 
         hole_offset = self.screw_mount_hole_distance / 2
