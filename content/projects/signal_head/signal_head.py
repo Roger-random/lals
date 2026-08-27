@@ -85,11 +85,12 @@ class signal_head:
         self.reference_hole_diameter = 27
 
         # Distance between top and bottom holes. (3-hole has additional at center.)
-        self.hole_distance_2 = 61
-        self.hole_distance_3 = 76.6
+        self.hole_distance_2 = inch_to_mm(2.5)
+        self.hole_distance_3 = inch_to_mm(3)
 
         # Distance between screw mounting holes.
-        self.screw_mount_hole_distance = 123
+        self.screw_mount_hole_distance = 125
+        self.screw_mount_hole_vertical_offset = 3.75
         self.screw_mount_diameter = (
             6  # Generously sized to accommodate enclosure variation
         )
@@ -115,7 +116,7 @@ class signal_head:
         self.side_marker_ring_radius_bottom = 19 / 2
         self.side_marker_ring_thickness = 4.8
 
-        self.side_marker_barrel_radius_outer = 38 / 2
+        self.side_marker_barrel_radius_outer = 29 / 2
         self.side_marker_barrel_thickness = 2.4
         self.side_marker_barrel_radius_inner = (
             self.side_marker_barrel_radius_outer - self.side_marker_barrel_thickness
@@ -130,7 +131,7 @@ class signal_head:
             - self.side_marker_ring_thickness
             - self.side_marker_barrel_taper_height
         )
-        self.side_marker_barrel_fillet = 5
+        self.side_marker_barrel_fillet = 0.5
 
     def plate(self, chamfer_surround: float = 0, chamfer_end: float = 0):
         """
@@ -411,15 +412,27 @@ class signal_head:
             offset = self.hole_distance_3 / 2
             face_plate = (
                 face_plate
-                + mount_add
-                + mount_add.translate((0, 0, -offset))
-                + mount_add.translate((0, 0, offset))
-                - hole_cut
-                - hole_cut.translate((0, 0, -offset))
-                - hole_cut.translate((0, 0, offset))
-                + hood_add
-                + hood_add.translate((0, 0, -offset))
-                + hood_add.translate((0, 0, offset))
+                + mount_add.translate((0, 0, -self.screw_mount_hole_vertical_offset))
+                + mount_add.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset - offset)
+                )
+                + mount_add.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset + offset)
+                )
+                - hole_cut.translate((0, 0, -self.screw_mount_hole_vertical_offset))
+                - hole_cut.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset - offset)
+                )
+                - hole_cut.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset + offset)
+                )
+                + hood_add.translate((0, 0, -self.screw_mount_hole_vertical_offset))
+                + hood_add.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset - offset)
+                )
+                + hood_add.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset + offset)
+                )
             )
         elif lights == 2:
             offset = self.hole_distance_2 / 2
@@ -720,4 +733,4 @@ class signal_head:
 
 sh = signal_head()
 
-show_object(sh.face_plate(3), options={"color": "green", "alpha": 0.25})
+show_object(sh.dwarf(), options={"color": "green", "alpha": 0.25})
