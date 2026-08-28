@@ -62,6 +62,19 @@ else? I'm not sure. I didn't want to test it tonight because I wanted another
 person (probably Dorado) to try it for the first time. One person lifts
 slowly and the other person watches to see what I might have missed.
 
+Before: Battery wired directly to the switch and current-sensing shunt.
+
+![Direct wire with no battery connector](./20260824_toonerville_battery_no_connector.jpg)
+
+After: XT60 to disconnect battery.
+
+![Battery disconnect](./20260824_toonerville_battery_connector.jpg)
+
+Not pictured: similar XT60 connector for the motor. Side note: I followed XT60
+usage convention for power supplier and consumer. As a result, it is now
+theoretically possible to connect the battery directly to the motor for crazy
+reckless full send. Let's not do that.
+
 As a test run to verify my electrical work, I took the Trolley out to the west
 end to revisit my battleground against digging squirrels. The major
 discouragements are still in place, but I can see a few minor ones that I
