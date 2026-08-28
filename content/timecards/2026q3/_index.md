@@ -26,7 +26,7 @@ this compressor. It can't generate the continuous airflow needed for the job.
 With that answer in hand, I proceeded to a secondary experiment: can I use a
 stream of compressed air to clear out debris that has buit up inside the
 narrow passages of a rail switch. Like the sharp corners of a frog. The answer
-is: yes, but with a bit of patience. Even with time consumed rolling from one
+is: yes, but with a bit of patience. Even with time spent rolling from one
 switch to the next, the little compressor couldn't keep up with the flow
 necessary for the job.
 
@@ -52,22 +52,22 @@ Signals, Toonerville electrical work.
 
 Arrived at the club to see signals were not on. Started walking over to panel
 S and signals illuminated just as I was ducking to walk through a tunnel. As I
-approached I saw a huge powerful stream of water spraying through the chain
+approached I saw a powerful stream of water spraying through the chain
 link fence onto a large area including panel S NT block. Curiously, the
 sprinklers shut off just as I arrived, implying they had been running for some
 time before signals activated. Looks like whatever is going on with panel S NT
 it needs ground to be soaked and it isn't an "activate on contact" situation.
 
-That data point gathered, I went back to the main topic of the day: Toonerville
+That data point gathered, I went back to the main focus of the day: Toonerville
 Trolley. Kallgren found the battery charger purchased with club money and today
 I'm going to install it. The complication was the charger was designed to be a
 permanently mounted unit, so there weren't any quick disconnects. The user (me)
 is expected to bolt it into the vehicle somewhere, but I have very little room
 available inside Toonerville Trolley. The wires are also to be fastened
-permenantly to the battery terminals (no alligator clips here) and this was
-when I found out the battery terminal fastening nuts were less than finger-
-tight. I would guess the previous person got it finger tight intending to come
-back later, never did, and it rattled loose from there.
+permenantly to the battery terminals (no alligator clamps) and this was
+when I found out the battery terminal fastening nuts were less than finger
+tight. I am guessing the previous worker got it finger tight intending to come
+back later with a wrench, never did, and it rattled loose from there.
 
 I wanted the wiring to be neat, out of the way, and not easily yanked. It took
 a few tries before I found a wire route that satisfied the above criteria. I
@@ -95,8 +95,8 @@ connectors for the motor wires and for the battery wires. In theory this would
 allow the body to lift clear once those two were unplugged. In reality we have
 at least one more wire, the 12V tap between two batteries, but I hope to get
 rid of that one with a 12V step-down transformer in the near future. Anything
-else? I'm not sure. I didn't want to test it tonight because I wanted another
-person (probably Dorado) to try it for the first time. One person lifts
+else? I'm not sure. I didn't want to test it today because I wanted another
+person (probably Dorado) to help for the first attempt. One person lifts
 slowly and the other person watches to see what I might have missed.
 
 Before: Battery wired directly to the switch and current-sensing shunt.
