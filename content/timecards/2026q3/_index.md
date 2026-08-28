@@ -5,11 +5,57 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/8/23
+
+* 8.5 hours today, 514 hours this track year.
+
+Sunday operations crew on a very hot day.
+
+#### 8:00AM - 4:30PM (8.5 hours)
+
+Arrived at the club to see signals were not on. But after I pulled SF163 out
+for today's runs, I noticed the signals were on. Did somebody press the station
+button? I opened up panel E and saw 0:00 so not that. On my test lap, I stopped
+near panel S to open that up to see timer counting from shortly after 8AM.
+That wasn't so long ago so I looked over at the NT block - it is glistening wet
+from morning sprinklers. Aha, this is a lead worth following up on.
+
+It was a very hot day for public rides, so we expected fewer people than normal
+on both sides of the fence: fewer volunteers to run, and fewer guests that want
+rides. It was hot enough in the morning Fuad decided against running and put
+his train back in the barn. I had SF163 ready to go and Famolare got SPSF out
+and staged if we need a second train. Which, to my surprise, we actually did in
+the morning.
+
+I could only handle running SF163 for about an hour before I had to ask for
+relief. I sat under shade to cool down as I ate lunch. Kallgren handed me the
+battery charger bought with club money intended for Toonerville Trolley. It is
+a model designed for permanent installation so that's going to present a bit of
+a challenge.
+
+At 1PM I got back on SF163 for a few more laps. By this point incoming guest
+flow dropped enough that we only needed one train. Which was good, because we
+also had some volunteers tap out due to the heat so SPSF had to be parked
+anyway.
+
+With the afternoon heat I lasted less than hour before I had to ask for Suncin
+to take over. This time mere shade was not enough, I went into the
+air-conditioned library to bring down my core temperature. Once that's
+accomplished I got back out and ran SF163 for the rest of the day.
+
+I'm glad we had multiple crews to cycle throughout the day. Trying to run with
+a single crew all day would not have been healthy.
+
+Finished out the day by helping with kitchen cleanup. My usual beverage fridge
+work plus drying and putting kitchenware away.
+
+---
+
 ## Saturday 2026/8/22
 
 * 10 hours today, 505.5 hours this track year.
 
-Signals, Toonerville, movie night setup+teardown
+Signals, Toonerville, movie night setup+teardown.
 
 #### 9:30AM - 6:30PM (9 hours)
 
@@ -25,7 +71,8 @@ had to give up. I went to my original goal of the day: probe and understand
 what's going inside the pendant control for Toonerville. I found that most of
 the circuit board likely implements a safety mechanism where turning on main
 power has no effect unless throttle is turned all the way down. Noble concept
-but implementing via analog logic is tough for me to decipher.
+but implementing via analog logic is tough for me to decipher. There was also a
+bad solder connection that I had to repair after it came loose.
 
 On a more productive note, I did determine the function of the other
 potentiometer on that board. It gets rid of the "dead spot" on throttle wheel
@@ -42,7 +89,7 @@ battery charging power.
 
 ![Toonerville Trolley charged by bench power supply](./20260822_toonerville_charged_via_bench_power_supply.jpg)
 
-Once batter was charged, Dorado and I took it out for our first test run. It
+Once battery was charged, Dorado and I took it out for our first test run. It
 told us letting random people run the trolley is probably not a great idea. The
 aforementioned forward/reverse transition makes electrical braking a dicey
 proposition and the trolley has no other braking mechanisms. The mechanical
