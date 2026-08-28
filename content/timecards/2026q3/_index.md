@@ -5,6 +5,43 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Tuesday 2026/8/24
+
+* 4 hours today, 529.5 hours this track year.
+
+Air compressor experiments.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Immediately after I parked my car I ran over to panel S to witness sprinkler
+activity. Well, joke's on me, because Griffith Park didn't run their sprinklers
+today. But that also gave me an useful data point: without sprinkler water,
+panel S NT stayed off. This strengths correlation between the two factors.
+
+I brought my EcoFlow Delta 2 and my pancake air compressor today to try an
+experiment: can I use a stream of compressed air to clear dirt off the foot
+of the rail in order to ward off corrosion. The answer is: yes, but not with
+this compressor. It can't generate the continuous airflow needed for the job.
+
+With that answer in hand, I proceeded to a secondary experiment: can I use a
+stream of compressed air to clear out debris that has buit up inside the
+narrow passages of a rail switch. Like the sharp corners of a frog. The answer
+is: yes, but with a bit of patience. Even with time consumed rolling from one
+switch to the next, the little compressor couldn't keep up with the flow
+necessary for the job.
+
+With the compressor motor running continuously trying and failing to keep up
+with demand, I was starting to wonder if it will overheat and fail. I could
+then use that as an excuse to buy a beefier compressor! But fortunately or
+unfortunately, it did not fail.
+
+Unlike Monday when I was mostly under the shaded maintenance bay roof, today
+I was out in the sun spraying compressed air into rail infrastructure. This is
+a lot warmer and by the time I finished all switches on the public run route
+it is lunchtime and I've reached my limit. I'll stop by Train Shack then home.
+
+---
+
 ## Monday 2026/8/24
 
 * 11.5 hours today, 525.5 hours this track year.
