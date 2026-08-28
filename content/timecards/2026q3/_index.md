@@ -5,6 +5,70 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Monday 2026/8/24
+
+* 11.5 hours today, 525.5 hours this track year.
+
+Signals, Toonerville electrical work.
+
+#### 8:00AM - 11:30AM (3.5 hours)
+
+Arrived at the club to see signals were not on. Started walking over to panel
+S and signals illuminated just as I was ducking to walk through a tunnel. As I
+approached I saw a huge powerful stream of water spraying through the chain
+link fence onto a large area including panel S NT block. Curiously, the
+sprinklers shut off just as I arrived, implying they had been running for some
+time before signals activated. Looks like whatever is going on with panel S NT
+it needs ground to be soaked and it isn't an "activate on contact" situation.
+
+That data point gathered, I went back to the main topic of the day: Toonerville
+Trolley. Kallgren found the battery charger purchased with club money and today
+I'm going to install it. The complication was the charger was designed to be a
+permanently mounted unit, so there weren't any quick disconnects. The user (me)
+is expected to bolt it into the vehicle somewhere, but I have very little room
+available inside Toonerville Trolley. The wires are also to be fastened
+permenantly to the battery terminals (no alligator clips here) and this was
+when I found out the battery terminal fastening nuts were less than finger-
+tight. I would guess the previous person got it finger tight intending to come
+back later, never did, and it rattled loose from there.
+
+I wanted the wiring to be neat, out of the way, and not easily yanked. It took
+a few tries before I found a wire route that satisfied the above criteria. I
+never did find enough volume for the charger on the trolley, though. I think
+long term it has to be mounted in the engineer's riding car like SF163. In the
+short term it has to sit in the riding bench car.
+
+Once charging was underway, I was going to head out to an early lunch but that
+was when Murphy and Lipton arrived with the new-to-Lipton Galloping Goose so I
+made it an extended lunch break and got nosy checking out that machine and
+trying to learn from how it was put together.
+
+#### 1:15PM - 9:15PM (8 hours)
+
+After lunch I embarked on a more challenging task: untangle some of the
+existing wiring and add connectors so it is possible to lift the body
+(with all control electronics) free from the chassis (with battery and motor)
+for servicing. Like the roof of the Trolley, this was once removable but
+various hands that worked on the Trolley did not preserve this capability so
+we have wires tying things together all over the place. I also realized I had
+to reroute the battery charger yet again to clear the body as it lifted up.
+
+After trying a few ideas I settled on the plan of wiring two beefy XT60
+connectors for the motor wires and for the battery wires. In theory this would
+allow the body to lift clear once those two were unplugged. In reality we have
+at least one more wire, the 12V tap between two batteries, but I hope to get
+rid of that one with a 12V step-down transformer in the near future. Anything
+else? I'm not sure. I didn't want to test it tonight because I wanted another
+person (probably Dorado) to try it for the first time. One person lifts
+slowly and the other person watches to see what I might have missed.
+
+As a test run to verify my electrical work, I took the Trolley out to the west
+end to revisit my battleground against digging squirrels. The major
+discouragements are still in place, but I can see a few minor ones that I
+had to fill in. The war continues.
+
+---
+
 ## Sunday 2026/8/23
 
 * 8.5 hours today, 514 hours this track year.
