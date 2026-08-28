@@ -85,11 +85,12 @@ class signal_head:
         self.reference_hole_diameter = 27
 
         # Distance between top and bottom holes. (3-hole has additional at center.)
-        self.hole_distance_2 = 61
-        self.hole_distance_3 = 76.6
+        self.hole_distance_2 = inch_to_mm(2.5)
+        self.hole_distance_3 = inch_to_mm(3)
 
         # Distance between screw mounting holes.
-        self.screw_mount_hole_distance = 123
+        self.screw_mount_hole_distance = 125
+        self.screw_mount_hole_vertical_offset = 3.75
         self.screw_mount_diameter = (
             6  # Generously sized to accommodate enclosure variation
         )
@@ -109,7 +110,28 @@ class signal_head:
         self.zip_tie_slot_length = 7
         self.lens_pcb_width = 25
         self.fitting_width = inch_to_mm(2)
-        pass
+
+        # Dimensions for accommodating side marker lights
+        self.side_marker_ring_radius_top = 18.7 / 2
+        self.side_marker_ring_radius_bottom = 19 / 2
+        self.side_marker_ring_thickness = 4.8
+
+        self.side_marker_barrel_radius_outer = 29 / 2
+        self.side_marker_barrel_thickness = 2.4
+        self.side_marker_barrel_radius_inner = (
+            self.side_marker_barrel_radius_outer - self.side_marker_barrel_thickness
+        )
+        self.side_marker_barrel_height = 15
+        self.side_marker_barrel_taper_angle_radians = math.radians(55)
+        self.side_marker_barrel_taper_height = (
+            self.side_marker_barrel_radius_inner - self.side_marker_ring_radius_bottom
+        ) / math.tan(self.side_marker_barrel_taper_angle_radians)
+        self.side_marker_barrel_taper_start = (
+            self.side_marker_barrel_height
+            - self.side_marker_ring_thickness
+            - self.side_marker_barrel_taper_height
+        )
+        self.side_marker_barrel_fillet = 0.5
 
     def plate(self, chamfer_surround: float = 0, chamfer_end: float = 0):
         """
@@ -279,7 +301,7 @@ class signal_head:
         hole = (
             cq.Workplane("YZ")
             .circle(self.screw_mount_diameter / 2 + self.print_margin)
-            .extrude(self.plate_thickness)
+            .extrude(inch_to_mm(3))
         )
 
         hole_offset = self.screw_mount_hole_distance / 2
@@ -376,36 +398,40 @@ class signal_head:
 
         return cut
 
-    def face_plate(self, lights, screw_holes=False):
+    def face_plate(self, lights):
         """
         Generate a face plate for number of lights as per 'lights' param
         Screw mounting holes optional. (Defaults to none.)
         """
         face_plate = self.plate(chamfer_surround=0, chamfer_end=0)
-        mount_add = self.lens_mount_add()
-        hole_cut = self.lens_mount_cut()
-        hood_add = self.hood()
+        mount_add = self.side_marker_barrel_outer()
+        hole_cut = self.side_marker_barrel_inner()
+        hood_add = self.hood_2()
 
         if lights == 3:
             offset = self.hole_distance_3 / 2
-            zip_tie_position = (
-                self.hood_outer_diameter / 2 + self.zip_tie_slot_length / 2
-            )
-
             face_plate = (
                 face_plate
-                + mount_add
-                + mount_add.translate((0, 0, -offset))
-                + mount_add.translate((0, 0, offset))
-                - hole_cut
-                - hole_cut.translate((0, 0, -offset))
-                - hole_cut.translate((0, 0, offset))
-                + hood_add
-                + hood_add.translate((0, 0, -offset))
-                + hood_add.translate((0, 0, offset))
-                - self.zip_ties_cut().translate((0, 0, zip_tie_position))
-                - self.zip_ties_cut().translate(
-                    (0, 0, -zip_tie_position + self.zip_tie_slot_length)
+                + mount_add.translate((0, 0, -self.screw_mount_hole_vertical_offset))
+                + mount_add.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset - offset)
+                )
+                + mount_add.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset + offset)
+                )
+                - hole_cut.translate((0, 0, -self.screw_mount_hole_vertical_offset))
+                - hole_cut.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset - offset)
+                )
+                - hole_cut.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset + offset)
+                )
+                + hood_add.translate((0, 0, -self.screw_mount_hole_vertical_offset))
+                + hood_add.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset - offset)
+                )
+                + hood_add.translate(
+                    (0, 0, -self.screw_mount_hole_vertical_offset + offset)
                 )
             )
         elif lights == 2:
@@ -419,7 +445,6 @@ class signal_head:
                 - hole_cut.translate((0, 0, offset))
                 + hood_add.translate((0, 0, -offset))
                 + hood_add.translate((0, 0, offset))
-                - self.zip_ties_cut()
             )
         elif lights == 1:
             face_plate = face_plate + mount_add - hole_cut + hood_add
@@ -429,19 +454,18 @@ class signal_head:
                 f"Not yet able to generate face plate for {lights} lights."
             )
 
-        if screw_holes:
-            face_plate = face_plate - self.screw_mount_holes_cut()
+        face_plate = face_plate - self.screw_mount_holes_cut()
 
         return face_plate
 
     def dwarf(self):
         """
-        Whip up something quick to test at dwarf signal GJ
+        Dwarf signal faceplate using side marker LED modules.
         """
         plate_base = self.plate_dwarf()
         hood_add = self.hood_2()
-        hole_cut = self.lens_mount_cut()
-        mount_add = self.lens_mount_add()
+        hole_cut = self.side_marker_barrel_inner()
+        mount_add = self.side_marker_barrel_outer()
 
         offset = self.hole_distance_2 / 2
 
@@ -497,6 +521,59 @@ class signal_head:
         )
 
         return fit_test_plate
+
+    def side_marker_barrel_outer(self):
+        """
+        A barrel shape to accommodate side marker LED modules. Used to build
+        the outer volume, follow by subtraction of matchining inner shape.
+        """
+        return (
+            cq.Workplane("YZ")
+            .circle(radius=self.side_marker_barrel_radius_outer)
+            .extrude(self.side_marker_barrel_height)
+            .faces(">X")
+            .fillet(self.side_marker_barrel_fillet)
+        )
+
+    def side_marker_barrel_inner(self):
+        """
+        Shape for cutting a cavity to accommodate side marker LED modules out
+        of the matching outer shape.
+        """
+        return (
+            cq.Workplane("YZ")
+            .circle(radius=self.side_marker_barrel_radius_inner)
+            .extrude(self.side_marker_barrel_taper_start)
+            .faces(">X")
+            .workplane()
+            .circle(radius=self.side_marker_barrel_radius_inner)
+            .workplane(self.side_marker_barrel_taper_height)
+            .circle(radius=self.side_marker_ring_radius_bottom)
+            .loft()
+            .faces(">X")
+            .workplane()
+            .circle(radius=self.side_marker_ring_radius_bottom)
+            .workplane(self.side_marker_ring_thickness)
+            .circle(radius=self.side_marker_ring_radius_top)
+            .loft()
+        )
+
+    def side_marker_test_ring(self):
+        """
+        The commodity side marker LED modules vary more than I had thought
+        they would. This is the (futile?) search for a design that can fit all
+        of them. It takes advantage of the fact they all have a rubber surround
+        for some dimensional tolerance. It may not be a perfect fit for all of
+        the different vendors, but maybe I can find a point where they can all
+        fit snugly enough for our purposes.
+        """
+        barrel_outer = self.side_marker_barrel_outer()
+
+        barrel_inner = self.side_marker_barrel_inner()
+
+        marker_housing = barrel_outer - barrel_inner
+
+        return marker_housing
 
     def absolute_sign(self):
         """
@@ -645,7 +722,9 @@ class signal_head:
             .extrude(back_plate_thickness)
         )
 
-        hood = self.hood_2().val().scale(1.6)
+        hood = (
+            self.hood_2()
+        )  # .val().scale(1.6) # VSCode really doesn't like the 1.6X scale. Not sure why?
 
         searchlight = back_plate + dome_area + hood
 
@@ -654,4 +733,4 @@ class signal_head:
 
 sh = signal_head()
 
-show_object(sh.dome_searchlight(), options={"color": "green", "alpha": 0.25})
+show_object(sh.dwarf(), options={"color": "green", "alpha": 0.25})
