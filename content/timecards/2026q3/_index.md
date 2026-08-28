@@ -5,6 +5,62 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Saturday 2026/8/22
+
+* 10 hours today, 505.5 hours this track year.
+
+Signals, Toonerville, movie night setup+teardown
+
+#### 9:30AM - 6:30PM (9 hours)
+
+Started the day with signals because I noticed signals were on and there's
+nobody out running trains. Pinned down to panel S which started counting down
+around 8AM but... why? Looked but couldn't find anything obvious. Tried probing
+a few things with a meter and nothing there, either. If I power cycle panel S,
+the NT board would click and immediately start counting down but I couldn't see
+what's shorting across the tracks.
+
+After panel S stopped doing its thing (NT block does not immediately trigger) I
+had to give up. I went to my original goal of the day: probe and understand
+what's going inside the pendant control for Toonerville. I found that most of
+the circuit board likely implements a safety mechanism where turning on main
+power has no effect unless throttle is turned all the way down. Noble concept
+but implementing via analog logic is tough for me to decipher.
+
+On a more productive note, I did determine the function of the other
+potentiometer on that board. It gets rid of the "dead spot" on throttle wheel
+so we don't have to turn it as far before the trolley starts moving. I can see
+the motivation but this is going to make it difficult to smoothly brake with
+reverse power. As soon as we reverse direction, this mechanism means the power
+level immediately skips over the "dead" areas that we need for gentle power
+application.
+
+We had the goal to make the trolley available for people to run during movie
+night. Since the official battery charger has yet to be found, I brought in my
+electronics work bench power supply and configured it to deliver lead-acid
+battery charging power.
+
+![Toonerville Trolley charged by bench power supply](./20260822_toonerville_charged_via_bench_power_supply.jpg)
+
+Once batter was charged, Dorado and I took it out for our first test run. It
+told us letting random people run the trolley is probably not a great idea. The
+aforementioned forward/reverse transition makes electrical braking a dicey
+proposition and the trolley has no other braking mechanisms. The mechanical
+drive train chain is also problematic: it is so loose that it is bouncing and
+flapping and making contact with itself. Worse, the loose chain means sprockets
+occasionally skip some teeth which is hugely jarring both mechanically and
+electrically. The former will cause physical damage, the latter trips the
+circuit breaker.
+
+We parked the trolley and got to work setting up for movie night.
+
+#### 10:00PM - 11:00PM (1 hour)
+
+Help tear down movie night setup and put things away, including Tonnerville
+Trolley.
+
+---
+
 ## Wednesday 2026/8/19
 
 * 6 hours today, 495.5 hours this track year.
