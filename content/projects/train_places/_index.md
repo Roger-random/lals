@@ -191,3 +191,19 @@ https://museums.moc.gov.tw/EN/MusData/Detail?museumsId=ad8619af-19cc-4489-81c2-e
 DT295 (once mislabeled as DT251) C55 steam locomotive on moving exhibit
 
 Looks like they have a ride-on train in the ballpark of 7.5" gauge.
+
+## 國家鐵道博物館 (National Railway Museum)
+臺北 (Taipei)
+
+https://www.nrm.gov.tw/
+
+## 花蓮鐵道文化園區 (Hualien Railway Culture Park)
+花蓮 (Hualien)
+
+https://linktr.ee/hrcp.2021
+https://en.wikipedia.org/wiki/Hualien_Railway_Culture_Park
+
+## 彰化扇形車庫 (Changhua Roundhouse)
+彰化 (Changhua)
+
+https://en.wikipedia.org/wiki/Changhua_Roundhouse
