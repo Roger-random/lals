@@ -5,7 +5,51 @@ title = '2026 Q3 Timecards'
 
 ---
 
-## Tuesday 2026/8/24
+## Friday 2026/8/28
+
+* 5.5 hours today, 535 hours this track year.
+
+Signals work day at K and J.
+
+#### 8:00AM - 1:30PM (5.5 hours)
+
+Started the day at panel P, just to see if there's something obvious with why
+it's not connected to the rest of the NT ring. Looks like it's supposed to
+connect to the ring via panel X. Found likely NT wires on both panels and
+the connectivity between them was zilch. Something had cut the NT wires. As far
+as obvious reasons go I guess that's pretty obvious.
+
+Weirdness: panel X has an active NT setup on the old circuit boards, plus two
+newer style NT circuit boards. One of which was mounted but had no wires
+installed, and one was not even mounted just sitting at the bottom gathering
+dust. Why are they here?
+
+Onward to panel K where we tried to find the lost wire towards position sensor
+for far end of reversing track in order to inform KEA/KEB. Just find a lost
+wire, how hard can it be?
+
+![Panel K unused wires](./20260828_panel_k_unused_wires.jpg)
+
+Turns out it's really hard because panel K had upwards of 40 wires not
+connected to anything. A consequence of the policy of never removing any wires.
+Failed wires just pile up and clutter and make it impossible to find a lost
+working wire. We solved the problem of the day by repurposing a wire that
+had been run for KEB but we can hack to go without. Unsatisfying.
+
+After it got too hot to work near panel K we ducked down to relatively shaded
+area of panel J. Harper and Strawn worked on installing a new dwarf lunar
+signal while I worked to permenantly wire the power supply in panel J, which
+was previously installed with a temporary plug.
+
+At the end of the day panel P is still isolated, panel K reversing switch now
+blinks appropriate warning signal light, panel J switchback dwarf lunar also
+blinks appropriate warning, and panel J power has been properly wired. We'll
+take that as a win because it's now far too hot. Time for lunch somewhere
+with air conditioning and free beverage refills, then home.
+
+---
+
+## Tuesday 2026/8/25
 
 * 4 hours today, 529.5 hours this track year.
 
