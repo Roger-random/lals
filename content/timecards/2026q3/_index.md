@@ -9,7 +9,7 @@ title = '2026 Q3 Timecards'
 
 * 5.5 hours today, 535 hours this track year.
 
-Signals work day at K and J.
+Hot signals half day at P/X, K, and J.
 
 #### 8:00AM - 1:30PM (5.5 hours)
 
@@ -17,7 +17,7 @@ Started the day at panel P, just to see if there's something obvious with why
 it's not connected to the rest of the NT ring. Looks like it's supposed to
 connect to the ring via panel X. Found likely NT wires on both panels and
 the connectivity between them was zilch. Something had cut the NT wires. As far
-as obvious reasons go I guess that's pretty obvious.
+as reasons go, I guess that counts as obvious.
 
 Weirdness: panel X has an active NT setup on the old circuit boards, plus two
 newer style NT circuit boards. One of which was mounted but had no wires
@@ -41,11 +41,8 @@ area of panel J. Harper and Strawn worked on installing a new dwarf lunar
 signal while I worked to permenantly wire the power supply in panel J, which
 was previously installed with a temporary plug.
 
-At the end of the day panel P is still isolated, panel K reversing switch now
-blinks appropriate warning signal light, panel J switchback dwarf lunar also
-blinks appropriate warning, and panel J power has been properly wired. We'll
-take that as a win because it's now far too hot. Time for lunch somewhere
-with air conditioning and free beverage refills, then home.
+We celebrated what we accomplished under the scorching sun. Time for a late
+lunch somewhere with air conditioning and free beverage refills, then home.
 
 ---
 
