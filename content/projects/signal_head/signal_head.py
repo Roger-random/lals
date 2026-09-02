@@ -230,20 +230,32 @@ class signal_head:
         copy majority of its curvature. Intended to be a directly replacement
         to hood() so they can be swapped around as desired.
         """
-        hood_2_outer_diameter = 44
+
+        # Distance from center of light to the outer base edge of hood
+        hood_2_outer_radius = 44 / 2
+
+        # Distance from that outer base edge to the inner base edge of hood
         hood_2_thickness = 5
+
+        # Distance from faceplace to tip of the hood
         hood_2_length = 36
-        hood_2_outer_radius = hood_2_outer_diameter / 2
-        hood_2_taper_degrees = 2
-        hood_2_taper_radians = math.radians(hood_2_taper_degrees)
-        hood_2_taper_radius = math.atan(hood_2_taper_radians) * hood_2_length
-        hood_2_bottom_taper_degrees = 5
+
+        # The hood has a slight taper specified in degrees, then we calculate
+        # the effect of that taper angle on radius at the tip of the hood.
+        hood_2_taper_radius = math.atan(math.radians(2)) * hood_2_length
+
+        # The slight taper at the bottom edge of the hood
+        hood_2_bottom_taper_radians = math.radians(5)
+
+        # How much of the hood length is occupied by that tapered section.
         hood_2_bottom_taper_length = hood_2_length / 2
-        hood_2_bottom_taper_radians = math.radians(hood_2_bottom_taper_degrees)
+
+        # From there we can calculate the amount of vertical rise of this taper.
         hood_2_bottom_taper_rise = (
             math.atan(hood_2_bottom_taper_radians) * hood_2_bottom_taper_length
         )
 
+        # A truncated cone representing the outer surface of the hood.
         hood_tube_outer = (
             cq.Workplane("YZ")
             .circle(hood_2_outer_radius)
@@ -252,6 +264,7 @@ class signal_head:
             .loft()
         )
 
+        # Another cone for the inner surface.
         hood_tube_inner = (
             cq.Workplane("YZ")
             .circle(hood_2_outer_radius - hood_2_thickness)
@@ -260,6 +273,7 @@ class signal_head:
             .loft()
         )
 
+        # Profile of the hood for upcoming boolean intersection operation
         hood_tube_intersect = (
             cq.Workplane("XZ")
             .lineTo(hood_2_bottom_taper_length, hood_2_bottom_taper_rise)
@@ -273,9 +287,10 @@ class signal_head:
             .lineTo(hood_2_length, hood_2_outer_radius)
             .lineTo(0, hood_2_outer_radius)
             .close()
-            .extrude(hood_2_outer_diameter, both=True)
+            .extrude(hood_2_outer_radius, both=True)
         )
 
+        # Build the hood!
         hood = (hood_tube_outer - hood_tube_inner).intersect(hood_tube_intersect)
 
         return hood
