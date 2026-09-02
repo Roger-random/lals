@@ -232,28 +232,33 @@ class signal_head:
         """
 
         # Distance from center of light to the outer base edge of hood
-        hood_2_outer_radius = 44 / 2
+        hood_2_outer_radius = 45 / 2
 
         # Distance from that outer base edge to the inner base edge of hood
-        hood_2_thickness = 5
+        hood_2_thickness = 7
 
         # Distance from faceplace to tip of the hood
-        hood_2_length = 36
+        hood_2_length = 45
 
         # The hood has a slight taper specified in degrees, then we calculate
         # the effect of that taper angle on radius at the tip of the hood.
         hood_2_taper_radius = math.atan(math.radians(2)) * hood_2_length
 
-        # The slight taper at the bottom edge of the hood
-        hood_2_bottom_taper_radians = math.radians(5)
+        # Bottom edge of the hood barrel
+        hood_2_bottom_radius = -hood_2_outer_radius + 8
 
-        # How much of the hood length is occupied by that tapered section.
-        hood_2_bottom_taper_length = hood_2_length / 2
+        # The hood profile is described with two tangential arcs curving in
+        # opposing directions. The start and ends are fixed to existing hood
+        # depth so adjusting the curvature means adjusting the point where they
+        # meet. The meeting point is dictated relative to the starting (lower)
+        # point
+        hood_2_profile_meet_point_length = 15
+        hood_2_profile_meet_point_height = hood_2_profile_meet_point_length
 
-        # From there we can calculate the amount of vertical rise of this taper.
-        hood_2_bottom_taper_rise = (
-            math.atan(hood_2_bottom_taper_radians) * hood_2_bottom_taper_length
-        )
+        # Control the start angle of the profile curve by changing starting
+        # point of the preceding straight line. It feels like I should have a
+        # better way to articulate this.
+        hood_2_profile_start_point_multiplier = 0.8
 
         # A truncated cone representing the outer surface of the hood.
         hood_tube_outer = (
@@ -276,7 +281,19 @@ class signal_head:
         # Profile of the hood for upcoming boolean intersection operation
         hood_tube_intersect = (
             cq.Workplane("XZ")
-            .lineTo(hood_2_bottom_taper_length, hood_2_bottom_taper_rise)
+            .lineTo(0, -hood_2_outer_radius)
+            .lineTo(
+                self.plate_thickness * hood_2_profile_start_point_multiplier,
+                -hood_2_outer_radius,
+            )
+            .lineTo(self.plate_thickness, hood_2_bottom_radius)
+            .tangentArcPoint(
+                (
+                    hood_2_profile_meet_point_length,
+                    hood_2_profile_meet_point_height,
+                ),
+                relative=True,
+            )
             .tangentArcPoint(
                 (
                     hood_2_length,
