@@ -121,7 +121,7 @@ class signal_head:
         self.side_marker_barrel_radius_inner = (
             self.side_marker_barrel_radius_outer - self.side_marker_barrel_thickness
         )
-        self.side_marker_barrel_height = 7
+        self.side_marker_barrel_height = 5
         self.side_marker_barrel_taper_angle_radians = math.radians(55)
         self.side_marker_barrel_taper_height = (
             self.side_marker_barrel_radius_inner - self.side_marker_ring_radius_bottom
