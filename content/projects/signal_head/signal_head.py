@@ -515,45 +515,6 @@ class signal_head:
 
         return face_plate
 
-    def side_marker_fit_test(self):
-        """
-        Small object to fit a commodity vehicle side marker light module.
-
-        Firsthand experience found the modules aren't as uniform across
-        manufacturers as I had hoped. While it is possible there's a hole
-        size where they'll all fit (loosely or tightly) I'm going to treat
-        them as different sizes.
-        """
-
-        ring_radius = 15
-        hole_height = 10
-
-        radius_g = 19 / 2
-        radius_ry = 18.7 / 2
-        height_g = 4.8
-        height_ry = 5.3
-
-        fit_test_plate = cq.Workplane("XY").rect(xLen=110, yLen=40).extrude(3)
-        fit_test_plate = fit_test_plate.edges("|Z").fillet(10)
-
-        ring_g = cq.Workplane("XY").circle(radius=ring_radius).extrude(height_g)
-        hole_g = cq.Workplane("XY").circle(radius=radius_g).extrude(hole_height)
-
-        ring_ry = cq.Workplane("XY").circle(radius=ring_radius).extrude(height_ry)
-        hole_ry = cq.Workplane("XY").circle(radius=radius_ry).extrude(hole_height)
-
-        fit_test_plate = (
-            fit_test_plate
-            + ring_g.translate((-35, 0, 0))
-            + ring_ry
-            + ring_ry.translate((35, 0, 0))
-            - hole_g.translate((-35, 0, 0))
-            - hole_ry
-            - hole_ry.translate((35, 0, 0))
-        )
-
-        return fit_test_plate
-
     def side_marker_barrel_outer(self):
         """
         A barrel shape to accommodate side marker LED modules. Used to build
@@ -589,23 +550,6 @@ class signal_head:
             .circle(radius=self.side_marker_ring_radius_top)
             .loft()
         )
-
-    def side_marker_test_ring(self):
-        """
-        The commodity side marker LED modules vary more than I had thought
-        they would. This is the (futile?) search for a design that can fit all
-        of them. It takes advantage of the fact they all have a rubber surround
-        for some dimensional tolerance. It may not be a perfect fit for all of
-        the different vendors, but maybe I can find a point where they can all
-        fit snugly enough for our purposes.
-        """
-        barrel_outer = self.side_marker_barrel_outer()
-
-        barrel_inner = self.side_marker_barrel_inner()
-
-        marker_housing = barrel_outer - barrel_inner
-
-        return marker_housing
 
     def absolute_sign(self):
         """
