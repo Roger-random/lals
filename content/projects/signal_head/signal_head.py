@@ -90,7 +90,7 @@ class signal_head:
 
         # Distance between screw mounting holes.
         self.screw_mount_hole_distance = 125
-        self.screw_mount_hole_vertical_offset = 3.75
+        self.screw_mount_hole_vertical_offset = 2
         self.screw_mount_diameter = (
             6  # Generously sized to accommodate enclosure variation
         )
@@ -121,7 +121,7 @@ class signal_head:
         self.side_marker_barrel_radius_inner = (
             self.side_marker_barrel_radius_outer - self.side_marker_barrel_thickness
         )
-        self.side_marker_barrel_height = 5
+        self.side_marker_barrel_height = 7
         self.side_marker_barrel_taper_angle_radians = math.radians(55)
         self.side_marker_barrel_taper_height = (
             self.side_marker_barrel_radius_inner - self.side_marker_ring_radius_bottom
@@ -232,10 +232,10 @@ class signal_head:
         """
 
         # Distance from center of light to the outer base edge of hood
-        hood_2_outer_radius = 45 / 2
+        hood_2_outer_radius = 40 / 2
 
         # Distance from that outer base edge to the inner base edge of hood
-        hood_2_thickness = 7
+        hood_2_thickness = 5
 
         # Distance from faceplace to tip of the hood
         hood_2_length = 45
@@ -245,14 +245,14 @@ class signal_head:
         hood_2_taper_radius = math.atan(math.radians(2)) * hood_2_length
 
         # Bottom edge of the hood barrel
-        hood_2_bottom_radius = -hood_2_outer_radius + 8
+        hood_2_bottom_radius = -hood_2_outer_radius + 4
 
         # The hood profile is described with two tangential arcs curving in
         # opposing directions. The start and ends are fixed to existing hood
         # depth so adjusting the curvature means adjusting the point where they
         # meet. The meeting point is dictated relative to the starting (lower)
         # point
-        hood_2_profile_meet_point_length = 15
+        hood_2_profile_meet_point_length = 5
         hood_2_profile_meet_point_height = hood_2_profile_meet_point_length
 
         # Control the start angle of the profile curve by changing starting
