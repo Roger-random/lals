@@ -5,6 +5,19 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/8/30
+
+* 8 hours today, 543 hours this track year.
+
+Sunday public ride ops crew.
+
+#### 8:00AM - 4:00PM (8 hours)
+
+CN2002 conductor and a few runs as engineer later in the day. It got tricky to
+juggle the throttle, the air brake valve, AND the radio.
+
+---
+
 ## Friday 2026/8/28
 
 * 5.5 hours today, 535 hours this track year.
