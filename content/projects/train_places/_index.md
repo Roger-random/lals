@@ -120,6 +120,15 @@ https://www.wrm.org/
 
 They have an old BART.
 
+# France
+
+## Cité du Train (City of Trains)
+Mulhouse
+
+https://en.wikipedia.org/wiki/Cit%C3%A9_du_Train
+
+TGV Sud-Est, the original European high speed rail.
+
 # Japan
 
 ## Hokkaido Railway Technology Museum (JR Hokkaido)
@@ -132,9 +141,9 @@ Kyoto
 
 https://www.kyotorailwaymuseum.jp/en/
 
-500 Series Shinkansen end unit in display hall.
+500 Series Shinkansen end unit in display hall. Possibly body only no bogies.
 
-D51 steam locomotive in operating condition.
+D51 steam locomotive in operating condition and giving rides.
 
 ## Kyushu Railway History Museum (JR Kyushu)
 Kitakyushu
@@ -159,6 +168,31 @@ https://www.railway-museum.jp/
 Note: Hands-on program participants are selected via raffle app for privilege of paying for an experience.
 
 D51 steam locomotive operations simulator. (¥600)
+
+# United Kingdom
+
+## London Museum of Water and Steam
+London
+
+https://waterandsteam.org.uk/
+
+Admittedly no trains here, but steam power is a close adjacent.
+
+## National Railway Museum
+York
+
+https://www.railwaymuseum.org.uk/
+
+Has King George V but it's currently loaned out.
+
+Only (?) 0 Series Shinkansen outside of Japan
+
+## STEAM – Museum of the Great Western Railway
+Swindon
+
+https://www.steam-museum.org.uk
+
+King George V on loan from National Railway Museum
 
 # 臺灣 (Taiwan)
 
