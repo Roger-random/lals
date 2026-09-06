@@ -5,6 +5,33 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Friday 2026/9/4
+
+* 1 hour today, 560.5 hours this track year.
+
+Signal panel magnet standoff and web access.
+
+#### 11:00AM - 12:00PM (1 hour)
+
+Today was dedicated to replacing Chessie's tired old batteries but it went
+smoothly so we had an hour to do some signals work.
+
+First experiment was to finish Tuesday's project upgrading signal driver
+boards. We left the second board dangling on a single standoff because we
+didn't want to drill new holes and throw metal shavings everywhere. I bought
+some magnetic standoffs from Amazon and I wanted to try them out. The verdict:
+very promising! The second board is now held magnetically, and we have more
+boards that will get moved around as things are upgraded. The magnets will
+make this much easier and less risky than drilling holes. I will order more.
+
+![Magnet feet standoff for signal board](./20260904_signal_board_on_magnetic_standoff.jpg)
+
+After that success we moved on to panel R and swap out the ESP32 for one with
+new firmware: this one has a web browser interface option! Since I have an
+Android phone I like the ability to access these controls without the iOS app.
+
+---
+
 ## Tuesday 2026/9/1
 
 * 11 hours today, 559.5 hours this track year.
