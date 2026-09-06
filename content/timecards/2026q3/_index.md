@@ -5,6 +5,41 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Tuesday 2026/9/1
+
+* 11 hours today, 559.5 hours this track year.
+
+Signals + extinguisher + super sucker
+
+#### 8:00AM - 12:00PM (4 hours)
+
+The signals crew got a lot done today! Harper and Strawn worked on panel S NT
+and rerouting wires for KD yellow. My job of the day was to start upgrading
+signal driver boards in panel L from old-school boards designed for incadescent
+filament bulbs, plus their LED adapter pigtails, to new LED-native drivers.
+This turned out to be way harder than it should have been thanks to the XO
+board "force red" situation. I had to install a diode board.
+
+#### 1:00PM - 8:00PM (7 hours)
+
+The project continued after lunch. The first board took the longest because I
+had to figure out the procedures, but the following two board moves (XO and
+another signal) went a lot faster. I learned redoing wires and trimming them to
+perfect length was a waste of time, because there are moves still ahead and
+what's perfect length now will be wrong a few moves down the line.
+
+The signal driver upgrade project stopped when the second board was complete
+electrically but not physically mounted. The first board had the luxury of
+existing matching holes but the second (and onward) boards do not. Do we want
+to drill holes into the metal backplate? That generates a lot of metal shavings
+and we really don't want that on circuit boards.
+
+After Harper and Strawn left I walked around for the monthly check of fire
+extinguisher pressure gauges. Then I finished the day on the center cab work
+locomotive pulling the track super sucker cleaning out track.
+
+---
+
 ## Monday 2026/8/31
 
 * 5.5 hours today, 548.5 hours this track year.
