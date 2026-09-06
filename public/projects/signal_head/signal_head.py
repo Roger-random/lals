@@ -90,7 +90,7 @@ class signal_head:
 
         # Distance between screw mounting holes.
         self.screw_mount_hole_distance = 125
-        self.screw_mount_hole_vertical_offset = 3.75
+        self.screw_mount_hole_vertical_offset = 2
         self.screw_mount_diameter = (
             6  # Generously sized to accommodate enclosure variation
         )
@@ -121,7 +121,7 @@ class signal_head:
         self.side_marker_barrel_radius_inner = (
             self.side_marker_barrel_radius_outer - self.side_marker_barrel_thickness
         )
-        self.side_marker_barrel_height = 15
+        self.side_marker_barrel_height = 7
         self.side_marker_barrel_taper_angle_radians = math.radians(55)
         self.side_marker_barrel_taper_height = (
             self.side_marker_barrel_radius_inner - self.side_marker_ring_radius_bottom
@@ -230,20 +230,37 @@ class signal_head:
         copy majority of its curvature. Intended to be a directly replacement
         to hood() so they can be swapped around as desired.
         """
-        hood_2_outer_diameter = 44
-        hood_2_thickness = 5
-        hood_2_length = 36
-        hood_2_outer_radius = hood_2_outer_diameter / 2
-        hood_2_taper_degrees = 2
-        hood_2_taper_radians = math.radians(hood_2_taper_degrees)
-        hood_2_taper_radius = math.atan(hood_2_taper_radians) * hood_2_length
-        hood_2_bottom_taper_degrees = 5
-        hood_2_bottom_taper_length = hood_2_length / 2
-        hood_2_bottom_taper_radians = math.radians(hood_2_bottom_taper_degrees)
-        hood_2_bottom_taper_rise = (
-            math.atan(hood_2_bottom_taper_radians) * hood_2_bottom_taper_length
-        )
 
+        # Distance from center of light to the outer base edge of hood
+        hood_2_outer_radius = 40 / 2
+
+        # Distance from that outer base edge to the inner base edge of hood
+        hood_2_thickness = 5
+
+        # Distance from faceplace to tip of the hood
+        hood_2_length = 45
+
+        # The hood has a slight taper specified in degrees, then we calculate
+        # the effect of that taper angle on radius at the tip of the hood.
+        hood_2_taper_radius = math.atan(math.radians(2)) * hood_2_length
+
+        # Bottom edge of the hood barrel
+        hood_2_bottom_radius = -hood_2_outer_radius + 4
+
+        # The hood profile is described with two tangential arcs curving in
+        # opposing directions. The start and ends are fixed to existing hood
+        # depth so adjusting the curvature means adjusting the point where they
+        # meet. The meeting point is dictated relative to the starting (lower)
+        # point
+        hood_2_profile_meet_point_length = 5
+        hood_2_profile_meet_point_height = hood_2_profile_meet_point_length
+
+        # Control the start angle of the profile curve by changing starting
+        # point of the preceding straight line. It feels like I should have a
+        # better way to articulate this.
+        hood_2_profile_start_point_multiplier = 0.8
+
+        # A truncated cone representing the outer surface of the hood.
         hood_tube_outer = (
             cq.Workplane("YZ")
             .circle(hood_2_outer_radius)
@@ -252,6 +269,7 @@ class signal_head:
             .loft()
         )
 
+        # Another cone for the inner surface.
         hood_tube_inner = (
             cq.Workplane("YZ")
             .circle(hood_2_outer_radius - hood_2_thickness)
@@ -260,9 +278,22 @@ class signal_head:
             .loft()
         )
 
+        # Profile of the hood for upcoming boolean intersection operation
         hood_tube_intersect = (
             cq.Workplane("XZ")
-            .lineTo(hood_2_bottom_taper_length, hood_2_bottom_taper_rise)
+            .lineTo(0, -hood_2_outer_radius)
+            .lineTo(
+                self.plate_thickness * hood_2_profile_start_point_multiplier,
+                -hood_2_outer_radius,
+            )
+            .lineTo(self.plate_thickness, hood_2_bottom_radius)
+            .tangentArcPoint(
+                (
+                    hood_2_profile_meet_point_length,
+                    hood_2_profile_meet_point_height,
+                ),
+                relative=True,
+            )
             .tangentArcPoint(
                 (
                     hood_2_length,
@@ -273,9 +304,10 @@ class signal_head:
             .lineTo(hood_2_length, hood_2_outer_radius)
             .lineTo(0, hood_2_outer_radius)
             .close()
-            .extrude(hood_2_outer_diameter, both=True)
+            .extrude(hood_2_outer_radius, both=True)
         )
 
+        # Build the hood!
         hood = (hood_tube_outer - hood_tube_inner).intersect(hood_tube_intersect)
 
         return hood
@@ -483,45 +515,6 @@ class signal_head:
 
         return face_plate
 
-    def side_marker_fit_test(self):
-        """
-        Small object to fit a commodity vehicle side marker light module.
-
-        Firsthand experience found the modules aren't as uniform across
-        manufacturers as I had hoped. While it is possible there's a hole
-        size where they'll all fit (loosely or tightly) I'm going to treat
-        them as different sizes.
-        """
-
-        ring_radius = 15
-        hole_height = 10
-
-        radius_g = 19 / 2
-        radius_ry = 18.7 / 2
-        height_g = 4.8
-        height_ry = 5.3
-
-        fit_test_plate = cq.Workplane("XY").rect(xLen=110, yLen=40).extrude(3)
-        fit_test_plate = fit_test_plate.edges("|Z").fillet(10)
-
-        ring_g = cq.Workplane("XY").circle(radius=ring_radius).extrude(height_g)
-        hole_g = cq.Workplane("XY").circle(radius=radius_g).extrude(hole_height)
-
-        ring_ry = cq.Workplane("XY").circle(radius=ring_radius).extrude(height_ry)
-        hole_ry = cq.Workplane("XY").circle(radius=radius_ry).extrude(hole_height)
-
-        fit_test_plate = (
-            fit_test_plate
-            + ring_g.translate((-35, 0, 0))
-            + ring_ry
-            + ring_ry.translate((35, 0, 0))
-            - hole_g.translate((-35, 0, 0))
-            - hole_ry
-            - hole_ry.translate((35, 0, 0))
-        )
-
-        return fit_test_plate
-
     def side_marker_barrel_outer(self):
         """
         A barrel shape to accommodate side marker LED modules. Used to build
@@ -557,23 +550,6 @@ class signal_head:
             .circle(radius=self.side_marker_ring_radius_top)
             .loft()
         )
-
-    def side_marker_test_ring(self):
-        """
-        The commodity side marker LED modules vary more than I had thought
-        they would. This is the (futile?) search for a design that can fit all
-        of them. It takes advantage of the fact they all have a rubber surround
-        for some dimensional tolerance. It may not be a perfect fit for all of
-        the different vendors, but maybe I can find a point where they can all
-        fit snugly enough for our purposes.
-        """
-        barrel_outer = self.side_marker_barrel_outer()
-
-        barrel_inner = self.side_marker_barrel_inner()
-
-        marker_housing = barrel_outer - barrel_inner
-
-        return marker_housing
 
     def absolute_sign(self):
         """
@@ -733,4 +709,4 @@ class signal_head:
 
 sh = signal_head()
 
-show_object(sh.dwarf(), options={"color": "green", "alpha": 0.25})
+show_object(sh.face_plate(3), options={"color": "green", "alpha": 0.25})
