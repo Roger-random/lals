@@ -19,10 +19,26 @@ smoothly so we had an hour to do some signals work.
 First experiment was to finish Tuesday's project upgrading signal driver
 boards. We left the second board dangling on a single standoff because we
 didn't want to drill new holes and throw metal shavings everywhere. I bought
-some magnetic standoffs from Amazon and I wanted to try them out. The verdict:
-very promising! The second board is now held magnetically, and we have more
-boards that will get moved around as things are upgraded. The magnets will
-make this much easier and less risky than drilling holes. I will order more.
+some magnetic standoffs and we got the following data points:
+* __Mechanical__ The right hand side screw heads butt right up against blue
+wire terminal connectors. This is the same as existing standoffs so these are
+no worse.
+* __Electrical__ The existing standoffs are plastic so electrical shorts
+weren't a concern. But these magnet feet units are metal so we looked for
+electrical traces that might get crushed. One trace got close, but none were
+within the footprint. Insulation washers will not be necessary, which is good
+because the mechanical situation does not allow us to fit those washers.
+At least not without some sandpaper action.
+* __Magnetic__ This is the big one. I didn't know how tightly the magnet would
+hold. If it held too light, boards will fall off by torque of wires or weight
+of some of these multi-wire bundles hanging off them. If it held too tightly,
+then we risk damaging the board trying to pull them free for movement. We were
+happy to find holding force to be between those two unfortunate extremes.
+
+The verdict: This is very promising! The second board is now held magnetically,
+and we have more boards that will get moved around as things are upgraded. The
+magnets will make the process easier and less risky than drilling holes. I will
+order more of these magnetic standoffs.
 
 ![Magnet feet standoff for signal board](./20260904_signal_board_on_magnetic_standoff.jpg)
 
@@ -51,15 +67,17 @@ board "force red" situation. I had to install a diode board.
 
 The project continued after lunch. The first board took the longest because I
 had to figure out the procedures, but the following two board moves (XO and
-another signal) went a lot faster. I learned redoing wires and trimming them to
-perfect length was a waste of time, because there are moves still ahead and
-what's perfect length now will be wrong a few moves down the line.
+another signal) went a lot faster with some experience and also a full belly.
+I learned redoing wires and trimming them to perfect length was a waste of
+time, because there are moves still ahead and what's perfect length now will
+be wrong a few moves down the line.
 
 The signal driver upgrade project stopped when the second board was complete
 electrically but not physically mounted. The first board had the luxury of
 existing matching holes but the second (and onward) boards do not. Do we want
 to drill holes into the metal backplate? That generates a lot of metal shavings
-and we really don't want that on circuit boards.
+and we really don't want that on circuit boards. We left that board dangling
+on a single standoff while we thought over the problem.
 
 After Harper and Strawn left I walked around for the monthly check of fire
 extinguisher pressure gauges. Then I finished the day on the center cab work
