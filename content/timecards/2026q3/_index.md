@@ -5,6 +5,42 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Monday 2026/8/31
+
+* 5.5 hours today, 548.5 hours this track year.
+
+Signals + leaves + water wheel + squirrel war.
+
+#### 7:45AM - 1:15PM (5.5 hours)
+
+Swapped out signal heads JFA/B from the 5mm SMD LED + faceted lens experiment
+to the vehicle side marker LED module experiment. The non-negotiable 100 ohm
+resistance makes it a lot dimmer than it can be, but it is still vislble in
+daylight so let's see how it works out.
+
+Yesterday I noticed the water wheel is breaking up, multiple pieces of wood had
+rotted and fallen off. Sent pictures to Davis as an update, and he stopped by
+to look it over. Might try to fix it back up next week.
+
+Someone had raked up a lot of leaves into piles near Bagley. I don't know who
+it was but I see they didn't bring all the piles back east into the bins. It
+would be a shame for those piles to get blown all over again so I hitched up
+some flatbeds and brought in ten garbage cans worth.
+
+After leaves, I got some dirt to pour into squirrel holes that had been dug
+back out at west end of O'Brien-Moore Bridge. They're not turning this area
+into Swiss cheese without a fight.
+
+#### Miscellaneous
+
+After lunch I cleaned up Chessie, which does not count towards club maintenance
+hours. The evening visit to Glendale Model Railroad Society also does not
+count.
+
+![Glendale Model Railroad Society layout](./20260831_glendale_model_railroad_society.jpg)
+
+---
+
 ## Sunday 2026/8/30
 
 * 8 hours today, 543 hours this track year.
