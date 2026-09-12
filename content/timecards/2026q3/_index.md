@@ -19,8 +19,10 @@ Switched to a different detector board and got the same behavior. I think we
 may have found a design flaw but need to consult with Brock to narrow further.
 
 Onward to panel L to continue upgrading old incadescent bulb signal driver
-boards to new era LED modules. Fishing wires through the panel is always a
-chore. Got one done and tested before lunch.
+boards to new era LED modules, which will be held by newfound magnetic
+standoffs that help making this incremental shuffle upgrade process much
+faster. Fishing wires through the panel is always a chore. Got one done and
+tested before lunch.
 
 #### 1:00PM - 7:00PM (6 hours)
 
@@ -42,7 +44,7 @@ Ended the day by pulling the two utility flatbeds we've been using for signals
 work into the maintenance bay. We've been hearing odd noises that we had been
 afraid indicated the wheel bearings were dry. I found lubrication fittings for
 those bearings, which seems like a good idea, but the actual problem was one of
-the air brake shows. It had somehow become misaligned so a corner is rubbing up
+the air brake shoes. It had somehow become misaligned so a corner is rubbing up
 against wheel flange. I don't know how to fix it but I'm happy to find the
 worrisome sound were not dying (or dead) wheel bearings.
 
