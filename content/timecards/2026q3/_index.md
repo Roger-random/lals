@@ -5,6 +5,20 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Tuesday 2026/9/8
+
+* 4 hours today 569.5 hours this track year.
+
+#### 4:00PM - 7:00PM (3 hours)
+
+Continue panel M diagnostics by getting voltage on every terminal on the
+detector board. Didn't get much further diagnosing the rest. Switched gears
+and shoveled dirt down more squirrel holes.
+
+![Full gondola of dirt for home delivery to squirrels](./20260908_full_gondola_of_dirt_for_squirrels.jpg)
+
+---
+
 ## Monday 2026/9/7
 
 * 5 hours today, 565.5 hours this track year.
