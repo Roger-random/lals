@@ -5,6 +5,21 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Monday 2026/9/7
+
+* 5 hours today, 565.5 hours this track year.
+
+#### 3:00PM - 7:00PM (4 hours)
+
+Public rides on Sunda 9/6 were rained out, which means a Monday signals session
+looking for errors caused by water intrusion. Good news: east end looks fine.
+Bad news: multiple false reds in west end from panel M to L. Opening up panels
+and poking inside with multimeter tracked down to one unexpected signal wire
+behavior between K and L, and one misbehaving detector board in panel M. These
+diagnosis results will inform future repair session.
+
+---
+
 ## Friday 2026/9/4
 
 * 1 hour today, 560.5 hours this track year.
