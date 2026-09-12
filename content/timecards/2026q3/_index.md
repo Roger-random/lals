@@ -5,9 +5,52 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Thursday 2026/9/10
+
+* 10 hours today, 578.5 hours this track year.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Started the day at panel M where despite our best efforts we couldn't find a
+reason why the detector board is lighting up fault. The best candidate was a
+bond wire that isn't even "marginal" just less than perfect. Replaced it and
+the fault still exists. Later in the day it got hot and the fault disappeared.
+Switched to a different detector board and got the same behavior. I think we
+may have found a design flaw but need to consult with Brock to narrow further.
+
+Onward to panel L to continue upgrading old incadescent bulb signal driver
+boards to new era LED modules. Fishing wires through the panel is always a
+chore. Got one done and tested before lunch.
+
+#### 1:00PM - 7:00PM (6 hours)
+
+Continued panel L signal driver upgrades after lunch. Strawn did the second and
+I resumed to handle the third. The test session for the second board found odd
+behavior traced to a XO board with a loose V+ power supply wire. Test for the
+third found behavior we can't explain but we've also seen before with the old
+signal driver boards. Well, at least now we know it's not the driver boards.
+It is not safety critical so we'll look into that later.
+
+EJA/B/C is failing to indicate station track 1 again. The positing sensing
+switch seems to be affected by external physical stimuli. It was failing closed
+then it was failing open then it was working fine as I unplugged the wire and
+plugged it back in during diagnosis. I will recommend this switch be replaced.
+
+![ESM2 switch position sensor diagnosis](./20260910_esm2_position_sensor_diagnosis.jpg)
+
+Ended the day by pulling the two utility flatbeds we've been using for signals
+work into the maintenance bay. We've been hearing odd noises that we had been
+afraid indicated the wheel bearings were dry. I found lubrication fittings for
+those bearings, which seems like a good idea, but the actual problem was one of
+the air brake shows. It had somehow become misaligned so a corner is rubbing up
+against wheel flange. I don't know how to fix it but I'm happy to find the
+worrisome sound were not dying (or dead) wheel bearings.
+
+---
+
 ## Tuesday 2026/9/8
 
-* 4 hours today 569.5 hours this track year.
+* 3 hours, today 568.5 hours this track year.
 
 #### 4:00PM - 7:00PM (3 hours)
 
