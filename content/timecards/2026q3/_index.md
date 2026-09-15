@@ -5,9 +5,51 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Saturday 2026/9/12
+
+* 7 hours today, 585.5 hours this track year.
+
+Signals work day.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Started by connecting my E-Flite power meter to see how much power panel L is
+drawing, a data point to inform design of future power systems. It was well
+under 5 amps which was surprising to me, even when all three switch motors were
+running simultaneously. We should still design for some headroom, but this also
+means we won't waste money on hefty overkill.
+
+Picked up where we left off Thursday with panel L signal head upgrades. First
+LK then LJA/B were upgraded, with LJA/B requiring diode board work to integrate
+force red and detect into a single red out.
+
+#### 12:30PM - 3:30PM (3 hours)
+
+Was recruited to help put the transfer table back on its tracks, but enough
+other people were recruited so I had nothing to contribute and sat unhelpfully
+before returning to panel L for the final push. LEA+LEB is difficult to work
+with because it is in the lower right of the back side of panel L, meaning it
+is completely covered with wires leading to other panels above it. It takes
+quite a bit of wire weaving to make it all work. There was also the hypothesis
+that LEA/B wouldn't require the same diode work I did for LJA/B as it only had
+a single detect block and a single force red.
+
+We tested it and... the hypothesis appears incorrect as LEA/B isn't working
+right. Because were were tired of staring at wires the whole day, and since
+LEA/B isn't even pointing in the current operating direction, we decide to
+label it as a known incomplete item for later. Maybe it is the diode board
+that's required, maybe it's something else.
+
+After putting work away, it was time to play with Oscar for a bit before
+switching gears to Toonerville and having the poor thing come apart.
+
+---
+
 ## Thursday 2026/9/10
 
 * 10 hours today, 578.5 hours this track year.
+
+Signals work day.
 
 #### 8:00AM - 12:00PM (4 hours)
 
