@@ -63,8 +63,10 @@ LEA/B isn't even pointing in the current operating direction, we decide to
 label it as a known incomplete item for later. Maybe it is the diode board
 that's required, maybe it's something else.
 
-After putting work away, it was time to play with Oscar for a bit before
-switching gears to Toonerville and having the poor thing come apart.
+After putting work away, I played with Oscar for a bit before switching gears
+to Toonerville with McKay. Sadly the poor thing came apart. Though we were
+planning to revisit the mechanicals anyway, it would have been nice to see
+and understand how it was "working" before anything broke.
 
 ---
 
