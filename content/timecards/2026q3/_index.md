@@ -5,6 +5,29 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/9/13
+
+* 8 hours today, 593.5 hours this track year.
+
+Eventful Sunday run day.
+
+#### 8:00AM - 4:00PM (8 hours)
+
+Engineer on SF163 for most of the day, but stopped after I tried to stop an
+unruly child from running off the station platform onto the tracks, and got
+bit for my effort. Incident report were filed for both club records and
+park rangers were called in as well to file their paperwork.
+
+![Bite marks left by unruly passenger](./20260913_bite_marks_by_unruly_child.jpg)
+
+Also my Baofeng radio died mid way through the day and I had to borrow a club
+radio.
+
+This day could have gone better. I can use a vacation and luckily I already
+have one planned.
+
+---
+
 ## Saturday 2026/9/12
 
 * 7 hours today, 585.5 hours this track year.
