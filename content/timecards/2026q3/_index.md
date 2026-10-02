@@ -5,6 +5,65 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Tuesday 2026/9/15
+
+* 5.5 hours today, 599 hours this track year.
+
+Toonerville repair session
+
+#### 8:00AM - 1:30PM (5.5 hours)
+
+Met up with Dorado to figure out the full extent of Toonerville Trolley
+disintegration that ended the outing with McKay on the 12th.
+
+![Motor sprocket bolt missing](./20260913_toonerville_motor_sprocket_bolt_missing.jpg)
+
+The primary problem was the motor output shaft was coupled to a sprocket
+adapter, and the adapter is held to the sprocket by a bolt that has gone
+missing. That explains why the motor is spinning uselessly and not transmitting
+any power to the drivetrain, but it doesn't explain why the drivetrain would
+occasionally jam up as we pushed it back to the barn.
+
+![Intermediate shaft bearing mounting nut missing](./20260913_toonerville_intermediate_shaft_bearing_block_mounting_nut_missing.jpg)
+
+The jamming-up was traced to missing nuts on the intermediate shaft. This
+allowed the intermediate shaft to flop around loosely, losing its alignment
+with the rest of the drivetrain. If the sprocket teeth is not aligned with
+the chain, they jam up.
+
+![Tonnerville top removed for servicing](./20260915_toonerville_top_remove_for_service.jpg)
+
+The best part about today's session, though, is proving that our work up to
+this point was useful: it is now much easier to remove the top of the trolley
+for troubleshooting like we did today.
+
+The extra weights bolted onto the chassis, front and back, were very crudely
+attached. The rear weight is wobbling and as far as we can tell it has always
+wobbled from day one: the wrong fasteners were used to attach it: a carriage
+bolt with a square neck could cut its own square hole into wood, but when used
+on metal without a precut square hole, it is impossible to tighten.
+
+In addition to the above problems, we also found an explanation for why the
+chain from motor to intermediate shaft is so loose: the "tensioner" mechanism
+was built around a cylindrical roller. As the roller was worn down by the
+chain, two grooves were cut allowing the chain slack that probably didn't used
+to be there. Dorado thinks this should be replaced by a small tooth sprocket
+spinning on ball bearings. We'll look into that.
+
+We also got a good close look at the chain linking the front to back axle. It
+is a puzzle. The most direct route takes it through the intermediate shaft,
+which means it's been wearing that shaft down. Not good. The cross shaft that
+tried to keep the two halves of the chain apart is not doing its job, and the
+floppy looseness has caused sprockets to skip resulting in accelerated wear to
+both sprockets. Until they can be addressed one-by-one, the trolley will have
+to go without that chain and thus be exclusively rear wheel drive.
+
+Replacing new bolts for the motor and nuts for intermediate shaft allowed power
+transmission to that rear axle, but the intermediate shaft chain is still
+floppy until we get that small sprocket installed spinning on ball bearings.
+
+---
+
 ## Sunday 2026/9/13
 
 * 8 hours today, 593.5 hours this track year.
@@ -62,6 +121,8 @@ right. Because were were tired of staring at wires the whole day, and since
 LEA/B isn't even pointing in the current operating direction, we decide to
 label it as a known incomplete item for later. Maybe it is the diode board
 that's required, maybe it's something else.
+
+#### Playtime
 
 After putting work away, I played with Oscar for a bit before switching gears
 to Toonerville with McKay. Sadly the poor thing came apart. Though we were
