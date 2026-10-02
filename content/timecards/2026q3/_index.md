@@ -5,6 +5,22 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Wednesday 2026/9/30
+
+* 3 hours today, 622.5 hours this track year.
+
+Squirrel war day.
+
+#### 8:30AM - 11:30AM (3 hours)
+
+The squrrels have taken advantage of my absence and redeveloped some major
+excavation projects. I loaded up a work gondola with dirt and a shovel to fill
+in new holes they've dug up west of O'Brien-Moore Bridge.
+
+![Big squirrel hole that needs to be filled back in](./20260930_major_squirrel_excavation.jpg)
+
+---
+
 ## Tuesday 2026/9/29
 
 * 9 hours today, 619.5 hours this track year.
