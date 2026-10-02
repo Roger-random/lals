@@ -5,11 +5,39 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Sunday 2026/9/27
+
+* 6.5 hours today, 610.5 hours this track year.
+
+Sunday public run crew.
+
+#### 9:30AM - 4:00PM (6.5 hours)
+
+Morning diagnosis of signals problem found that panel H is no longer connected
+to the rest of the NT ring. This explains why mountain division signals were
+dark and also why we've heard reports of HG being dark. It's not a problem with
+HG, the entire panel H is dark! Panel H turns on when a train runs over a NT
+block so we're fine as long as a train runs over it at least once every 21
+minutes.
+
+Helped get UP1989 set up, take a test lap, and stage at track 1 position 1 to
+be ready to take over after Fuad is done for the day.
+
+Conducted then engineered SF163 for lunch break relief. Put away SF163 while
+showing Clouse the procedures to do so.
+
+I didn't pull Sankey out for show and display today because there were already
+two steam locomotives being worked on.
+
+![Two steam locomotives being worked on](./20260927_alvazian_and_cook_steam_locomotives_being_worked_on.jpg)
+
+---
+
 ## Saturday 2026/9/26
 
 * 4 hours today, 604 hours this track year.
 
-Signals troubleshooting
+Signals troubleshooting.
 
 #### 1:00PM - 5:00PM (4 hours)
 
@@ -47,7 +75,7 @@ on public run route.
 
 * 5.5 hours today, 599 hours this track year.
 
-Toonerville repair session
+Toonerville repair session.
 
 #### 8:00AM - 1:30PM (5.5 hours)
 
