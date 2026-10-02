@@ -5,6 +5,56 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Tuesday 2026/9/29
+
+* 9 hours today, 619.5 hours this track year.
+
+Signals work day
+
+#### 8:00AM - 12:30PM (4.5 hours)
+
+Started the morning with CSM2 limit switch replacement. We replaced one and
+tested the results to find the other direction is also intermittent. So we
+replaced the other switch as well and CSM2 is back up and running.
+
+Stopped in panel H to increase NT timer interval to greater than 21 minutes.
+Every time we touch something we risk breaking something, and that happened
+here. We ended up replacing the NT board to get panel H back up and running
+with the extended interval.
+
+LB+LC false yellow was acting upon a logical high coming from panel K for
+KB red out. Went over to panel K for a look and found the driver board was
+sending logical high even though its input signal, KB red out, was low. Moved
+KB red out wires (both input and output) to another channel on the driver
+board. This resolved LB+LC false yellow.
+
+Panel L ESP32 installed and powered up via buck converter board. It isn't
+controlling anything yet, for now we just want to see if the board survives.
+
+#### 1:30PM - 6:00PM (4.5 hours)
+
+After lunch we focused on block detect failure in LB3 trying to get to the
+bottom of it. Determined one wire (green) had already failed some time in
+the past and a brown wire was installed to replace part of the run, with
+wire nuts on either end. Curiously, this new wire turned out to be where the
+fault was located. We were all set to run fresh wire when we noticed a kink
+of damaged brown insulation. Inside the damaged insulation, the copper wire
+had disintegrated to nothing. That would explain it! Trimming the brown
+wire and reconnecting restored LB3 operation. That was much easier than
+running new wire, whew!
+
+After that was done we mapped out and labeled all the wires coming into and
+out of panel L. This will be important when we revamp the panel to use the
+new boards that allow that ESP32 to run the show. We didn't do enough of this
+prep work for panel K and it was messy figuring it all out afterwards.
+
+My brain was pretty fried by this point, but Strawn wanted to push on with
+the isolator board. My brain could not support this effort and when panel L
+power started acting weird we recognized our limits. Panel L was flipped
+over to always-on until we can return with refreshed brains.
+
+---
+
 ## Sunday 2026/9/27
 
 * 6.5 hours today, 610.5 hours this track year.
