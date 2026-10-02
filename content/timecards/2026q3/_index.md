@@ -5,6 +5,44 @@ title = '2026 Q3 Timecards'
 
 ---
 
+## Saturday 2026/9/26
+
+* 4 hours today, 604 hours this track year.
+
+Signals troubleshooting
+
+#### 1:00PM - 5:00PM (4 hours)
+
+After a fun train themed vacation and a morning visit to East Valley Lines it
+is back to work. The signals system has degraded over the past two weeks and I
+wanted to get some preliminary data points to help triage and plan the upcoming
+work day.
+
+EJA red is intermittent. A while ago I spent a lot of time trying to track down
+intermittent yellow and it turned out to be the LED retrofit module that sits
+in the automotive style socket. This time I'm going straight to "bulb"
+replacement and I found validation this is the right way to go when I saw the
+module already had one dead LED out of four.
+
+![EJA red one dead LED out of four](./20260926_eja_red_one_dead_led_out_of_four.jpg)
+
+CSM2 crossover motor traced to limit switch failure. I disconnected motor power
+but this turned out to be insufficient: this left the other motor functional
+and the signal indication flips if either rail switch position sensor is closed
+which gives misleading indication when the two motors aren't moving together.
+So I reconnected power to the misbehaving motor and went into panel C to
+disconnect power to the motor board in order to deactive both motors at once.
+
+LB+LK false red traced to a detector fault. 15V at detector board output
+terminals but 0V at the rail feed wire imply underground wire issue.
+Disconnected output of false detect to avoid a false red on public run route.
+
+LB+LC false yellow traced to a logical high coming from panel K for KB red even
+though KB is not red. Disconnected yellow-in so LB does not show false yellow
+on public run route.
+
+---
+
 ## Tuesday 2026/9/15
 
 * 5.5 hours today, 599 hours this track year.
