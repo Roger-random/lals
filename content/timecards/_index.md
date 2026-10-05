@@ -3,6 +3,11 @@ date = '2026-01-01T00:00:00-08:00'
 title = 'Timecards'
 +++
 
+## [2026 Q4](./2026q4)
+
+The forecast was correct: I ended Q3 without building my train. Let's see if I
+manage to strike a balance in Q4.
+
 ## [2026 Q3](./2026q3)
 
 Established and building timecard hours rapidly with many projects around the
