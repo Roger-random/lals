@@ -312,6 +312,114 @@ class signal_head:
 
         return hood
 
+    def hood_2_octo_top(self):
+        """
+        Experimental variation of hood_2 that has a octogonal top so it can be
+        printed in an upside-down orientation. If this proves to be
+        useful it needs to be merged back into hood_2 as a parameter.
+        """
+
+        # Distance from center of light to the outer base edge of hood
+        hood_2_outer_radius = 40 / 2
+
+        # Distance from that outer base edge to the inner base edge of hood
+        hood_2_thickness = 5
+
+        # Distance from faceplace to tip of the hood
+        hood_2_length = 45
+
+        # The hood has a slight taper specified in degrees, then we calculate
+        # the effect of that taper angle on radius at the tip of the hood.
+        hood_2_taper_radius = math.atan(math.radians(2)) * hood_2_length
+
+        # Bottom edge of the hood barrel
+        hood_2_bottom_radius = -hood_2_outer_radius + 4
+
+        # The hood profile is described with two tangential arcs curving in
+        # opposing directions. The start and ends are fixed to existing hood
+        # depth so adjusting the curvature means adjusting the point where they
+        # meet. The meeting point is dictated relative to the starting (lower)
+        # point
+        hood_2_profile_meet_point_length = 5
+        hood_2_profile_meet_point_height = hood_2_profile_meet_point_length
+
+        # Control the start angle of the profile curve by changing starting
+        # point of the preceding straight line. It feels like I should have a
+        # better way to articulate this.
+        hood_2_profile_start_point_multiplier = 0.8
+
+        octo = (
+            cq.Workplane("YZ")
+            .polygon(nSides=8, diameter=40, circumscribed=True)
+            .extrude(45)
+        ) + (
+            cq.Workplane("YZ")
+            .rect(xLen=20, yLen=40, centered=(False, True))
+            .extrude(45)
+        )
+
+        octo_intersect = (
+            cq.Workplane("YZ")
+            .rect(xLen=40, yLen=20, centered=(True, False))
+            .extrude(45)
+        )
+
+        round = cq.Workplane("YZ").circle(radius=20).extrude(45)
+
+        round_intersect = (
+            cq.Workplane("YZ")
+            .rect(xLen=40, yLen=-20, centered=(True, False))
+            .extrude(45)
+        )
+
+        octo_top = octo.intersect(octo_intersect)
+        round_bottom = round.intersect(round_intersect)
+
+        hood_tube_outer = octo_top + round_bottom
+
+        # Another cone for the inner surface.
+        hood_tube_inner = (
+            cq.Workplane("YZ")
+            .circle(hood_2_outer_radius - hood_2_thickness)
+            .workplane(hood_2_length)
+            .circle(hood_2_outer_radius - hood_2_thickness + hood_2_taper_radius)
+            .loft()
+        )
+
+        # Profile of the hood for upcoming boolean intersection operation
+        hood_tube_intersect = (
+            cq.Workplane("XZ")
+            .lineTo(0, -hood_2_outer_radius)
+            .lineTo(
+                self.plate_thickness * hood_2_profile_start_point_multiplier,
+                -hood_2_outer_radius,
+            )
+            .lineTo(self.plate_thickness, hood_2_bottom_radius)
+            .tangentArcPoint(
+                (
+                    hood_2_profile_meet_point_length,
+                    hood_2_profile_meet_point_height,
+                ),
+                relative=True,
+            )
+            .tangentArcPoint(
+                (
+                    hood_2_length,
+                    hood_2_outer_radius - hood_2_thickness + hood_2_taper_radius,
+                ),
+                relative=False,
+            )
+            .lineTo(hood_2_length, hood_2_outer_radius)
+            .lineTo(0, hood_2_outer_radius)
+            .close()
+            .extrude(hood_2_outer_radius, both=True)
+        )
+
+        # Build the hood!
+        hood = (hood_tube_outer - hood_tube_inner).intersect(hood_tube_intersect)
+
+        return hood
+
     def reference_hole_cut(self):
         """
         Object to use to subtract for cutting a hole for one of the lights.
@@ -706,7 +814,63 @@ class signal_head:
 
         return searchlight
 
+    def dwarf_low_profile(self):
+        """
+        A dwarf signal for the yard where there is a lot of foot traffic so we
+        want something with lowest profile possible to minimize risk of getting
+        kicked.
+        """
+        hood = self.hood_2_octo_top()
+        hole_cut = self.side_marker_barrel_inner()
+        mount_add = self.side_marker_barrel_outer()
+
+        octo = (
+            cq.Workplane("YZ")
+            .polygon(nSides=8, diameter=40, circumscribed=True)
+            .extrude(self.plate_thickness)
+        )
+        octo_top_intersect = (
+            cq.Workplane("YZ")
+            .rect(xLen=40, yLen=20, centered=(True, False))
+            .extrude(self.plate_thickness)
+        )
+
+        non_octo = (
+            cq.Workplane("YZ")
+            .lineTo(0, 20)
+            .lineTo(20, 20)
+            .lineTo(20, -20)
+            .lineTo(0, -20)
+            .radiusArc((-20, 0), radius=20)
+            .close()
+            .extrude(self.plate_thickness)
+        )
+
+        single_light = (
+            hood + octo.intersect(octo_top_intersect) + non_octo + mount_add - hole_cut
+        ).translate((0, -19, 0))
+
+        dual_light = single_light + single_light.mirror("XZ")
+
+        spine_half = (
+            cq.Workplane("XY")
+            .transformed(offset=(0, 0, 20))
+            .lineTo(-inch_to_mm(2.5), 0)
+            .lineTo(-inch_to_mm(2.5), 20)
+            .lineTo(-5, 20)
+            .radiusArc((0, 25), radius=-5)
+            .close()
+            .extrude(-self.plate_thickness)
+        )
+        spine = spine_half + spine_half.mirror("XZ")
+
+        dwarf_half = (dual_light + spine).translate((inch_to_mm(2.5), 0, 0))
+
+        dwarf = dwarf_half + dwarf_half.mirror("YZ")
+
+        return dwarf
+
 
 sh = signal_head()
 
-show_object(sh.face_plate(3), options={"color": "green", "alpha": 0.25})
+show_object(sh.dwarf_low_profile(), options={"color": "green", "alpha": 0.25})
