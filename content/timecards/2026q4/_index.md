@@ -5,9 +5,66 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Thursday 2026/10/8
+
+* 9.5 hours today, 639 hours this track year.
+
+Signals work day
+
+#### 8:00AM - 1:30PM (5.5 hours)
+
+Started the day reviving the dwarf signal indicating yard vs. Sutchville.
+How old was the old equipment? We found LEDs instead of incadescent bulbs so
+they're not that old... but the LEDs were mounted in wood. Who needs circuit
+boards when you have wood?
+
+![Signal head LEDs mounted in wood](./20261008_dwarf_led_wood_circuit_board.jpg)
+
+I didn't have a dwarf faceplate ready but I did have a B signal head with the
+big side plates. In order to make things fit I took a band saw and chopped off
+the bottom part so we can use commodity side marker LED modules.
+
+Once that was done we split up. I went up to fix the switch motor controlling
+mainline/Akins while the rest worked on panel S NT. Fortunately my part only
+needed a little cleaning then I started working on putting a switchmode power
+supply in panel S. This took most of the day to figure out.
+
+#### 2:30PM - 6:30PM (4 hours)
+
+After lunch break I had fuel for my brain to wrap up the power supply upgrade.
+While I was doing this Strawn went over to panel J to play with the NT block
+and we found out the current generation switch motor boards can completely
+freak out flipping the motor back and forth in the presence of not-yet-
+understood power issues when a regulated power supply interacts with a linear
+power supply. No good! And this means until we understand what's going on,
+we shouldn't bring panel S NT block back online either. Sucks.
+
+After I verified basic panel S functionality after the power supply upgrade,
+I pulled out the old giant transformer. Since it was held with nuts on the rear
+panel this meant dropping the entier panel to access those nuts. Not pleasant
+but not as bad as I thought it might have been.
+
+The problems didn't come up until I looked at cross-panel communication. The
+ground reference has changed with the switchmode power supply so I disconnected
+wires to panel R until we can understand what's going on.
+
+The day ended with a bit of humor mirroring the morning's wood circuit board:
+some old signals components were found buried in the dirt adjacent to the
+siding resurrection project.
+
+![Old signals encrusted in dirt](./20261008_ancient_mud_encrusted_siding_signals.jpg)
+
+We're not going to be able to use... whatever this was.
+
+![Old signal component encrusted in mud](./20261008_ancient_mud_encrusted_siding_signals_closeup.jpg)
+
+---
+
 ## Monday 2026/10/5
 
 * 3 hours today, 629.5 hours this track year.
+
+SF163 maintenance.
 
 #### 3:30PM - 6:30PM (3 hours)
 
