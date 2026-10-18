@@ -5,6 +5,46 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Saturday 2026/10/17
+
+* 10 hours today, 670 hours this track year.
+
+Signals work day.
+
+#### 8:00AM - 12:30PM (4.5 hours)
+
+Started the day with the most important mainline impact: ESM2 position sensing
+switch, which has been working intermittent for several weeks, got replaced.
+This should resolve the misleadingly reported "can't select track 1" issue.
+
+After that was done, we went back to paying panel P the attention it has long
+been deprived of. Most important for a sense of completeness, Strawn and Harper
+found the failed power wire for that seventh dwarf and ran a replacement so it
+illuminates along with the rest. Working in parallel, Katz and I installed a
+set of side marker LED modules to the maintenance bay dwarf using my 3D-printed
+TPU ring. The inner diameter proved to be a tad too large, allowing the LED
+modules to pop out. Putting a loop of electrical tape will allow this initial
+field test to proceed. Next round will have TPU rings with a smaller inner
+diameter.
+
+Once all seven lights were illuminating, we turned our attention back to P NT.
+The ancient NT board did not allow adjustment of timeout, so it was swapped out
+with a newer board that did. Then, to trigger that timer, we connected the
+mainteance bay button as well as the currently working NT track block located
+on south track east of the driveway. Finally, the previously-nonworking NT
+track block located on the north track west of the driveway got a look see. I
+found two breaks in underground wiring that had allowed water to seep in and
+corrode the wire to nothing. Cutting them out and splicing the remaining wires
+together brought the NT block back.
+
+![Compromised wire insulation](./20261017_broken_p_nt_block_wire_insulation.jpg)
+
+Now trains exiting Phil West yard westbound will be sure to trigger the NT ring.
+
+#### 1:30PM - 7:00PM (5.5 hours)
+
+---
+
 ## Friday 2026/10/16
 
 * 2 hours today, 660 hours this track year.
@@ -15,7 +55,7 @@ Dwarf signal remains stubborn.
 
 I stopped in for a quick work session, hoping to bring that final seventh
 yard dwarf back online. Replacing bulbs and a socket allowed me to get the
-dwarf running on battery power, but it still needs power to actually be
+dwarf running on battery power, but it still needs power feed to actually be
 useful.
 
 ![Grumpy dwarf on battery power](./20261016_grumpy_dwarf_on_battery.jpg)
