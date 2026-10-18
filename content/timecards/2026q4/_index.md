@@ -5,6 +5,23 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Friday 2026/10/16
+
+* 2 hours today, 660 hours this track year.
+
+Dwarf signal remains stubborn.
+
+#### 12:30PM - 2:30PM (2 hours)
+
+I stopped in for a quick work session, hoping to bring that final seventh
+yard dwarf back online. Replacing bulbs and a socket allowed me to get the
+dwarf running on battery power, but it still needs power to actually be
+useful.
+
+![Grumpy dwarf on battery power](./20261016_grumpy_dwarf_on_battery.jpg)
+
+---
+
 ## Tuesday 2026/10/13
 
 * 10 hours today, 658 hours this track year.
@@ -42,9 +59,13 @@ After Strawn departed, Harper and I focused on the Phil West yard ladder
 track dwarf signals, the "Seven Dwarves". Many had burnt out light bulbs,
 several had damaged microswitches that had to be replaced, and three had bad
 power wires. We were able to fix two, but one is still broken. Six out of
-seven dwarves are back online! The last one taunts me.
+seven dwarves are back online!
 
 ![Six out of seven dwarves back online](./20261013_six_out_of_seven_dwarves.jpg)
+
+The last one taunts me. I took out my frustrations by shoveling some dirt.
+
+![Gondola of dirt](./20261013_gondola_of_dirt.jpg)
 
 ---
 
