@@ -5,6 +5,49 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Tuesday 2026/10/13
+
+* 10 hours today, 658 hours this track year.
+
+Signals work day.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Following up yard/Sutchville yard dwarf work, today we brought the associated
+motor back online so now it is a motorized switch again. This is expected to be
+useful at the upcoming Fall Meet. Remaining yard switches remain manually
+operated and no visual indication beyond watching the points. We won't have
+time to do anything about that for this Fall Meet. Maybe the next one?
+
+After that was up and running we revisited the crossover switch with my very
+temporary zip-ties. Repositioning the microswitch (required drilling several
+new holes) brought it back to operating condition without any zip ties at all.
+
+Panel S main control ESP32 was upgraded so it can participate in cross-panel
+communications. This required some rewiring work because the new code moved
+some wires around for no functional need.
+
+#### 1:00PM - 7:00PM (6 hours)
+
+Panel P has no contact with public route and thus has rarely been considered a
+high priority. Today we pay attention! First job is to get it to rejoin the
+timer ring. We had to patch a broken connection inside a vault but first we
+had to find the buried vault!
+
+Cleaning up the buried vault also allowed us to find wires associated with NT
+block that had stopped working. More answers would have to wait for another
+work day.
+
+After Strawn departed, Harper and I focused on the Phil West yard ladder
+track dwarf signals, the "Seven Dwarves". Many had burnt out light bulbs,
+several had damaged microswitches that had to be replaced, and three had bad
+power wires. We were able to fix two, but one is still broken. Six out of
+seven dwarves are back online! The last one taunts me.
+
+![Six out of seven dwarves back online](./20261013_six_out_of_seven_dwarves.jpg)
+
+---
+
 ## Sunday 2026/10/11
 
 * 2 hours today, 648 hours this track year.
