@@ -5,6 +5,21 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Sunday 2026/10/11
+
+* 2 hours today, 648 hours this track year.
+
+Fire extinguisher check, squirrel war continues.
+
+#### 5:00PM - 7:00PM (2 hours)
+
+Public run cancelled so I went to check out the Galpin auto show instead.
+Stopped by the club on the way home and performed my monthly fire extinguisher
+check. After that, loaded up a gondola with Crystal Springs Drive dirt and
+filled some squirrel holes alongside minor signals work.
+
+---
+
 ## Saturday 2026/10/10
 
 * 7 hours today, 646 hours this track year.
