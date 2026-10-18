@@ -5,11 +5,56 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Saturday 2026/10/10
+
+* 7 hours today, 646 hours this track year.
+
+Signals work day.
+
+#### 8:00AM - 12:00PM (4 hours)
+
+Started by wrapping up a loose end from last time: the yard/Sutchville dwarf
+now has a proper dwarf faceplate instead of a full size faceplate with the
+bottom chopped by a band saw.
+
+Then we moved to BSM5 which had lost all power, and traced the problem to
+wires disintegrated inside a wire nut. Trimming wire to expose fresh conductor
+brought the motor back.
+
+While testing that fixed motor we noticed BH showing the intermittent false
+red that has been haunting us for a while. This opportunity allowed us to go
+chase down the bad bond wire and get it fixed hopefully once and for all.
+
+Onward to panel S where we diagnosed the cross-panel communication issues
+and decided S and R need to send reference ground from each other as the design
+originally specified and not try to do anything fancy with shared grounds.
+That's just not going to fly in the new world of regulated power supplies.
+
+#### 1:00PM - 4:00PM (3 hours)
+
+Panel S received the next iteration of block detector and signal driver boards,
+now each with their own ESP32 brain and communicate with the main ESP32 via
+serial link. This cuts down on the wiring within the panel and I hope it will
+pan out as hoped.
+
+Griped about enclosure for RSM2 and how it defeated several of the points of
+putting position sensing microswitch inside an enclosure. Why go through all
+this effort just to expose it to the environment?
+
+![RSM2 exposed even while enclosed](./20261010_rsm2_enclosure.jpg)
+
+After Strawn departed I continued working on issues I found. False red on
+KD and KEA traced to a bad bond wire that was replaced. Also found a bad
+crossover signal head that was not indicating rail switch position reliably.
+I could make it a bit better with zip-ties but that's still not a proper fix.
+
+---
+
 ## Thursday 2026/10/8
 
 * 9.5 hours today, 639 hours this track year.
 
-Signals work day
+Signals work day.
 
 #### 8:00AM - 1:30PM (5.5 hours)
 
