@@ -27,6 +27,8 @@ modules to pop out. Putting a loop of electrical tape will allow this initial
 field test to proceed. Next round will have TPU rings with a smaller inner
 diameter.
 
+#### 1:30PM - 7:00PM (5.5 hours)
+
 Once all seven lights were illuminating, we turned our attention back to P NT.
 The ancient NT board did not allow adjustment of timeout, so it was swapped out
 with a newer board that did. Then, to trigger that timer, we connected the
@@ -41,8 +43,6 @@ together brought the NT block back.
 
 Now trains exiting Phil West yard westbound will be sure to trigger the NT ring.
 
-#### 1:30PM - 7:00PM (5.5 hours)
-
 ---
 
 ## Friday 2026/10/16
@@ -55,7 +55,7 @@ Dwarf signal remains stubborn.
 
 I stopped in for a quick work session, hoping to bring that final seventh
 yard dwarf back online. Replacing bulbs and a socket allowed me to get the
-dwarf running on battery power, but it still needs power feed to actually be
+dwarf running on battery power, but it still needs a power feed to actually be
 useful.
 
 ![Grumpy dwarf on battery power](./20261016_grumpy_dwarf_on_battery.jpg)
@@ -98,12 +98,12 @@ work day.
 After Strawn departed, Harper and I focused on the Phil West yard ladder
 track dwarf signals, the "Seven Dwarves". Many had burnt out light bulbs,
 several had damaged microswitches that had to be replaced, and three had bad
-power wires. We were able to fix two, but one is still broken. Six out of
-seven dwarves are back online!
+power wires. We were able to fix two of the bad power wires, but one dwarf
+is still broken. Getting six out of seven dwarves back online is a great start.
 
 ![Six out of seven dwarves back online](./20261013_six_out_of_seven_dwarves.jpg)
 
-The last one taunts me. I took out my frustrations by shoveling some dirt.
+But that last one taunts me. I took out my frustrations by shoveling some dirt.
 
 ![Gondola of dirt](./20261013_gondola_of_dirt.jpg)
 
@@ -185,8 +185,9 @@ boards when you have wood?
 ![Signal head LEDs mounted in wood](./20261008_dwarf_led_wood_circuit_board.jpg)
 
 I didn't have a dwarf faceplate ready but I did have a B signal head with the
-big side plates. In order to make things fit I took a band saw and chopped off
-the bottom part so we can use commodity side marker LED modules.
+big side plates. In order to make things fit I trimmed the bottom part short
+with a band saw so that plate will fit in a dwarf position allowing us to
+deploy commodity side marker LED modules on this dwarf.
 
 Once that was done we split up. I went up to fix the switch motor controlling
 mainline/Akins while the rest worked on panel S NT. Fortunately my part only
@@ -198,10 +199,11 @@ supply in panel S. This took most of the day to figure out.
 After lunch break I had fuel for my brain to wrap up the power supply upgrade.
 While I was doing this Strawn went over to panel J to play with the NT block
 and we found out the current generation switch motor boards can completely
-freak out flipping the motor back and forth in the presence of not-yet-
-understood power issues when a regulated power supply interacts with a linear
-power supply. No good! And this means until we understand what's going on,
-we shouldn't bring panel S NT block back online either. Sucks.
+freak out flipping the motor back and forth in the presence of power issues we
+are still struggling to understand. We suspect this episode was triggered by
+a regulated power supply interacts with a linear power supply via NT ring.
+No good! And this means until we understand what's going on, we shouldn't
+bring panel S NT block back online either. Sucks.
 
 After I verified basic panel S functionality after the power supply upgrade,
 I pulled out the old giant transformer. Since it was held with nuts on the rear
@@ -249,7 +251,7 @@ There's been conversation of having replacement gearmotors on stock at the club
 for their eventual replacement. I asked how they've been failing in the past
 and learned it was because the lubricant leaked out. Curiously, the gearbox has
 neither an oil drain plug or an oil fill plug, meaning there's not really
-anything we can do make sure the gearbox doesn't leak out. This seems like a
+anything we can do make sure the gearbox doesn't dry out. This seems like a
 less than optimal design!
 
 I looked from underneath the locomotive with an eye on lubrication. I can see a
@@ -263,8 +265,8 @@ The third axle looks dry and there's no gunk accumulation.
 
 ![SF163 clean third axle](./20261005_sf163_clean_third_axle.jpg)
 
-Without an oil level check or a fill plug, there's not much more I can do for
-the other three axles. I don't particulary enjoy that feeling but oh well.
+Without an oil level check or a fill plug, there's nothing I can do for
+the other three axles. I don't particulary enjoy that feeling, but oh well.
 
 To make myself feel better, I pulled out the cosmetic maintenance kit and made
 SF163 look pretty. I am not happy someone put her away with a big glop of bird
