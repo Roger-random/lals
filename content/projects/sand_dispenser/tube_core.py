@@ -889,15 +889,27 @@ tc = tube_core()
 
 wheel, ring = tc.endcap_wheel_and_ring(inch_to_mm(5))
 
-show_object(wheel, options={"color": "green", "alpha": 0.25})
-# show_object(ring, options={"color": "purple", "alpha": 0.25})
-# show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
-# show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
-# show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
+show_object(
+    wheel.mirror("XZ").translate((0, inch_to_mm(3), 0)),
+    options={"color": "green", "alpha": 0.25},
+)
+show_object(ring, options={"color": "purple", "alpha": 0.25})
+show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
+show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
+show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
 
 plug, hole = tc.flexible_plug_and_hole()
 
-show_object(plug, options={"color": "aliceblue", "alpha": 0.25})
+
+show_object(
+    wheel - hole.translate((inch_to_mm(1.25), -tc.ibls_T_min, 0)),
+    options={"color": "green", "alpha": 0.25},
+)
+
+show_object(
+    plug.translate((inch_to_mm(1.25), -tc.ibls_T_min, 0)),
+    options={"color": "aliceblue", "alpha": 0.25},
+)
 
 # plug_test = (
 #     cq.Workplane("XZ")
