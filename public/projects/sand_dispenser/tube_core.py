@@ -176,20 +176,7 @@ class tube_core:
         :type diameter: float
         """
 
-        # Experiment: try a squared-off flange to see if it has better ability
-        # to stay on track.
-
-        # Build on top of the base wheel generator
-        base_wheel = self.wheel(diameter, apply_fillet=False)
-
-        # Clip with cylinder of larger radius
-        base_wheel_intersect = (
-            cq.Workplane("XZ")
-            .circle(radius=diameter / 2 + inch_to_mm(1 / 4))
-            .extrude(self.ibls_T_min * 2, both=True)
-        )
-
-        base_wheel = base_wheel.intersect(base_wheel_intersect)
+        base_wheel = self.wheel(diameter)
 
         # Cut a hole for a commodity 608 bearing
         bearing_radius = 11  # 608 bearing diameter of 22mm
@@ -752,20 +739,173 @@ class tube_core:
 
         return plug
 
+    def flexible_plug_and_hole(self):
+        """
+        I had grand dreams for the insert-and-twist plug but the geometry got
+        too much for me to handle. Here's plan B: a plan hole with beveled ends
+        and a plug that will need to be printed in flexible filament to work.
+
+        Returns two objects in a tuple: the first is the plug to be printed in
+        flexible filament. The second is the object to use to subtract.
+        """
+        plug_radius = inch_to_mm(0.5)
+        plug_length = inch_to_mm(0.5)
+        hole_bevel_outside = 3
+        hole_bevel_inside = 3
+        plug_recess = hole_bevel_outside * 0.25
+        plug_edge = hole_bevel_outside * 0.25
+        plug_inner = hole_bevel_outside - plug_edge - plug_recess
+        plug_lip_size = hole_bevel_outside * 0.5
+        plug_lip_remainder = plug_lip_size - hole_bevel_outside
+        hole_subtract_margin = 100
+        handle_width = 0.4 * 3
+        plug_wall_thickness = 0.4 * 3
+        plug_body = (
+            # Recess the plug to avoid leaving a lip that can catch, then
+            # create the outer lip
+            cq.Workplane("XZ")
+            .transformed(offset=(0, 0, -plug_recess))
+            .circle(radius=plug_radius + hole_bevel_outside - plug_inner)
+            .extrude(-plug_edge)
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius + hole_bevel_outside - plug_inner)
+            .workplane(offset=plug_inner)
+            .circle(radius=plug_radius)
+            .loft()
+            # main barrel section of the plug
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius)
+            .extrude(plug_length - hole_bevel_inside - hole_bevel_outside)
+            # Taper down to help insertion
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius)
+            .workplane(offset=hole_bevel_inside + hole_bevel_outside)
+            .circle(radius=plug_radius - hole_bevel_outside)
+            .loft()
+        )
+        plug_lip = (
+            # Expand out beyond barrel diameter
+            cq.Workplane("XZ")
+            .transformed(offset=(0, 0, -plug_length + hole_bevel_outside))
+            .circle(radius=plug_radius)
+            .workplane(offset=-plug_lip_size)
+            .circle(radius=plug_radius + plug_lip_size)
+            .loft()
+            # Constant radius barrel section
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius + plug_lip_size)
+            .extrude(-plug_lip_remainder * 2)
+            # Taper back down to barrel diameter to help guide insertion
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius + plug_lip_size)
+            .workplane(offset=plug_lip_size)
+            .circle(radius=plug_radius)
+            .loft()
+        ).intersect(
+            # If the lip is all the way around, the plug has nowhere to
+            # flex to fold, so we only keep a section of the lip.
+            cq.Workplane("XZ")
+            .rect(xLen=plug_radius, yLen=plug_radius * 3)
+            .extrude(-plug_length * 2)
+        )
+
+        bottom_wedge = (
+            # Bottom wedge cut out of the plug allowing bottom to fold
+            cq.Workplane("XZ")
+            .transformed(offset=(0, 0, -plug_length + hole_bevel_outside))
+            .rect(xLen=plug_radius * 3, yLen=0.2)
+            .workplane(offset=-hole_bevel_outside - hole_bevel_inside)
+            .rect(xLen=plug_radius * 3, yLen=hole_bevel_inside * 3)
+            .loft()
+        )
+
+        plug = plug_body + plug_lip - bottom_wedge
+
+        plug_subtract_cavity = plug - plug.faces("<Y").shell(-plug_wall_thickness)
+
+        plug_handle = (
+            # Give the outer end of the handle a lip for better grip
+            cq.Workplane("XZ")
+            .rect(xLen=plug_radius * 3, yLen=handle_width * 3)
+            .extrude(-hole_bevel_outside / 2)
+            # Then taper downward for a more flexible handle
+            .faces(">Y")
+            .workplane()
+            .rect(xLen=plug_radius * 3, yLen=handle_width * 3)
+            .workplane(offset=handle_width)
+            .rect(xLen=plug_radius * 3, yLen=handle_width)
+            .loft()
+            # And thin the rest of the way
+            .faces(">Y")
+            .workplane()
+            .rect(xLen=plug_radius * 3, yLen=handle_width)
+            .extrude(plug_length * 2)
+        )
+
+        plug_subtract_cavity = plug_subtract_cavity - plug_handle
+
+        plug = plug - plug_subtract_cavity
+
+        hole_subtract = (
+            # Create extra margin for cutting outside of hole.
+            cq.Workplane("XZ")
+            .circle(radius=plug_radius + hole_bevel_outside)
+            .extrude(hole_subtract_margin)
+            # Create the outside beveled surface to help install plug
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius + hole_bevel_outside)
+            .workplane(offset=hole_bevel_outside)
+            .circle(radius=plug_radius + self.print_margin)
+            .loft()
+            # Barrel to fit the plug body
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius + self.print_margin)
+            .extrude(plug_length - hole_bevel_outside - hole_bevel_inside)
+            # Inside beveled edge to retain plug
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius + self.print_margin)
+            .workplane(offset=hole_bevel_inside)
+            .circle(radius=plug_radius + hole_bevel_inside)
+            .loft()
+            # Extra margin for cutting inside of hole
+            .faces(">Y")
+            .workplane()
+            .circle(radius=plug_radius + hole_bevel_inside)
+            .extrude(hole_subtract_margin)
+        )
+
+        return (plug, hole_subtract)
+
 
 tc = tube_core()
 
-(wheel, ring) = tc.endcap_wheel_and_ring(inch_to_mm(5))
+wheel, ring = tc.endcap_wheel_and_ring(inch_to_mm(5))
 
-# show_object(wheel, options={"color": "green", "alpha": 0.25})
-# show_object(ring, options={"color": "purple", "alpha": 0.25})
-# show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
-# show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
-# show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
+show_object(
+    wheel.mirror("XZ").translate((0, inch_to_mm(3), 0)),
+    options={"color": "green", "alpha": 0.25},
+)
+show_object(ring, options={"color": "purple", "alpha": 0.25})
+show_object(tc.endcap_shim(inch_to_mm(0.15)), options={"color": "blue", "alpha": 0.25})
+show_object(tc.axle_to_cross_beam(), options={"color": "yellow", "alpha": 0.25})
+show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
 
-plug = tc.twist_plug_and_hole()
+plug, hole = tc.flexible_plug_and_hole()
 
-show_object(plug, options={"color": "aliceblue", "alpha": 0.25})
+show_object(
+    wheel - hole.translate((inch_to_mm(1.25), -tc.ibls_T_min, 0)),
+    options={"color": "green", "alpha": 0.25},
+)
 
-blank_cylinder = cq.Workplane("XZ").circle(radius=inch_to_mm(1)).extrude(inch_to_mm(1))
-show_object(blank_cylinder, options={"color": "purple", "alpha": 0.25})
+show_object(
+    plug.translate((inch_to_mm(1.25), -tc.ibls_T_min, 0)),
+    options={"color": "aliceblue", "alpha": 0.25},
+)
