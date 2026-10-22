@@ -5,6 +5,46 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Sunday 2026/10/18
+
+* 9 hours today, 679 hours this track year.
+
+Disney Sunday
+
+#### 8:00AM - 5:00PM (9 hours)
+
+Started the morning by pulling CN2002 out of the barn for a little bit of
+exercise, starting with a trip down to Valley Division to replace a screw on
+signal head SA. When replacing it with a side marker LED faceplate, I managed
+to lose a faceplate screw. (It was in my small magnetic parts tray and I
+unintentionally bumped it on its lip turning it into a catapult.)
+
+No running public with CN2002 today as there were enough trains. We had SF163,
+UP1989, SPSF, and Fuad's engine all pulling bench car sets. I also lacked the
+Ryobi battery necessary to run the air compressor for air brakes. Which meant
+CN2002 will be on show-and-display. To put on a good show and display, I pulled
+out my pile of microfiber towels and used the Alexander-designated paint care
+product to shine things up.
+
+![CN2002 on display](./20261018_cn2002_on_show.jpg)
+
+Since I had my train cosmetic care kit out, I put away Alexander's CN2002
+product and switched over to my own bottles to give SF163 its own glow-up
+treatment.
+
+I was the east gate person for about two hours in the afternoon, where I had
+the chance to chat with other lovely Carolwood staff at the booth in between
+making sure the track is cleared when a train comes through.
+
+Plus random other miscellaneous tasks as part of being the Sunday crew. I was
+busy enough I didn't have time to bring out Chessie or Sankey for display.
+Silver brought out his Nickel Plate Road locomotive which tempted Murphy to
+bring out his NS Dash-9 set but he did not. The biggest novelty show train is
+Horgan's steam locomotive pulling his sete of passenger cars. Choo-choo is
+always a crowd pleaser.
+
+---
+
 ## Saturday 2026/10/17
 
 * 10 hours today, 670 hours this track year.
