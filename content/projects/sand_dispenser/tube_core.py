@@ -759,7 +759,7 @@ class tube_core:
         plug_lip_remainder = plug_lip_size - hole_bevel_outside
         hole_subtract_margin = 100
         handle_width = 0.4 * 3
-        plug_wall_thickness = 0.4 * 2
+        plug_wall_thickness = 0.4 * 3
         plug_body = (
             # Recess the plug to avoid leaving a lip that can catch, then
             # create the outer lip
@@ -900,7 +900,6 @@ show_object(tc.beam_to_handle(), options={"color": "red", "alpha": 0.25})
 
 plug, hole = tc.flexible_plug_and_hole()
 
-
 show_object(
     wheel - hole.translate((inch_to_mm(1.25), -tc.ibls_T_min, 0)),
     options={"color": "green", "alpha": 0.25},
@@ -910,13 +909,3 @@ show_object(
     plug.translate((inch_to_mm(1.25), -tc.ibls_T_min, 0)),
     options={"color": "aliceblue", "alpha": 0.25},
 )
-
-# plug_test = (
-#     cq.Workplane("XZ")
-#     .circle(radius=inch_to_mm(1))
-#     .extrude(-inch_to_mm(0.75))
-#     .edges()
-#     .chamfer(1)
-# ) - hole
-
-# show_object(plug_test, options={"color": "purple", "alpha": 0.25})
