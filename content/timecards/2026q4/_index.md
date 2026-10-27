@@ -5,6 +5,28 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Thursday 2026/10/22
+
+* 6.5 hours today, 685.5 hours this track year.
+
+Signal head cleaning service + situation survey.
+
+#### 12:30PM - 7:00PM (6.5 hours)
+
+I arrived just after a rainstorm to see what has gone haywire. There were many
+small issues but I found two big ones: signal heads HC and IC were not
+indicating correctly and these are important switches we need to work for the
+upcoming Fall Meet. I had a shop vac and compressed air with me so it was
+pretty quick to give those position sensors a quick clenaing. Better, but not
+quite good enough. This will need more work.
+
+I had the vacuum and the air compressor because another goal of today's visit
+was a cosmetic appearance cleaning pass. First the shop vac for big clumps of
+dirt tangled in spider webs, then a damp towel to wipe off bird poop and any
+remaining residue, and a stream of compressed air to clean out details.
+
+---
+
 ## Sunday 2026/10/18
 
 * 9 hours today, 679 hours this track year.
