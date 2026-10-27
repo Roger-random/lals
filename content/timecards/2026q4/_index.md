@@ -5,6 +5,46 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Friday 2026/10/23
+
+* 7.5 hours today, 693 hours this track year.
+
+Frantic signals repairs before bulk of Fall Meet guests arrive.
+
+#### 8:00AM - 12:30PM (4.5 hours)
+
+Threat of rain (and a bit of actual rain) kept majority of our Fall Meet guests
+away and that is good news for signals: we have some elbow room to make fixes
+before everyone shows up.
+
+Also good news: signal head HC started indicating correctly. We'll keep an eye
+on it over the weekend and be ready to jump on it as needed.
+
+IC didn't start working better, though, and this is a signal whose malfunction
+could lead to head-on collisions so this was definitely the red alert work item
+of the day. It wasn't just the micro switch that was bad, some of the wiring
+and crimp connectors had to be redone as well for reliable operation.
+
+Also very important was the Minden siding switch HS1, because that is around a
+blind corner and steam locomotives do use that location to top off water. We
+need the preceding signal HFA/B to warn incoming locomotives with red/yellow
+if that switch was thrown.
+
+A quick verification lap confirmed everything looked good beyond panel M. Time
+to get some food in the belly then let's jump on that.
+
+#### 1:30PM - 4:30PM (3 hours)
+
+Spent the afternoon struggling to understand why panel M block detectors show
+fault even though all the track voltages are within proper range. Eventually
+pinned blame on an unexpected path for current to flow, aided by the damp soil
+after rain. But exactly what power, and going where, remains mysterious.
+
+Like I told people later: we never did figure out what it IS, but we did find
+many things it was NOT. And that's still progress.
+
+---
+
 ## Thursday 2026/10/22
 
 * 6.5 hours today, 685.5 hours this track year.
