@@ -7,7 +7,7 @@ title = '2026 Q4 Timecards'
 
 ## Friday 2026/10/23
 
-* 7.5 hours today, 693 hours this track year.
+* 7 hours today, 692.5 hours this track year.
 
 Frantic signals repairs before bulk of Fall Meet guests arrive.
 
@@ -33,7 +33,7 @@ if that switch was thrown.
 A quick verification lap confirmed everything looked good beyond panel M. Time
 to get some food in the belly then let's jump on that.
 
-#### 1:30PM - 4:30PM (3 hours)
+#### 1:30PM - 4:00PM (2.5 hours)
 
 Spent the afternoon struggling to understand why panel M block detectors show
 fault even though all the track voltages are within proper range. Eventually
