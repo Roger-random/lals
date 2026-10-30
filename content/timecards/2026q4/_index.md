@@ -5,6 +5,30 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Monday 2026/10/26
+
+* 3.5 hours today, 698 hours this track year.
+
+Signals and squirrels.
+
+#### 2:30PM - 6:00PM (3.5 hours)
+
+I arrived hoping to perform a test with malfunctioning panel M, swap out its
+detector with both older and newer types to see if they share the same issue.
+We didn't want to do it during the meet because of risk of breaking something
+else, but I arrived to see panel M signals working correctly. Our current
+hypothesis says it's the damp soil after rain and if so the ground dried out
+enough to make the symptoms disappear. We'll have to continue after the next
+rain.
+
+Since I was here anyway I first performed a survey lap to see if there were
+any other signals issues. After they were logged, I thought the drying ground
+is a good opportunity to move another gondola (or three) of dirt. This time
+taking from the buildup near western signal bridge to the west end of O'Brien
+Moore bridge.
+
+---
+
 ## Sunday 2026/10/25
 
 * 2 hours today, 694.5 hours this track year.
