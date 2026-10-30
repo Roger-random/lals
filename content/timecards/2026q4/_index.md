@@ -5,6 +5,38 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Tuesday 2026/10/27
+
+* 4 hours today, 702 hours this track year.
+
+Bench car reassembly, track fixes, and signals
+
+#### 8:00AM - 12:00PM (4 hours)
+
+During Fall Meet our guests can help themselves to club owned bench cars to
+carry people around. A side effect is our Sunday public run bench car sets get
+scrambled up. Harper and I got them all put back together. Guests tend not to
+use the air brakes, which meant those lines are usually dangling around and at
+risk of damage. Fortunately they look fine, and none of them have disappeared.
+The final exam will be Sunday morning when they are pressure tested.
+
+When I arrived the signals were on but there was nobody else. I walked around
+and saw NT counts on panel P and C. Panel C seems to be the most problematic
+one with constant resetting. Harper decided damp dirt under the track is the
+culprit and cleaning them out did stop the counter reset so I guess that's
+good? Panel P NT might need the same treatment soon.
+
+Yesterday I noticed the east end of Bowlus had a joiner plate with both bolts
+missing from one side, which leaves the track flapping. There was also a dip
+that threatened to derail trains going over it. Harper handled majority of
+fixing while I was a minor assistant.
+
+After lunch Harper started running a new conduit for narrow gauge barn switch.
+I passed on helping and went to fill in a fresh squirrel hole before heading
+home to rest.
+
+---
+
 ## Monday 2026/10/26
 
 * 3.5 hours today, 698 hours this track year.
