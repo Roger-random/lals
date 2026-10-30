@@ -5,6 +5,21 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Sunday 2026/10/25
+
+* 2 hours today, 694.5 hours this track year.
+
+Taking Strawn's entrance gate shift.
+
+#### 7:00AM - 9:00AM (2 hours)
+
+Strawn was not feeling well so I took over his morning shift at the entrance
+gate. Getting up early to arrive by 7AM is not something I would have done
+by choice! It was also very cold at the booth so I was very eager to go get
+hot food and coffee when the shift was over.
+
+---
+
 ## Friday 2026/10/23
 
 * 7 hours today, 692.5 hours this track year.
