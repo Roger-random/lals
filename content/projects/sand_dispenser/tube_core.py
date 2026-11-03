@@ -884,6 +884,15 @@ class tube_core:
 
         return (plug, hole_subtract)
 
+    def spacer(self):
+        """
+        Quick and dirty spacer to fill a gap left by math mistake calculating
+        fastener positions
+        """
+        return (
+            cq.Workplane("XZ").circle(radius=8).circle(radius=4.2).extrude(6).chamfer(1)
+        )
+
 
 tc = tube_core()
 
@@ -908,4 +917,8 @@ show_object(
 show_object(
     plug.translate((inch_to_mm(1.25), -tc.ibls_T_min, 0)),
     options={"color": "aliceblue", "alpha": 0.25},
+)
+
+show_object(
+    tc.spacer().translate((0, -50, 0)), options={"color": "orange", "alpha": 0.25}
 )
