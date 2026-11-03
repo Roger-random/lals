@@ -5,6 +5,32 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Monday 2026/11/02
+
+* 3 hours today, 714 hours this track year.
+
+SF163 maintenance.
+
+#### 3:00PM - 6:00PM (3 hours)
+
+SF163 maintenance session before monthly board meeting.
+
+* Brought my CRC battery cleaner spray to neutralize bits of battery acid that
+has seeped out and corroding its terminals.
+* Topped off battery water.
+* Inspected air compressor filter and it doesn't look too bad.
+* No charred wires or melted parts that indicate electrical component failure.
+* Axle #3 is still the only dry axle. Axles #1, #2, and #4 continue to show
+evidence of small amounts of gearbox lubricant seeping out.
+* "Rattling chain" noise reported from yesterday's run pinpointed to the
+locomotive brake mechanism, whose parts just dangle when released. The geometry
+is such that the noise is only heard loudly when moving in reverse.
+* Use damp cloth to wipe off muddy footprints from Sunday's rainy session.
+* Conductor's chair mounting bolts tightened and the broken back swapped with
+one from a currently offline caboose.
+
+---
+
 ## Sunday 2026/11/01
 
 * 9 hours today, 711 hours this track year.
@@ -20,7 +46,7 @@ refrigerator, emergency power disconnect for ESM2, etc. Rained out for about
 sander.
 
 After public run wrapped up I connected the new iteration of detector board
-to panel M detector blocks and no joy: it's still a fault.
+to panel M detector blocks and no joy: it still shows fault.
 
 ---
 
