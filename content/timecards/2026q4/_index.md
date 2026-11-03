@@ -5,6 +5,25 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Sunday 2026/11/01
+
+* 9 hours today, 711 hours this track year.
+
+Sunday public run + signals.
+
+#### 8:00AM - 5:00PM (9 hours)
+
+Sunday miscellaneous tasks support crew. Started with signals verification
+finding erratic GSM1 and panel M false reds returned. Also restock beverage
+refrigerator, emergency power disconnect for ESM2, etc. Rained out for about
+30-45 minutes but tracks dried up quickly enough I didn't need to deploy my
+sander.
+
+After public run wrapped up I connected the new iteration of detector board
+to panel M detector blocks and no joy: it's still a fault.
+
+---
+
 ## Tuesday 2026/10/27
 
 * 4 hours today, 702 hours this track year.
