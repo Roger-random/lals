@@ -5,6 +5,59 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Tuesday 2026/11/03
+
+* 9 hours today, 723 hours this track year.
+
+Signals work day.
+
+#### 8:00AM - 11:30AM (3.5 hours)
+
+Started the day with installing replacement for HFB lens that has gone missing.
+
+Next is ESM2 which required a cleaning of motor mechanism and replacement of
+switch position sensing micro switch. It's a recurring issue that can be traced
+to the fact water flows into this area and pools, bringing debris that jams up
+mechanical components and corrodes parts that were not designed to handle water
+exposure. In the short term we have to keep replacing these bits. In the medium
+term better water drainage should help. In the long term I want to replace all
+these components with waterproof equivalents.
+
+Then over to panel A for two AC circuit projects with McMurray: one restore
+wires knocked loose from a wire nut, and the other retracing power path
+connecting panels A+B+C to Inchberg.
+
+Next work item was signal BD whose red has gone dark. Vault immediately
+adjacent was cleaned out, and wire traced back to the next vault towards panel
+B. There were a set of wire nut connections inside this vault and the red wire
+is visibly degraded. At the wire nut, the red wire has disintegrated into
+powder. About 6 inches back, the wire was mostly solid but strands are easily
+broken. I had to cut about a foot before I got usable wire. These were
+reconnected with fresh wire nuts filled with conductive grease to keep out
+water, backed up by a wrap of electrical tape.
+
+#### 12:30PM - 6:00PM (5.5 hours)
+
+After lunch break Strawn and I commenced panel R upgrade to latest generation
+of block detector and signal head driver boards. In parallel, Harper worked on
+position sensing switch wiring to enable signal ACB. I got to move a lot of
+wires around, some of which weren't in the best shape.
+
+![Frayed insulation in panel R wire](./20261103_frayed_wire_insulation.jpg)
+
+We got the detector blocks and signal heads working and superficially tested
+before Strawn had to leave. After that I continued working to connect
+cross-panel communication wiring. These are difficult to test by myself so
+they'll get tested later.
+
+But on paper, panel R is back up and running at feature parity with its
+pre-upgrade state this morning. The caveat is because RSM2 sensing switch is
+not operating reliably, but that's not an upgrade issue. And we are missing
+three driver board output wires, which meant they never worked before and thus
+the counterpart input wires can wait for another day.
+
+---
+
 ## Monday 2026/11/02
 
 * 3 hours today, 714 hours this track year.
