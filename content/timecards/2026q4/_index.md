@@ -17,7 +17,16 @@ SF163 maintenance session before monthly board meeting.
 
 * Brought my CRC battery cleaner spray to neutralize bits of battery acid that
 has seeped out and corroding its terminals.
-* Topped off battery water.
+
+Before:
+
+![Battery terminal corrosion](./20261006_battery_terminal_before.jpg)
+
+After:
+
+![Battery terminal corrosion cleaned](./20261103_battery_terminal_after.jpg)
+
+* Topped off battery water level.
 * Inspected air compressor filter and it doesn't look too bad.
 * No charred wires or melted parts that indicate electrical component failure.
 * Axle #3 is still the only dry axle. Axles #1, #2, and #4 continue to show
