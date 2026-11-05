@@ -15,13 +15,17 @@ Signals work day.
 
 Started the day with installing replacement for HFB lens that has gone missing.
 
-Next is ESM2 which required a cleaning of motor mechanism and replacement of
+Next is ESM3 which required a cleaning of motor mechanism and replacement of
 switch position sensing micro switch. It's a recurring issue that can be traced
 to the fact water flows into this area and pools, bringing debris that jams up
 mechanical components and corrodes parts that were not designed to handle water
 exposure. In the short term we have to keep replacing these bits. In the medium
 term better water drainage should help. In the long term I want to replace all
 these components with waterproof equivalents.
+
+While verifying ESM3 behavior we opened up panel E and found an ant infestation
+requiring some chemical warfare. Harper noticed a large amount were hiding
+between the two back-to-back boxes so they got sprayed too.
 
 Then over to panel A for two AC circuit projects with McMurray: one restore
 wires knocked loose from a wire nut, and the other retracing power path
@@ -41,9 +45,14 @@ water, backed up by a wrap of electrical tape.
 After lunch break Strawn and I commenced panel R upgrade to latest generation
 of block detector and signal head driver boards. In parallel, Harper worked on
 position sensing switch wiring to enable signal ACB. I got to move a lot of
-wires around, some of which weren't in the best shape.
+wires around, some of which weren't in the best shape so they had to be fixed
+before continuing.
 
 ![Frayed insulation in panel R wire](./20261103_frayed_wire_insulation.jpg)
+
+This panel also had a bad ant infestation. Between panel E and R we used up
+a lot or Raid and breathing the poisonous fumes afterwards probably took some
+time off my lifespan.
 
 We got the detector blocks and signal heads working and superficially tested
 before Strawn had to leave. After that I continued working to connect
