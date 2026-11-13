@@ -5,6 +5,42 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Saturday 2026/11/07
+
+* 3 hours today, 726 hours this track year.
+
+RailGiants event.
+
+#### 8:00AM - 11:00AM (3 hours)
+
+Arrived to set up SF163 to give rides at today's event, then brought out
+Chessie to check signals status. Found panel B failed to power up, diagnosed
+to power board not closing the AC circuit in response to NT signal nor manual
+override switch. Pulled the wires out of terminals and connected them together
+with a Wago connector so panel B is on all the time. Since B and C are very
+closely linked, went and flipped panel C to be always-on until we can replace
+panel B power board.
+
+Found no other signals issues, and we had so many steam locomotives today
+giving rides we ended up not needing SF163 at all. This is my ideal scenario:
+so many steamers we don't need the electric.
+
+At the end of the event I put SF163 away.
+
+#### Other
+
+Since I had no steamer to give rides and we didn't need the electric, Strawn
+and I ended up working on Sankey for the rest of the day. We got the water tank
+out of the tender for cleaning. The steam injector outlet is completely
+plugged. I thought it was deliberately plugged but others present think it is
+hard water buildup. Either way, we had to slice open the silicone seal to get
+inside so it can be cleaned. There's a lot of rust in the space between the
+tank and the tender today, that'll need to be removed and repainted.
+
+![Sankey water tank lifted and opened](./20261107_sankey_water_tank.jpg)
+
+---
+
 ## Tuesday 2026/11/03
 
 * 9 hours today, 723 hours this track year.
