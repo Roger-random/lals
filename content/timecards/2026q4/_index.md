@@ -5,6 +5,66 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Tuesday 2026/11/10
+
+* 9.5 hours today, 745 hours this track year.
+
+Signals work day.
+
+#### 8:00AM - 12:30PM (4.5 hours)
+
+Started by replacing the power board in panel B. It's a hairy nest of wires in
+there but it seems like we didn't break anything doing it. C was then turned
+back on "Auto" mode. Later in the afternoon NT ring shut down and I was able to
+verify B and C both turned off as expected. Pushed the button in Sherwood
+station (panel E) and they all came on.
+
+Took a look at the loose rail in Phil West track 7. We'll need a few things
+from Home Depot before we can tackle this job.
+
+GSM1 is still doing its weird twitch but, since it's switching reliably today,
+we'll leave it. We've got enough to do today.
+
+Signal RF was occasionally not showing correctly due to RSM2 position sensing
+micro switch not responding to rail switch movement. Opened up the enclosure to
+find a big mess as expected. After cleaning it up RF indicated properly, but
+RSM2 was not acting right. It's doing the bounce thing it did before. Motor
+driver board ref F supposedly have a fix. We'll see.
+
+Made minor progress in panel L ESP32 upgrade prep with the new opto isolator
+board. We had to sort out some wires and find an unused one we can use for
+panel K ground reference. Then we got three good signals getting sent across
+before brain performance went downhill. Lunchtime!
+
+#### 1:30PM - 6:30PM (5 hours)
+
+Stopped by Home Depot on the way home so we could get started on Phil West
+track 7 work. The very first Tapcon screw snapped its head so we're not
+terribly confident this particular job will hold up. But it's what we have
+today so let's see how it holds up. If it does, no need to devise another plan.
+
+Went over to east gate and looked at the full sized crossing. It lights up and
+rings bell just fine. The lights don't alternate regularly and we can hear the
+clicks hinting at a mechanical switching mechanism. Maybe project for another
+day.
+
+After Strawn departed I returned to digging out the western signal bridge by
+panel M. 2 gondola loads worth of dirt was moved today, which is overall number
+4 and 5 for this project. I hit concrete on #4, and #5 lets us see the shape of
+the concrete base.
+
+![Signal bridge concrete base](./20261110_signal_bridge_concrete_base.jpg)
+
+Those two gondolas of dirt went into squirrel holes, and the left over spread
+over downhill side of Akins hoping to replace erosion in that area.
+
+Final lap around the track found LB and LC showing false yellow again. Probed
+panel K driver board and saw the same problem as before: KB red out is logical
+low but the driver output is logical high. Will ask Brock before moving to yet
+another driver board I/O pairing.
+
+---
+
 ## Sunday 2026/11/08
 
 * 9.5 hours today, 735.5 hours this track year.
