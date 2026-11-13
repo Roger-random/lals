@@ -31,10 +31,10 @@ find a big mess as expected. After cleaning it up RF indicated properly, but
 RSM2 was not acting right. It's doing the bounce thing it did before. Motor
 driver board ref F supposedly have a fix. We'll see.
 
-Made minor progress in panel L ESP32 upgrade prep with the new opto isolator
-board. We had to sort out some wires and find an unused one we can use for
-panel K ground reference. Then we got three good signals getting sent across
-before brain performance went downhill. Lunchtime!
+Made some progress in panel L ESP32 upgrade prep with the new opto isolator
+board. We had to sort out two bundles of wires and find an unused one we can
+use as reference for panel K signal ground. Then we got three good signals
+getting sent across before brain performance went downhill. Lunchtime!
 
 #### 1:30PM - 6:30PM (5 hours)
 
@@ -49,14 +49,15 @@ clicks hinting at a mechanical switching mechanism. Maybe project for another
 day.
 
 After Strawn departed I returned to digging out the western signal bridge by
-panel M. 2 gondola loads worth of dirt was moved today, which is overall number
+panel M. I moved two gondola loads worth of dirt today, which is overall number
 4 and 5 for this project. I hit concrete on #4, and #5 lets us see the shape of
-the concrete base.
+the concrete base. Probably need at least one or two more before we can shore
+up this hillside.
 
 ![Signal bridge concrete base](./20261110_signal_bridge_concrete_base.jpg)
 
-Those two gondolas of dirt went into squirrel holes, and the left over spread
-over downhill side of Akins hoping to replace erosion in that area.
+Those two gondolas of dirt went into squirrel holes, remainder spread over
+downhill side of Akins hoping to replace erosion in that area.
 
 Final lap around the track found LB and LC showing false yellow again. Probed
 panel K driver board and saw the same problem as before: KB red out is logical
@@ -117,7 +118,8 @@ out of the tender for cleaning. The steam injector outlet is completely
 plugged. I thought it was deliberately plugged but others present think it is
 hard water buildup. Either way, we had to slice open the silicone seal to get
 inside so it can be cleaned. There's a lot of rust in the space between the
-tank and the tender today, that'll need to be removed and repainted.
+tank and the tender, that should be removed and repainted before Sankey is put
+back together.
 
 ![Sankey water tank lifted and opened](./20261107_sankey_water_tank.jpg)
 
