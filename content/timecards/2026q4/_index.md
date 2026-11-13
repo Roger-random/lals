@@ -5,6 +5,28 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Sunday 2026/11/08
+
+* 9.5 hours today, 735.5 hours this track year.
+
+Sunday public run operations.
+
+#### 8:00AM - 5:30PM (9.5 hours)
+
+Morning signals check found no new issues, and thankfully it stayed that way.
+Pulled out Sankey so guests can see a steam locomotive. When 10AM rolled
+around there were only two trains out so I pulled CN2002 out of the barn for
+a third option if needed. It turned out we didn't have enough people to run
+three trains anyway so CN2002 sat looking pretty in the station. I ended up
+conducting SF657 for several laps. Since we only had two trains we ran well
+past 3PM to give rides to everyone who were in the gate by 3PM. And after
+they were done... I got to put CN2002, Chessie and Sankey back in their
+storage tracks.
+
+![CN2002 refueling for a day's run](./20261108_cn2002_refueling.jpg)
+
+---
+
 ## Saturday 2026/11/07
 
 * 3 hours today, 726 hours this track year.
