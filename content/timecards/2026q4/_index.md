@@ -5,6 +5,32 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Monday 2026/11/16
+
+* 4 hours today, 768 hours this track year.
+
+Signals & Squirrels.
+
+#### 2:00PM - 6:00PM (4 hours)
+
+Continued digging out western signal bridge in preparation for retaining wall.
+Brought the dirt over to west end of O'Brien-Moore bridge to rebuild eroded
+landscape. Did the same for dirt someone had dumped in the driveway, now
+theyr're on the hillside as well. Squirrel tunneling has also undermined the
+bridge at Akins switchback. Harper and I tried to shore things up but this
+needs a lot more attention.
+
+While scouting potential power paths for a dwarf signal at pit entrance, Harper
+encountered some badly corroded wire nuts and things just fell apart. Most of
+the wires just needed to be trimmed a few inches, but the black wire had
+almost fourteen inches of flaky green powdery bits of copper before I found
+something structurally sound enough to fasten to. Yikes! We got signal GG back
+online after sunset.
+
+![Harper vault cleanup](./20261116_harper_vault_cleanup.jpg)
+
+---
+
 ## Sunday 2026/11/15
 
 * 9 hours today, 764 hours this track year.
