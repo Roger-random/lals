@@ -5,6 +5,64 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Saturday 2026/11/14
+
+* 10 hours today, 755 hours this track year.
+
+Signals work day during official club monthly work day.
+
+#### 8:00AM - 6:00PM (10 hours)
+
+Started the day with my show-and-tell with reed switch sold for home security
+system window sensors. Michael thinks it looks promising, let's keep an eye
+open for good field trial opportunities.
+
+Work day was greeted by the twitching GSM1, so we took it as an omen to replace
+its switch motor board with another. It stopped twitching, but we'll need to
+keep an eye on it.
+
+Next stop on the way out is the switch to valley division... it wasn't always
+working. Looking in panel I we saw it is an unique motor board with additional
+circuitry for the automatic switch to mainline. We have no replacements if it
+should go bad, not a great position to be in.
+
+Bagley siding switch moves but does not always indicate correctly. Position
+sensing microswitch enclosure is dirty and the switch is rusted out. Maybe we
+want that reed switch sooner rather than later.
+
+I got an introduction to the full sized railroad signals in the showcase
+garden area. It's weird to see tiny proto boards connected to beefy industrial
+equipment. One side is controlled by unplugging from a socket, the other side
+has an actual power switch.
+
+Disney crossing bell disassembled, cleaned, and reassembled so now it rings
+as intended. Also re-fastened the railroad crossing sign as well.
+
+Signal WB false red quickly traced to a bad track resistor, routine replacement
+followed and WB is back again.
+
+RFA/B is also not indicating correctly even after cleaning and adjustment. Not
+on mainline (unlike Bagley siding) so a better reed switch field test
+candidate.
+
+"Oh let's hook up panel P NT. It should be quick." It was not. There's some
+electrical path we couldn't figure out. The NT track blocks aren't really open
+circuits when there's no train over it, so the timer board logic is stuck and
+never resets the timer. Maybe it'll do so after the timer expires but we can't
+renew the timer in this state. Mitigation: since the tracks aren't working
+anyway, we leave then disconnected so at least the maintenance bay button can
+reset the timer.
+
+Finished the day by putting the flash relay on signal ACB so AC can show red
+and blinking-red when the adjacent switch is set to go into the narrow gauge
+barn.
+
+I went to LB+LC driver board to check its current draw on yellow-in port. I
+thought it was 0.890A which is way too much! Turns out it's just 0.890mA
+which is fine and doesn't explain driver board failure.
+
+---
+
 ## Tuesday 2026/11/10
 
 * 9.5 hours today, 745 hours this track year.
