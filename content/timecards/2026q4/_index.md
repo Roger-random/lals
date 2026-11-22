@@ -5,6 +5,40 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Saturday 2026/11/21
+
+* 7.5 hours today, 775.5 hours this track year.
+
+Signals & Shovels.
+
+#### 7:00AM - 2:30PM (7.5 hours)
+
+Big rainstorm! Arrived preparing to jump on a whole mess of serious signals
+issues but there were delightfully few of them. Just luck today? Or are we
+finally starting to see payoff from all the work trying to improve weather
+resistance? We'll know soon... more rain coming.
+
+Panel W had no power and we had to reset the GFI at the outlet by the kitchen
+behind the drinking fountain. A totally obvious place to look. (Sarcasm)
+
+GSM1 was only intermittently responsive. It's not bouncing back and forth
+like it used to so the switch motor board replacement seems to be holding.
+But clearly something else is wrong.
+
+Took a look at signal BB GRed. There's voltage on red out wire even when
+there's no detect in to ask for that. Something weird is happening, more
+experiments later.
+
+Even though signals were in surprisingly good shape, the rest of the club
+was not. We had to dig track out from under a mound of dirt that had
+collapsed and washed over it. We had rocks all around the track. We had
+leaves and pine needles washed into switches. It was a mess that needed
+cleaning up.
+
+![Buried track](./20261121_buried_track.jpg)
+
+---
+
 ## Monday 2026/11/16
 
 * 4 hours today, 768 hours this track year.
