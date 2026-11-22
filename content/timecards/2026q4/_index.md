@@ -5,6 +5,40 @@ title = '2026 Q4 Timecards'
 
 ---
 
+## Sunday 2026/11/15
+
+* 9 hours today, 764 hours this track year.
+
+Disney Sunday public run day.
+
+#### 8:00AM - 5:00PM (9 hours)
+
+Arrived to find signals on but nobody on track. Time for the usual panel-
+opening ritual which found panel C NT to be continually resetting. I thought
+we cured this by moving damp dirt off the tracks but apparently I thought
+wrong.
+
+Signals verification lap found an issue with ESM3 so we cleaned it out and
+applied graphite lubricant. Seems OK... for now.
+
+While working on ESM3 we opened up panel E for access to the test button and
+saw the NT countdown timer was at 42 minutes. It should be at 120 because
+Chessie just rolled over the block. But nothing would reset that timer, not
+the track and not the remote control button. Feels like whatever was happening
+at P yesterday is happening at E now.
+
+Noticed that whoever put SF163 away forgot to put down the conductor's seat so
+the seat back I just replaced is broken again. Grumpy.
+
+Floated around various tasks during run day, including a noon shift at east
+gate so Campbell can go sit for a while and get lunch. Plus my November check
+of fire extinguishers.
+
+No need to pull Sankey out today because we had real steam locomotives running
+on track today. Always a good thing.
+
+---
+
 ## Saturday 2026/11/14
 
 * 10 hours today, 755 hours this track year.
